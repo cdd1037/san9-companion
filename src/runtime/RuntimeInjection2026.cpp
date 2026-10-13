@@ -269,7 +269,7 @@ void Runtime2026::installCoreHooks()
   writePatch(dword_42F0D4, &unk_429798, 0xF4u);
   writePatch(dword_42F070, &unk_42B3F0, 0xECu);
   writePatch(dword_42F06C, &unk_42B5C8, 0x98u);
-  writePatch(dword_42B700, sourceVA(lpBuffer), nSize);
+  writePatch(dword_42B700, sourceVA(lpBuffer, nSize), nSize);
   writePatch(dword_42F068, &unk_42B718, 0x4Fu);
   writePatch(dword_42F064, aQhld, 0x2Cu);
   writePatch(dword_42F060, &unk_42B7BC, 0x40u);
@@ -392,7 +392,7 @@ void Runtime2026::installNotificationBridge()
     messageId = registerRuntimeMessage(String);
     *(_DWORD *)(state + san9::layout2026::MessageId) = messageId;
   }
-  writePatch((LPVOID)0x43F7E4, (LPCVOID)(state + san9::layout2026::OwnerWindow), 0xCu);
+  writePatch((LPVOID)0x43F7E4, stateBytes(san9::layout2026::OwnerWindow, 0xCu), 0xCu);
   patchCodeCursorAt41F848 = (char *)&unk_41F848;
   patchIndexAt41F818 = 0;
   do
@@ -859,7 +859,7 @@ void Runtime2026::installGameplayPatches()
   writeDescriptor(0x423B20u, PatchSource2026::CompanionAddress);
   writeDescriptor(0x428ED0u, PatchSource2026::CompanionAddress);
   writeDescriptor(0x428BC0u, PatchSource2026::CompanionAddress);
-  writePatch(off_428F30, sourceVA(off_428F38), dword_428F34);
+  writePatch(off_428F30, sourceVA(off_428F38, dword_428F34), dword_428F34);
   writeDescriptor(0x428FC0u, PatchSource2026::CompanionAddress);
   writeDescriptor(0x429090u, PatchSource2026::CompanionAddress);
   writeDescriptor(0x4290D0u, PatchSource2026::CompanionAddress);
@@ -894,7 +894,7 @@ void Runtime2026::installGameplayPatches()
     writePatch((LPVOID)dword_42C134[patchIndexAt42C134], (char *)&unk_42C17C + dword_42C164[patchIndexAt42C134], dword_42C14C[patchIndexAt42C134]);
   }
   writeDescriptor(0x42C550u, PatchSource2026::CompanionAddress);
-  writePatch(off_42C5A8, sourceVA(off_42C5B0), dword_42C5AC);
+  writePatch(off_42C5A8, sourceVA(off_42C5B0, dword_42C5AC), dword_42C5AC);
   writeDescriptor(0x42C600u, PatchSource2026::CompanionAddress);
   writeDescriptor(0x42C930u, PatchSource2026::CompanionAddress);
   writeDescriptor(0x42C9B8u, PatchSource2026::CompanionAddress);
@@ -962,13 +962,13 @@ void Runtime2026::installGameplayPatches()
   writePatch(*(LPVOID *)(state + 6440), &initializationValue, 1u);
   writeDescriptor(0x42A560u, PatchSource2026::CompanionAddress);
   writeDescriptor(0x42A5C0u, PatchSource2026::CompanionAddress);
-  writePatch(off_42AFA0, sourceVA(off_42AFA8), dword_42AFA4);
+  writePatch(off_42AFA0, sourceVA(off_42AFA8, dword_42AFA4), dword_42AFA4);
   writeDescriptor(0x42B1B0u, PatchSource2026::CompanionAddress);
-  writePatch(off_42B278, sourceVA(off_42B280), dword_42B27C);
-  writePatch(off_42B2A0, sourceVA(off_42B2A8), dword_42B2A4);
-  writePatch(off_42B388, sourceVA(off_42B390), dword_42B38C);
-  writePatch(off_42B3B0, sourceVA(off_42B3B8), dword_42B3B4);
-  writePatch(off_42B3D8, sourceVA(off_42B3E0), dword_42B3DC);
+  writePatch(off_42B278, sourceVA(off_42B280, dword_42B27C), dword_42B27C);
+  writePatch(off_42B2A0, sourceVA(off_42B2A8, dword_42B2A4), dword_42B2A4);
+  writePatch(off_42B388, sourceVA(off_42B390, dword_42B38C), dword_42B38C);
+  writePatch(off_42B3B0, sourceVA(off_42B3B8, dword_42B3B4), dword_42B3B4);
+  writePatch(off_42B3D8, sourceVA(off_42B3E0, dword_42B3DC), dword_42B3DC);
   writeDescriptor(0x41F988u, PatchSource2026::CompanionAddress);
   writeDescriptor(0x421788u, PatchSource2026::CompanionAddress);
   writeDescriptor(0x4217B8u, PatchSource2026::CompanionAddress);
@@ -977,95 +977,95 @@ void Runtime2026::installGameplayPatches()
   writeDescriptor(0x424360u, PatchSource2026::CompanionAddress);
   writeDescriptor(0x4243E0u, PatchSource2026::CompanionAddress);
   writeDescriptor(0x424408u, PatchSource2026::CompanionAddress);
-  readMemory(*(HANDLE *)(state + san9::layout2026::ProcessHandle), dword_4253B4, sourceVA(off_4253BC), dword_4253B8, nullptr);
+  captureGameBytes(addressOf(dword_4253B4), addressOf(off_4253BC), dword_4253B8);
   writeDescriptor(0x4253A8u, PatchSource2026::CompanionAddress);
   writePatch(dword_4253C0, &codeGetPersonFriendship, 0x38u);
   writeDescriptor(0x427188u, PatchSource2026::CompanionAddress);
-  writePatch(*(LPVOID *)(state + san9::injection2026::BurnExperienceAddr), (LPCVOID)(state + san9::injection2026::BurnExperienceCode), 4u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::RobExperienceAddr), (LPCVOID)(state + san9::injection2026::RobExperienceCode), 4u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::ReinforceExperienceAddr), (LPCVOID)(state + san9::injection2026::ReinforceExperienceCode), 4u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::TrainExperienceAddr), (LPCVOID)(state + san9::injection2026::TrainExperienceCode), 4u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::RepairExperienceAddr), (LPCVOID)(state + san9::injection2026::RepairExperienceCode), 4u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::CultivateMinPoliticsAddr), (LPCVOID)(state + san9::injection2026::CultivateMinPolitics), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::DispatchArrayAddr), (LPCVOID)(state + san9::injection2026::DispatchArray), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::DispatchShipAddr), (LPCVOID)(state + san9::injection2026::DispatchShip), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::ChaosDayAddr), (LPCVOID)(state + san9::injection2026::ChaosDayCoef), 4u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::LowerTrickAddr), (LPCVOID)(state + san9::injection2026::LowerTrickCoef), 1u);
-  writePatch(*(LPVOID *)(state + 6480), (LPCVOID)(state + 6484), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::LowerTrapAddr), (LPCVOID)(state + san9::injection2026::LowerTrickCoef), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::AlienateIntelligenceAddr), (LPCVOID)(state + san9::injection2026::AlienateIntelligenceCode), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::GossipIntelligenceAddr), (LPCVOID)(state + san9::injection2026::GossipIntelligenceCode), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::InspireIntelligenceAddr), (LPCVOID)(state + san9::injection2026::InspireIntelligenceCode), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::CheatIntelligenceAddr), (LPCVOID)(state + san9::injection2026::CheatIntelligenceCode), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::DisorderIntelligenceAddr), (LPCVOID)(state + san9::injection2026::DisorderIntelligenceCode), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::BuildExperienceAddr), (LPCVOID)(state + san9::injection2026::BuildExperienceCode), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::AntiAttackMinSoldierdAddr), (LPCVOID)(state + san9::injection2026::AntiAttackMinSoldier), 4u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::AntiAttackBarbarismAddr), (LPCVOID)(state + san9::injection2026::AntiAttackBarbarism), 1u);
-  writePatch(*(LPVOID *)(state + 6504), (LPCVOID)(state + 6508), 4u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::AlienateForceNameAddr), (LPCVOID)(state + san9::injection2026::AlienateForceName), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::AntiMinTroopSoldierAddr), (LPCVOID)(state + san9::injection2026::AntiMinTroopSoldier), 4u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::SaveBaseAddr), (LPCVOID)(state + san9::injection2026::SaveBase), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::OfficerBasicCommandAddr), (LPCVOID)(state + san9::injection2026::OfficerBasicCommand), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::OfficerBasicIntAddr), (LPCVOID)(state + san9::injection2026::OfficerBasicInt), 4u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::SearchMinPoliticsAddr), (LPCVOID)(state + san9::injection2026::SearchMinPolitics), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::FootAntiElephantAddr), (LPCVOID)(state + san9::injection2026::FootAntiElephant), 4u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::InspireMaxVigourAddr), (LPCVOID)(state + san9::injection2026::InspireMaxVigour), 1u);
-  writePatch(*(LPVOID *)(state + 6740), (LPCVOID)(state + 6744), 1u);
-  writePatch(*(LPVOID *)(state + 6752), (LPCVOID)(state + san9::injection2026::GossipSubLoyalty), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::GoalNullCityAddr), (LPCVOID)(state + san9::injection2026::GoalNullCity), 4u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::NullBulidingDangerAddr), (LPCVOID)(state + san9::injection2026::NullBulidingDanger), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::AvoidNearCityAddr), (LPCVOID)(state + san9::injection2026::AvoidNearCity), 2u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::RetreatMinVigourAddr), (LPCVOID)(state + san9::injection2026::RetreatMinVigour), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::SelectCleverKillerAddr), (LPCVOID)(state + san9::injection2026::SelectCleverKiller), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::BurnExperienceAddr), stateBytes(san9::injection2026::BurnExperienceCode, 4u), 4u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::RobExperienceAddr), stateBytes(san9::injection2026::RobExperienceCode, 4u), 4u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::ReinforceExperienceAddr), stateBytes(san9::injection2026::ReinforceExperienceCode, 4u), 4u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::TrainExperienceAddr), stateBytes(san9::injection2026::TrainExperienceCode, 4u), 4u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::RepairExperienceAddr), stateBytes(san9::injection2026::RepairExperienceCode, 4u), 4u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::CultivateMinPoliticsAddr), stateBytes(san9::injection2026::CultivateMinPolitics, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::DispatchArrayAddr), stateBytes(san9::injection2026::DispatchArray, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::DispatchShipAddr), stateBytes(san9::injection2026::DispatchShip, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::ChaosDayAddr), stateBytes(san9::injection2026::ChaosDayCoef, 4u), 4u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::LowerTrickAddr), stateBytes(san9::injection2026::LowerTrickCoef, 1u), 1u);
+  writePatch(*(LPVOID *)(state + 6480), stateBytes(6484, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::LowerTrapAddr), stateBytes(san9::injection2026::LowerTrickCoef, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::AlienateIntelligenceAddr), stateBytes(san9::injection2026::AlienateIntelligenceCode, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::GossipIntelligenceAddr), stateBytes(san9::injection2026::GossipIntelligenceCode, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::InspireIntelligenceAddr), stateBytes(san9::injection2026::InspireIntelligenceCode, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::CheatIntelligenceAddr), stateBytes(san9::injection2026::CheatIntelligenceCode, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::DisorderIntelligenceAddr), stateBytes(san9::injection2026::DisorderIntelligenceCode, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::BuildExperienceAddr), stateBytes(san9::injection2026::BuildExperienceCode, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::AntiAttackMinSoldierdAddr), stateBytes(san9::injection2026::AntiAttackMinSoldier, 4u), 4u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::AntiAttackBarbarismAddr), stateBytes(san9::injection2026::AntiAttackBarbarism, 1u), 1u);
+  writePatch(*(LPVOID *)(state + 6504), stateBytes(6508, 4u), 4u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::AlienateForceNameAddr), stateBytes(san9::injection2026::AlienateForceName, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::AntiMinTroopSoldierAddr), stateBytes(san9::injection2026::AntiMinTroopSoldier, 4u), 4u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::SaveBaseAddr), stateBytes(san9::injection2026::SaveBase, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::OfficerBasicCommandAddr), stateBytes(san9::injection2026::OfficerBasicCommand, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::OfficerBasicIntAddr), stateBytes(san9::injection2026::OfficerBasicInt, 4u), 4u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::SearchMinPoliticsAddr), stateBytes(san9::injection2026::SearchMinPolitics, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::FootAntiElephantAddr), stateBytes(san9::injection2026::FootAntiElephant, 4u), 4u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::InspireMaxVigourAddr), stateBytes(san9::injection2026::InspireMaxVigour, 1u), 1u);
+  writePatch(*(LPVOID *)(state + 6740), stateBytes(6744, 1u), 1u);
+  writePatch(*(LPVOID *)(state + 6752), stateBytes(san9::injection2026::GossipSubLoyalty, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::GoalNullCityAddr), stateBytes(san9::injection2026::GoalNullCity, 4u), 4u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::NullBulidingDangerAddr), stateBytes(san9::injection2026::NullBulidingDanger, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::AvoidNearCityAddr), stateBytes(san9::injection2026::AvoidNearCity, 2u), 2u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::RetreatMinVigourAddr), stateBytes(san9::injection2026::RetreatMinVigour, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::SelectCleverKillerAddr), stateBytes(san9::injection2026::SelectCleverKiller, 1u), 1u);
   writePatch(*(LPVOID *)(state + san9::injection2026::NeglectChongCheAddr), (LPCVOID)(state + (skipDurabilitySiegeSelection_ ? 6828 : 6832)), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::SameForceTroopAddr), (LPCVOID)(state + san9::injection2026::SameForceTroop), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::SameForceTroopAddr2), (LPCVOID)(state + san9::injection2026::SameForceTroop), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::AttackIgnoreAntitrapAddr), (LPCVOID)(state + san9::injection2026::AttackIgnoreAntitrap), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::HomeForceDoorAddr), (LPCVOID)(state + san9::injection2026::HomeForceDoor), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::AvoidInduceMaxDayAddr), (LPCVOID)(state + san9::injection2026::AvoidInduceMaxDay), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::GetTroopGoalBugAddr), (LPCVOID)(state + san9::injection2026::GetTroopGoalBug), 4u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::GoalToSourceDamageAddr), (LPCVOID)(state + san9::injection2026::GoalToSourceDamage), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::BadBrothersArrayEndAddr), (LPCVOID)(state + san9::injection2026::BadBrothersArrayEnd), 4u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::TroopFromBuildingAddr), (LPCVOID)(state + san9::injection2026::TroopFromBuilding), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::FalseAntiTroopAddr), (LPCVOID)(state + san9::injection2026::ExternalAntiTroop), 4u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::DisorderAntiTroopAddr), (LPCVOID)(state + san9::injection2026::InternalAntiTroop), 4u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::DeclareAttackTroopAddr), (LPCVOID)(state + san9::injection2026::DeclareAttackTroop), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::InviteSubLoyatyAddr), (LPCVOID)(state + san9::injection2026::InviteSubLoyaty), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::CommandOfficerEndFlagAddr), (LPCVOID)(state + san9::injection2026::CommandOfficerEndFlag), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::IntelligenceOfficerEndFlagAddr), (LPCVOID)(state + san9::injection2026::IntelligenceOfficerEndFlag), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::ShowCelueKillerAddr), (LPCVOID)(state + san9::injection2026::ShowCelueKiller), 4u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::LvbuAttackDoorAddr), (LPCVOID)(state + san9::injection2026::LvbuAttackDoor), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::EnableSecondKillerAddr), (LPCVOID)(state + san9::injection2026::EnableSecondKiller), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::TroopGoalBuildingAddr), (LPCVOID)(state + san9::injection2026::TroopGoalBuilding), 4u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::NotGetPersonQuotaAddr), (LPCVOID)(state + san9::injection2026::NotGetPersonQuota), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::YearTableInvalidFlagAddr), (LPCVOID)(state + san9::injection2026::YearTableInvalidFlag), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::TransportGoalInfoAddr), (LPCVOID)(state + san9::injection2026::TransportGoalInfo), 4u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::CounselorMinCandidateAddr), (LPCVOID)(state + san9::injection2026::CounselorMinCandidate), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::NoarrayToBuildingAddr), (LPCVOID)(state + san9::injection2026::NoarrayToBuilding), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::NoarrayToBuildingAddr2), (LPCVOID)(state + san9::injection2026::NoarrayToBuilding), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::SearchNoResultAddr), (LPCVOID)(state + san9::injection2026::SearchNoResult), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::AttackBuildForceAddr), (LPCVOID)(state + san9::injection2026::AttackBuildForce), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::BuildMaxArriveDayAddr), (LPCVOID)(state + san9::injection2026::BuildMaxArriveDay), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::GameEndYearAddr), (LPCVOID)(state + san9::injection2026::GameEndYear), 4u);
-  writePatch((LPVOID)(*(_DWORD *)(state + san9::injection2026::BuildMinBuildingAddr) - 32), (LPCVOID)(state + san9::injection2026::BuildMinBuilding), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::BuildMinBuildingAddr), (LPCVOID)(state + san9::injection2026::BuildMinBuilding), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::UpdateGoalForceAddr), (LPCVOID)(state + san9::injection2026::UpdateGoalForce), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::UpdateGoalPropAddr), (LPCVOID)(state + san9::injection2026::UpdateGoalProp), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::SameForceTroopAddr), stateBytes(san9::injection2026::SameForceTroop, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::SameForceTroopAddr2), stateBytes(san9::injection2026::SameForceTroop, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::AttackIgnoreAntitrapAddr), stateBytes(san9::injection2026::AttackIgnoreAntitrap, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::HomeForceDoorAddr), stateBytes(san9::injection2026::HomeForceDoor, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::AvoidInduceMaxDayAddr), stateBytes(san9::injection2026::AvoidInduceMaxDay, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::GetTroopGoalBugAddr), stateBytes(san9::injection2026::GetTroopGoalBug, 4u), 4u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::GoalToSourceDamageAddr), stateBytes(san9::injection2026::GoalToSourceDamage, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::BadBrothersArrayEndAddr), stateBytes(san9::injection2026::BadBrothersArrayEnd, 4u), 4u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::TroopFromBuildingAddr), stateBytes(san9::injection2026::TroopFromBuilding, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::FalseAntiTroopAddr), stateBytes(san9::injection2026::ExternalAntiTroop, 4u), 4u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::DisorderAntiTroopAddr), stateBytes(san9::injection2026::InternalAntiTroop, 4u), 4u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::DeclareAttackTroopAddr), stateBytes(san9::injection2026::DeclareAttackTroop, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::InviteSubLoyatyAddr), stateBytes(san9::injection2026::InviteSubLoyaty, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::CommandOfficerEndFlagAddr), stateBytes(san9::injection2026::CommandOfficerEndFlag, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::IntelligenceOfficerEndFlagAddr), stateBytes(san9::injection2026::IntelligenceOfficerEndFlag, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::ShowCelueKillerAddr), stateBytes(san9::injection2026::ShowCelueKiller, 4u), 4u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::LvbuAttackDoorAddr), stateBytes(san9::injection2026::LvbuAttackDoor, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::EnableSecondKillerAddr), stateBytes(san9::injection2026::EnableSecondKiller, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::TroopGoalBuildingAddr), stateBytes(san9::injection2026::TroopGoalBuilding, 4u), 4u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::NotGetPersonQuotaAddr), stateBytes(san9::injection2026::NotGetPersonQuota, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::YearTableInvalidFlagAddr), stateBytes(san9::injection2026::YearTableInvalidFlag, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::TransportGoalInfoAddr), stateBytes(san9::injection2026::TransportGoalInfo, 4u), 4u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::CounselorMinCandidateAddr), stateBytes(san9::injection2026::CounselorMinCandidate, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::NoarrayToBuildingAddr), stateBytes(san9::injection2026::NoarrayToBuilding, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::NoarrayToBuildingAddr2), stateBytes(san9::injection2026::NoarrayToBuilding, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::SearchNoResultAddr), stateBytes(san9::injection2026::SearchNoResult, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::AttackBuildForceAddr), stateBytes(san9::injection2026::AttackBuildForce, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::BuildMaxArriveDayAddr), stateBytes(san9::injection2026::BuildMaxArriveDay, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::GameEndYearAddr), stateBytes(san9::injection2026::GameEndYear, 4u), 4u);
+  writePatch((LPVOID)(*(_DWORD *)(state + san9::injection2026::BuildMinBuildingAddr) - 32), stateBytes(san9::injection2026::BuildMinBuilding, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::BuildMinBuildingAddr), stateBytes(san9::injection2026::BuildMinBuilding, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::UpdateGoalForceAddr), stateBytes(san9::injection2026::UpdateGoalForce, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::UpdateGoalPropAddr), stateBytes(san9::injection2026::UpdateGoalProp, 1u), 1u);
 
   writeInlineRange(0x42C250u, 42);
 
   writeInlineRange(0x42C618u, 27);
-  writePatch(*(LPVOID *)(state + 7480), (LPCVOID)(state + 7484), 1u);
-  writePatch(*(LPVOID *)(state + 7492), (LPCVOID)(state + 7504), 1u);
-  writePatch(*(LPVOID *)(state + 7496), (LPCVOID)(state + 7504), 1u);
-  writePatch(*(LPVOID *)(state + 7500), (LPCVOID)(state + 7512), 1u);
-  writePatch(*(LPVOID *)(state + 7520), (LPCVOID)(state + 7524), 1u);
-  writePatch(*(LPVOID *)(state + 7532), (LPCVOID)(state + 7536), 1u);
-  writePatch(*(LPVOID *)(state + 7544), (LPCVOID)(state + 7548), 4u);
-  writePatch(*(LPVOID *)(state + 7556), (LPCVOID)(state + 7560), 1u);
-  writePatch(*(LPVOID *)(state + 7580), (LPCVOID)(state + 7584), 1u);
-  writePatch(*(LPVOID *)(state + 7592), (LPCVOID)(state + 7596), 4u);
-  writePatch(*(LPVOID *)(state + 7604), (LPCVOID)(state + 7608), 4u);
+  writePatch(*(LPVOID *)(state + 7480), stateBytes(7484, 1u), 1u);
+  writePatch(*(LPVOID *)(state + 7492), stateBytes(7504, 1u), 1u);
+  writePatch(*(LPVOID *)(state + 7496), stateBytes(7504, 1u), 1u);
+  writePatch(*(LPVOID *)(state + 7500), stateBytes(7512, 1u), 1u);
+  writePatch(*(LPVOID *)(state + 7520), stateBytes(7524, 1u), 1u);
+  writePatch(*(LPVOID *)(state + 7532), stateBytes(7536, 1u), 1u);
+  writePatch(*(LPVOID *)(state + 7544), stateBytes(7548, 4u), 4u);
+  writePatch(*(LPVOID *)(state + 7556), stateBytes(7560, 1u), 1u);
+  writePatch(*(LPVOID *)(state + 7580), stateBytes(7584, 1u), 1u);
+  writePatch(*(LPVOID *)(state + 7592), stateBytes(7596, 4u), 4u);
+  writePatch(*(LPVOID *)(state + 7604), stateBytes(7608, 4u), 4u);
 }
 
 void Runtime2026::applyParameterPatches()
@@ -1077,9 +1077,9 @@ void Runtime2026::applyParameterPatches()
   int selectedEnableRelayDispatchIndexBias;
   int selectedEnableCityPopulationCoefIndexBias;
   DWORD patchValue = 0;
-  writePatch(*(LPVOID *)(state + 4404), (LPCVOID)(state + san9::layout2026::MaxExperience), 2u);
-  writePatch(*(LPVOID *)(state + 3700), (LPCVOID)(state + san9::layout2026::PersonLevels), 0xC80u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::PersonFriendshipAddress), (LPCVOID)(state + san9::layout2026::PersonFriendships), 0x2B8u);
+  writePatch(*(LPVOID *)(state + 4404), stateBytes(san9::layout2026::MaxExperience, 2u), 2u);
+  writePatch(*(LPVOID *)(state + 3700), stateBytes(san9::layout2026::PersonLevels, 0xC80u), 0xC80u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::PersonFriendshipAddress), stateBytes(san9::layout2026::PersonFriendships, 0x2B8u), 0x2B8u);
   byte_42F164 = *(_BYTE *)(state + san9::injection2026::MoneyCut1);
   byte_42F165 = *(_BYTE *)(state + san9::injection2026::MoneyCut2);
   byte_42F166 = *(_BYTE *)(state + san9::injection2026::MoneyCut3);
@@ -1108,25 +1108,25 @@ void Runtime2026::applyParameterPatches()
   if ( patchValue != 0 )
     patchValue = 10 - patchValue;
   writePatch((LPVOID)0x43F4CC, &patchValue, 1u);
-  writePatch((LPVOID)0x43F4CF, (LPCVOID)(state + san9::injection2026::NatureAttractCoef), 1u);
-  writePatch(*(LPVOID *)(state + 7360), (LPCVOID)(state + san9::injection2026::OnePersonKillerProp), 1u);
-  writePatch((LPVOID)(*(_DWORD *)(state + 7360) + 8), (LPCVOID)(state + san9::injection2026::TwoPersonKillerProp), 1u);
-  writePatch((LPVOID)(*(_DWORD *)(state + 7360) + 16), (LPCVOID)(state + san9::injection2026::ThreePersonKillerProp), 1u);
-  writePatch((LPVOID)(*(_DWORD *)(state + 7360) + 24), (LPCVOID)(state + san9::injection2026::FourPersonKillerProp), 1u);
-  writePatch((LPVOID)(*(_DWORD *)(state + 7360) + 32), (LPCVOID)(state + san9::injection2026::FivePersonKillerProp), 1u);
-  writePatch((LPVOID)0x43FF19, (LPCVOID)(state + san9::injection2026::AntiPlayerLeagueCoef), 1u);
+  writePatch((LPVOID)0x43F4CF, stateBytes(san9::injection2026::NatureAttractCoef, 1u), 1u);
+  writePatch(*(LPVOID *)(state + 7360), stateBytes(san9::injection2026::OnePersonKillerProp, 1u), 1u);
+  writePatch((LPVOID)(*(_DWORD *)(state + 7360) + 8), stateBytes(san9::injection2026::TwoPersonKillerProp, 1u), 1u);
+  writePatch((LPVOID)(*(_DWORD *)(state + 7360) + 16), stateBytes(san9::injection2026::ThreePersonKillerProp, 1u), 1u);
+  writePatch((LPVOID)(*(_DWORD *)(state + 7360) + 24), stateBytes(san9::injection2026::FourPersonKillerProp, 1u), 1u);
+  writePatch((LPVOID)(*(_DWORD *)(state + 7360) + 32), stateBytes(san9::injection2026::FivePersonKillerProp, 1u), 1u);
+  writePatch((LPVOID)0x43FF19, stateBytes(san9::injection2026::AntiPlayerLeagueCoef, 1u), 1u);
   patchValue = 4 - (*(_DWORD *)(state + san9::injection2026::AntiPlayerLeagueCoef) >> 2);
   writePatch(*(LPVOID *)(state + san9::injection2026::CheckLeagueProbabilityAddr), &patchValue, 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::LeagueTimeAddr), (LPCVOID)(state + san9::injection2026::LeagueTime), 1u);
-  writePatch((LPVOID)0x43FF1A, (LPCVOID)(state + san9::injection2026::FightSubIncomeCoef), 1u);
-  writePatch((LPVOID)0x43FF1D, (LPCVOID)(state + san9::injection2026::MaxCaptiveCoef), 1u);
-  writePatch((LPVOID)0x43F3D1, (LPCVOID)(state + san9::injection2026::BasicAbilityCoef), 1u);
-  writePatch(*(LPVOID *)(state + san9::injection2026::SexCoefAddr), (LPCVOID)(state + san9::injection2026::SexCoef), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::LeagueTimeAddr), stateBytes(san9::injection2026::LeagueTime, 1u), 1u);
+  writePatch((LPVOID)0x43FF1A, stateBytes(san9::injection2026::FightSubIncomeCoef, 1u), 1u);
+  writePatch((LPVOID)0x43FF1D, stateBytes(san9::injection2026::MaxCaptiveCoef, 1u), 1u);
+  writePatch((LPVOID)0x43F3D1, stateBytes(san9::injection2026::BasicAbilityCoef, 1u), 1u);
+  writePatch(*(LPVOID *)(state + san9::injection2026::SexCoefAddr), stateBytes(san9::injection2026::SexCoef, 1u), 1u);
   patchValue = (unsigned __int8)*(_DWORD *)(state + san9::injection2026::TroopViewRange)
                + (((unsigned __int8)*(_DWORD *)(state + san9::injection2026::BuildingViewRange)
                  + (((unsigned __int8)*(_DWORD *)(state + san9::injection2026::CityViewRange) + ((*(_DWORD *)(state + san9::injection2026::SoldierDisplayError) & 0x7F) << 8)) << 8)) << 8);
   writePatch((LPVOID)0x43F887, &patchValue, 4u);
-  writePatch((LPVOID)0x43F88F, (LPCVOID)(state + san9::injection2026::CounselorReportCoef), 1u);
+  writePatch((LPVOID)0x43F88F, stateBytes(san9::injection2026::CounselorReportCoef, 1u), 1u);
   writePatch(*(LPVOID *)(state + 4828), &dword_42D948, 0x190u);
   writePatch(*(LPVOID *)(state + 4832), &byte_42DAD8, 0x32u);
   patchValue = *(_DWORD *)(state + san9::injection2026::EnableTrainEnabled) != 0 ? 0x32 : 0;
@@ -1296,7 +1296,7 @@ void Runtime2026::applyParameterPatches()
   patchValue = *(_DWORD *)(state + san9::injection2026::SoldierSubKillerEnabled) != 0 ? 61943 : 747;
   writePatch((char *)dword_42F49C + 33, &patchValue, 2u);
   patchValue = *(_DWORD *)(state + san9::injection2026::NpcAutoDraftEnabled) == 0;
-  writePatch((LPVOID)dword_428AD8[3 * patchValue], sourceVA((&off_428AE0)[3 * patchValue]), dword_428ADC[3 * patchValue]);
+  writePatch((LPVOID)dword_428AD8[3 * patchValue], sourceVA((&off_428AE0)[3 * patchValue], dword_428ADC[3 * patchValue]), dword_428ADC[3 * patchValue]);
   patchValue = *(_DWORD *)(state + san9::injection2026::PlayerAutoProcessEnabled) == 0;
   writeDescriptor(0x428B70u + 12 * (patchValue), PatchSource2026::CompanionAddress);
   patchValue = *(_DWORD *)(state + san9::injection2026::LowDurabilityChaosEnabled) != 0;
@@ -1388,24 +1388,27 @@ void Runtime2026::writeDescriptor(DWORD address, PatchSource2026 source)
 {
   PatchDescriptor2026 descriptor{};
   dataOut(address, &descriptor, sizeof(descriptor));
+  if (!descriptor.length) throw std::out_of_range("empty patch descriptor");
   const BYTE *bytes = source == PatchSource2026::CompanionAddress
-      ? sourceVA(descriptor.source) : reinterpret_cast<const BYTE *>(descriptor.source);
+      ? sourceVA(descriptor.source,descriptor.length) : nativeDataBytes(descriptor.source,descriptor.length);
   writePatch(descriptor.target, bytes, descriptor.length);
 }
 
 void Runtime2026::writeDescriptorRange(DWORD first, size_t count, PatchSource2026 source)
 {
+  dataBytes(first,imageRecordBytes2026(count,sizeof(PatchDescriptor2026)));
   for (size_t index = 0; index < count; ++index)
     writeDescriptor(first + DWORD(index * sizeof(PatchDescriptor2026)), source);
 }
 
 void Runtime2026::writeInlineRange(DWORD first, size_t count)
 {
+  dataBytes(first,imageRecordBytes2026(count,sizeof(InlinePatch2026)));
   for (size_t index = 0; index < count; ++index)
   {
     InlinePatch2026 descriptor{};
     dataOut(first + DWORD(index * sizeof(InlinePatch2026)), &descriptor, sizeof(descriptor));
-    if (descriptor.length > descriptor.bytes.size()) throw std::out_of_range("inline patch length");
+    if (!descriptor.length || descriptor.length > descriptor.bytes.size()) throw std::out_of_range("inline patch length");
     writePatch(descriptor.target, descriptor.bytes.data(), descriptor.length);
   }
 }

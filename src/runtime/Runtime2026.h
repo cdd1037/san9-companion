@@ -18,6 +18,7 @@
 #include "GameSnapshots2026.h"
 #include "PatchDescriptor2026.h"
 #include "ProcessSession2026.h"
+#include "ImageRegion2026.h"
 
 // 0x409E10 dispatch; message-related names follow the host entry points,
 // not an inferred game action. Values remain the recovered ABI values.
@@ -91,8 +92,7 @@ public:
 private:
     friend struct RuntimeTestAccess2026;
     template<class T> T& field(size_t offset) {
-        checkStateRange(offset,sizeof(T));
-        return *reinterpret_cast<T*>(state_.data()+offset);
+        return *reinterpret_cast<T*>(stateBytes(offset,sizeof(T)));
     }
     void copyIn(size_t offset, const void* source, size_t size);
     void copyOut(size_t offset, void* destination, size_t size) const;
@@ -100,10 +100,23 @@ private:
     void dataOut(DWORD address, void* destination, size_t size);
     bool readGameMemory(DWORD address, void* buffer, SIZE_T size);
     bool rebase();
-    void checkStateRange(size_t offset,size_t size) const {
-        if(offset>state_.size() || size>state_.size()-offset)
-            throw std::out_of_range("runtime state range");
+    BYTE* stateBytes(size_t offset, size_t size) {
+        return ImageRegion2026<BYTE>(state_.data(),state_.size(),0).at(offset,size);
     }
+    const BYTE* stateBytes(size_t offset, size_t size) const {
+        return ImageRegion2026<const BYTE>(state_.data(),state_.size(),0).at(offset,size);
+    }
+    BYTE* dataBytes(std::uintptr_t address, size_t size) {
+        return ImageRegion2026<BYTE>(data_.data(),data_.size(),0x41F000).at(address,size);
+    }
+    const BYTE* dataBytes(std::uintptr_t address, size_t size) const {
+        return ImageRegion2026<const BYTE>(data_.data(),data_.size(),0x41F000).at(address,size);
+    }
+    const BYTE* nativeDataBytes(std::uintptr_t address, size_t size) const {
+        return ImageRegion2026<const BYTE>(data_.data(),data_.size(),reinterpret_cast<std::uintptr_t>(data_.data())).at(address,size);
+    }
+    void validateImagePointer(std::uintptr_t address, size_t size) const;
+    void captureGameBytes(std::uintptr_t source, std::uintptr_t destination, SIZE_T size);
     ProcessSession2026 process_;
     alignas(4) std::array<BYTE, san9::layout2026::StateSize> state_{};
     alignas(4) std::array<BYTE, 0x11000> data_{};
@@ -150,9 +163,7 @@ private:
     bool retireExitedProcess();
     void restoreSessionBaseline();
     template<class T> T* pointer(DWORD address) {
-        if (address < 0x41F000 || address + sizeof(T) > 0x430000)
-            throw std::out_of_range("runtime data");
-        return reinterpret_cast<T*>(data_.data()+address-0x41F000);
+        return reinterpret_cast<T*>(dataBytes(address,sizeof(T)));
     }
     template<class T> T& global(DWORD address) { return *pointer<T>(address); }
     void setStatus(RuntimeStatusKind2026 kind) { status_ = {}; status_.kind = kind; }
@@ -160,14 +171,16 @@ private:
         if constexpr (std::is_pointer_v<T>) return reinterpret_cast<std::uintptr_t>(value);
         else return static_cast<std::uintptr_t>(value);
     }
-    template<class T> const BYTE* sourceVA(T value) {
-        return pointer<BYTE>(static_cast<DWORD>(addressOf(value)));
+    template<class T> const BYTE* sourceVA(T value, size_t size) const {
+        return dataBytes(addressOf(value),size);
     }
     template<class A, class B> BOOL writeMemory(HANDLE process, A target, B source, SIZE_T size, SIZE_T*) {
+        validateImagePointer(addressOf(source),size);
         return writeBytes(process, reinterpret_cast<LPVOID>(addressOf(target)),
             reinterpret_cast<LPCVOID>(addressOf(source)), size);
     }
     template<class A, class B> BOOL readMemory(HANDLE process, A source, B target, SIZE_T size, SIZE_T*) {
+        validateImagePointer(addressOf(target),size);
         return process_.read(process, reinterpret_cast<LPCVOID>(addressOf(source)),
             reinterpret_cast<LPVOID>(addressOf(target)), size);
     }

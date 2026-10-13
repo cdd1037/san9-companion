@@ -254,20 +254,36 @@ void Runtime2026::setConfigurationState(const ConfigurationState2026& state) {
     field<BYTE>(san9::layout2026::FormationFlags) = BYTE((state.formationLoaded ? 1 : 0) | (state.formationPending ? 2 : 0));
 }
 void Runtime2026::copyIn(size_t offset, const void* source, size_t size) {
-    checkStateRange(offset,size);
-    std::memcpy(state_.data()+offset,source,size);
+    auto destination=stateBytes(offset,size);
+    validateImagePointer(reinterpret_cast<std::uintptr_t>(source),size);
+    if (size) std::memcpy(destination,source,size);
 }
 void Runtime2026::copyOut(size_t offset, void* destination, size_t size) const {
-    checkStateRange(offset,size);
-    std::memcpy(destination,state_.data()+offset,size);
+    auto source=stateBytes(offset,size);
+    validateImagePointer(reinterpret_cast<std::uintptr_t>(destination),size);
+    if (size) std::memcpy(destination,source,size);
 }
 void Runtime2026::dataIn(DWORD address, const void* source, size_t size) {
-    if (address<0x41F000 || address>0x430000 || size>0x430000-address) throw std::out_of_range("data copy in");
-    std::memcpy(pointer<BYTE>(address),source,size);
+    auto destination=dataBytes(address,size);
+    validateImagePointer(reinterpret_cast<std::uintptr_t>(source),size);
+    if (size) std::memcpy(destination,source,size);
 }
 void Runtime2026::dataOut(DWORD address, void* destination, size_t size) {
-    if (address<0x41F000 || address>0x430000 || size>0x430000-address) throw std::out_of_range("data copy out");
-    std::memcpy(destination,pointer<BYTE>(address),size);
+    auto source=dataBytes(address,size);
+    validateImagePointer(reinterpret_cast<std::uintptr_t>(destination),size);
+    if (size) std::memcpy(destination,source,size);
+}
+void Runtime2026::validateImagePointer(std::uintptr_t address, size_t size) const {
+    const auto dataOrigin=reinterpret_cast<std::uintptr_t>(data_.data());
+    const auto stateOrigin=reinterpret_cast<std::uintptr_t>(state_.data());
+    if (address >= dataOrigin && address-dataOrigin <= data_.size())
+        nativeDataBytes(address,size);
+    else if (address >= stateOrigin && address-stateOrigin < state_.size())
+        stateBytes(address-stateOrigin,size);
+}
+void Runtime2026::captureGameBytes(std::uintptr_t source, std::uintptr_t destination, SIZE_T size) {
+    auto bytes=dataBytes(destination,size);
+    readMemory(field<HANDLE>(san9::layout2026::ProcessHandle),source,bytes,size,nullptr);
 }
 void Runtime2026::setParameters(const san9::ParameterConfig& parameters) {
     if (parameters.validate().error != san9::ParameterError::none)
@@ -303,8 +319,8 @@ san9::CityConfig Runtime2026::cityConfig() const {
     std::array<BYTE, san9::CityConfig::Count * san9::CityConfig::RecordSize> limits{};
     copyOut(san9::layout2026::CityLimits,limits.data(),limits.size());
     config.decodeLimits(limits);
-    std::memcpy(config.relations.data(),data_.data()+0x42D948-0x41F000,400);
-    std::memcpy(config.attackDays.data(),data_.data()+0x42DAD8-0x41F000,50);
+    std::memcpy(config.relations.data(),dataBytes(0x42D948,400),400);
+    std::memcpy(config.attackDays.data(),dataBytes(0x42DAD8,50),50);
     return config;
 }
 void Runtime2026::setCityConfig(const san9::CityConfig& config) {
@@ -322,7 +338,7 @@ bool Runtime2026::rebase() {
     if (!delta) return false;
     for (const auto& r:relocations) {
         DWORD value;
-        BYTE* destination = r.objectField ? state_.data()+r.location : data_.data()+r.location-0x41F000;
+        BYTE* destination = r.objectField ? stateBytes(r.location,sizeof(value)) : dataBytes(r.location,sizeof(value));
         std::memcpy(&value,destination,4);
         value += delta;
         std::memcpy(destination,&value,4);

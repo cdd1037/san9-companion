@@ -27,6 +27,14 @@ struct RuntimeTestAccess2026 {
     bool operation(const std::function<void()>& action) { return runtime.runOperation(action); }
     void write(DWORD target, const void* bytes, size_t size) { runtime.writePatch(target, bytes, size); }
     void read(DWORD source, void* bytes, size_t size) { runtime.readMemory(runtime.session().process,source,bytes,size,nullptr); }
+    const BYTE* source(DWORD address, size_t size) { return runtime.sourceVA(address,size); }
+    const BYTE* nativeSource(std::uintptr_t address, size_t size) { return runtime.nativeDataBytes(address,size); }
+    BYTE* stateBytes(size_t offset, size_t size) { return runtime.stateBytes(offset,size); }
+    template<class T> T* pointer(DWORD address) { return runtime.pointer<T>(address); }
+    void descriptor(DWORD address, PatchSource2026 source) { runtime.writeDescriptor(address,source); }
+    void descriptorRange(DWORD address, size_t count, PatchSource2026 source) { runtime.writeDescriptorRange(address,count,source); }
+    void inlineRange(DWORD address, size_t count) { runtime.writeInlineRange(address,count); }
+    void capture(std::uintptr_t source, std::uintptr_t destination, size_t size) { runtime.captureGameBytes(source,destination,size); }
 };
 namespace app {
 struct ControllerTestAccess {
@@ -114,7 +122,11 @@ BOOL WINAPI protect(HANDLE,LPVOID address,SIZE_T size,DWORD value,PDWORD old) {
     return TRUE;
 }
 BOOL WINAPI read(HANDLE,LPCVOID address,LPVOID buffer,SIZE_T size,SIZE_T* count) {
-    if(fails(Fault::Read)) { *count=partialFailure?size-1:0;return partialFailure && shortSuccess; }
+    if(fails(Fault::Read)) {
+        *count=partialFailure?size-1:0;
+        if (*count) std::memset(buffer,0xE1,*count);
+        return partialFailure && shortSuccess;
+    }
     ++reads;
     check(size<0x10000 || size==san9::PersonSnapshot::Count*san9::PersonSnapshot::RecordSize,"bounded read");
     if(recordedReads) recordedReads->emplace_back(reinterpret_cast<DWORD>(address),size);
@@ -676,6 +688,116 @@ void stateBoundsTest() {
     check(rejected([&] {RuntimeTestAccess2026{runtime}.copyIn(1,&value,maximum);})
         && rejected([&] {RuntimeTestAccess2026{runtime}.copyOut(1,&result,maximum);}),"copy size addition cannot wrap");
     std::puts("State buffer boundary and overflow checks passed.");
+}
+void imageBoundsTest() {
+    resetBackend();
+    Runtime2026 runtime(api());
+    auto access=RuntimeTestAccess2026{runtime};
+    constexpr DWORD first=0x41F000,end=0x430000,record=0x42FF00,remote=0x600000;
+    const auto maximum=(std::numeric_limits<size_t>::max)();
+    const auto rejected=[](const std::function<void()>& action) {
+        try { action(); } catch(const std::out_of_range&) { return true; }
+        return false;
+    };
+    BYTE value=0xAB,result=0;
+    access.dataIn(end-1,&value,1); access.dataOut(end-1,&result,1);
+    check(result==value && *access.source(end-1,1)==value,"last image byte can be copied and resolved");
+    access.dataIn(end,nullptr,0); access.dataOut(end,nullptr,0);
+    check(access.source(end,0)==access.source(end-1,1)+1,"empty companion range is valid at the end");
+    check(rejected([&]{access.source(end,1);}) && rejected([&]{access.source(end-1,2);})
+        && rejected([&]{access.source(first-1,1);}) && rejected([&]{access.source(first,maximum);})
+        && rejected([&]{access.pointer<DWORD>(0xFFFFFFFE);}),
+        "companion ranges reject crossings, underflow and address addition wrap");
+    check(rejected([&]{access.dataIn(end-1,&value,2);}) && rejected([&]{access.dataOut(end-1,&result,2);})
+        && rejected([&]{access.dataIn(0xFFFFFFFF,&value,maximum);}),
+        "full copy ranges fail before accessing either buffer");
+    const auto native=reinterpret_cast<std::uintptr_t>(access.source(first,1));
+    check(access.nativeSource(native+end-first,0)==access.source(end,0),"empty native image range is valid at the end");
+    check(rejected([&]{access.nativeSource(native+end-first-1,2);})
+        && rejected([&]{access.nativeSource(native-1,1);})
+        && rejected([&]{access.nativeSource((std::numeric_limits<std::uintptr_t>::max)(),8);}),
+        "native image sources reject forged pointers and full-length overflow");
+    check(imageRecordBytes2026(0,12)==0 && imageRecordBytes2026(2,12)==24
+        && rejected([&]{imageRecordBytes2026(maximum,12);}),"record table sizes cannot multiply-wrap");
+    access.descriptorRange(end,0,PatchSource2026::CompanionAddress);
+    access.inlineRange(end,0);
+    check(reads==0 && writes==0,"empty record tables do not access the process");
+    version(runtime); initialModify(runtime);
+    store(remote,0x12345678); store(remote+4,0xABCDEF01);
+    const BYTE replacement[8]={8,7,6,5,4,3,2,1};
+    for(unsigned scenario=0;scenario<14;++scenario) {
+        PatchDescriptor2026 descriptor{remote+32,8,end-4};
+        if (scenario==1) descriptor.source=static_cast<DWORD>(native+end-first-4);
+        if (scenario==2) { descriptor.source=0xFFFFFFFE; descriptor.length=4; }
+        if (scenario==3) { descriptor.source=1; descriptor.length=1; }
+        if (scenario==12) descriptor.length=0;
+        if (scenario==13) descriptor.source=first-1;
+        access.dataIn(record,&descriptor,sizeof(descriptor));
+        InlinePatch2026 inlined{remote+32,9,{}};
+        access.dataIn(record+32,&inlined,sizeof(inlined));
+        const auto before=memory;
+        const auto originalCalls=calls;
+        const auto beforeWrites=writes,beforeReads=reads,beforeJournal=runtime.session().journal.size();
+        check(!access.operation([&] {
+            access.write(remote,replacement,sizeof(replacement));
+            switch(scenario) {
+            case 0: case 2: case 12: case 13: access.descriptor(record,PatchSource2026::CompanionAddress);break;
+            case 1: case 3: access.descriptor(record,PatchSource2026::HostPointer);break;
+            case 4: access.descriptor(end-11,PatchSource2026::CompanionAddress);break;
+            case 5: access.descriptorRange(end-12,2,PatchSource2026::CompanionAddress);break;
+            case 6: access.descriptorRange(first,maximum,PatchSource2026::CompanionAddress);break;
+            case 7: access.inlineRange(record+32,1);break;
+            case 8: access.capture(remote,end-4,8);break;
+            case 9: access.write(remote+32,access.stateBytes(san9::layout2026::StateSize-1,2),2);break;
+            case 10: access.write(remote+32,access.source(end-4,4),8);break;
+            case 11: access.read(remote,access.pointer<BYTE>(end-4),8);break;
+            }
+        }),"invalid image access aborts the transaction");
+        check(memory==before && runtime.session().journal.size()==beforeJournal && runtime.hasGameSession()
+            && runtime.session().result==OperationResult2026::RolledBack,
+            "range failure restores prior writes and retains the committed session");
+        check(writes==beforeWrites+2 && reads==beforeReads+1,
+            "invalid image source or capture destination reaches no remote transfer");
+        check(calls[static_cast<size_t>(Fault::Allocate)]==originalCalls[static_cast<size_t>(Fault::Allocate)]
+            && allocated && closes==0 && releases==0,"range failure retains session resources");
+    }
+    store(remote,0x11223344);
+    const auto readBefore=reads;
+    check(access.operation([&]{access.capture(remote,end-4,4);}),"valid old-byte capture accepts the complete end range");
+    DWORD captured=0;access.dataOut(end-4,&captured,sizeof(captured));
+    check(captured==0x11223344 && reads==readBefore+1,"capture reads exactly the requested bytes into the image");
+    auto before=memory;
+    fault=Fault::Read;faultAt=calls[static_cast<size_t>(Fault::Read)]+2;
+    partialFailure=true;shortSuccess=false;
+    check(!access.operation([&] {
+        access.write(remote,replacement,sizeof(replacement));
+        access.capture(remote,end-4,4);
+    }),"partial dynamic capture aborts its transaction");
+    DWORD restored=0;access.dataOut(end-4,&restored,sizeof(restored));
+    check(restored==captured && memory==before && runtime.hasGameSession(),
+        "partial capture restores both host bytes and earlier game writes");
+    check(runtime.status().failure.operation==RuntimeOperation2026::Read
+        && runtime.status().failure.target==remote && runtime.status().failure.requested==4
+        && runtime.status().failure.transferred==3,"partial capture keeps its transfer diagnostic");
+    fault=Fault::Write;fired=false;partialFailure=false;
+    faultAt=calls[static_cast<size_t>(Fault::Write)]+2;blockRecovery=true;
+    PatchDescriptor2026 invalid{remote+32,8,end-4};access.dataIn(record,&invalid,sizeof(invalid));
+    const auto committedBoundary=runtime.session().journal.size();
+    check(!access.operation([&] {
+        access.write(remote,replacement,sizeof(replacement));
+        access.descriptor(record,PatchSource2026::CompanionAddress);
+    }),"range failure with failed restoration retains recovery state");
+    check(runtime.session().phase==SessionPhase2026::RecoveryRequired
+        && runtime.session().journal.size()==committedBoundary+1
+        && runtime.status().failure.operation==RuntimeOperation2026::RuntimeException
+        && runtime.status().recoveryFailure.operation==RuntimeOperation2026::RestoreBytes,
+        "local range failure and remote recovery failure retain separate causes and pending bytes");
+    blockRecovery=false;
+    check(runtime.retryRollback() && memory==before && runtime.session().journal.size()==committedBoundary,
+        "range failure recovery retry restores the committed image and journal boundary");
+    check(runtime.undo(),"image-boundary test session cleans up");
+    resetBackend();
+    std::puts("Complete image ranges, record overflow, capture bounds and transaction recovery passed.");
 }
 void gameTextTest() {
     using san9::TextResult;
@@ -1383,7 +1505,7 @@ int main(int argc, char** argv) {
         const std::pair<const char*,void(*)()> focused[] = {
             {"--config-files",configFilesTest},
             {"--journal",journalTest},{"--diagnostics",diagnosticsTest},{"--app-paths",appPathsTest},{"--core-boundary",coreBoundaryTest},{"--game-snapshots",gameSnapshotsTest},
-            {"--siege-selection",siegeSelectionTest},{"--state-bounds",stateBoundsTest},
+            {"--siege-selection",siegeSelectionTest},{"--state-bounds",stateBoundsTest},{"--image-bounds",imageBoundsTest},
             {"--game-text",gameTextTest},{"--person-snapshot",personSnapshotTest},
             {"--lifecycle",lifecycleTest}
         };
@@ -1432,7 +1554,7 @@ int main(int argc, char** argv) {
         diagnosticsTest();
         if(configurationsRequested) {
             configFilesTest(); controllerTest(configRoot);
-            coreBoundaryTest();gameSnapshotsTest();appPathsTest();stateBoundsTest();gameTextTest();personSnapshotTest();siegeSelectionTest();
+            coreBoundaryTest();gameSnapshotsTest();appPathsTest();stateBoundsTest();imageBoundsTest();gameTextTest();personSnapshotTest();siegeSelectionTest();
             for(const auto& entry:configurations) entry.run((configRoot/entry.file).string().c_str());
         }
     } catch(const std::exception& error) {
