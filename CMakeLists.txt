@@ -31,11 +31,14 @@ add_test(NAME parameter-config COMMAND san9-parameter-test)
 if(WIN32 AND CMAKE_SIZEOF_VOID_P EQUAL 4)
   add_library(san9-runtime STATIC
     src/runtime/Runtime2026.cpp src/runtime/RuntimeVersion2026.cpp
+    src/runtime/ProcessSession2026.cpp src/runtime/ChangeJournal2026.cpp
     src/runtime/RuntimeInjection2026.cpp src/runtime/RuntimeConfiguration2026.cpp
     src/runtime/RuntimeZone2026.cpp src/runtime/GameText.cpp src/runtime/GameSnapshots2026.cpp)
   target_link_libraries(san9-runtime PUBLIC san9-recovered user32)
   target_include_directories(san9-runtime PUBLIC src/runtime)
-  add_executable(san9-runtime-test tests/runtime_test.cpp tests/config_files_test.cpp src/app/application/ConfigFiles.cpp src/app/application/Controller.cpp)
+  add_executable(san9-runtime-test tests/runtime_test.cpp tests/config_files_test.cpp
+    src/app/application/ConfigFiles.cpp src/app/application/Controller.cpp
+    src/app/ui/RuntimeStatusText.cpp)
   target_link_libraries(san9-runtime-test PRIVATE san9-runtime)
   if(MSVC)
     foreach(target san9-runtime san9-runtime-test)

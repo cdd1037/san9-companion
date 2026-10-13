@@ -57,6 +57,7 @@ bool Controller::commitPersons(const san9::PersonConfig &value)
     configuration_.persons = value;
     configuration_.sources.persons = confirmedSource(configuration_.sources.persons);
     queued_ |= Persons;
+    confirmationPending_ = true;
     stageConfiguration();
     return true;
 }
@@ -67,6 +68,8 @@ bool Controller::commitCities(const san9::CityConfig &value, bool automatic)
     configuration_.cityAutomatic = automatic;
     configuration_.sources.cities = confirmedSource(configuration_.sources.cities);
     queued_ |= Cities;
+    // Relations and attack days are written by the parameter application phase.
+    confirmationPending_ = true;
     stageConfiguration();
     return true;
 }
@@ -135,8 +138,9 @@ void Controller::modify(ModifyReason2026 reason)
     if (reason == ModifyReason2026::TimerTick && confirmationPending_ && connected)
         reason = ModifyReason2026::ParametersConfirmed;
     runtime_.modify(reason);
-    // A confirmation received during Applying belongs to the next operation.
-    if (!(queued_ & Parameters) && runtime_.session().result == OperationResult2026::Committed && runtime_.hasGameSession() &&
+    // Inputs written by the parameter phase and confirmed during Applying
+    // belong to the next operation.
+    if (!(queued_ & (Parameters | Persons | Cities)) && runtime_.session().result == OperationResult2026::Committed && runtime_.hasGameSession() &&
         (!connected || reason == ModifyReason2026::ParametersConfirmed)) confirmationPending_ = false;
     observeLifecycle();
 }
