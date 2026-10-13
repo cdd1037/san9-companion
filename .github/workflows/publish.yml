@@ -1,0 +1,53 @@
+name: Publish Windows x86
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: windows-2025-vs2026
+    timeout-minutes: 20
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Build Publish
+        run: ./Build.ps1 -Configuration Publish
+
+      - name: Upload Publish package
+        uses: actions/upload-artifact@v7
+        with:
+          name: San9Companion-Publish-win-x86
+          path: |
+            build/app/Publish/San9Companion.exe
+            build/app/Publish/San9PKHardArray.txt
+            build/app/Publish/San9PKHardCity.txt
+            build/app/Publish/San9PKHardPara.txt
+            build/app/Publish/San9PKHardPerson.txt
+            build/app/Publish/San9PKHardSkill.txt
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload build log
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: Publish-build-log
+          path: out/app/Publish.log
+          if-no-files-found: ignore
+          retention-days: 7

@@ -1,6 +1,7 @@
 #include "../../../assets/ui/resource_ids.h"
 #include "Pages.h"
 #include "RuntimeStatusText.h"
+#include "BuildInfo.h"
 namespace app
 {
 class MainWindow final : public ui::Dialog
@@ -16,6 +17,7 @@ class MainWindow final : public ui::Dialog
     void initialize() override
     {
         icon(IDR_MAINFRAME);
+        text(IDC_COMMIT_TIME, std::wstring(L"提交：") + build_info::CommitTime);
         app.runtime.setCallbackWindow(endpoint());
         if (!smoke)
         {

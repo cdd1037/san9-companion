@@ -4,7 +4,7 @@
 
 ## 构建与验证
 
-环境：Windows、Visual Studio C++ v145、Windows SDK、Python 3.10+。目标架构为 x86；CMake 检查另需 CMake/Ninja。打开根目录 `San9Companion.sln`，或在 PowerShell 执行：
+环境：Windows、Visual Studio C++ v145、Windows SDK、Git、Python 3.10+。目标架构为 x86；CMake 检查另需 CMake/Ninja。打开根目录 `San9Companion.sln`，或在 PowerShell 执行：
 
 ```powershell
 ./Build.ps1                              # Debug 日常构建
@@ -17,6 +17,10 @@
 ```
 
 所有配置默认不生成 PDB。日常构建和测试使用 Debug，Release/Publish 仅在显式指定时使用。
+
+主页面底部显示当前版本最近一次 Git 提交的时间，格式为 `提交：YYYY-MM-DD HH:mm`，统一使用北京时间。MSBuild 自动生成时间信息，同一提交重复构建不会改变该时间；未提交的本地改动沿用当前提交时间。
+
+推送 `main`、推送 `v*` 标签或手动运行 [Publish Windows x86](https://github.com/cdd1037/san9-companion/actions/workflows/publish.yml) 会构建 Publish。运行成功后下载 `San9Companion-Publish-win-x86` artifact，包含 EXE 和五份默认配置，保留 30 天。工作流不运行测试，不包含 PDB、个人 INI 或恢复样本。
 
 程序：`build/app/Debug/San9Companion.exe`。五份配置 TXT 与偏好 INI 按 EXE 所在目录定位；手动测试时保留自己的配置。隐藏窗口检查禁用游戏轮询和偏好写入，不连接游戏。实机注入及可见界面由用户验收。
 

@@ -23,6 +23,9 @@
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
   <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ResourceCompile>
       <Culture>0x0804</Culture>
       <AdditionalIncludeDirectories>$(ProjectDir)..\assets\ui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -55,6 +58,9 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Target Name="GenerateBuildInfo" BeforeTargets="ClCompile">
+    <Exec Command="powershell.exe -NoProfile -ExecutionPolicy Bypass -File &quot;$(ProjectDir)..\tools\Write-BuildInfo.ps1&quot; -Output &quot;$(IntDir)BuildInfo.h&quot;" />
+  </Target>
   <Target Name="CopyConfigurationFiles" AfterTargets="Build">
     <Copy SourceFiles="@(ConfigFile)" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true" />
   </Target>

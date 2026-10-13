@@ -10,6 +10,7 @@
 #define IDD_KILLER_CONFIG               134
 #define IDD_ARRAY_CONFIG                135
 #define IDC_STATUS                      1001
+#define IDC_COMMIT_TIME                 1202
 #define IDC_SAVE_CONFIG                 1004
 #define IDC_PERSON_CONFIG               1006
 #define IDC_CITY_CONFIG                 1007
