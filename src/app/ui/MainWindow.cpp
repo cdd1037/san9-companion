@@ -17,7 +17,7 @@ class MainWindow final : public ui::Dialog
     void initialize() override
     {
         icon(IDR_MAINFRAME);
-        text(IDC_COMMIT_TIME, std::wstring(L"提交：") + build_info::CommitTime);
+        text(IDC_COMMIT_DATE, std::wstring(build_info::CommitDate) + L" 版");
         app.runtime.setCallbackWindow(endpoint());
         if (!smoke)
         {

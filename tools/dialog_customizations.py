@@ -3,7 +3,7 @@
 def control_title(dialog_id, control_id, original):
     if dialog_id == 102 and control_id in (1202, 0xFFFF, 0xFFFFFFFF):
         assert original == "2026年2月9日更新"
-        return "提交时间"
+        return "版本日期"
     if (dialog_id, control_id) == (133, 1133):
         assert original == "自动同步配置信息"
         return "自动应用都市配置"
