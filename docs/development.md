@@ -12,7 +12,9 @@
 
 应用编译前由 `tools/Write-BuildInfo.ps1` 读取当前 Git 提交的 committer 时间，转换为 UTC+8，生成 `$(IntDir)/BuildInfo.h`。生成文件只在内容变化时重写，不入库；直接用 Visual Studio 或 MSBuild 构建也会执行。此显示代表提交时间，未提交的本地改动不会更新它；构建应用需要 Git 和含提交记录的工作区。
 
-`.github/workflows/publish.yml` 使用 Windows Server 2025 / Visual Studio 2026 runner 构建 x86 Publish，仅上传 EXE 和五份配置 TXT。触发方式为推送 main、推送 v* 标签或手动运行；不运行测试，不创建 GitHub Release。失败时保留 MSBuild 日志。
+`.github/workflows/publish.yml` 使用 Windows Server 2025 / Visual Studio 2026 runner 构建 x86 Publish，仅上传 EXE 和五份配置 TXT。触发方式为推送 main、推送 v* 标签或手动运行；不运行测试。失败时保留 MSBuild 日志。
+
+在 v* 标签上运行时，独立 Release job 下载同次构建的 artifact，打包为 `San9Companion-<标签>-win-x86.zip`，创建 GitHub Release 并上传 ZIP。重复运行同一标签时更新其同名附件。构建 job 只有读取权限，Release job 才有 contents 写权限。普通 main 构建不发布 Release；手动运行时选择已存在的 v* 标签也会发布。
 
 `--ui-smoke` 创建隐藏的主窗口和编辑窗口，检查参数绑定、分页、单选组、条目切换保存和草稿隔离。该模式不轮询或连接游戏、不读取个人配置、不写 INI，也不打开文件对话框。它不代替可见界面和实机验收。
 

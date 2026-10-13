@@ -22,6 +22,8 @@
 
 推送 `main`、推送 `v*` 标签或手动运行 [Publish Windows x86](https://github.com/cdd1037/san9-companion/actions/workflows/publish.yml) 会构建 Publish。运行成功后下载 `San9Companion-Publish-win-x86` artifact，包含 EXE 和五份默认配置，保留 30 天。工作流不运行测试，不包含 PDB、个人 INI 或恢复样本。
 
+推送 `v*` 标签后，构建成功还会自动创建 [GitHub Release](https://github.com/cdd1037/san9-companion/releases)，附上 `San9Companion-<标签>-win-x86.zip`。例如 `git tag v1.0.0` 后执行 `git push origin v1.0.0`。普通 main 推送只生成 Actions artifact；手动运行时选择已有 v* 标签也可发布，重复运行会更新同名附件。
+
 程序：`build/app/Debug/San9Companion.exe`。五份配置 TXT 与偏好 INI 按 EXE 所在目录定位；手动测试时保留自己的配置。隐藏窗口检查禁用游戏轮询和偏好写入，不连接游戏。实机注入及可见界面由用户验收。
 
 ## 目录
