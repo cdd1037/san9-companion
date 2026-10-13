@@ -1044,6 +1044,7 @@ void gameSnapshotsTest() {
     std::puts("Typed game snapshots, import flags, atomic invalid rows, force read order and exit checks passed.");
 }
 
+void configFilesTest();
 int main(int argc, char** argv) {
     std::setvbuf(stdout,nullptr,_IONBF,0);
     _set_invalid_parameter_handler([](const wchar_t* expression,const wchar_t* function,const wchar_t* file,unsigned line,uintptr_t) {
@@ -1068,6 +1069,7 @@ int main(int argc, char** argv) {
             return 0;
         }
         const std::pair<const char*,void(*)()> focused[] = {
+            {"--config-files",configFilesTest},
             {"--journal",journalTest},{"--app-paths",appPathsTest},{"--core-boundary",coreBoundaryTest},{"--game-snapshots",gameSnapshotsTest},
             {"--siege-selection",siegeSelectionTest},{"--state-bounds",stateBoundsTest},
             {"--game-text",gameTextTest},{"--person-snapshot",personSnapshotTest},
@@ -1091,12 +1093,14 @@ int main(int argc, char** argv) {
             branchTest(false);branchTest(true);unsupportedVersionTest();return 0;
         }
         const bool all=argc==3 && std::strcmp(argv[1],"--all")==0;
-        if(argc!=1 && !all) {
-            std::fputs("Unknown arguments; use --all <configuration directory> or a supported focused check.\n",stderr);
+        const bool quick=argc==3 && std::strcmp(argv[1],"--quick")==0;
+        const bool configurationsRequested=all || quick;
+        if(argc!=1 && !configurationsRequested) {
+            std::fputs("Unknown arguments; use --all/--quick <configuration directory> or a supported focused check.\n",stderr);
             return 2;
         }
-        const auto configRoot=all?std::filesystem::absolute(argv[2]):std::filesystem::path{};
-        if(all) for(const auto& entry:configurations)
+        const auto configRoot=configurationsRequested?std::filesystem::absolute(argv[2]):std::filesystem::path{};
+        if(configurationsRequested) for(const auto& entry:configurations)
             if(!std::filesystem::is_regular_file(configRoot/entry.file))
                 throw std::runtime_error("missing configuration fixture: "+(configRoot/entry.file).string());
         resetBackend();
@@ -1109,10 +1113,11 @@ int main(int argc, char** argv) {
         protectionRegionTest(false);protectionRegionTest(true);windowChangeTest();
         playerForceTest();
         for(auto kind:{Fault::Write,Fault::Flush,Fault::Protect,Fault::Release,Fault::Close}) undoFailureTest(kind);
-        faultSweep();
+        if (!quick) faultSweep();
         lifecycleTest();
         journalTest();
-        if(all) {
+        if(configurationsRequested) {
+            configFilesTest();
             coreBoundaryTest();gameSnapshotsTest();appPathsTest();stateBoundsTest();gameTextTest();personSnapshotTest();siegeSelectionTest();
             for(const auto& entry:configurations) entry.run((configRoot/entry.file).string().c_str());
         }

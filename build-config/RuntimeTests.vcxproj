@@ -30,6 +30,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\tests\runtime_test.cpp" />
+    <ClCompile Include="..\tests\config_files_test.cpp" />
+    <ClCompile Include="..\src\app\application\ConfigFiles.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Runtime.vcxproj">

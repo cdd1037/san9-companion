@@ -1,6 +1,7 @@
 #include "../../../assets/ui/resource_ids.h"
 #include "Pages.h"
 #include "RuntimeStatusText.h"
+#include "ConfigFileText.h"
 #include "BuildInfo.h"
 namespace app
 {
@@ -24,7 +25,7 @@ class MainWindow final : public ui::Dialog
             auto errors = app.load(preference(L"City", L"AutoApply", true),
                                    preference(L"Extensions", L"SkipDurabilitySiegeSelection", true));
             for (const auto &error : errors)
-                message(error.file + L"：配置无效，已保留原配置。行号：" + std::to_wstring(error.line));
+                message(error.file + L"：" + configFileText(error.result));
         }
         timer(39, 1000);
     }

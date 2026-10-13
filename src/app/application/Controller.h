@@ -1,12 +1,13 @@
 #pragma once
 #include "../../runtime/Runtime2026.h"
+#include "ConfigFiles.h"
 
 namespace app
 {
 struct ConfigLoadError
 {
     std::wstring file;
-    size_t line = 0;
+    ConfigFileResult result;
 };
 class Controller
 {

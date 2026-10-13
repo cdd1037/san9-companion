@@ -1,6 +1,5 @@
 #include "Controller.h"
 #include "../../runtime/AppPaths.h"
-#include <fstream>
 namespace app
 {
 Controller::Controller()
@@ -12,21 +11,16 @@ std::vector<ConfigLoadError> Controller::load(bool automatic, bool skipSelection
     std::vector<ConfigLoadError> errors;
     flags.cityAutomatic = automatic;
     skipSiegeSelection = skipSelection;
-    std::ifstream parameterFile(san9::executableFile(L"San9PKHardPara.txt"));
-    if (parameterFile && parameters.read(parameterFile).status != san9::ConfigReadStatus::complete)
-        errors.push_back({L"San9PKHardPara.txt", 0});
     auto load = [&](auto &config, const wchar_t *name) {
-        std::ifstream input(san9::executableFile(name));
-        if (!input)
-            return false;
-        auto result = config.read(input);
-        if (result.error != san9::PackedReadError::none)
+        const auto result = loadConfigFile(san9::executableFile(name), config);
+        if (!result.ok())
         {
-            errors.push_back({name, result.line});
+            errors.push_back({name, result});
             return false;
         }
         return true;
     };
+    load(parameters, L"San9PKHardPara.txt");
     load(persons, L"San9PKHardPerson.txt");
     flags.cityPending = load(cities, L"San9PKHardCity.txt");
     flags.skillLoaded = load(skills, L"San9PKHardSkill.txt");

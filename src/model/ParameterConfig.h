@@ -16,6 +16,9 @@ enum class ConfigReadStatus { complete, truncated, integerOverflow, ioError, inv
 struct ConfigReadResult {
     ConfigReadStatus status;
     std::size_t linesApplied;
+    // One-based failing file line; controlId identifies a failed field validation.
+    std::size_t line = 0;
+    unsigned controlId = 0;
 };
 enum class ParameterError { none, range, cutOrder };
 struct ParameterValidation {

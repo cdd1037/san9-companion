@@ -1,4 +1,4 @@
-﻿param([ValidateSet('Debug','Release','Publish')][string]$Configuration = 'Debug', [switch]$OfflineTests, [switch]$UiSmoke)
+﻿param([ValidateSet('Debug','Release','Publish')][string]$Configuration = 'Debug', [switch]$OfflineTests, [switch]$UiSmoke, [ValidateSet('Full','Quick')][string]$TestSuite = 'Full')
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent $PSScriptRoot
 . (Join-Path $PSScriptRoot 'VisualStudio.ps1')
@@ -14,7 +14,8 @@ if ($OfflineTests) {
     & $msbuildPath (Join-Path $projectRoot 'build-config\RuntimeTests.vcxproj') /nologo /m /v:minimal `
         "/p:Configuration=$Configuration" /p:Platform=Win32
     if ($LASTEXITCODE -ne 0) { throw "Runtime test build failed: $LASTEXITCODE" }
-    & (Join-Path $projectRoot "build\tests\$Configuration\San9RuntimeTests.exe") --all (Join-Path $projectRoot 'assets\config')
+    $suiteArgument = if ($TestSuite -eq 'Quick') { '--quick' } else { '--all' }
+    & (Join-Path $projectRoot "build\tests\$Configuration\San9RuntimeTests.exe") $suiteArgument (Join-Path $projectRoot 'assets\config')
     if ($LASTEXITCODE -ne 0) { throw "Offline runtime tests failed: $LASTEXITCODE" }
 }
 if ($UiSmoke) {

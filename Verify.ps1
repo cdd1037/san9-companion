@@ -2,6 +2,7 @@
     [switch]$Runtime,
     [ValidateSet('Debug','Release','Publish')][string]$Configuration = 'Debug',
     [switch]$AllConfigurations,
+    [ValidateSet('Full','Quick')][string]$TestSuite = 'Full',
     [switch]$Native
 )
 $ErrorActionPreference = 'Stop'
@@ -13,7 +14,7 @@ if ($LASTEXITCODE -ne 0) { throw 'Offline relocation failed' }
 if ($Runtime -or $AllConfigurations) {
     $configurations = @(if ($AllConfigurations) { 'Release'; 'Debug'; 'Publish' } else { $Configuration })
     foreach ($selectedConfiguration in $configurations) {
-        & "$PSScriptRoot/Build.ps1" -Configuration $selectedConfiguration -OfflineTests -UiSmoke
+        & "$PSScriptRoot/Build.ps1" -Configuration $selectedConfiguration -OfflineTests -UiSmoke -TestSuite $TestSuite
     }
     & python "$source/tools/verify_app.py" --configuration @configurations
     if ($LASTEXITCODE -ne 0) { throw '2026 structural verification failed' }

@@ -1,8 +1,8 @@
 #include "Pages.h"
 #include "../../../assets/ui/resource_ids.h"
 #include "FormBinding.h"
+#include "ConfigFileText.h"
 #include <algorithm>
-#include <fstream>
 #include <iterator>
 namespace app
 {
@@ -99,9 +99,8 @@ template <class Config, class Snapshot> class RowsPage : public ui::Dialog
         auto path = file(true, filename);
         if (!path)
             return;
-        std::ofstream output(*path);
-        if (!draft.write(output))
-            message(L"保存配置失败，请检查路径和可用空间。");
+        const auto result = saveConfigFile(*path, draft);
+        if (!result.ok()) message(configFileText(result));
     }
     void command(int id, ui::Event event) override
     {
@@ -268,11 +267,10 @@ class CityPage final : public RowsPage<san9::CityConfig, CitySnapshot2026>
             if (!path)
                 return;
             auto candidate = draft;
-            std::ifstream input(*path);
-            auto result = candidate.read(input);
-            if (result.error != san9::PackedReadError::none)
+            const auto result = loadConfigFile(*path, candidate);
+            if (!result.ok())
             {
-                message(L"都市配置无效，保留原配置。第 " + std::to_wstring(result.line) + L" 行附近。");
+                message(configFileText(result));
                 return;
             }
             draft = candidate;
@@ -425,9 +423,8 @@ class PersonPage final : public ui::Dialog
             auto path = file(true, L"San9PKHardPerson.txt");
             if (path)
             {
-                std::ofstream output(*path);
-                if (!draft.write(output))
-                    message(L"保存武将配置失败。");
+                const auto result = saveConfigFile(*path, draft);
+                if (!result.ok()) message(configFileText(result));
             }
         }
         else if (id == IDC_PERSON_LIST && event == ui::Event::Selection)
@@ -618,9 +615,8 @@ class SettingsPage final : public ui::Dialog
             auto path = file(true, L"San9PKHardPara.txt");
             if (path)
             {
-                std::ofstream output(*path);
-                if (!draft.write(output))
-                    message(L"保存参数失败。");
+                const auto result = saveConfigFile(*path, draft);
+                if (!result.ok()) message(configFileText(result));
             }
             break;
         }

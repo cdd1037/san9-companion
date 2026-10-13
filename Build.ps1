@@ -1,3 +1,3 @@
-﻿param([ValidateSet('Debug','Release','Publish')][string]$Configuration = 'Debug', [switch]$OfflineTests, [switch]$UiSmoke)
+﻿param([ValidateSet('Debug','Release','Publish')][string]$Configuration = 'Debug', [switch]$OfflineTests, [switch]$UiSmoke, [ValidateSet('Full','Quick')][string]$TestSuite = 'Full')
 $ErrorActionPreference = 'Stop'
-& "$PSScriptRoot/tools/Build-App.ps1" -Configuration $Configuration -OfflineTests:$OfflineTests -UiSmoke:$UiSmoke
+& "$PSScriptRoot/tools/Build-App.ps1" -Configuration $Configuration -OfflineTests:$OfflineTests -UiSmoke:$UiSmoke -TestSuite $TestSuite

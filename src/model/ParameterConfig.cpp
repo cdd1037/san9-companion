@@ -29,10 +29,10 @@ ConfigReadResult ParameterConfig::read(std::istream& input) {
         std::uint32_t number = 0;
         switch (packed::number(input, number)) {
         case PackedReadError::none: break;
-        case PackedReadError::missingLine: return {ConfigReadStatus::truncated, 0};
-        case PackedReadError::integerOverflow: return {ConfigReadStatus::integerOverflow, 0};
-        case PackedReadError::ioError: return {ConfigReadStatus::ioError, 0};
-        default: return {ConfigReadStatus::invalidInteger, 0};
+        case PackedReadError::missingLine: return {ConfigReadStatus::truncated, 0, line};
+        case PackedReadError::integerOverflow: return {ConfigReadStatus::integerOverflow, 0, line};
+        case PackedReadError::ioError: return {ConfigReadStatus::ioError, 0, line};
+        default: return {ConfigReadStatus::invalidInteger, 0, line};
         }
         for (std::size_t i = 0; i < FieldCount; ++i) {
             const auto& field = Fields[i];
@@ -43,9 +43,10 @@ ConfigReadResult ParameterConfig::read(std::istream& input) {
     }
     const auto tail = packed::finish(input, FileLineCount);
     if (tail.error != PackedReadError::none)
-        return {tail.error == PackedReadError::ioError ? ConfigReadStatus::ioError : ConfigReadStatus::extraData, 0};
-    if (candidate.validate().error != ParameterError::none)
-        return {ConfigReadStatus::invalidValues, 0};
+        return {tail.error == PackedReadError::ioError ? ConfigReadStatus::ioError : ConfigReadStatus::extraData, 0, tail.line};
+    const auto validation = candidate.validate();
+    if (validation.error != ParameterError::none)
+        return {ConfigReadStatus::invalidValues, 0, Fields[index(validation.controlId)].fileLine, validation.controlId};
     *this = candidate;
     return {ConfigReadStatus::complete, FileLineCount};
 }
