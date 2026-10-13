@@ -30,6 +30,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\tests\runtime_test.cpp" />
+    <ClCompile Include="..\src\app\ui\RuntimeStatusText.cpp" />
     <ClCompile Include="..\tests\config_files_test.cpp" />
     <ClCompile Include="..\src\app\application\ConfigFiles.cpp" />
     <ClCompile Include="..\src\app\application\Controller.cpp" />

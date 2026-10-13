@@ -26,6 +26,8 @@
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="..\src\runtime\Runtime2026.cpp" />
+    <ClCompile Include="..\src\runtime\ChangeJournal2026.cpp" />
+    <ClCompile Include="..\src\runtime\ProcessSession2026.cpp" />
     <ClCompile Include="..\src\runtime\RuntimeVersion2026.cpp" />
     <ClCompile Include="..\src\runtime\RuntimeInjection2026.cpp" />
     <ClCompile Include="..\src\runtime\RuntimeConfiguration2026.cpp" />

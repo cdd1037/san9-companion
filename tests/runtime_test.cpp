@@ -4,6 +4,7 @@
 #include "../src/runtime/GameText.h"
 #include "../src/runtime/AppPaths.h"
 #include "../src/app/application/Controller.h"
+#include "../src/app/ui/RuntimeStatusText.h"
 #include <unordered_map>
 #include <vector>
 #include <cstdio>
@@ -23,6 +24,9 @@ struct RuntimeTestAccess2026 {
     void copyOut(size_t offset, void* destination, size_t size) { runtime.copyOut(offset, destination, size); }
     void dataIn(DWORD address, const void* source, size_t size) { runtime.dataIn(address, source, size); }
     void dataOut(DWORD address, void* destination, size_t size) { runtime.dataOut(address, destination, size); }
+    bool operation(const std::function<void()>& action) { return runtime.runOperation(action); }
+    void write(DWORD target, const void* bytes, size_t size) { runtime.writePatch(target, bytes, size); }
+    void read(DWORD source, void* bytes, size_t size) { runtime.readMemory(runtime.session().process,source,bytes,size,nullptr); }
 };
 namespace app {
 struct ControllerTestAccess {
@@ -59,8 +63,8 @@ size_t faultAt=0;
 bool fired=false, blockRecovery=false, partialFailure=false, shortSuccess=true;
 bool fails(Fault kind) {
     const auto n=++calls[static_cast<size_t>(kind)];
-    if (fired && blockRecovery && kind==Fault::Write) return true;
-    if (!fired && fault==kind && n==faultAt) { fired=true; return true; }
+    if (fired && blockRecovery && kind==Fault::Write) { SetLastError(ERROR_WRITE_FAULT); return true; }
+    if (!fired && fault==kind && n==faultAt) { fired=true; SetLastError(ERROR_ACCESS_DENIED); return true; }
     return false;
 }
 SIZE_T WINAPI query(HANDLE,LPCVOID address,PMEMORY_BASIC_INFORMATION region,SIZE_T) {
@@ -122,6 +126,7 @@ BOOL WINAPI read(HANDLE,LPCVOID address,LPVOID buffer,SIZE_T size,SIZE_T* count)
 }
 BOOL WINAPI write(HANDLE,LPVOID address,LPCVOID buffer,SIZE_T size,SIZE_T* count) {
     const bool failure=fails(Fault::Write);
+    const DWORD failureError=failure?GetLastError():0;
     const SIZE_T requested=size;
     if(failure) size=partialFailure?size/2:0;
     if(failure && !size) { *count=0;return FALSE; }
@@ -146,6 +151,7 @@ BOOL WINAPI write(HANDLE,LPVOID address,LPCVOID buffer,SIZE_T size,SIZE_T* count
     for(size_t i=0;i<size;++i) memory[reinterpret_cast<DWORD>(address)+static_cast<DWORD>(i)]=p[i];
     *count=size;
     if (writeCallback) { auto callback=std::move(writeCallback); writeCallback={}; callback(); }
+    if (failure) SetLastError(failureError);
     return failure?(partialFailure && shortSuccess):size==requested;
 }
 BOOL WINAPI flush(HANDLE,LPCVOID,SIZE_T) {return !fails(Fault::Flush);}
@@ -236,7 +242,7 @@ void branchTest(bool options, bool alternateTarget=false) {
     check(RuntimeTestAccess2026{runtime}.field<HANDLE>(112)==nullptr,"undo resets process state");
     check(writes-injected>400,"complete recovered undo path executes");
     check(load(4733494,2)==0u,"undo restores actual pre-session bytes");
-    check(runtime.session().changes.empty(),"undo clears recovered journal");
+    check(runtime.session().journal.entries().empty(),"undo clears recovered journal");
     std::printf("options=%d alternateTarget=%d: %zu writes, %zu reads; undo=%zu writes\n",options,alternateTarget,writes,reads,writes-injected);
 }
 void unsupportedVersionTest() {
@@ -288,6 +294,102 @@ void checkRestored(const std::unordered_map<DWORD,BYTE>& before) {
     for(const auto& pair:protections) check(pair.second==PAGE_READONLY,"original page protection restored");
     check(!allocated,"no allocation remains");
 }
+void diagnosticsTest() {
+    constexpr DWORD address=0x600000;
+    const BYTE replacement[8]={8,7,6,5,4,3,2,1};
+    for(bool success:{false,true}) {
+        resetBackend();
+        Runtime2026 runtime(api()); version(runtime); initialModify(runtime);
+        store(address,0x12345678); store(address+4,0xABCDEF01);
+        const auto baseline=memory;
+        fault=Fault::Write; faultAt=calls[static_cast<size_t>(Fault::Write)]+1;
+        partialFailure=true; shortSuccess=success; blockRecovery=true;
+        auto access=RuntimeTestAccess2026{runtime};
+        check(!access.operation([&]{access.write(address,replacement,sizeof(replacement));}),
+            "partial write and failed recovery report failure");
+        const auto failed=runtime.status();
+        check(runtime.session().phase==SessionPhase2026::RecoveryRequired,
+            "diagnostic failure retains pending recovery");
+        check(failed.failure.operation==RuntimeOperation2026::Write && failed.failure.target==address
+            && failed.failure.requested==8 && failed.failure.transferred==4,
+            "original write diagnostic includes target and actual transfer");
+        check(failed.failure.systemError==(success?0:ERROR_ACCESS_DENIED),
+            "short success has no stale system error");
+        check(failed.recoveryFailure.operation==RuntimeOperation2026::RestoreBytes
+            && failed.recoveryFailure.target==address && failed.recoveryFailure.requested==8
+            && failed.recoveryFailure.transferred==4
+            && failed.recoveryFailure.systemError==(success?0:ERROR_WRITE_FAULT),
+            "recovery failure is recorded independently with its own API error");
+        const auto text=app::statusDetails(failed);
+        check(text.find(L"0x00600000")!=std::wstring::npos && text.find(L"4/8")!=std::wstring::npos
+            && text.find(L"恢复失败")!=std::wstring::npos,
+            "presentation exposes address, short transfer and recovery cause");
+        check(app::statusText(failed).find(L"0x00600000")==std::wstring::npos,
+            "narrow status control keeps a summary while hover details retain diagnostics");
+        const auto pending=runtime.session().journal.size();
+        runtime.modify(ModifyReason2026::TimerTick);
+        check(runtime.session().journal.size()==pending && runtime.status().failure.operation==RuntimeOperation2026::Write
+            && runtime.status().recoveryFailure.operation==RuntimeOperation2026::RestoreBytes,
+            "blocked modification retains both diagnostics and pending history");
+        blockRecovery=false; partialFailure=false;
+        SetLastError(ERROR_INVALID_DATA);
+        check(runtime.retryRollback(),"diagnostic recovery can be retried");
+        const auto restored=runtime.status();
+        check(!restored.recoveryFailure && restored.failure.operation==failed.failure.operation
+            && restored.failure.target==failed.failure.target && restored.failure.requested==8
+            && restored.failure.transferred==4 && restored.failure.systemError==failed.failure.systemError,
+            "successful retry clears recovery failure and retains the original cause");
+        check(memory==baseline,"retry restores complete bytes after a partial recovery write");
+        runtime.modify(ModifyReason2026::TimerTick);
+        check(!runtime.status().failure && !runtime.status().recoveryFailure,
+            "next operation clears previous diagnostics");
+        check(runtime.undo(),"diagnostic session can be undone");
+    }
+    for(bool success:{false,true}) {
+        resetBackend(); Runtime2026 runtime(api()); version(runtime); initialModify(runtime);
+        fault=Fault::Read; faultAt=calls[static_cast<size_t>(Fault::Read)]+1;
+        partialFailure=true; shortSuccess=success;
+        auto access=RuntimeTestAccess2026{runtime};
+        check(!access.operation([&]{access.write(address,replacement,sizeof(replacement));}),"preimage read failure rolls back");
+        const auto diagnostic=runtime.status().failure;
+        check(diagnostic.operation==RuntimeOperation2026::ReadOriginal && diagnostic.target==address
+            && diagnostic.requested==8 && diagnostic.transferred==7
+            && diagnostic.systemError==(success?0:ERROR_ACCESS_DENIED),
+            "preimage read failure preserves transfer details without stale errors");
+        check(!runtime.status().recoveryFailure && runtime.undo(),"preimage read failure needs no pending recovery");
+    }
+    resetBackend(); Runtime2026 runtime(api()); version(runtime); initialModify(runtime);
+    fault=Fault::Flush; faultAt=calls[static_cast<size_t>(Fault::Flush)]+1;
+    auto access=RuntimeTestAccess2026{runtime};
+    check(!access.operation([&]{access.write(address,replacement,sizeof(replacement));}),"cache failure rolls back completed write");
+    const auto diagnostic=runtime.status().failure;
+    check(diagnostic.operation==RuntimeOperation2026::Flush && diagnostic.target==address
+        && diagnostic.requested==8 && diagnostic.transferred==8 && diagnostic.systemError==ERROR_ACCESS_DENIED,
+        "cache failure identifies fully transferred write and original API error");
+    check(!runtime.status().recoveryFailure,"cache failure recovery succeeds");
+    fault=Fault::Read; fired=false; faultAt=calls[static_cast<size_t>(Fault::Read)]+1;
+    partialFailure=true; shortSuccess=false;
+    BYTE snapshot[8]{};
+    check(!access.operation([&]{access.read(address,snapshot,sizeof(snapshot));}),"snapshot read failure is structured");
+    check(runtime.status().failure.operation==RuntimeOperation2026::Read
+        && runtime.status().failure.target==address && runtime.status().failure.requested==8
+        && runtime.status().failure.transferred==7 && runtime.status().failure.systemError==ERROR_ACCESS_DENIED,
+        "snapshot read reports its own operation and partial transfer");
+    runtime.modify(ModifyReason2026::TimerTick);
+    partialFailure=false;
+    fault=Fault::Flush; fired=false; faultAt=calls[static_cast<size_t>(Fault::Flush)]+1;
+    check(!runtime.undo(),"undo cache failure retains recovery state");
+    const auto recovery=runtime.status();
+    check(!recovery.failure && recovery.recoveryFailure.operation==RuntimeOperation2026::RestoreFlush
+        && recovery.recoveryFailure.requested>0
+        && recovery.recoveryFailure.transferred==recovery.recoveryFailure.requested
+        && recovery.recoveryFailure.systemError==ERROR_ACCESS_DENIED,
+        "undo distinguishes restored bytes from failed cache flush without inventing an original failure");
+    check(runtime.retryRollback() && !runtime.status().failure && !runtime.status().recoveryFailure,
+        "successful undo retry clears the recovery diagnostic");
+    resetBackend();
+    std::puts("Structured failure causes, partial transfers, recovery retry and status text passed.");
+}
 void journalTest() {
     resetBackend();
     constexpr DWORD address=0x600000;
@@ -333,6 +435,23 @@ void journalTest() {
     rejected=false;try { compactCommittedChanges2026(history); } catch(const std::logic_error&) { rejected=true; }
     check(rejected,"malformed original byte range is rejected");
 
+    ChangeJournal2026 journal;
+    journal.begin();
+    journal.append(barrier);
+    journal.commit();
+    const auto committedBoundary=journal.boundary();
+    journal.begin();
+    journal.append({ChangeKind2026::Bytes,reinterpret_cast<HANDLE>(43),reinterpret_cast<LPVOID>(address),8});
+    rejected=false;try { journal.commit(); } catch(const std::logic_error&) { rejected=true; }
+    check(rejected && journal.size()==2 && journal.boundary()==committedBoundary
+        && journal.entries().front().completed && !journal.entries().back().completed,
+        "failed journal commit preserves the committed boundary and pending records");
+    journal.discardLast();
+    journal.restoreAll();
+    check(journal.boundary()==0 && journal.size()==1,"undo boundary retains owned resources until restored");
+    journal.clear();
+    check(journal.empty() && journal.boundary()==0,"cleared journal has no pending boundary");
+
     resetBackend();
     auto owned=std::make_unique<Runtime2026>(api());auto& runtime=*owned;
     version(runtime);store(0x483A36,0x12345678);
@@ -341,10 +460,10 @@ void journalTest() {
     runtime.modify(ModifyReason2026::ParametersConfirmed);
     runtime.modify(ModifyReason2026::GameNotification);
     runtime.modify(ModifyReason2026::GameDialogClosed);
-    const auto size=runtime.session().changes.size();
+    const auto size=runtime.session().journal.entries().size();
     for(int i=0;i<1000;++i) {
         runtime.modify(ModifyReason2026::TimerTick);
-        check(runtime.session().result==OperationResult2026::Committed && runtime.session().changes.size()==size,
+        check(runtime.session().result==OperationResult2026::Committed && runtime.session().journal.entries().size()==size,
             "long-running timer journal stays bounded");
     }
     for(int i=0;i<20;++i) {
@@ -352,17 +471,17 @@ void journalTest() {
         runtime.modify(ModifyReason2026::ParametersConfirmed);
         runtime.modify(ModifyReason2026::GameNotification);
         runtime.modify(ModifyReason2026::GameDialogClosed);
-        check(runtime.session().changes.size()==size,"repeated configuration and game events stay bounded");
+        check(runtime.session().journal.entries().size()==size,"repeated configuration and game events stay bounded");
     }
     const auto committed=memory;
     fault=Fault::Write;faultAt=calls[static_cast<size_t>(Fault::Write)]+2;partialFailure=true;blockRecovery=true;
     runtime.modify(ModifyReason2026::ParametersConfirmed);
     check(fired && runtime.session().phase==SessionPhase2026::RecoveryRequired,"compacted session retains failed operation for retry");
-    const auto pending=runtime.session().changes.size();
+    const auto pending=runtime.session().journal.entries().size();
     runtime.modify(ModifyReason2026::TimerTick);
-    check(runtime.session().changes.size()==pending,"pending recovery is never compacted");
+    check(runtime.session().journal.entries().size()==pending,"pending recovery is never compacted");
     blockRecovery=false;
-    check(runtime.retryRollback() && runtime.session().changes.size()==size,"retry restores committed compact baseline");
+    check(runtime.retryRollback() && runtime.session().journal.entries().size()==size,"retry restores committed compact baseline");
     for(const auto& pair:memory) {
         const auto found=committed.find(pair.first);
         check(pair.second==(found==committed.end()?0:found->second),"failed operation restores last committed bytes");
@@ -408,7 +527,7 @@ void faultSweep() {
             check(fired,"fault point reached");
             check(runtime.session().result==OperationResult2026::RolledBack,"failed operation rolled back");
             check(runtime.session().phase==SessionPhase2026::Idle,"failed initial session is idle");
-            check(runtime.session().changes.empty() && !runtime.session().process,"rollback releases ownership");
+            check(runtime.session().journal.entries().empty() && !runtime.session().process,"rollback releases ownership");
             checkRestored(before);
             check(runtime.undo(),"undo after failed modification is idempotent");
             ++cases;
@@ -425,11 +544,11 @@ void recoveryTest() {
     fault=Fault::Write;faultAt=30;partialFailure=true;shortSuccess=false;blockRecovery=true;
     initialModify(runtime);
     check(runtime.session().phase==SessionPhase2026::RecoveryRequired,"rollback failure is explicit");
-    check(allocated && closes==0 && releases==0 && !runtime.session().changes.empty(),"failed rollback retains resources and log");
-    const auto pending=runtime.session().changes.size();
+    check(allocated && closes==0 && releases==0 && !runtime.session().journal.entries().empty(),"failed rollback retains resources and log");
+    const auto pending=runtime.session().journal.entries().size();
     const auto previousCalls=calls;
     runtime.modify(ModifyReason2026::ParametersConfirmed);
-    check(calls==previousCalls && runtime.session().changes.size()==pending,"pending recovery blocks modifications");
+    check(calls==previousCalls && runtime.session().journal.entries().size()==pending,"pending recovery blocks modifications");
     check(!runtime.undo(),"failed recovery prevents close/undo success");
     blockRecovery=false;
     check(runtime.retryRollback(),"rollback retry succeeds");
@@ -445,13 +564,13 @@ void liveFailureTest() {
     resetBackend();
     Runtime2026 runtime(api()); version(runtime);initialModify(runtime);
     const auto committed=memory;
-    const auto journalSize=runtime.session().changes.size();
+    const auto journalSize=runtime.session().journal.entries().size();
     san9::ParameterConfig config;config.set(1164,1);runtime.setParameters(config);
     fault=Fault::Write;faultAt=calls[static_cast<size_t>(Fault::Write)]+15;partialFailure=true;
     runtime.modify(ModifyReason2026::ParametersConfirmed);
     check(fired && runtime.session().result==OperationResult2026::RolledBack,"live failure rolls back one operation");
     check(runtime.session().phase==SessionPhase2026::Active && allocated && releases==0 && closes==0,"committed session retained");
-    check(runtime.session().changes.size()==journalSize,"committed log retained");
+    check(runtime.session().journal.entries().size()==journalSize,"committed log retained");
     for(const auto& pair:memory) {
         const auto found=committed.find(pair.first);
         check(pair.second==(found==committed.end()?0:found->second),"live rollback restores previous commit");
@@ -468,10 +587,10 @@ void undoFailureTest(Fault kind) {
     fault=kind;faultAt=calls[static_cast<size_t>(kind)]+1;partialFailure=true;
     check(!runtime.undo(),"undo failure reported");
     check(fired && runtime.session().phase==SessionPhase2026::RecoveryRequired,"undo keeps recovery state");
-    check(runtime.session().process && !runtime.session().changes.empty(),"undo failure retains pending ownership");
+    check(runtime.session().process && !runtime.session().journal.entries().empty(),"undo failure retains pending ownership");
     if(kind==Fault::Write || kind==Fault::Flush) check(allocated && releases==0,"references prevent premature release");
     check(runtime.undo(),"undo retry finishes");
-    check(runtime.session().changes.empty() && closes==1 && releases==1,"undo cleanup exactly once");
+    check(runtime.session().journal.entries().empty() && closes==1 && releases==1,"undo cleanup exactly once");
     checkRestored(before);
     check(runtime.undo() && closes==1 && releases==1,"undo idempotence");
     resetBackend();
@@ -511,10 +630,10 @@ void playerForceTest() {
     check(runtime.togglePlayerForce(0) && load(flagAddress)==0x785634A5,"player flag toggles one bit only");
     for(auto kind:{Fault::Read,Fault::Write,Fault::Flush}) {
         fault=kind;faultAt=calls[static_cast<size_t>(kind)]+1;fired=false;
-        const auto journal=runtime.session().changes.size();
+        const auto journal=runtime.session().journal.entries().size();
         check(!runtime.togglePlayerForce(0),"player toggle failure reported");
         check(fired && load(flagAddress)==0x785634A5,"player toggle rolls back to prior commit");
-        check(runtime.session().changes.size()==journal,"player toggle uses same operation boundary");
+        check(runtime.session().journal.entries().size()==journal,"player toggle uses same operation boundary");
     }
     check(runtime.undo() && load(flagAddress)==0x785634A4,"session undo restores original player flag");
     resetBackend();
@@ -855,7 +974,7 @@ void lifecycleTest() {
         const auto written=writes;
         processAlive=false;allocated=false;runtime.modify(ModifyReason2026::TimerTick);
         check(runtime.session().result==OperationResult2026::ProcessExited,"confirmed exit has distinct result");
-        check(runtime.session().changes.empty() && !runtime.session().process && closes==1,"exit clears old ownership");
+        check(runtime.session().journal.entries().empty() && !runtime.session().process && closes==1,"exit clears old ownership");
         check(writes==written && releases==0,"exited address space is never restored or freed again");
         DWORD marker=0;RuntimeTestAccess2026{runtime}.dataOut(0x420050,&marker,4);
         check(marker==initialBase && !RuntimeTestAccess2026{runtime}.field<DWORD>(112) && !RuntimeTestAccess2026{runtime}.field<DWORD>(132),"exit restores local address/event baseline");
@@ -881,7 +1000,7 @@ void lifecycleTest() {
         exitAfterRead=reads+1;
         check(!runtime.togglePlayerForce(0),"exit between read and write aborts operation");
         check(writes==written && releases==0 && closes==1,"mid-operation exit retires without remote cleanup");
-        check(runtime.session().changes.empty() && runtime.session().result==OperationResult2026::ProcessExited,"mid-operation exit clears entire old session");
+        check(runtime.session().journal.entries().empty() && runtime.session().result==OperationResult2026::ProcessExited,"mid-operation exit clears entire old session");
     }
     resetBackend();
     {
@@ -890,12 +1009,17 @@ void lifecycleTest() {
         version(runtime);
         fault=Fault::Write;faultAt=30;blockRecovery=true;initialModify(runtime);
         check(runtime.session().phase==SessionPhase2026::RecoveryRequired,"setup pending recovery");
-        const auto pending=runtime.session().changes.size();const auto written=writes;
+        const auto pending=runtime.session().journal.entries().size();const auto written=writes;
         processAlive=false;allocated=false;fault=Fault::Close;faultAt=calls[static_cast<size_t>(Fault::Close)]+1;fired=false;
         runtime.modify(ModifyReason2026::TimerTick);
-        check(runtime.session().changes.size()==pending && closes==0,"failed exited-handle close retains retry ownership");
+        check(runtime.session().journal.entries().size()==pending && closes==0,"failed exited-handle close retains retry ownership");
+        check(runtime.status().recoveryFailure.operation==RuntimeOperation2026::CloseExitedProcess
+            && runtime.status().recoveryFailure.systemError==ERROR_ACCESS_DENIED
+            && runtime.status().failure.operation==RuntimeOperation2026::Write,
+            "exit cleanup failure retains the original failure and the separate close error");
         runtime.modify(ModifyReason2026::TimerTick);
-        check(runtime.session().changes.empty() && closes==1 && releases==0 && writes==written,"pending recovery can finish by confirmed exit");
+        check(runtime.session().journal.entries().empty() && closes==1 && releases==0 && writes==written,"pending recovery can finish by confirmed exit");
+        check(!runtime.status().recoveryFailure,"successful exit cleanup clears its recovery error");
         check(runtime.undo() && closes==1,"retired handle is not closed twice");
     }
     resetBackend();
@@ -903,12 +1027,12 @@ void lifecycleTest() {
         auto ownedRuntime = std::make_unique<Runtime2026>(api());
         auto& runtime = *ownedRuntime;
         version(runtime);initialModify(runtime);
-        const auto written=writes;const auto pending=runtime.session().changes.size();
+        const auto written=writes;const auto pending=runtime.session().journal.entries().size();
         identityAvailable=false;runtime.modify(ModifyReason2026::TimerTick);
         check(!runtime.undo() && runtime.session().processState==ProcessState2026::Unavailable,"unavailable identity does not imply exit");
         identityAvailable=true;processCreated=2;
         check(!runtime.undo() && runtime.session().processState==ProcessState2026::IdentityChanged,"reused handle/identity blocks recovery");
-        check(writes==written && releases==0 && closes==0 && runtime.session().changes.size()==pending,"unknown or foreign target receives no mutation or close");
+        check(writes==written && releases==0 && closes==0 && runtime.session().journal.entries().size()==pending,"unknown or foreign target receives no mutation or close");
         processCreated=1;
         check(runtime.undo(),"original identity allows recovery retry");
     }
@@ -1080,7 +1204,7 @@ void gameSnapshotsTest() {
     check(writes==writeCount,"all game snapshots perform no remote writes");
     fault=Fault::None;fired=false;processAlive=false;allocated=false;
     check(!runtime.readSkillSnapshot(skill)&&runtime.session().result==OperationResult2026::ProcessExited
-        &&runtime.session().changes.empty(),"snapshot reads retire exited sessions through the common lifecycle");
+        &&runtime.session().journal.entries().empty(),"snapshot reads retire exited sessions through the common lifecycle");
     check(runtime.undo(),"snapshot exit cleanup remains idempotent");resetBackend();
     std::puts("Typed game snapshots, import flags, atomic invalid rows, force read order and exit checks passed.");
 }
@@ -1169,7 +1293,7 @@ void controllerTest(const std::filesystem::path &configurationDirectory) {
     const auto retainedPerson = core.personConfig().encodeLevels();
     const auto retainedCity = core.cityConfig().encodeLimits();
     const auto retainedFormation = core.formationConfig().encode();
-    const auto pendingChanges = core.session().changes.size();
+    const auto pendingChanges = core.session().journal.entries().size();
     parameters.set(1164,0);
     auto latestSkills = recovery.configuration().skills; latestSkills.entries[0].power = 77;
     auto latestPersons = recovery.configuration().persons; latestPersons.levels[0] = 1;
@@ -1180,7 +1304,7 @@ void controllerTest(const std::filesystem::path &configurationDirectory) {
           recovery.commitFormations(latestFormations), "all five configuration groups can queue during recovery");
     check(core.skillConfig().encode()==retainedSkill && core.personConfig().encodeLevels()==retainedPerson &&
           core.cityConfig().encodeLimits()==retainedCity && core.formationConfig().encode()==retainedFormation &&
-          core.session().changes.size()==pendingChanges && recovery.state().inputsQueued,
+          core.session().journal.entries().size()==pendingChanges && recovery.state().inputsQueued,
           "queued edits cannot touch the failed host projection or journal");
     const auto priorWrites = writes;
     recovery.poll();
@@ -1258,7 +1382,7 @@ int main(int argc, char** argv) {
         }
         const std::pair<const char*,void(*)()> focused[] = {
             {"--config-files",configFilesTest},
-            {"--journal",journalTest},{"--app-paths",appPathsTest},{"--core-boundary",coreBoundaryTest},{"--game-snapshots",gameSnapshotsTest},
+            {"--journal",journalTest},{"--diagnostics",diagnosticsTest},{"--app-paths",appPathsTest},{"--core-boundary",coreBoundaryTest},{"--game-snapshots",gameSnapshotsTest},
             {"--siege-selection",siegeSelectionTest},{"--state-bounds",stateBoundsTest},
             {"--game-text",gameTextTest},{"--person-snapshot",personSnapshotTest},
             {"--lifecycle",lifecycleTest}
@@ -1305,6 +1429,7 @@ int main(int argc, char** argv) {
         if (!quick) faultSweep();
         lifecycleTest();
         journalTest();
+        diagnosticsTest();
         if(configurationsRequested) {
             configFilesTest(); controllerTest(configRoot);
             coreBoundaryTest();gameSnapshotsTest();appPathsTest();stateBoundsTest();gameTextTest();personSnapshotTest();siegeSelectionTest();

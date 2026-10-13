@@ -20,6 +20,7 @@ class MainWindow final : public ui::Dialog
         icon(IDR_MAINFRAME);
         text(IDC_COMMIT_DATE, std::wstring(build_info::CommitDate) + L" 版");
         app.setCallbackWindow(endpoint());
+        tooltip(IDC_STATUS, L"悬停查看运行状态与失败详情。");
         if (!smoke)
         {
             auto errors = app.load(preference(L"City", L"AutoApply", true),
@@ -31,10 +32,12 @@ class MainWindow final : public ui::Dialog
     }
     void refresh()
     {
-        auto value = statusText(app.status());
+        const auto status = app.status();
+        auto value = statusDetails(status);
         if (!value.empty() && value != lastStatus)
         {
-            text(IDC_STATUS, value);
+            text(IDC_STATUS, statusText(status));
+            tooltip(IDC_STATUS, value);
             lastStatus = value;
         }
     }
@@ -92,7 +95,7 @@ int run(bool smoke)
     {
         if (!window.createHidden(IDD_SAN9PKHARD_DIALOG))
             return 2;
-        bool passed = smokePages(controller);
+        bool passed = ui::smokeTooltipUpdates(window, IDC_STATUS) && smokePages(controller);
         window.destroy();
         return passed ? 0 : 3;
     }

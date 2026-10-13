@@ -17,72 +17,21 @@
 #include "../model/PersonSnapshot.h"
 #include "GameSnapshots2026.h"
 #include "PatchDescriptor2026.h"
+#include "ProcessSession2026.h"
 
-struct ProcessApi2026 {
-    decltype(&::FindWindowA) findWindow = ::FindWindowA;
-    decltype(&::GetWindowThreadProcessId) windowProcess = ::GetWindowThreadProcessId;
-    decltype(&::OpenProcess) openProcess = ::OpenProcess;
-    decltype(&::CloseHandle) closeHandle = ::CloseHandle;
-    decltype(&::VirtualAllocEx) allocate = ::VirtualAllocEx;
-    decltype(&::VirtualFreeEx) release = ::VirtualFreeEx;
-    decltype(&::VirtualProtectEx) protect = ::VirtualProtectEx;
-    decltype(&::ReadProcessMemory) read = ::ReadProcessMemory;
-    decltype(&::WriteProcessMemory) write = ::WriteProcessMemory;
-    decltype(&::FlushInstructionCache) flush = ::FlushInstructionCache;
-    decltype(&::RegisterWindowMessageA) registerMessage = ::RegisterWindowMessageA;
-    decltype(&::VirtualQueryEx) query = ::VirtualQueryEx;
-    decltype(&::GetProcessId) processId = ::GetProcessId;
-    decltype(&::GetProcessTimes) processTimes = ::GetProcessTimes;
-    decltype(&::WaitForSingleObject) wait = ::WaitForSingleObject;
-};
 // 0x409E10 dispatch; message-related names follow the host entry points,
 // not an inferred game action. Values remain the recovered ABI values.
 enum class ModifyReason2026 : int { TimerTick=1, GameNotification=2, GameDialogClosed=3, ParametersConfirmed=4 };
 
-enum class SessionPhase2026 { Idle, Active, Applying, RollingBack, RecoveryRequired };
-enum class OperationResult2026 { None, Committed, RolledBack, RecoveryRequired, Undone, ProcessExited };
-enum class ProcessState2026 { None, Alive, Exited, Unavailable, IdentityChanged };
-struct ProcessIdentity2026 {
-    DWORD pid = 0;
-    FILETIME created{};
-    HWND window = nullptr;
-    bool verified = false;
-};
-enum class ChangeKind2026 { Handle, Allocation, Protection, Bytes };
-struct Change2026 {
-    ChangeKind2026 kind;
-    HANDLE process = nullptr;
-    LPVOID address = nullptr;
-    SIZE_T size = 0;
-    DWORD protection = 0;
-    std::vector<BYTE> before;
-    SIZE_T transferred = 0;
-    bool completed = false;
-};
-// Successful operations retain only first-observed bytes within each resource epoch.
-// Build a new journal so allocation failure never damages the rollback history.
-std::vector<Change2026> compactCommittedChanges2026(const std::vector<Change2026>& changes);
-struct RuntimeSession2026 {
-    SessionPhase2026 phase = SessionPhase2026::Idle;
-    OperationResult2026 result = OperationResult2026::None;
-    HANDLE process = nullptr;
-    std::vector<Change2026> changes;
-    ProcessIdentity2026 identity;
-    ProcessState2026 processState = ProcessState2026::None;
-    size_t boundary = 0;
-    std::string failure;
-    std::string recoveryFailure;
-};
 enum class RuntimeStatusKind2026 {
-    None, Connected, WaitingForGame, OpenFailed, UnsupportedVersion, AllocationFailed,
-    WriteFailed, ExitCleanupFailed, ProcessExited, IdentityUnavailable,
+    None, Connected, WaitingForGame, UnsupportedVersion, ExitCleanupFailed, ProcessExited, IdentityUnavailable,
     RecoveryRequired, Restored, ModificationBlocked, ModificationRolledBack, ExceptionRolledBack
 };
 struct RuntimeStatus2026 {
     RuntimeStatusKind2026 kind = RuntimeStatusKind2026::None;
     DWORD errorCount = 0;
-    DWORD writeStage = 0;
-    DWORD systemError = 0;
+    RuntimeFailure2026 failure;
+    RuntimeFailure2026 recoveryFailure;
     unsigned activityDots = 0;
 };
 struct ConfigurationState2026 {
@@ -105,7 +54,12 @@ public:
     void setCallbackWindow(HWND endpoint);
     bool isGameMessage(UINT message) const;
     bool handleGameMessage(UINT message, WPARAM action, LPARAM argument);
-    const RuntimeStatus2026& status() const { return status_; }
+    RuntimeStatus2026 status() const {
+        auto value = status_;
+        value.failure = process_.state().failure;
+        value.recoveryFailure = process_.state().recoveryFailure;
+        return value;
+    }
     ConfigurationState2026 configurationState() const;
     void setConfigurationState(const ConfigurationState2026& state);
     void modify(ModifyReason2026 reason);
@@ -113,15 +67,15 @@ public:
     bool undo();
     bool retryRollback();
     bool hasGameSession() const {
-        return session_.phase == SessionPhase2026::Active && session_.process != nullptr
-            && session_.processState == ProcessState2026::Alive;
+        return process_.state().phase == SessionPhase2026::Active && process_.state().process != nullptr
+            && process_.state().processState == ProcessState2026::Alive;
     }
     bool readPersonSnapshot(san9::PersonSnapshot& snapshot);
     bool readCitySnapshot(CitySnapshot2026& snapshot);
     bool readSkillSnapshot(SkillSnapshot2026& snapshot);
     bool readFormationSnapshot(FormationSnapshot2026& snapshot);
     bool readPlayerForces(std::vector<PlayerForce2026>& forces);
-    const RuntimeSession2026& session() const { return session_; }
+    const RuntimeSession2026& session() const { return process_.state(); }
     // Changes only when an exited or restored session resets its host projection.
     std::uint64_t configurationEpoch() const { return configurationEpoch_; }
     void setSkipDurabilitySiegeSelection(bool enabled) { skipDurabilitySiegeSelection_ = enabled; }
@@ -150,18 +104,15 @@ private:
         if(offset>state_.size() || size>state_.size()-offset)
             throw std::out_of_range("runtime state range");
     }
-    ProcessApi2026 api_;
+    ProcessSession2026 process_;
     alignas(4) std::array<BYTE, san9::layout2026::StateSize> state_{};
     alignas(4) std::array<BYTE, 0x11000> data_{};
     RuntimeStatus2026 status_;
-    RuntimeSession2026 session_;
     decltype(state_) savedState_{}, initialState_{};
     decltype(data_) savedData_{}, initialData_{};
     bool undoPending_ = false;
     std::uint64_t configurationEpoch_ = 0;
     bool skipDurabilitySiegeSelection_ = true; // Preserve the companion default.
-    struct OperationFailure {};
-    [[noreturn]] void fail(const char* operation);
     void modifyBranches(ModifyReason2026 reason);
     bool connectGame(HWND window);
     void animateConnectedStatus();
@@ -192,10 +143,10 @@ private:
     LPVOID allocateMemory(HANDLE process, LPVOID address, SIZE_T size, DWORD type, DWORD protection);
     BOOL protectMemory(HANDLE process, LPVOID address, SIZE_T size, DWORD protection, PDWORD old);
     BOOL writeBytes(HANDLE process, LPVOID target, LPCVOID source, SIZE_T size);
-    bool reverseChanges(size_t boundary);
+    bool reverseChanges();
     bool runOperation(const std::function<void()>& operation);
-    ProcessState2026 observeProcess();
-    void requireProcess(HANDLE process);
+    ProcessState2026 observeProcess() { return process_.observe(); }
+    void requireProcess(HANDLE process) { process_.require(process); }
     bool retireExitedProcess();
     void restoreSessionBaseline();
     template<class T> T* pointer(DWORD address) {
@@ -217,11 +168,7 @@ private:
             reinterpret_cast<LPCVOID>(addressOf(source)), size);
     }
     template<class A, class B> BOOL readMemory(HANDLE process, A source, B target, SIZE_T size, SIZE_T*) {
-        requireProcess(process);
-        SIZE_T transferred = 0;
-        if (!api_.read(process, reinterpret_cast<LPCVOID>(addressOf(source)),
-            reinterpret_cast<LPVOID>(addressOf(target)), size, &transferred) || transferred != size)
-            fail("read");
-        return TRUE;
+        return process_.read(process, reinterpret_cast<LPCVOID>(addressOf(source)),
+            reinterpret_cast<LPVOID>(addressOf(target)), size);
     }
 };

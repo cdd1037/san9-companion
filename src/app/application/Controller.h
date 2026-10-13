@@ -24,7 +24,7 @@ class Controller final
   public:
     explicit Controller(ProcessApi2026 api = {});
     const Configuration &configuration() const { return configuration_; }
-    const RuntimeStatus2026 &status() const { return runtime_.status(); }
+    RuntimeStatus2026 status() const { return runtime_.status(); }
     bool hasGameSession() const { return runtime_.hasGameSession(); }
     ApplicationState state() const;
     void setCallbackWindow(HWND endpoint) { runtime_.setCallbackWindow(endpoint); }

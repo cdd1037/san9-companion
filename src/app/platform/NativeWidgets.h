@@ -1,6 +1,6 @@
 #pragma once
 #include <Windows.h>
-#include <deque>
+#include <map>
 #include <filesystem>
 #include <functional>
 #include <optional>
@@ -92,14 +92,17 @@ class Dialog
     }
 
   private:
+    friend bool smokeTooltipUpdates(Dialog &dialog, int id);
     static INT_PTR CALLBACK procedure(HWND, UINT, WPARAM, LPARAM);
     HWND window_ = nullptr;
     HWND tabs_ = nullptr, extension_ = nullptr;
     std::vector<HWND> originals_;
-    std::deque<std::wstring> tooltipText_;
+    HWND tooltip_ = nullptr;
+    std::map<int, std::wstring> tooltipText_;
     bool modal_ = false;
 };
 std::wstring gameText(char *value, size_t capacity);
+bool smokeTooltipUpdates(Dialog &dialog, int id);
 std::wstring ansiText(const char *value);
 void initializeWindows();
 void launchGame(Dialog &owner);

@@ -306,21 +306,53 @@ void Dialog::icon(int resource)
 }
 void Dialog::tooltip(int id, const std::wstring &message)
 {
-    auto tip = CreateWindowExW(WS_EX_TOPMOST, TOOLTIPS_CLASSW, nullptr,
+    const auto control = child(window_, id);
+    if (!tooltip_)
+        tooltip_ = CreateWindowExW(WS_EX_TOPMOST, TOOLTIPS_CLASSW, nullptr,
                                WS_POPUP | TTS_ALWAYSTIP | TTS_NOPREFIX, CW_USEDEFAULT, CW_USEDEFAULT,
                                CW_USEDEFAULT, CW_USEDEFAULT, window_, nullptr, instance(), nullptr);
-    if (!tip)
+    if (!tooltip_)
         throw std::runtime_error("cannot create tooltip");
-    tooltipText_.push_back(message);
+    auto [entry, inserted] = tooltipText_.try_emplace(id, message);
+    if (!inserted) entry->second = message;
     TOOLINFOW info{sizeof(info)};
     info.uFlags = TTF_IDISHWND | TTF_SUBCLASS;
     info.hwnd = window_;
-    info.uId = reinterpret_cast<UINT_PTR>(child(window_, id));
-    info.lpszText = tooltipText_.back().data();
-    if (!SendMessageW(tip, TTM_ADDTOOLW, 0, reinterpret_cast<LPARAM>(&info)))
-        throw std::runtime_error("cannot bind tooltip");
-    SendMessageW(tip, TTM_SETMAXTIPWIDTH, 0, 420);
-    SendMessageW(tip, TTM_SETDELAYTIME, TTDT_AUTOPOP, 15000);
+    info.uId = reinterpret_cast<UINT_PTR>(control);
+    info.lpszText = entry->second.data();
+    if (inserted) {
+        wchar_t className[16]{};
+        GetClassNameW(control, className, _countof(className));
+        if (lstrcmpiW(className, L"Static") == 0)
+            SetWindowLongPtrW(control, GWL_STYLE, GetWindowLongPtrW(control, GWL_STYLE) | SS_NOTIFY);
+        if (!SendMessageW(tooltip_, TTM_ADDTOOLW, 0, reinterpret_cast<LPARAM>(&info))) {
+            tooltipText_.erase(entry);
+            throw std::runtime_error("cannot bind tooltip");
+        }
+        SendMessageW(tooltip_, TTM_SETMAXTIPWIDTH, 0, 420);
+        SendMessageW(tooltip_, TTM_SETDELAYTIME, TTDT_AUTOPOP, 15000);
+    } else {
+        SendMessageW(tooltip_, TTM_UPDATETIPTEXTW, 0, reinterpret_cast<LPARAM>(&info));
+    }
+}
+bool smokeTooltipUpdates(Dialog &dialog, int id)
+{
+    if (!dialog.smoke) return false;
+    dialog.tooltip(id, L"失败详情");
+    const auto window = dialog.tooltip_;
+    const auto count = SendMessageW(window, TTM_GETTOOLCOUNT, 0, 0);
+    const std::wstring details(600, L'测');
+    for (int index = 0; index < 100; ++index) dialog.tooltip(id, details + std::to_wstring(index));
+    TOOLINFOW info{sizeof(info)};
+    info.uFlags = TTF_IDISHWND;
+    info.hwnd = dialog.endpoint();
+    info.uId = reinterpret_cast<UINT_PTR>(child(dialog.endpoint(), id));
+    wchar_t actual[1024]{};
+    info.lpszText = actual;
+    SendMessageW(window, TTM_GETTEXTW, _countof(actual), reinterpret_cast<LPARAM>(&info));
+    return window == dialog.tooltip_ && SendMessageW(window, TTM_GETTOOLCOUNT, 0, 0) == count
+        && dialog.tooltipText_.size() == static_cast<size_t>(count)
+        && std::wstring(actual) == details + L"99";
 }
 void Dialog::timer(unsigned id, unsigned milliseconds)
 {
@@ -502,6 +534,8 @@ INT_PTR CALLBACK Dialog::procedure(HWND window, UINT message, WPARAM first, LPAR
         if (message == WM_NCDESTROY)
         {
             self->window_ = nullptr;
+            self->tooltip_ = nullptr;
+            self->tooltipText_.clear();
             return FALSE;
         }
         if (self->gameMessage(message, first, second))
