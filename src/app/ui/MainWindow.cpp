@@ -19,7 +19,7 @@ class MainWindow final : public ui::Dialog
     {
         icon(IDR_MAINFRAME);
         text(IDC_COMMIT_DATE, std::wstring(build_info::CommitDate) + L" 版");
-        app.runtime.setCallbackWindow(endpoint());
+        app.setCallbackWindow(endpoint());
         if (!smoke)
         {
             auto errors = app.load(preference(L"City", L"AutoApply", true),
@@ -31,7 +31,7 @@ class MainWindow final : public ui::Dialog
     }
     void refresh()
     {
-        auto value = statusText(app.runtime.status());
+        auto value = statusText(app.status());
         if (!value.empty() && value != lastStatus)
         {
             text(IDC_STATUS, value);
@@ -42,7 +42,7 @@ class MainWindow final : public ui::Dialog
     {
         if (id == 39)
         {
-            app.modify(ModifyReason2026::TimerTick);
+            app.poll();
             refresh();
         }
     }

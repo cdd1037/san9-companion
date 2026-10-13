@@ -91,6 +91,7 @@ void Runtime2026::requireProcess(HANDLE process) {
         fail("process is not the live session target");
 }
 void Runtime2026::restoreSessionBaseline() {
+    ++configurationEpoch_;
     // Keep user inputs; discard game addresses, version-derived data and event state.
     const auto inputs = state_;
     std::array<BYTE, 450> inputData{};

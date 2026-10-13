@@ -15,7 +15,7 @@ template <class Config, class Snapshot> class RowsPage : public ui::Dialog
     friend bool app::smokePages(Controller &);
 
   public:
-    RowsPage(Controller &controller, Config &shared, int list, int save, const wchar_t *name,
+    RowsPage(Controller &controller, const Config &shared, int list, int save, const wchar_t *name,
              const wchar_t *title)
         : app(controller), shared(shared), listId(list), saveId(save), filename(name), title(title)
     {
@@ -23,7 +23,7 @@ template <class Config, class Snapshot> class RowsPage : public ui::Dialog
 
   protected:
     Controller &app;
-    Config &shared;
+    const Config &shared;
     Config draft;
     Snapshot snapshot;
     size_t index = 0;
@@ -39,14 +39,10 @@ template <class Config, class Snapshot> class RowsPage : public ui::Dialog
     {
         return true;
     }
-    virtual bool committed()
-    {
-        shared = draft;
-        return true;
-    }
+    virtual bool committed() = 0;
     void initialize() override
     {
-        bool connected = app.runtime.hasGameSession();
+        bool connected = app.hasGameSession();
         bool read = connected && readSnapshot();
         draft = shared;
         if (connected && !read)
@@ -130,7 +126,7 @@ class SkillPage final : public RowsPage<san9::SkillConfig, SkillSnapshot2026>
 
   public:
     explicit SkillPage(Controller &c)
-        : RowsPage(c, c.skills, IDC_KILLER_LIST, IDC_SAVE_KILLER_CONFIG, L"San9PKHardSkill.txt", L"兵法")
+        : RowsPage(c, c.configuration().skills, IDC_KILLER_LIST, IDC_SAVE_KILLER_CONFIG, L"San9PKHardSkill.txt", L"兵法")
     {
     }
 
@@ -148,9 +144,7 @@ class SkillPage final : public RowsPage<san9::SkillConfig, SkillSnapshot2026>
     }
     bool committed() override
     {
-        shared = draft;
-        app.flags.skillPending = true;
-        return true;
+        return app.commitSkills(draft);
     }
 };
 class FormationPage final : public RowsPage<san9::FormationConfig, FormationSnapshot2026>
@@ -159,7 +153,7 @@ class FormationPage final : public RowsPage<san9::FormationConfig, FormationSnap
 
   public:
     explicit FormationPage(Controller &c)
-        : RowsPage(c, c.formations, IDC_ARRAY_LIST, IDC_SAVE_ARRAY_CONFIG, L"San9PKHardArray.txt", L"阵型")
+        : RowsPage(c, c.configuration().formations, IDC_ARRAY_LIST, IDC_SAVE_ARRAY_CONFIG, L"San9PKHardArray.txt", L"阵型")
     {
     }
 
@@ -183,9 +177,7 @@ class FormationPage final : public RowsPage<san9::FormationConfig, FormationSnap
     }
     bool committed() override
     {
-        shared = draft;
-        app.flags.formationPending = true;
-        return true;
+        return app.commitFormations(draft);
     }
 };
 class CityPage final : public RowsPage<san9::CityConfig, CitySnapshot2026>
@@ -194,7 +186,7 @@ class CityPage final : public RowsPage<san9::CityConfig, CitySnapshot2026>
 
   public:
     explicit CityPage(Controller &c)
-        : RowsPage(c, c.cities, IDC_CITY_LIST, IDC_SAVE_CITY_CONFIG, L"San9PKHardCity.txt", L"都市")
+        : RowsPage(c, c.configuration().cities, IDC_CITY_LIST, IDC_SAVE_CITY_CONFIG, L"San9PKHardCity.txt", L"都市")
     {
     }
 
@@ -222,7 +214,7 @@ class CityPage final : public RowsPage<san9::CityConfig, CitySnapshot2026>
         const wchar_t *skills[] = {L"齐射", L"连射", L"连弩", L"混乱", L"陷阱", L"攻心",
                                    L"幻术", L"辱骂", L"鼓舞", L"治疗", L"妖术", L"无"};
         appendItems(IDC_CITY_KILLER, std::vector<std::wstring>(std::begin(skills), std::end(skills)), true);
-        check(IDC_CITY_CONFIG_AUTO, app.flags.cityAutomatic);
+        check(IDC_CITY_CONFIG_AUTO, app.configuration().cityAutomatic);
     }
     void extraLoad() override
     {
@@ -254,10 +246,7 @@ class CityPage final : public RowsPage<san9::CityConfig, CitySnapshot2026>
             message(L"无法写入程序目录下的 San9PKHardSettings.ini，设置尚未确认。");
             return false;
         }
-        shared = draft;
-        app.flags.cityAutomatic = automatic;
-        app.flags.cityPending = true;
-        return true;
+        return app.commitCities(draft, automatic);
     }
     void command(int id, ui::Event event) override
     {
@@ -309,9 +298,9 @@ class PersonPage final : public ui::Dialog
     std::array<int, 4> abilityQuery{{-1, -1, -1, -1}};
     void initialize() override
     {
-        if (app.runtime.hasGameSession() && !app.personSnapshot(snapshot))
+        if (app.hasGameSession() && !app.personSnapshot(snapshot))
             message(L"读游戏武将信息失败，仍可按编号编辑配置。");
-        draft = app.persons;
+        draft = app.configuration().persons;
         std::vector<std::wstring> labels;
         labels.reserve(san9::PersonConfig::Count);
         for (size_t i = 0; i < san9::PersonConfig::Count; ++i)
@@ -410,9 +399,8 @@ class PersonPage final : public ui::Dialog
     {
         if (id == ID_EXIT && event == ui::Event::Click)
         {
-            if (save())
+            if (save() && app.commitPersons(draft))
             {
-                app.persons = draft;
                 finish(IDOK);
             }
         }
@@ -524,7 +512,7 @@ class SettingsPage final : public ui::Dialog
     friend bool app::smokePages(Controller &);
 
   public:
-    explicit SettingsPage(Controller &c) : app(c), draft(c.parameters)
+    explicit SettingsPage(Controller &c) : app(c), draft(c.configuration().parameters)
     {
     }
 
@@ -533,7 +521,7 @@ class SettingsPage final : public ui::Dialog
     san9::ParameterConfig draft;
     void initialize() override
     {
-        settingsPages(L"跳过耐久驱动的攻城阵型优先选择", app.skipSiegeSelection);
+        settingsPages(L"跳过耐久驱动的攻城阵型优先选择", app.configuration().skipSiegeSelection);
         tooltip(IDC_SKIP_DURABILITY_SIEGE_SELECTION,
                 L"跳过原版按城池耐久优先选择攻城阵型的判断，不影响因路径障碍触发的选择。");
         tooltip(IDC_NPC_ALLIE_ATTACK, L"使多个电脑势力更容易集中进攻玩家的城池。");
@@ -579,9 +567,7 @@ class SettingsPage final : public ui::Dialog
             message(L"无法写入 San9PKHardSettings.ini，设置尚未确认。");
             return;
         }
-        app.parameters = draft;
-        app.skipSiegeSelection = skip;
-        finish(IDOK);
+        if (app.commitParameters(draft, skip)) finish(IDOK);
     }
     void command(int id, ui::Event event) override
     {
@@ -643,7 +629,7 @@ void showSettings(Controller &controller, ui::Dialog &owner)
 {
     SettingsPage page(controller);
     if (page.show(IDD_PARA_SETTING, &owner) == IDOK)
-        controller.modify(ModifyReason2026::ParametersConfirmed);
+        controller.applyConfirmedConfiguration();
 }
 bool smokePages(Controller &c)
 {
@@ -652,15 +638,15 @@ bool smokePages(Controller &c)
     CityPage city(c);
     SkillPage skill(c);
     FormationPage formation(c);
-    const auto parametersBefore = c.parameters;
-    const auto personsBefore = c.persons.encodeLevels();
-    const auto citiesBefore = c.cities.encodeLimits();
-    const auto skillsBefore = c.skills.encode();
-    const auto formationsBefore = c.formations.encode();
+    const auto parametersBefore = c.configuration().parameters;
+    const auto personsBefore = c.configuration().persons.encodeLevels();
+    const auto citiesBefore = c.configuration().cities.encodeLimits();
+    const auto skillsBefore = c.configuration().skills.encode();
+    const auto formationsBefore = c.configuration().formations.encode();
     if (!settings.createHidden(IDD_PARA_SETTING))
         return false;
     settings.settingsPage(1);
-    settings.check(IDC_SKIP_DURABILITY_SIEGE_SELECTION, !c.skipSiegeSelection);
+    settings.check(IDC_SKIP_DURABILITY_SIEGE_SELECTION, !c.configuration().skipSiegeSelection);
     settings.settingsPage(0);
     if (!settings.save())
         return false;
@@ -696,7 +682,20 @@ bool smokePages(Controller &c)
     };
     if (!rows(city, IDD_CITY_CONFIG) || !rows(skill, IDD_KILLER_CONFIG) || !rows(formation, IDD_ARRAY_CONFIG))
         return false;
-    return c.persons.encodeLevels() == personsBefore && c.cities.encodeLimits() == citiesBefore &&
-           c.skills.encode() == skillsBefore && c.formations.encode() == formationsBefore;
+    if (c.configuration().persons.encodeLevels() != personsBefore || c.configuration().cities.encodeLimits() != citiesBefore ||
+        c.configuration().skills.encode() != skillsBefore || c.configuration().formations.encode() != formationsBefore)
+        return false;
+    // A confirmed child is independent of its parent's unconfirmed parameter draft.
+    Controller independent;
+    const auto independentParameters = independent.configuration().parameters;
+    SettingsPage parent(independent);
+    SkillPage child(independent);
+    if (!parent.createHidden(IDD_PARA_SETTING) || !child.createHidden(IDD_KILLER_CONFIG)) return false;
+    parent.number(IDC_MONEY_CUT_1, 13);
+    child.number(IDC_KILLER_POWER, 91);
+    child.accept();
+    parent.finish(IDCANCEL);
+    return independent.configuration().skills.entries[0].power == 91 &&
+           independent.configuration().parameters.get(IDC_MONEY_CUT_1) == independentParameters.get(IDC_MONEY_CUT_1);
 }
 } // namespace app

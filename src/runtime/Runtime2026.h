@@ -121,6 +121,8 @@ public:
     bool readFormationSnapshot(FormationSnapshot2026& snapshot);
     bool readPlayerForces(std::vector<PlayerForce2026>& forces);
     const RuntimeSession2026& session() const { return session_; }
+    // Changes only when an exited or restored session resets its host projection.
+    std::uint64_t configurationEpoch() const { return configurationEpoch_; }
     void setSkipDurabilitySiegeSelection(bool enabled) { skipDurabilitySiegeSelection_ = enabled; }
     void setParameters(const san9::ParameterConfig& parameters);
     san9::PersonConfig personConfig() const;
@@ -155,6 +157,7 @@ private:
     decltype(state_) savedState_{}, initialState_{};
     decltype(data_) savedData_{}, initialData_{};
     bool undoPending_ = false;
+    std::uint64_t configurationEpoch_ = 0;
     bool skipDurabilitySiegeSelection_ = true; // Preserve the companion default.
     struct OperationFailure {};
     [[noreturn]] void fail(const char* operation);

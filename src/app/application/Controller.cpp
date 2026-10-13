@@ -2,90 +2,208 @@
 #include "../../runtime/AppPaths.h"
 namespace app
 {
-Controller::Controller()
+Controller::Controller(ProcessApi2026 api) : runtime_(api)
 {
-    syncFromCore();
+    // One-time recovered defaults, including friendships and city relations.
+    configuration_.persons = runtime_.personConfig();
+    configuration_.cities = runtime_.cityConfig();
+    configuration_.skills = runtime_.skillConfig();
+    configuration_.formations = runtime_.formationConfig();
+}
+ApplicationState Controller::state() const
+{
+    return {runtime_.session().phase, runtime_.session().result, runtime_.configurationState(),
+            queued_ != 0 || epoch_ != runtime_.configurationEpoch(), confirmationPending_};
 }
 std::vector<ConfigLoadError> Controller::load(bool automatic, bool skipSelection)
 {
+    return load(san9::executableFile(L""), automatic, skipSelection);
+}
+std::vector<ConfigLoadError> Controller::load(const std::filesystem::path &directory, bool automatic, bool skipSelection)
+{
     std::vector<ConfigLoadError> errors;
-    flags.cityAutomatic = automatic;
-    skipSiegeSelection = skipSelection;
-    auto load = [&](auto &config, const wchar_t *name) {
-        const auto result = loadConfigFile(san9::executableFile(name), config);
-        if (!result.ok())
-        {
-            errors.push_back({name, result});
-            return false;
-        }
-        return true;
+    configuration_.cityAutomatic = automatic;
+    configuration_.skipSiegeSelection = skipSelection;
+    queued_ |= Parameters | Cities;
+    auto load = [&](auto &value, ConfigurationSource &source, InputGroup group, const wchar_t *name) {
+        const auto result = loadConfigFile(directory / name, value);
+        if (!result.ok()) errors.push_back({name, result});
+        else { source = ConfigurationSource::File; queued_ |= group; }
     };
-    load(parameters, L"San9PKHardPara.txt");
-    load(persons, L"San9PKHardPerson.txt");
-    flags.cityPending = load(cities, L"San9PKHardCity.txt");
-    flags.skillLoaded = load(skills, L"San9PKHardSkill.txt");
-    flags.formationLoaded = load(formations, L"San9PKHardArray.txt");
-    syncToCore();
+    auto &sources = configuration_.sources;
+    load(configuration_.parameters, sources.parameters, Parameters, L"San9PKHardPara.txt");
+    load(configuration_.persons, sources.persons, Persons, L"San9PKHardPerson.txt");
+    load(configuration_.cities, sources.cities, Cities, L"San9PKHardCity.txt");
+    load(configuration_.skills, sources.skills, Skills, L"San9PKHardSkill.txt");
+    load(configuration_.formations, sources.formations, Formations, L"San9PKHardArray.txt");
+    confirmationPending_ = true;
+    stageConfiguration();
     return errors;
 }
-void Controller::syncToCore()
+bool Controller::commitParameters(const san9::ParameterConfig &value, bool skipSelection)
 {
-    runtime.setParameters(parameters);
-    runtime.setPersonConfig(persons);
-    runtime.setCityConfig(cities);
-    runtime.setSkillConfig(skills);
-    runtime.setFormationConfig(formations);
-    runtime.setConfigurationState(flags);
-    runtime.setSkipDurabilitySiegeSelection(skipSiegeSelection);
+    if (value.validate().error != san9::ParameterError::none) return false;
+    configuration_.parameters = value;
+    configuration_.skipSiegeSelection = skipSelection;
+    configuration_.sources.parameters = confirmedSource(configuration_.sources.parameters);
+    queued_ |= Parameters;
+    confirmationPending_ = true;
+    stageConfiguration();
+    return true;
 }
-void Controller::syncFromCore()
+bool Controller::commitPersons(const san9::PersonConfig &value)
 {
-    persons = runtime.personConfig();
-    cities = runtime.cityConfig();
-    skills = runtime.skillConfig();
-    formations = runtime.formationConfig();
-    flags = runtime.configurationState();
+    if (!value.valid()) return false;
+    configuration_.persons = value;
+    configuration_.sources.persons = confirmedSource(configuration_.sources.persons);
+    queued_ |= Persons;
+    stageConfiguration();
+    return true;
+}
+bool Controller::commitCities(const san9::CityConfig &value, bool automatic)
+{
+    if (!value.valid()) return false;
+    configuration_.cities = value;
+    configuration_.cityAutomatic = automatic;
+    configuration_.sources.cities = confirmedSource(configuration_.sources.cities);
+    queued_ |= Cities;
+    stageConfiguration();
+    return true;
+}
+bool Controller::commitSkills(const san9::SkillConfig &value)
+{
+    if (!value.valid()) return false;
+    configuration_.skills = value;
+    configuration_.sources.skills = confirmedSource(configuration_.sources.skills);
+    queued_ |= Skills;
+    stageConfiguration();
+    return true;
+}
+bool Controller::commitFormations(const san9::FormationConfig &value)
+{
+    if (!value.valid()) return false;
+    configuration_.formations = value;
+    configuration_.sources.formations = confirmedSource(configuration_.sources.formations);
+    queued_ |= Formations;
+    stageConfiguration();
+    return true;
+}
+void Controller::observeLifecycle()
+{
+    if (epoch_ == runtime_.configurationEpoch()) return;
+    epoch_ = runtime_.configurationEpoch();
+    queued_ |= All;
+}
+void Controller::stageConfiguration()
+{
+    observeLifecycle();
+    const auto phase = runtime_.session().phase;
+    if (!queued_ || (phase != SessionPhase2026::Idle && phase != SessionPhase2026::Active)) return;
+    auto flags = runtime_.configurationState();
+    const auto &sources = configuration_.sources;
+    if (queued_ & Parameters)
+    {
+        runtime_.setParameters(configuration_.parameters);
+        runtime_.setSkipDurabilitySiegeSelection(configuration_.skipSiegeSelection);
+    }
+    if (queued_ & Persons) runtime_.setPersonConfig(configuration_.persons);
+    if (queued_ & Cities)
+    {
+        runtime_.setCityConfig(configuration_.cities);
+        flags.cityAutomatic = configuration_.cityAutomatic;
+        flags.cityPending = sources.cities != ConfigurationSource::Defaults || flags.cityAutomatic;
+    }
+    if (queued_ & Skills)
+    {
+        runtime_.setSkillConfig(configuration_.skills);
+        flags.skillLoaded = fileBacked(sources.skills);
+        flags.skillPending = sources.skills != ConfigurationSource::Defaults;
+    }
+    if (queued_ & Formations)
+    {
+        runtime_.setFormationConfig(configuration_.formations);
+        flags.formationLoaded = fileBacked(sources.formations);
+        flags.formationPending = sources.formations != ConfigurationSource::Defaults;
+    }
+    runtime_.setConfigurationState(flags);
+    queued_ = 0;
 }
 void Controller::modify(ModifyReason2026 reason)
 {
-    syncToCore();
-    runtime.modify(reason);
-    syncFromCore();
+    stageConfiguration();
+    const bool connected = runtime_.hasGameSession();
+    if (reason == ModifyReason2026::TimerTick && confirmationPending_ && connected)
+        reason = ModifyReason2026::ParametersConfirmed;
+    runtime_.modify(reason);
+    // A confirmation received during Applying belongs to the next operation.
+    if (!(queued_ & Parameters) && runtime_.session().result == OperationResult2026::Committed && runtime_.hasGameSession() &&
+        (!connected || reason == ModifyReason2026::ParametersConfirmed)) confirmationPending_ = false;
+    observeLifecycle();
+}
+void Controller::poll() { modify(ModifyReason2026::TimerTick); }
+void Controller::applyConfirmedConfiguration()
+{
+    confirmationPending_ = true;
+    modify(ModifyReason2026::ParametersConfirmed);
 }
 bool Controller::gameMessage(UINT message, WPARAM action, LPARAM argument)
 {
-    if (!runtime.isGameMessage(message))
-        return false;
-    syncToCore();
-    runtime.handleGameMessage(message, action, argument);
-    syncFromCore();
-    return true;
+    if (!runtime_.isGameMessage(message)) return false;
+    stageConfiguration();
+    const bool result = runtime_.handleGameMessage(message, action, argument);
+    observeLifecycle();
+    return result;
 }
 bool Controller::undo()
 {
-    bool result = runtime.undo();
-    syncFromCore();
+    const bool result = runtime_.undo();
+    observeLifecycle();
+    return result;
+}
+bool Controller::retryRecovery()
+{
+    const bool result = runtime_.retryRollback();
+    observeLifecycle();
+    if (result) stageConfiguration();
     return result;
 }
 bool Controller::toggleForce(unsigned index)
 {
-    syncToCore();
-    bool result = runtime.togglePlayerForce(index);
-    syncFromCore();
+    const bool result = runtime_.togglePlayerForce(index);
+    observeLifecycle();
     return result;
 }
-#define SNAPSHOT(method, coreMethod, type)                                                                   \
-    bool Controller::method(type &value)                                                                     \
-    {                                                                                                        \
-        syncToCore();                                                                                        \
-        bool result = runtime.coreMethod(value);                                                             \
-        syncFromCore();                                                                                      \
-        return result;                                                                                       \
-    }
-SNAPSHOT(personSnapshot, readPersonSnapshot, san9::PersonSnapshot)
-SNAPSHOT(citySnapshot, readCitySnapshot, CitySnapshot2026)
-SNAPSHOT(skillSnapshot, readSkillSnapshot, SkillSnapshot2026)
-SNAPSHOT(formationSnapshot, readFormationSnapshot, FormationSnapshot2026)
-SNAPSHOT(forces, readPlayerForces, std::vector<PlayerForce2026>)
-#undef SNAPSHOT
+bool Controller::personSnapshot(san9::PersonSnapshot &value)
+{
+    const bool result = runtime_.readPersonSnapshot(value);
+    observeLifecycle();
+    return result;
+}
+bool Controller::citySnapshot(CitySnapshot2026 &value)
+{
+    const bool result = runtime_.readCitySnapshot(value);
+    observeLifecycle();
+    if (result && (queued_ & Cities)) { value.config = configuration_.cities; value.invalidRow.reset(); }
+    return result;
+}
+bool Controller::skillSnapshot(SkillSnapshot2026 &value)
+{
+    const bool result = runtime_.readSkillSnapshot(value);
+    observeLifecycle();
+    if (result && (queued_ & Skills)) { value.config = configuration_.skills; value.invalidRow.reset(); }
+    return result;
+}
+bool Controller::formationSnapshot(FormationSnapshot2026 &value)
+{
+    const bool result = runtime_.readFormationSnapshot(value);
+    observeLifecycle();
+    if (result && (queued_ & Formations)) { value.config = configuration_.formations; value.invalidRow.reset(); }
+    return result;
+}
+bool Controller::forces(std::vector<PlayerForce2026> &value)
+{
+    const bool result = runtime_.readPlayerForces(value);
+    observeLifecycle();
+    return result;
+}
 } // namespace app

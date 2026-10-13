@@ -3,6 +3,7 @@
 #include "../src/model/PersonSnapshot.h"
 #include "../src/runtime/GameText.h"
 #include "../src/runtime/AppPaths.h"
+#include "../src/app/application/Controller.h"
 #include <unordered_map>
 #include <vector>
 #include <cstdio>
@@ -23,6 +24,11 @@ struct RuntimeTestAccess2026 {
     void dataIn(DWORD address, const void* source, size_t size) { runtime.dataIn(address, source, size); }
     void dataOut(DWORD address, void* destination, size_t size) { runtime.dataOut(address, destination, size); }
 };
+namespace app {
+struct ControllerTestAccess {
+    static Runtime2026& runtime(app::Controller& controller) { return controller.runtime_; }
+};
+}
 namespace {
 std::unordered_map<DWORD,BYTE> memory;
 std::unordered_map<DWORD,BYTE> singleByteWrites;
@@ -45,6 +51,7 @@ bool allocated=false;
 bool processAlive=true, identityAvailable=true;
 DWORD processPid=123, windowPid=123, processCreated=1, windowHandle=42;
 size_t exitAfterRead=0;
+std::function<void()> writeCallback;
 enum class Fault { None, Open, Read, Write, Flush, Query, Protect, Allocate, Release, Close, Resolve, Message, Count };
 std::array<size_t,static_cast<size_t>(Fault::Count)> calls{};
 Fault fault=Fault::None;
@@ -137,7 +144,9 @@ BOOL WINAPI write(HANDLE,LPVOID address,LPCVOID buffer,SIZE_T size,SIZE_T* count
     traceMemory('W',destination,buffer,size);
     if (size==1) singleByteWrites[destination]=p[0];
     for(size_t i=0;i<size;++i) memory[reinterpret_cast<DWORD>(address)+static_cast<DWORD>(i)]=p[i];
-    *count=size;return failure?(partialFailure && shortSuccess):size==requested;
+    *count=size;
+    if (writeCallback) { auto callback=std::move(writeCallback); writeCallback={}; callback(); }
+    return failure?(partialFailure && shortSuccess):size==requested;
 }
 BOOL WINAPI flush(HANDLE,LPCVOID,SIZE_T) {return !fails(Fault::Flush);}
 UINT WINAPI registerMessage(LPCSTR) {return fails(Fault::Message)?0:0xC001;}
@@ -232,6 +241,7 @@ void unsupportedVersionTest() {
     check(RuntimeTestAccess2026{runtime}.field<HANDLE>(112)==nullptr,"unsupported game handle closed");
 }
 void resetBackend() {
+    writeCallback = {};
     memory.clear(); singleByteWrites.clear(); protections.clear();
     writes=reads=releases=closes=0; allocated=false; present=true; base=0x10000000;
     calls.fill(0); fault=Fault::None; faultAt=0; fired=false; blockRecovery=false; partialFailure=false; shortSuccess=true;
@@ -1044,6 +1054,153 @@ void gameSnapshotsTest() {
     std::puts("Typed game snapshots, import flags, atomic invalid rows, force read order and exit checks passed.");
 }
 
+void controllerTest(const std::filesystem::path &configurationDirectory) {
+    using app::ConfigurationSource;
+    resetBackend();
+    app::Controller controller(api());
+    auto& runtime = app::ControllerTestAccess::runtime(controller);
+    auto skills = controller.configuration().skills;
+    skills.entries[0].power = 91;
+    check(controller.configuration().skills.entries[0].power != 91, "editing a value draft does not submit it");
+    check(controller.commitSkills(skills), "disconnected skill confirmation accepted");
+    auto invalid = skills; invalid.entries[0].power = 101;
+    check(!controller.commitSkills(invalid) && controller.configuration().skills.entries[0].power == 91,
+          "invalid confirmation leaves desired state unchanged");
+    present = false;
+    controller.poll();
+    check(writes == 0 && controller.configuration().skills.entries[0].power == 91,
+          "waiting for a game preserves confirmed child configuration");
+    present = true; version(runtime);
+    for (int i=0; i<6; ++i) controller.poll();
+    check(controller.hasGameSession() && load(0x14FDAD0+0x64)==91, "initial connection applies disconnected edits");
+    check(!controller.state().runtimeConfiguration.skillPending, "core owns consumption of pending state");
+    auto effective = runtime.skillConfig(); effective.entries[0].power = 70;
+    runtime.setSkillConfig(effective);
+    memory[0x14FDAD0+0x64] = 255;
+    SkillSnapshot2026 snapshot;
+    const auto snapshotWrites = writes;
+    check(controller.skillSnapshot(snapshot) && snapshot.invalidRow == 0 && snapshot.config.entries[0].power == 70,
+          "invalid game import falls back to the effective core configuration");
+    check(controller.configuration().skills.entries[0].power == 91 && runtime.skillConfig().entries[0].power == 70 &&
+          writes == snapshotWrites, "snapshot neither stages desired values nor overwrites them");
+    const auto desiredCitySoldiers = controller.configuration().cities.limits[0].soldiers;
+    auto effectiveCity = runtime.cityConfig(); effectiveCity.limits[0].soldiers = 17;
+    runtime.setCityConfig(effectiveCity);
+    CitySnapshot2026 citySnapshot;
+    check(controller.citySnapshot(citySnapshot) && citySnapshot.invalidRow && citySnapshot.config.limits[0].soldiers==17 &&
+          controller.configuration().cities.limits[0].soldiers==desiredCitySoldiers,
+          "derived default fallback is a snapshot view, not a replacement for desired city input");
+    check(controller.undo() && controller.state().inputsQueued && controller.configuration().skills.entries[0].power == 91,
+          "undo retains desired inputs and rearms the next session");
+    version(runtime);
+    for (int i=0; i<6; ++i) controller.poll();
+    check(controller.hasGameSession() && load(0x14FDAD0+0x64)==91, "reconnect restores the confirmed input, not derived state");
+    auto retriedParameters = controller.configuration().parameters; retriedParameters.set(1164,1);
+    check(controller.commitParameters(retriedParameters,true), "parameter confirmation before recoverable failure");
+    fault=Fault::Write; faultAt=calls[static_cast<size_t>(Fault::Write)]+3; partialFailure=true;
+    controller.applyConfirmedConfiguration();
+    check(controller.state().result==OperationResult2026::RolledBack && controller.state().confirmationPending &&
+          controller.configuration().parameters.get(1164)==1, "successful rollback does not acknowledge unapplied parameters");
+    controller.poll();
+    check(!controller.state().confirmationPending && load(4733494,2)==59792,
+          "next poll retries a failed parameter confirmation instead of reporting idle success");
+    auto inFlight = controller.configuration().parameters; inFlight.set(1164,0);
+    check(controller.commitParameters(inFlight,true), "submit first in-flight parameter revision");
+    writeCallback = [&] {
+        check(controller.state().phase==SessionPhase2026::Applying, "confirmation callback runs during application");
+        inFlight.set(1164,1);
+        check(controller.commitParameters(inFlight,true), "new revision accepted during Applying");
+    };
+    controller.applyConfirmedConfiguration();
+    check(controller.state().inputsQueued && controller.state().confirmationPending && load(4733494,2)==33807,
+          "committing the older operation cannot acknowledge the newer queued confirmation");
+    controller.poll();
+    check(!controller.state().inputsQueued && !controller.state().confirmationPending && load(4733494,2)==59792,
+          "next poll stages and applies the in-flight confirmation");
+    check(controller.undo(), "close first controller scenario");
+
+    resetBackend();
+    app::Controller recovery(api());
+    auto& core = app::ControllerTestAccess::runtime(recovery);
+    check(recovery.load(configurationDirectory, true, true).empty(), "controller loads all configuration fixtures");
+    check(recovery.configuration().sources.skills == ConfigurationSource::File, "file origin is explicit");
+    version(core);
+    for (int i=0; i<6; ++i) recovery.poll();
+    check(recovery.hasGameSession() && !recovery.state().confirmationPending, "successful connection acknowledges parameters");
+    auto parameters = recovery.configuration().parameters; parameters.set(1164,1);
+    check(recovery.commitParameters(parameters,true), "first parameter confirmation");
+    fault=Fault::Write; faultAt=calls[static_cast<size_t>(Fault::Write)]+15;
+    partialFailure=true; blockRecovery=true;
+    recovery.applyConfirmedConfiguration();
+    check(fired && recovery.state().phase==SessionPhase2026::RecoveryRequired && recovery.state().confirmationPending,
+          "failed live application remains pending until recovery and commit");
+    const auto retainedSkill = core.skillConfig().encode();
+    const auto retainedPerson = core.personConfig().encodeLevels();
+    const auto retainedCity = core.cityConfig().encodeLimits();
+    const auto retainedFormation = core.formationConfig().encode();
+    const auto pendingChanges = core.session().changes.size();
+    parameters.set(1164,0);
+    auto latestSkills = recovery.configuration().skills; latestSkills.entries[0].power = 77;
+    auto latestPersons = recovery.configuration().persons; latestPersons.levels[0] = 1;
+    auto latestCities = recovery.configuration().cities; latestCities.limits[0].income = 11;
+    auto latestFormations = recovery.configuration().formations; latestFormations.entries[0].range = 4;
+    check(recovery.commitParameters(parameters,false) && recovery.commitSkills(latestSkills) &&
+          recovery.commitPersons(latestPersons) && recovery.commitCities(latestCities,true) &&
+          recovery.commitFormations(latestFormations), "all five configuration groups can queue during recovery");
+    check(core.skillConfig().encode()==retainedSkill && core.personConfig().encodeLevels()==retainedPerson &&
+          core.cityConfig().encodeLimits()==retainedCity && core.formationConfig().encode()==retainedFormation &&
+          core.session().changes.size()==pendingChanges && recovery.state().inputsQueued,
+          "queued edits cannot touch the failed host projection or journal");
+    const auto priorWrites = writes;
+    recovery.poll();
+    check(!recovery.skillSnapshot(snapshot) && writes==priorWrites && recovery.configuration().skills.entries[0].power==77,
+          "blocked polling and snapshot reads retain newer confirmations without writes");
+    check(!recovery.undo() && recovery.configuration().persons.levels[0]==1,
+          "failed close retains both recovery and latest desired inputs");
+    blockRecovery=false; fault=Fault::None;
+    check(recovery.retryRecovery() && !recovery.state().inputsQueued && core.skillConfig().entries[0].power==77,
+          "successful recovery stages queued changes only after rollback");
+    check(recovery.configuration().sources.skills==ConfigurationSource::ConfirmedFile &&
+          recovery.state().runtimeConfiguration.skillLoaded && recovery.state().runtimeConfiguration.skillPending,
+          "confirming file-backed edits retains continuous policy and schedules application");
+    check(core.cityConfig().limits[0].income==11 && core.formationConfig().entries[0].range==4 &&
+          recovery.state().runtimeConfiguration.cityPending && recovery.state().runtimeConfiguration.formationPending,
+          "recovery stages latest city and formation confirmations with pending state");
+    recovery.poll();
+    check(recovery.hasGameSession() && !recovery.state().confirmationPending && load(4733494,2)==33807 &&
+          load(0x4B87EB,1)==0x85 && load(0x14FDAD0+0x64)==77,
+          "post-recovery retry commits the newest parameters, extension and skill values");
+    const auto rangeAddress = RuntimeTestAccess2026{core}.field<DWORD>(san9::injection2026::FormationAttackRangeAddress);
+    check(load(0x124DBAA+386)==1100 && load(rangeAddress,1)==4 &&
+          !recovery.state().runtimeConfiguration.cityPending && !recovery.state().runtimeConfiguration.formationPending,
+          "successful retry applies city and formation changes and consumes their pending state");
+    const auto message = runtime.isGameMessage(0xC001); // Earlier closed session must not leak its callback.
+    check(!message && recovery.gameMessage(0xC001,1,1), "game messages route only through the active controller");
+    check(recovery.configuration().persons.levels[0]==1 && recovery.configuration().skills.entries[0].power==77,
+          "game notification cannot replace desired input with effective state");
+    const auto epoch = core.configurationEpoch();
+    processAlive=false; allocated=false;
+    check(!recovery.skillSnapshot(snapshot) && core.configurationEpoch()!=epoch && recovery.state().inputsQueued,
+          "read-triggered process exit queues desired state for reconnection");
+    check(recovery.configuration().skills.entries[0].power==77 && recovery.configuration().persons.levels[0]==1,
+          "exit cleanup retains confirmations from the recovery interval");
+    processAlive=true; ++processCreated; version(core);
+    for (int i=0; i<6; ++i) recovery.poll();
+    check(recovery.hasGameSession() && load(0x14FDAD0+0x64)==77 && load(0x4B87EB,1)==0x85 &&
+          recovery.configuration().sources.skills==ConfigurationSource::ConfirmedFile,
+          "new process receives the newest inputs with their original application policy");
+    const auto reconnectedRange = RuntimeTestAccess2026{core}.field<DWORD>(san9::injection2026::FormationAttackRangeAddress);
+    check(load(0x124DBAA+386)==1100 && load(reconnectedRange,1)==4,
+          "new process reapplies queued city and formation confirmations");
+    const auto sources = recovery.configuration().sources.skills;
+    check(recovery.load(configurationDirectory / "absent", true, false).size()==5 &&
+          recovery.configuration().sources.skills==sources && recovery.configuration().skills.entries[0].power==77,
+          "failed reload preserves configuration and source policy");
+    check(recovery.undo(), "final controller session restores successfully");
+    resetBackend();
+    std::puts("Controller drafts, typed confirmations, snapshots, recovery queues, file policies and reconnection passed.");
+}
+
 void configFilesTest();
 int main(int argc, char** argv) {
     std::setvbuf(stdout,nullptr,_IONBF,0);
@@ -1092,6 +1249,7 @@ int main(int argc, char** argv) {
         if(argc==2 && std::strcmp(argv[1],"--dispatch")==0) {
             branchTest(false);branchTest(true);unsupportedVersionTest();return 0;
         }
+        if(argc==3 && std::strcmp(argv[1],"--controller")==0) { controllerTest(std::filesystem::absolute(argv[2])); return 0; }
         const bool all=argc==3 && std::strcmp(argv[1],"--all")==0;
         const bool quick=argc==3 && std::strcmp(argv[1],"--quick")==0;
         const bool configurationsRequested=all || quick;
@@ -1117,7 +1275,7 @@ int main(int argc, char** argv) {
         lifecycleTest();
         journalTest();
         if(configurationsRequested) {
-            configFilesTest();
+            configFilesTest(); controllerTest(configRoot);
             coreBoundaryTest();gameSnapshotsTest();appPathsTest();stateBoundsTest();gameTextTest();personSnapshotTest();siegeSelectionTest();
             for(const auto& entry:configurations) entry.run((configRoot/entry.file).string().c_str());
         }

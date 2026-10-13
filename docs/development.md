@@ -17,7 +17,7 @@
 
 在 v* 标签上运行时，独立 Release job 下载同次构建的 artifact，打包为 `San9Companion-<标签>-win-x86.zip`，创建 GitHub Release 并上传 ZIP。重复运行同一标签时更新其同名附件。构建 job 只有读取权限，Release job 才有 contents 写权限。普通 main 构建不发布 Release；手动运行时选择已存在的 v* 标签也会发布。
 
-`--ui-smoke` 创建隐藏的主窗口和编辑窗口，检查参数绑定、分页、单选组、条目切换保存和草稿隔离。该模式不轮询或连接游戏、不读取个人配置、不写 INI，也不打开文件对话框。它不代替可见界面和实机验收。
+`--ui-smoke` 创建隐藏的主窗口和编辑窗口，检查参数绑定、分页、单选组、条目切换保存和草稿隔离。该模式同时检查子窗口确认与父窗口取消的隔离语义，不轮询或连接游戏、不读取个人配置、不写 INI，也不打开文件对话框。它不代替可见界面和实机验收。
 
 CMake 在 x86 Windows 环境构建模型、核心与离线测试，不构建 GUI：
 
@@ -26,6 +26,8 @@ cmake -S . -B build/cmake-x86 -G Ninja -DCMAKE_BUILD_TYPE=Debug
 cmake --build build/cmake-x86
 ctest --test-dir build/cmake-x86 --output-on-failure
 ```
+
+运行时测试还通过假后端验证应用层的期望配置、来源策略、失败确认重试、恢复期间的输入队列、快照隔离和退出重连；专项入口为 `San9RuntimeTests.exe --controller <配置目录>`，Quick 与 Full 都包含这些检查。
 
 其他平台或 x64 仅启用纯模型目标。日常构建不需要 IDA；再生固定数据需要 `recovery/` 中保留的输入和证据。生成器不会覆盖手工注入逻辑。
 
