@@ -1195,6 +1195,55 @@ void siegeSelectionTest() {
     }
     std::puts("Focused siege-selection option checks passed; fake backend only.");
 }
+void computerWorkTimingTest() {
+    constexpr DWORD reward=0x6574F0, attack=0x6574C0;
+    for (bool improve : {false,true}) for (bool skip : {false,true}) {
+        resetBackend();
+        Runtime2026 runtime(api()); version(runtime);
+        memory[reward]=90; memory[reward+1]=30; memory[reward+2]=1;
+        memory[attack]=120; memory[attack+1]=0; memory[attack+2]=255;
+        memory[0x657658]=120; // Work code 60 has its own independent delay.
+        if (!improve || skip) runtime.setComputerWorkTiming({improve,skip});
+        initialModify(runtime);
+        check(load(reward,2)==(improve?60u:0x1E5Au) && load(attack,1)==(skip?0u:120u),
+              "computer timing defaults and all startup combinations apply");
+        for (auto next : {ComputerWorkTiming2026{!improve,!skip}, {improve,skip}}) {
+            runtime.setComputerWorkTiming(next);
+            runtime.modify(ModifyReason2026::ParametersConfirmed);
+            check(load(reward,2)==(next.improveRewards?60u:0x1E5Au) &&
+                  load(attack,1)==(next.skipAttackStartDelay?0u:120u),
+                  "computer timing options switch independently on live confirmation");
+            check(load(reward+2,1)==1 && load(attack+1,2)==0xFF00 && load(0x657658,1)==120,
+                  "timing changes preserve permissions, budgets and other work delays");
+        }
+        check(runtime.undo() && load(reward,2)==0x1E5A && load(attack,1)==120,
+              "undo restores both original timing entries");
+        version(runtime); initialModify(runtime);
+        check(load(reward,2)==(improve?60u:0x1E5Au) && load(attack,1)==(skip?0u:120u),
+              "reconnection retains both timing choices");
+        check(runtime.undo(),"timing reconnection cleanup succeeds");
+    }
+    resetBackend();
+    Runtime2026 runtime(api()); version(runtime); initialModify(runtime);
+    runtime.setComputerWorkTiming({false,true});
+    std::function<void()> failAfterReward;
+    failAfterReward=[&] {
+        if (load(reward,2)==0x1E5A) {
+            fault=Fault::Write; faultAt=calls[static_cast<size_t>(Fault::Write)]+1;
+        } else writeCallback=failAfterReward;
+    };
+    writeCallback=failAfterReward;
+    runtime.modify(ModifyReason2026::ParametersConfirmed);
+    check(fired && runtime.session().result==OperationResult2026::RolledBack &&
+          load(reward,2)==60 && load(attack,1)==120,
+          "failure between timing writes rolls both choices back to committed state");
+    fault=Fault::None;
+    runtime.modify(ModifyReason2026::ParametersConfirmed);
+    check(load(reward,2)==0x1E5A && load(attack,1)==0,"timing confirmation succeeds after rollback");
+    check(runtime.undo(),"timing failure cleanup succeeds");
+    resetBackend();
+    std::puts("Computer work timing startup, live changes, isolation, rollback and reconnection passed.");
+}
 void coreBoundaryTest() {
     resetBackend();
     auto owned = std::make_unique<Runtime2026>(api());
@@ -1373,7 +1422,7 @@ void controllerTest(const std::filesystem::path &configurationDirectory) {
     for (int i=0; i<6; ++i) controller.poll();
     check(controller.hasGameSession() && load(0x14FDAD0+0x64)==91, "reconnect restores the confirmed input, not derived state");
     auto retriedParameters = controller.configuration().parameters; retriedParameters.set(1164,1);
-    check(controller.commitParameters(retriedParameters,true), "parameter confirmation before recoverable failure");
+    check(controller.commitParameters(retriedParameters,true,{}), "parameter confirmation before recoverable failure");
     fault=Fault::Write; faultAt=calls[static_cast<size_t>(Fault::Write)]+3; partialFailure=true;
     controller.applyConfirmedConfiguration();
     check(controller.state().result==OperationResult2026::RolledBack && controller.state().confirmationPending &&
@@ -1382,11 +1431,11 @@ void controllerTest(const std::filesystem::path &configurationDirectory) {
     check(!controller.state().confirmationPending && load(4733494,2)==59792,
           "next poll retries a failed parameter confirmation instead of reporting idle success");
     auto inFlight = controller.configuration().parameters; inFlight.set(1164,0);
-    check(controller.commitParameters(inFlight,true), "submit first in-flight parameter revision");
+    check(controller.commitParameters(inFlight,true,{}), "submit first in-flight parameter revision");
     writeCallback = [&] {
         check(controller.state().phase==SessionPhase2026::Applying, "confirmation callback runs during application");
         inFlight.set(1164,1);
-        check(controller.commitParameters(inFlight,true), "new revision accepted during Applying");
+        check(controller.commitParameters(inFlight,true,{}), "new revision accepted during Applying");
     };
     controller.applyConfirmedConfiguration();
     check(controller.state().inputsQueued && controller.state().confirmationPending && load(4733494,2)==33807,
@@ -1399,13 +1448,13 @@ void controllerTest(const std::filesystem::path &configurationDirectory) {
     resetBackend();
     app::Controller recovery(api());
     auto& core = app::ControllerTestAccess::runtime(recovery);
-    check(recovery.load(configurationDirectory, true, true).empty(), "controller loads all configuration fixtures");
+    check(recovery.load(configurationDirectory, true, true,{}).empty(), "controller loads all configuration fixtures");
     check(recovery.configuration().sources.skills == ConfigurationSource::File, "file origin is explicit");
     version(core);
     for (int i=0; i<6; ++i) recovery.poll();
     check(recovery.hasGameSession() && !recovery.state().confirmationPending, "successful connection acknowledges parameters");
     auto parameters = recovery.configuration().parameters; parameters.set(1164,1);
-    check(recovery.commitParameters(parameters,true), "first parameter confirmation");
+    check(recovery.commitParameters(parameters,true,{}), "first parameter confirmation");
     fault=Fault::Write; faultAt=calls[static_cast<size_t>(Fault::Write)]+15;
     partialFailure=true; blockRecovery=true;
     recovery.applyConfirmedConfiguration();
@@ -1421,7 +1470,7 @@ void controllerTest(const std::filesystem::path &configurationDirectory) {
     auto latestPersons = recovery.configuration().persons; latestPersons.levels[0] = 1;
     auto latestCities = recovery.configuration().cities; latestCities.limits[0].income = 11;
     auto latestFormations = recovery.configuration().formations; latestFormations.entries[0].range = 4;
-    check(recovery.commitParameters(parameters,false) && recovery.commitSkills(latestSkills) &&
+    check(recovery.commitParameters(parameters,false,{false,true}) && recovery.commitSkills(latestSkills) &&
           recovery.commitPersons(latestPersons) && recovery.commitCities(latestCities,true) &&
           recovery.commitFormations(latestFormations), "all five configuration groups can queue during recovery");
     check(core.skillConfig().encode()==retainedSkill && core.personConfig().encodeLevels()==retainedPerson &&
@@ -1445,7 +1494,8 @@ void controllerTest(const std::filesystem::path &configurationDirectory) {
           "recovery stages latest city and formation confirmations with pending state");
     recovery.poll();
     check(recovery.hasGameSession() && !recovery.state().confirmationPending && load(4733494,2)==33807 &&
-          load(0x4B87EB,1)==0x85 && load(0x14FDAD0+0x64)==77,
+          load(0x4B87EB,1)==0x85 && load(0x14FDAD0+0x64)==77 &&
+          load(0x6574F0,2)==0x1E5A && load(0x6574C0,1)==0,
           "post-recovery retry commits the newest parameters, extension and skill values");
     const auto rangeAddress = RuntimeTestAccess2026{core}.field<DWORD>(san9::injection2026::FormationAttackRangeAddress);
     check(load(0x124DBAA+386)==1100 && load(rangeAddress,1)==4 &&
@@ -1464,13 +1514,14 @@ void controllerTest(const std::filesystem::path &configurationDirectory) {
     processAlive=true; ++processCreated; version(core);
     for (int i=0; i<6; ++i) recovery.poll();
     check(recovery.hasGameSession() && load(0x14FDAD0+0x64)==77 && load(0x4B87EB,1)==0x85 &&
-          recovery.configuration().sources.skills==ConfigurationSource::ConfirmedFile,
+          recovery.configuration().sources.skills==ConfigurationSource::ConfirmedFile &&
+          load(0x6574F0,2)==0x1E5A && load(0x6574C0,1)==0,
           "new process receives the newest inputs with their original application policy");
     const auto reconnectedRange = RuntimeTestAccess2026{core}.field<DWORD>(san9::injection2026::FormationAttackRangeAddress);
     check(load(0x124DBAA+386)==1100 && load(reconnectedRange,1)==4,
           "new process reapplies queued city and formation confirmations");
     const auto sources = recovery.configuration().sources.skills;
-    check(recovery.load(configurationDirectory / "absent", true, false).size()==5 &&
+    check(recovery.load(configurationDirectory / "absent", true, false,{}).size()==5 &&
           recovery.configuration().sources.skills==sources && recovery.configuration().skills.entries[0].power==77,
           "failed reload preserves configuration and source policy");
     check(recovery.undo(), "final controller session restores successfully");
@@ -1506,6 +1557,7 @@ int main(int argc, char** argv) {
             {"--config-files",configFilesTest},
             {"--journal",journalTest},{"--diagnostics",diagnosticsTest},{"--app-paths",appPathsTest},{"--core-boundary",coreBoundaryTest},{"--game-snapshots",gameSnapshotsTest},
             {"--siege-selection",siegeSelectionTest},{"--state-bounds",stateBoundsTest},{"--image-bounds",imageBoundsTest},
+            {"--computer-work-timing",computerWorkTimingTest},
             {"--game-text",gameTextTest},{"--person-snapshot",personSnapshotTest},
             {"--lifecycle",lifecycleTest}
         };
@@ -1554,7 +1606,7 @@ int main(int argc, char** argv) {
         diagnosticsTest();
         if(configurationsRequested) {
             configFilesTest(); controllerTest(configRoot);
-            coreBoundaryTest();gameSnapshotsTest();appPathsTest();stateBoundsTest();imageBoundsTest();gameTextTest();personSnapshotTest();siegeSelectionTest();
+            coreBoundaryTest();gameSnapshotsTest();appPathsTest();stateBoundsTest();imageBoundsTest();gameTextTest();personSnapshotTest();siegeSelectionTest();computerWorkTimingTest();
             for(const auto& entry:configurations) entry.run((configRoot/entry.file).string().c_str());
         }
     } catch(const std::exception& error) {

@@ -1054,7 +1054,9 @@ void Runtime2026::installGameplayPatches()
 
   writeInlineRange(0x42C250u, 42);
 
-  writeInlineRange(0x42C618u, 27);
+  // Work code 15's timing at 0x42C788 is now owned by the optional parameter phase.
+  writeInlineRange(0x42C618u, 23);
+  writeInlineRange(0x42C798u, 3);
   writePatch(*(LPVOID *)(state + 7480), stateBytes(7484, 1u), 1u);
   writePatch(*(LPVOID *)(state + 7492), stateBytes(7504, 1u), 1u);
   writePatch(*(LPVOID *)(state + 7496), stateBytes(7504, 1u), 1u);
@@ -1382,6 +1384,7 @@ void Runtime2026::applyParameterPatches()
   writePatch(*(LPVOID *)(state + san9::injection2026::MaskPersonWhereAddr), &patchValue, 1u);
   patchValue = *(_DWORD *)(state + san9::injection2026::WarFogEnabled) != 0;
   writeDescriptor(0x42A780u + 12 * (patchValue), PatchSource2026::CompanionAddress);
+  applyComputerWorkTiming();
 }
 
 void Runtime2026::writeDescriptor(DWORD address, PatchSource2026 source)
