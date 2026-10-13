@@ -1,0 +1,412 @@
+{
+  "source_database": "San9PK-TC-101.i64",
+  "scope": "Read-only original game formation-selection chain; no patches or renames applied",
+  "functions": [
+    {
+      "address": "0x4b7730",
+      "name": "sub_4B7730",
+      "pseudocode": "unsigned int __thiscall sub_4B7730(_DWORD *this, void **value)\n{\n  unsigned int result; // eax\n\n  result = sub_435120(*value);\n  if ( result <= 0xF8 )\n    *(this + result + 17) |= 1u;\n  return result;\n}\n",
+      "callers": [
+        "0x4a0bdd",
+        "0x4b53cd"
+      ]
+    },
+    {
+      "address": "0x4b7790",
+      "name": "sub_4B7790",
+      "pseudocode": "unsigned int __thiscall sub_4B7790(_DWORD *this, void **value)\n{\n  unsigned int result; // eax\n\n  result = sub_435120(*value);\n  if ( result <= 0xF8 )\n    *(this + result + 17) |= 2u;\n  return result;\n}\n",
+      "callers": [
+        "0x4b778e",
+        "0x4a0c03",
+        "0x4b53f3"
+      ]
+    },
+    {
+      "address": "0x4b7760",
+      "name": "sub_4B7760",
+      "pseudocode": "int __thiscall sub_4B7760(_DWORD *this, void **p_value)\n{\n  unsigned int v3; // eax\n\n  v3 = sub_435120(*p_value);\n  if ( v3 > 0xF8 )\n    return 0;\n  else\n    return *(this + v3 + 17) & 1;\n}\n",
+      "callers": [
+        "0x4b7ff2",
+        "0x4b8757",
+        "0x4b8bed"
+      ]
+    },
+    {
+      "address": "0x4b77c0",
+      "name": "sub_4B77C0",
+      "pseudocode": "int __thiscall sub_4B77C0(_DWORD *this, void **p_value)\n{\n  unsigned int v3; // eax\n\n  v3 = sub_435120(*p_value);\n  if ( v3 > 0xF8 )\n    return 0;\n  else\n    return *(this + v3 + 17) & 2;\n}\n",
+      "callers": [
+        "0x4b873d",
+        "0x4b87c4"
+      ]
+    },
+    {
+      "address": "0x4b85b0",
+      "name": "sub_4B85B0",
+      "pseudocode": "San9ArrayRecord *__thiscall sub_4B85B0(_DWORD *this, int a2, int i, void *value, int *a5, int a6)\n{\n  San9ArrayRecord *array_record_or_null_4; // esi\n  San9ArrayRecord *array_record_or_null_5; // ebx\n  San9ArrayRecord *array_record_or_null_7; // edi\n  int v10; // eax\n  int *v11; // edi\n  void ***v12; // ecx\n  _DWORD *v13; // ebx\n  int v14; // esi\n  San9ArrayRecord *array_record_or_null_13; // eax\n  int v16; // eax\n  int v18; // edi\n  int v19; // eax\n  BOOL v20; // edx\n  BOOL v21; // ecx\n  San9ArrayRecord *array_record_or_null_3; // eax\n  San9ArrayRecord *array_record_or_null; // esi\n  San9ArrayRecord *array_record_or_null_1; // edi\n  San9ArrayRecord *array_record_or_null_2; // ebp\n  BOOL audio_node_by_id_w; // esi\n  BOOL v27; // ebx\n  BOOL v28; // eax\n  BOOL v29; // ebp\n  unsigned int n20; // edi\n  San9ArrayRecord *array_record_or_null_9; // [esp+10h] [ebp-108h]\n  San9ArrayRecord *array_record_or_null_12; // [esp+14h] [ebp-104h]\n  San9ArrayRecord *array_record_or_null_11; // [esp+18h] [ebp-100h]\n  BOOL v34; // [esp+1Ch] [ebp-FCh]\n  _DWORD *v36; // [esp+20h] [ebp-F8h]\n  BOOL v37; // [esp+24h] [ebp-F4h]\n  BOOL v38; // [esp+28h] [ebp-F0h]\n  San9ArrayRecord *array_record_or_null_6; // [esp+2Ch] [ebp-ECh]\n  BOOL v40; // [esp+30h] [ebp-E8h]\n  BOOL v41; // [esp+34h] [ebp-E4h]\n  San9ArrayRecord *array_record_or_null_10; // [esp+38h] [ebp-E0h]\n  void **v43[8]; // [esp+3Ch] [ebp-DCh] BYREF\n  San9ArrayRecord *array_record_or_null_8; // [esp+5Ch] [ebp-BCh]\n  int v45; // [esp+60h] [ebp-B8h]\n  void **v46[8]; // [esp+64h] [ebp-B4h] BYREF\n  void **v47[8]; // [esp+84h] [ebp-94h] BYREF\n  void **list_; // [esp+A4h] [ebp-74h] BYREF\n  _DWORD *v49; // [esp+A8h] [ebp-70h]\n  void **v50[8]; // [esp+C4h] [ebp-54h] BYREF\n  _DWORD v51[3]; // [esp+E4h] [ebp-34h] BYREF\n  _DWORD v52[3]; // [esp+F0h] [ebp-28h] BYREF\n  _DWORD v53[4]; // [esp+FCh] [ebp-1Ch] BYREF\n  int v54; // [esp+114h] [ebp-4h]\n\n  CPersonData_ctor(v47);\n  v54 = 0;\n  sub_46F750(v47, (_DWORD *)(a2 + 64), 0x7FFFFFFF);\n  CJinkeiData_ctor(v43);\n  LOBYTE(v54) = 1;\n  if ( !a6 )\n  {\n    sub_470200(v43, (int)v47);\n    sub_46DEB0(v52, 0, i);\n    CJinkeiData_ctor(v50);\n    LOBYTE(v54) = 4;\n    sub_46F330(v50, v43, sub_46FFD0, v52, 0);\n    array_record_or_null = get_array_record_or_null(0x15u);\n    array_record_or_null_1 = get_array_record_or_null(0x16u);\n    array_record_or_null_2 = get_array_record_or_null(0x17u);\n    audio_node_by_id_w = find_audio_node_by_id_w(v50, (int)array_record_or_null);\n    v27 = find_audio_node_by_id_w(v50, (int)array_record_or_null_1);\n    v28 = find_audio_node_by_id_w(v50, (int)array_record_or_null_2);\n    v29 = v28;\n    n20 = 20;\n    if ( (audio_node_by_id_w || v27 || v28) && get_region_building_fixed_type_code(a5) == 1 && sub_4B7760(this, &value) )\n    {\n      if ( v29 )\n      {\n        n20 = 23;\n      }\n      else if ( v27 )\n      {\n        n20 = 22;\n      }\n      else if ( audio_node_by_id_w )\n      {\n        n20 = 21;\n      }\n    }\n    array_record_or_null_3 = get_array_record_or_null(n20);\n    v12 = v50;\n    goto LABEL_63;\n  }\n  sub_4701E0(v43, (int)v47);\n  sub_46DEB0(v51, 0, i);\n  CJinkeiData_ctor(v46);\n  LOBYTE(v54) = 2;\n  sub_46F330(v46, v43, sub_46FFD0, v51, 0);\n  array_record_or_null_4 = get_array_record_or_null(6u);\n  array_record_or_null_5 = get_array_record_or_null(0xBu);\n  array_record_or_null_6 = array_record_or_null_5;\n  array_record_or_null_7 = get_array_record_or_null(9u);\n  array_record_or_null_8 = array_record_or_null_7;\n  array_record_or_null_9 = get_array_record_or_null(0xAu);\n  array_record_or_null_10 = get_array_record_or_null(2u);\n  array_record_or_null_11 = get_array_record_or_null(5u);\n  array_record_or_null_12 = get_array_record_or_null(8u);\n  v41 = find_audio_node_by_id_w(v46, (int)array_record_or_null_5);\n  v40 = find_audio_node_by_id_w(v46, (int)array_record_or_null_7);\n  v34 = find_audio_node_by_id_w(v46, (int)array_record_or_null_9);\n  v36 = (_DWORD *)find_audio_node_by_id_w(v46, (int)array_record_or_null_10);\n  v38 = find_audio_node_by_id_w(v46, (int)array_record_or_null_11);\n  v37 = find_audio_node_by_id_w(v46, (int)array_record_or_null_12);\n  v10 = sub_4B77C0(this, &value);\n  v11 = a5;\n  if ( v10 || !sub_4B7760(this, &value) || get_region_building_fixed_type_code(v11) != 1 )\n  {\n    if ( !v41 && !v40 && !v34 )\n    {\nLABEL_30:\n      v18 = count_selected_tactics_by_system((int *)(a2 + 44), 2);\n      v19 = count_selected_tactics_by_system((int *)(a2 + 44), 3);\n      if ( v18 <= 0 || v19 > 0 )\n      {\n        v20 = v37;\n        v21 = v34;\n      }\n      else\n      {\n        v20 = v37;\n        if ( v37 )\n          goto LABEL_45;\n        v21 = v34;\n        if ( v34 )\n          goto LABEL_28;\n        if ( v36 )\n        {\n          LOBYTE(v54) = 1;\n          sub_46FF80(v46);\n          LOBYTE(v54) = 0;\n          sub_46FF80(v43);\n          v54 = -1;\n          CPersonData_dtor(v47);\n          return array_record_or_null_10;\n        }\n      }\n      if ( v18 < 0 )\n      {\nLABEL_43:\n        if ( v19 <= 0 )\n          goto LABEL_48;\n        if ( v20 )\n          goto LABEL_45;\n        if ( v21 )\n          goto LABEL_28;\n        if ( !v38 )\n          goto LABEL_48;\nLABEL_49:\n        LOBYTE(v54) = 1;\n        sub_46FF80(v46);\n        LOBYTE(v54) = 0;\n        sub_46FF80(v43);\n        v54 = -1;\n        CPersonData_dtor(v47);\n        return array_record_or_null_11;\n      }\n      if ( v19 <= 0 )\n      {\nLABEL_42:\n        if ( v18 > 0 )\n        {\nLABEL_48:\n          if ( !v43[3] )\n            goto LABEL_49;\n          sub_46F610((int *)v43, (int (__cdecl *)(_DWORD *))&dword_470014[19], 0);\n          array_record_or_null_3 = (San9ArrayRecord *)validate_person_object_reference(\n                                                        &runtime_class_CJinkeiData,\n                                                        *((int (__thiscall ****)(_DWORD))v43[1] + 2));// \"CJinkeiData\"\n          v12 = v46;\nLABEL_63:\n          array_record_or_null_4 = array_record_or_null_3;\n          goto LABEL_64;\n        }\n        goto LABEL_43;\n      }\n      if ( !v20 )\n      {\n        if ( v21 )\n          goto LABEL_28;\n        if ( v38 )\n          goto LABEL_49;\n        goto LABEL_42;\n      }\nLABEL_45:\n      LOBYTE(v54) = 1;\n      sub_46FF80(v46);\n      LOBYTE(v54) = 0;\n      sub_46FF80(v43);\n      v54 = -1;\n      CPersonData_dtor(v47);\n      return array_record_or_null_12;\n    }\n    v45 = 0;\n    sub_4730F0(v53, (int)v11);\n    sub_473CC0(&list_);\n    LOBYTE(v54) = 3;\n    if ( !sub_4B77C0(this, &value) )\n    {\n      if ( sub_46F280(&list_, sub_4B0770, v53, 0) <= 0 )\n        goto LABEL_29;\n      v13 = v49;\n      if ( !v49 )\n        goto LABEL_29;\n      do\n      {\n        v14 = v13[2];\n        v13 = (_DWORD *)*v13;\n        if ( !v14\n          || !(*(int (__thiscall **)(int))(*(_DWORD *)v14 + 16))(v14)\n          || !sub_5DED60((int (__thiscall ***)(_DWORD))v14, &runtime_class_CUnitData) )// \"CUnitData\"\n        {\n          v14 = 0;\n        }\n        array_record_or_null_13 = *(San9ArrayRecord **)(v14 + 108);\n        if ( array_record_or_null_13 == array_record_or_null_6 || array_record_or_null_13 == array_record_or_null_8 )\n        {\n          v16 = (*(int (__thiscall **)(int *))(*v11 + 80))(v11);\n          v45 = kakuritsu((500 - v16) / 5);\n        }\n      }\n      while ( v13 );\n      if ( !v45 )\n      {\nLABEL_29:\n        LOBYTE(v54) = 2;\n        sub_473CE0(&list_);\n        goto LABEL_30;\n      }\n      array_record_or_null_5 = array_record_or_null_6;\n    }\n    if ( v41 )\n    {\n      LOBYTE(v54) = 2;\n      sub_473CE0(&list_);\n      LOBYTE(v54) = 1;\n      sub_46FF80(v46);\n      LOBYTE(v54) = 0;\n      sub_46FF80(v43);\n      v54 = -1;\n      CPersonData_dtor(v47);\n      return array_record_or_null_5;\n    }\n    if ( v40 )\n    {\n      LOBYTE(v54) = 2;\n      sub_473CE0(&list_);\n      LOBYTE(v54) = 1;\n      sub_46FF80(v46);\n      LOBYTE(v54) = 0;\n      sub_46FF80(v43);\n      v54 = -1;\n      CPersonData_dtor(v47);\n      return array_record_or_null_8;\n    }\n    if ( v34 )\n    {\n      LOBYTE(v54) = 2;\n      sub_473CE0(&list_);\nLABEL_28:\n      LOBYTE(v54) = 1;\n      sub_46FF80(v46);\n      LOBYTE(v54) = 0;\n      sub_46FF80(v43);\n      v54 = -1;\n      CPersonData_dtor(v47);\n      return array_record_or_null_9;\n    }\n    goto LABEL_29;\n  }\n  v12 = v46;\nLABEL_64:\n  LOBYTE(v54) = 1;\n  sub_46FF80(v12);\n  LOBYTE(v54) = 0;\n  sub_46FF80(v43);\n  v54 = -1;\n  CPersonData_dtor(v47);\n  return array_record_or_null_4;\n}\n",
+      "callers": [
+        "0x4b9ea3",
+        "0x4b9ec8"
+      ]
+    },
+    {
+      "address": "0x4b0770",
+      "name": "sub_4B0770",
+      "pseudocode": "int __cdecl sub_4B0770(_DWORD *a1)\n{\n  int v1; // esi\n  int v2; // eax\n  unsigned int index; // eax\n  void *zone_record; // esi\n  BOOL v5; // eax\n  _DWORD self[2]; // [esp+8h] [ebp-24h] BYREF\n  unsigned int index_1; // [esp+10h] [ebp-1Ch]\n  int n38; // [esp+14h] [ebp-18h]\n  int v10; // [esp+28h] [ebp-4h]\n\n  v1 = *a1;\n  if ( !*a1\n    || !(*(int (__thiscall **)(_DWORD))(*(_DWORD *)v1 + 16))(*a1)\n    || !sub_5DED60((int (__thiscall ***)(_DWORD))v1, &runtime_class_CUnitData) )// \"CUnitData\"\n  {\n    v1 = 0;\n  }\n  v2 = *(_DWORD *)(v1 + 32);\n  if ( (v2 & 8) == 0 || (v2 & 2) != 0 )\n    return 0;\n  command_event_record_base_ctor(self);\n  v10 = 0;\n  sub_45EED0((_DWORD *)v1, self, 1);\n  index = index_1;\n  if ( index_1 == -1 )\n    index = self[1];\n  if ( n38 == 38 )\n  {\n    if ( HIWORD(index) == 4 )\n    {\n      zone_record = get_zone_record((unsigned __int16)index);\n      v5 = sub_405840((int)zone_record);\n      goto LABEL_14;\n    }\n    if ( HIWORD(index) == 5 )\n    {\n      zone_record = get_city_record((unsigned __int16)index);\n      v5 = sub_405840((int)zone_record);\nLABEL_14:\n      if ( v5 && zone_record == (void *)a1[3] )\n      {\n        v10 = -1;\n        command_event_record_base_dtor(self);\n        return 1;\n      }\n    }\n  }\n  v10 = -1;\n  command_event_record_base_dtor(self);\n  return 0;\n}\n",
+      "callers": [
+        "0x49f1bd",
+        "0x4a380b",
+        "0x4a38f8",
+        "0x4a3d35",
+        "0x4a3f5d",
+        "0x4ae789",
+        "0x4b405b",
+        "0x4b40ce",
+        "0x4b58e2",
+        "0x4b785c",
+        "0x4b87da"
+      ]
+    },
+    {
+      "address": "0x435630",
+      "name": "?get_bit_data@@YAHGG@Z_w",
+      "pseudocode": "// [RE-SAN9PK-0057][FACT] CCityData vslot +0x50 returns current durability from runtime +0x3C, masked to 15 bits.\nint __thiscall get_bit_data(unsigned __int16 *this)\n{\n  return get_bit_data(*(this + 30), 0x7FFFu);\n}\n",
+      "callers": [
+        "0x605178",
+        "0x6052e8",
+        "0x605988"
+      ]
+    },
+    {
+      "address": "0x46ffd0",
+      "name": "sub_46FFD0",
+      "pseudocode": "BOOL __cdecl sub_46FFD0(_DWORD *a1)\n{\n  int v1; // esi\n  int v2; // eax\n\n  v1 = *a1;\n  if ( *a1 == 0\n    || (*(int (__thiscall **)(_DWORD))(*(_DWORD *)v1 + 16))(*a1) == 0\n    || sub_5DED60((int (__thiscall ***)(_DWORD))v1, &runtime_class_CJinkeiData) == 0 )\n  {\n    v1 = 0;\n  }\n  v2 = *(_DWORD *)(v1 + 120);\n  return a1[1] <= v2 && v2 <= a1[2];\n}\n/* Orphan comments:\n\"CJinkeiData\"\n*/\n",
+      "callers": [
+        "0x4a232c",
+        "0x4b9744"
+      ]
+    }
+  ],
+  "patch_site": {
+    "address": "0x4B87EB",
+    "original_bytes": "85c00f8e9c010000",
+    "companion_replacement_first_byte": "33"
+  },
+  "selection_disassembly": [
+    {
+      "address": "0x4b87b2",
+      "bytes": "8d942424010000",
+      "instruction": "lea     edx, [esp+118h+value]"
+    },
+    {
+      "address": "0x4b87b9",
+      "bytes": "52",
+      "instruction": "push    edx; p_value"
+    },
+    {
+      "address": "0x4b87ba",
+      "bytes": "8bcd",
+      "instruction": "mov     ecx, ebp; this"
+    },
+    {
+      "address": "0x4b87bc",
+      "bytes": "c684241801000003",
+      "instruction": "mov     byte ptr [esp+11Ch+var_4], 3"
+    },
+    {
+      "address": "0x4b87c4",
+      "bytes": "e8f7efffff",
+      "instruction": "call    sub_4B77C0"
+    },
+    {
+      "address": "0x4b87c9",
+      "bytes": "85c0",
+      "instruction": "test    eax, eax"
+    },
+    {
+      "address": "0x4b87cb",
+      "bytes": "0f85a6000000",
+      "instruction": "jnz     loc_4B8877"
+    },
+    {
+      "address": "0x4b87d1",
+      "bytes": "50",
+      "instruction": "push    eax"
+    },
+    {
+      "address": "0x4b87d2",
+      "bytes": "8d842400010000",
+      "instruction": "lea     eax, [esp+11Ch+var_1C]"
+    },
+    {
+      "address": "0x4b87d9",
+      "bytes": "50",
+      "instruction": "push    eax"
+    },
+    {
+      "address": "0x4b87da",
+      "bytes": "6870074b00",
+      "instruction": "push    offset sub_4B0770"
+    },
+    {
+      "address": "0x4b87df",
+      "bytes": "8d8c24b0000000",
+      "instruction": "lea     ecx, [esp+124h+var_74]"
+    },
+    {
+      "address": "0x4b87e6",
+      "bytes": "e8956afbff",
+      "instruction": "call    sub_46F280"
+    },
+    {
+      "address": "0x4b87eb",
+      "bytes": "85c0",
+      "instruction": "test    eax, eax"
+    },
+    {
+      "address": "0x4b87ed",
+      "bytes": "0f8e9c010000",
+      "instruction": "jle     loc_4B898F"
+    },
+    {
+      "address": "0x4b87f3",
+      "bytes": "8b9c24a8000000",
+      "instruction": "mov     ebx, [esp+118h+var_70]"
+    },
+    {
+      "address": "0x4b87fa",
+      "bytes": "85db",
+      "instruction": "test    ebx, ebx"
+    },
+    {
+      "address": "0x4b87fc",
+      "bytes": "0f848d010000",
+      "instruction": "jz      loc_4B898F"
+    },
+    {
+      "address": "0x4b8802",
+      "bytes": "8bc3",
+      "instruction": "mov     eax, ebx"
+    },
+    {
+      "address": "0x4b8804",
+      "bytes": "8b7008",
+      "instruction": "mov     esi, [eax+8]"
+    },
+    {
+      "address": "0x4b8807",
+      "bytes": "85f6",
+      "instruction": "test    esi, esi"
+    },
+    {
+      "address": "0x4b8809",
+      "bytes": "8b1b",
+      "instruction": "mov     ebx, [ebx]"
+    },
+    {
+      "address": "0x4b880b",
+      "bytes": "741b",
+      "instruction": "jz      short loc_4B8828"
+    },
+    {
+      "address": "0x4b880d",
+      "bytes": "8b16",
+      "instruction": "mov     edx, [esi]"
+    },
+    {
+      "address": "0x4b880f",
+      "bytes": "8bce",
+      "instruction": "mov     ecx, esi"
+    },
+    {
+      "address": "0x4b8811",
+      "bytes": "ff5210",
+      "instruction": "call    dword ptr [edx+10h]"
+    },
+    {
+      "address": "0x4b8814",
+      "bytes": "85c0",
+      "instruction": "test    eax, eax"
+    },
+    {
+      "address": "0x4b8816",
+      "bytes": "7410",
+      "instruction": "jz      short loc_4B8828"
+    },
+    {
+      "address": "0x4b8818",
+      "bytes": "686c646000",
+      "instruction": "push    offset runtime_class_CUnitData"
+    },
+    {
+      "address": "0x4b881d",
+      "bytes": "8bce",
+      "instruction": "mov     ecx, esi"
+    },
+    {
+      "address": "0x4b881f",
+      "bytes": "e83c651200",
+      "instruction": "call    sub_5DED60"
+    },
+    {
+      "address": "0x4b8824",
+      "bytes": "85c0",
+      "instruction": "test    eax, eax"
+    },
+    {
+      "address": "0x4b8826",
+      "bytes": "7502",
+      "instruction": "jnz     short loc_4B882A"
+    },
+    {
+      "address": "0x4b8828",
+      "bytes": "33f6",
+      "instruction": "xor     esi, esi"
+    },
+    {
+      "address": "0x4b882a",
+      "bytes": "8b466c",
+      "instruction": "mov     eax, [esi+6Ch]"
+    },
+    {
+      "address": "0x4b882d",
+      "bytes": "3b44242c",
+      "instruction": "cmp     eax, [esp+118h+var_EC]"
+    },
+    {
+      "address": "0x4b8831",
+      "bytes": "7406",
+      "instruction": "jz      short loc_4B8839"
+    },
+    {
+      "address": "0x4b8833",
+      "bytes": "3b44245c",
+      "instruction": "cmp     eax, [esp+118h+var_BC]"
+    },
+    {
+      "address": "0x4b8837",
+      "bytes": "752a",
+      "instruction": "jnz     short loc_4B8863"
+    },
+    {
+      "address": "0x4b8839",
+      "bytes": "8b07",
+      "instruction": "mov     eax, [edi]"
+    },
+    {
+      "address": "0x4b883b",
+      "bytes": "8bcf",
+      "instruction": "mov     ecx, edi"
+    },
+    {
+      "address": "0x4b883d",
+      "bytes": "ff5050",
+      "instruction": "call    dword ptr [eax+50h]"
+    },
+    {
+      "address": "0x4b8840",
+      "bytes": "b9f4010000",
+      "instruction": "mov     ecx, 1F4h"
+    },
+    {
+      "address": "0x4b8845",
+      "bytes": "2bc8",
+      "instruction": "sub     ecx, eax"
+    },
+    {
+      "address": "0x4b8847",
+      "bytes": "b867666666",
+      "instruction": "mov     eax, 66666667h"
+    },
+    {
+      "address": "0x4b884c",
+      "bytes": "f7e9",
+      "instruction": "imul    ecx"
+    },
+    {
+      "address": "0x4b884e",
+      "bytes": "d1fa",
+      "instruction": "sar     edx, 1"
+    },
+    {
+      "address": "0x4b8850",
+      "bytes": "8bca",
+      "instruction": "mov     ecx, edx"
+    },
+    {
+      "address": "0x4b8852",
+      "bytes": "c1e91f",
+      "instruction": "shr     ecx, 1Fh"
+    },
+    {
+      "address": "0x4b8855",
+      "bytes": "03d1",
+      "instruction": "add     edx, ecx"
+    },
+    {
+      "address": "0x4b8857",
+      "bytes": "52",
+      "instruction": "push    edx"
+    },
+    {
+      "address": "0x4b8858",
+      "bytes": "8bcd",
+      "instruction": "mov     ecx, ebp"
+    },
+    {
+      "address": "0x4b885a",
+      "bytes": "e89167ffff",
+      "instruction": "call    ?kakuritsu@@YAHHW4RANDOM_KIND@@H@Z_w"
+    },
+    {
+      "address": "0x4b885f",
+      "bytes": "89442460",
+      "instruction": "mov     [esp+118h+var_B8], eax"
+    },
+    {
+      "address": "0x4b8863",
+      "bytes": "85db",
+      "instruction": "test    ebx, ebx"
+    },
+    {
+      "address": "0x4b8865",
+      "bytes": "759b",
+      "instruction": "jnz     short loc_4B8802"
+    },
+    {
+      "address": "0x4b8867",
+      "bytes": "8b442460",
+      "instruction": "mov     eax, [esp+118h+var_B8]"
+    },
+    {
+      "address": "0x4b886b",
+      "bytes": "85c0",
+      "instruction": "test    eax, eax"
+    },
+    {
+      "address": "0x4b886d",
+      "bytes": "0f841c010000",
+      "instruction": "jz      loc_4B898F"
+    },
+    {
+      "address": "0x4b8873",
+      "bytes": "8b5c242c",
+      "instruction": "mov     ebx, [esp+118h+var_EC]"
+    },
+    {
+      "address": "0x4b8877",
+      "bytes": "8b442434",
+      "instruction": "mov     eax, [esp+118h+var_E4]"
+    },
+    {
+      "address": "0x4b887b",
+      "bytes": "85c0",
+      "instruction": "test    eax, eax"
+    },
+    {
+      "address": "0x4b887d",
+      "bytes": "7454",
+      "instruction": "jz      short loc_4B88D3"
+    }
+  ]
+}

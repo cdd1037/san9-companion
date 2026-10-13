@@ -1,0 +1,3192 @@
+{
+  "fields": {
+    "148": {
+      "name": "EnableTrainEnabled",
+      "legacy": "m_bEnableTrain",
+      "evidence": "parameter control 1013: 开启小兵培养"
+    },
+    "152": {
+      "name": "NpcAllieAttackEnabled",
+      "legacy": "m_bNpcAllieAttack",
+      "evidence": "parameter control 1033: 电脑群攻"
+    },
+    "156": {
+      "name": "SubCounsellorJudgeEnabled",
+      "legacy": "m_bSubCounsellorJudge",
+      "evidence": "parameter control 1049: 军师准确判断的智力=110"
+    },
+    "160": {
+      "name": "AddNpcMoneyFoodEnabled",
+      "legacy": "m_bAddNpcMoneyFood",
+      "evidence": "parameter control 1046: 加倍电脑钱粮收入"
+    },
+    "164": {
+      "name": "EnableRelayDispatchEnabled",
+      "legacy": "m_bEnableRelayDispatch",
+      "evidence": "parameter control 1052: 允许电脑接力救援"
+    },
+    "168": {
+      "name": "DispatchSoldierToPlayerEnabled",
+      "legacy": "m_bDispatchSoldierToPlayer",
+      "evidence": "parameter control 1053: 电脑与玩家势力接壤的都设重点部署兵力"
+    },
+    "172": {
+      "name": "DisableSearchEventEnabled",
+      "legacy": "m_bDisableSearchEvent",
+      "evidence": "parameter control 1054: 禁止“遇到华佗”"
+    },
+    "176": {
+      "name": "EnableBaramArrayEnabled",
+      "legacy": "m_bEnableBaramArray",
+      "evidence": "parameter control 1047: 启用电脑蛮族阵型"
+    },
+    "180": {
+      "name": "SubRobFoodEnabled",
+      "legacy": "m_bSubRobFood",
+      "evidence": "parameter control 1057: 减少玩家攻陷都市时所获钱粮"
+    },
+    "184": {
+      "name": "WarFogEnabled",
+      "legacy": "m_bWarFog",
+      "evidence": "parameter control 1059: 开启迷雾"
+    },
+    "188": {
+      "name": "NotSureCaptiveEnabled",
+      "legacy": "m_bNotSureCaptive",
+      "evidence": "parameter control 1063: 玩家按常规概率抓获灭亡势力的武将"
+    },
+    "192": {
+      "name": "NullCitySubMunicipalEnabled",
+      "legacy": "m_bNullCitySubMunicipal",
+      "evidence": "parameter control 1065: 无守将都市减少内政"
+    },
+    "196": {
+      "name": "NpcSearchTreasureEnabled",
+      "legacy": "m_bNpcSearchTreasure",
+      "evidence": "parameter control 1066: 电脑可探索宝物"
+    },
+    "200": {
+      "name": "NpcAutoDraftEnabled",
+      "legacy": "m_bNpcAutoDraft",
+      "evidence": "parameter control 1068: 电脑自动征兵"
+    },
+    "204": {
+      "name": "DisableMovePersonEnabled",
+      "legacy": "m_bDisableMovePerson",
+      "evidence": "parameter control 1073: 禁止武将飞调"
+    },
+    "208": {
+      "name": "AllPersonLiveEnabled",
+      "legacy": "m_bAllPersonLive",
+      "evidence": "parameter control 1017: 武将长生不老"
+    },
+    "212": {
+      "name": "AllPersonDeadEnabled",
+      "legacy": "m_bAllPersonDead",
+      "evidence": "parameter control 1018: 高能武将可阵亡"
+    },
+    "216": {
+      "name": "DisableAlienateEnabled",
+      "legacy": "m_bDisableAlienate",
+      "evidence": "parameter control 1032: 禁止电脑离间"
+    },
+    "220": {
+      "name": "SoldierCommandKillerEnabled",
+      "legacy": "m_bSoldierCommandKiller",
+      "evidence": "parameter control 1015: 士兵数和统率增加兵法伤害"
+    },
+    "224": {
+      "name": "SecondKillerEnabled",
+      "legacy": "m_bSecondKiller",
+      "evidence": "parameter control 1029: “第二兵法”系统"
+    },
+    "228": {
+      "name": "FriendToAlienateEnabled",
+      "legacy": "m_bFriendToAlienate",
+      "evidence": "parameter control 1034: 武将与君主的相性差影响离间和登用"
+    },
+    "232": {
+      "name": "SubWoundSoldierEnabled",
+      "legacy": "m_bSubWoundSoldier",
+      "evidence": "parameter control 1030: 减少伤兵率"
+    },
+    "236": {
+      "name": "DisableNpcPlotForceEnabled",
+      "legacy": "m_bDisableNpcPlotForce",
+      "evidence": "parameter control 1037: 禁止电脑划分军团"
+    },
+    "240": {
+      "name": "BurnFoodEnabled",
+      "legacy": "m_bBurnFood",
+      "evidence": "parameter control 1038: 烧夷增加烧兵粮效果"
+    },
+    "244": {
+      "name": "DisableBurnEnabled",
+      "legacy": "m_bDisableBurn",
+      "evidence": "parameter control 1040: 禁止电脑烧夷"
+    },
+    "248": {
+      "name": "MunicipalDraftEnabled",
+      "legacy": "m_bMunicipalDraft",
+      "evidence": "parameter control 1042: 禁止玩家委任军团运输和救援"
+    },
+    "252": {
+      "name": "DoubleBuildingDefenseEnabled",
+      "legacy": "m_bDoubleBuildingDefense",
+      "evidence": "parameter control 1048: 增加耐久的普防系数"
+    },
+    "256": {
+      "name": "NotAddDraftEnabled",
+      "legacy": "m_bNotAddDraft",
+      "evidence": "parameter control 1050: 都市兵役人口不累加"
+    },
+    "260": {
+      "name": "AlikeKillerLinkageEnabled",
+      "legacy": "m_bAlikeKillerLinkage",
+      "evidence": "parameter control 1051: 同系物理兵法联动"
+    },
+    "264": {
+      "name": "DynamicAddProficiencyEnabled",
+      "legacy": "m_bDynamicAddProficiency",
+      "evidence": "parameter control 1031: 动态增加兵法熟练度"
+    },
+    "268": {
+      "name": "DynamicAddAbilityEnabled",
+      "legacy": "m_bDynamicAddAbility",
+      "evidence": "parameter control 1041: 动态增加武将能力"
+    },
+    "272": {
+      "name": "ChangeTroopCommandEnabled",
+      "legacy": "m_bChangeTroopCommand",
+      "evidence": "parameter control 1043: 部队最高统率决定部队普通攻防"
+    },
+    "276": {
+      "name": "SearchMaxAbilityEnabled",
+      "legacy": "m_bSearchMaxAbility",
+      "evidence": "parameter control 1044: 增加武将能力上限"
+    },
+    "280": {
+      "name": "WeakenLongRangeKillerEnabled",
+      "legacy": "m_bWeakenLongRangeKiller",
+      "evidence": "parameter control 1055: 减少远程兵法对设施的伤害"
+    },
+    "284": {
+      "name": "MunicipalForceDraftEnabled",
+      "legacy": "m_bMunicipalForceDraft",
+      "evidence": "parameter control 1056: 重视内政委任军团可征兵"
+    },
+    "288": {
+      "name": "UpdateWaterKillerPropEnabled",
+      "legacy": "m_bUpdateWaterKillerProp",
+      "evidence": "parameter control 1058: 调整水军兵法发动率"
+    },
+    "292": {
+      "name": "MinDurabilityZeroEnabled",
+      "legacy": "m_bMinDurabilityZero",
+      "evidence": "parameter control 1060: 设施耐久为0即破城"
+    },
+    "296": {
+      "name": "UpdateZoneCityEnabled",
+      "legacy": "m_bUpdateZoneCity",
+      "evidence": "parameter control 1061: 修正地域所属都市"
+    },
+    "300": {
+      "name": "FightKillerPropEnabled",
+      "legacy": "m_bFightKillerProp",
+      "evidence": "parameter control 1062: 士气影响兵法发动率"
+    },
+    "304": {
+      "name": "GooseKillerLinkageEnabled",
+      "legacy": "m_bGooseKillerLinkage",
+      "evidence": "parameter control 1064: 萁型利于兵法联动雁行附加阻击概率"
+    },
+    "308": {
+      "name": "SoldierSubKillerEnabled",
+      "legacy": "m_bSoldierSubKiller",
+      "evidence": "parameter control 1067: 士兵数减少兵法伤害"
+    },
+    "312": {
+      "name": "PlayerAutoProcessEnabled",
+      "legacy": "m_bPlayerAutoProcess",
+      "evidence": "parameter control 1069: 玩家自动内政"
+    },
+    "316": {
+      "name": "LowDurabilityChaosEnabled",
+      "legacy": "m_bLowDurabilityChaos",
+      "evidence": "parameter control 1070: 都设耐久很低时较易陷入混乱"
+    },
+    "320": {
+      "name": "LeaderInspireEnabled",
+      "legacy": "m_bLeaderInspire",
+      "evidence": "parameter control 1071: 君主/都督交战时随机发动鼓舞"
+    },
+    "324": {
+      "name": "DisableKillPersonEnabled",
+      "legacy": "m_bDisableKillPerson",
+      "evidence": "parameter control 1016: 禁止电脑处斩俘虏"
+    },
+    "328": {
+      "name": "KillAddProficiencyEnabled",
+      "legacy": "m_bKillAddProficiency",
+      "evidence": "parameter control 1072: 发动兵法时才增加兵法熟练度"
+    },
+    "332": {
+      "name": "GeneralDeadEnabled",
+      "legacy": "m_bGeneralDead",
+      "evidence": "parameter control 1019: 部队大将可阵亡"
+    },
+    "336": {
+      "name": "AbilityKillerPropEnabled",
+      "legacy": "m_bAbilityKillerProp",
+      "evidence": "parameter control 1074: 统率和智力影响兵法发动概率"
+    },
+    "340": {
+      "name": "BarbarianNotDisappearEnabled",
+      "legacy": "m_bBarbarianNotDisappear",
+      "evidence": "parameter control 1158: 蛮族灭亡武将不消失"
+    },
+    "344": {
+      "name": "AddKillerJianyuEnabled",
+      "legacy": "m_bAddKillerJianyu",
+      "evidence": "parameter control 1159: 艨艟可以发动“箭雨”"
+    },
+    "348": {
+      "name": "DisableKillerJianlanEnabled",
+      "legacy": "m_bDisableKillerJianlan",
+      "evidence": "parameter control 1160: 鬥舰不能发动“箭岚”"
+    },
+    "352": {
+      "name": "NotDisplaySlashEnabled",
+      "legacy": "m_bNotDisplaySlash",
+      "evidence": "parameter control 1161: 不观看单挑过程"
+    },
+    "356": {
+      "name": "NotDisplayExchangeEnabled",
+      "legacy": "m_bNotDisplayExchange",
+      "evidence": "parameter control 1162: 简化俘虏交还对话"
+    },
+    "360": {
+      "name": "EnableCityPopulationCoefEnabled",
+      "legacy": "m_bEnableCityPopulationCoef",
+      "evidence": "parameter control 1163: 启用都市人口系数"
+    },
+    "364": {
+      "name": "Parameter1164",
+      "legacy": null,
+      "evidence": "parameter control 1164: 禁止电脑势力合并"
+    },
+    "368": {
+      "name": "Parameter1165",
+      "legacy": null,
+      "evidence": "parameter control 1165: 电脑出征部队数目不限"
+    },
+    "372": {
+      "name": "MoneyCut1",
+      "legacy": "m_uMoneyCut_1",
+      "evidence": "parameter control 1020: "
+    },
+    "376": {
+      "name": "MoneyCut2",
+      "legacy": "m_uMoneyCut_2",
+      "evidence": "parameter control 1021: "
+    },
+    "380": {
+      "name": "MoneyCut3",
+      "legacy": "m_uMoneyCut_3",
+      "evidence": "parameter control 1022: "
+    },
+    "384": {
+      "name": "FoodCut1",
+      "legacy": "m_uFoodCut_1",
+      "evidence": "parameter control 1023: "
+    },
+    "388": {
+      "name": "FoodCut2",
+      "legacy": "m_uFoodCut_2",
+      "evidence": "parameter control 1024: "
+    },
+    "392": {
+      "name": "FoodCut3",
+      "legacy": "m_uFoodCut_3",
+      "evidence": "parameter control 1025: "
+    },
+    "396": {
+      "name": "DraftCut1",
+      "legacy": "m_uDraftCut_1",
+      "evidence": "parameter control 1026: "
+    },
+    "400": {
+      "name": "DraftCut2",
+      "legacy": "m_uDraftCut_2",
+      "evidence": "parameter control 1027: "
+    },
+    "404": {
+      "name": "DraftCut3",
+      "legacy": "m_uDraftCut_3",
+      "evidence": "parameter control 1028: "
+    },
+    "408": {
+      "name": "YearDifference",
+      "legacy": "m_iYearDifference",
+      "evidence": "parameter control 1039: "
+    },
+    "412": {
+      "name": "KillerPowerCoef",
+      "legacy": "m_uKillerPowerCoef",
+      "evidence": "parameter control 1045: "
+    },
+    "416": {
+      "name": "SlashDeadCoef",
+      "legacy": "m_uSlashDeadCoef",
+      "evidence": "parameter control 1137: "
+    },
+    "420": {
+      "name": "NoOfficialSalary",
+      "legacy": "m_uNoOfficialSalary",
+      "evidence": "parameter control 1138: "
+    },
+    "424": {
+      "name": "BlockPropCoef",
+      "legacy": "m_uBlockPropCoef",
+      "evidence": "parameter control 1139: "
+    },
+    "428": {
+      "name": "NpcAttackDisorder",
+      "legacy": "m_uNpcAttackDisorder",
+      "evidence": "parameter control 1140: "
+    },
+    "432": {
+      "name": "NatureAttractCoef",
+      "legacy": "m_uNatureAttractCoef",
+      "evidence": "parameter control 1150: "
+    },
+    "436": {
+      "name": "OnePersonKillerProp",
+      "legacy": "m_uOnePersonKillerProp",
+      "evidence": "parameter control 1145: "
+    },
+    "440": {
+      "name": "TwoPersonKillerProp",
+      "legacy": "m_uTwoPersonKillerProp",
+      "evidence": "parameter control 1146: "
+    },
+    "444": {
+      "name": "ThreePersonKillerProp",
+      "legacy": "m_uThreePersonKillerProp",
+      "evidence": "parameter control 1147: "
+    },
+    "448": {
+      "name": "FourPersonKillerProp",
+      "legacy": "m_uFourPersonKillerProp",
+      "evidence": "parameter control 1148: "
+    },
+    "452": {
+      "name": "FivePersonKillerProp",
+      "legacy": "m_uFivePersonKillerProp",
+      "evidence": "parameter control 1149: "
+    },
+    "456": {
+      "name": "AntiPlayerLeagueCoef",
+      "legacy": "m_uAntiPlayerLeagueCoef",
+      "evidence": "parameter control 1152: "
+    },
+    "460": {
+      "name": "LeagueTime",
+      "legacy": "m_uLeagueTime",
+      "evidence": "parameter control 1153: "
+    },
+    "464": {
+      "name": "FightSubIncomeCoef",
+      "legacy": "m_uFightSubIncomeCoef",
+      "evidence": "parameter control 1154: "
+    },
+    "468": {
+      "name": "MaxCaptiveCoef",
+      "legacy": "m_uMaxCaptiveCoef",
+      "evidence": "parameter control 1157: "
+    },
+    "472": {
+      "name": "BasicAbilityCoef",
+      "legacy": "m_uBasicAbilityCoef",
+      "evidence": "parameter control 1155: "
+    },
+    "476": {
+      "name": "SexCoef",
+      "legacy": "m_uSexCoef",
+      "evidence": "parameter control 1156: "
+    },
+    "480": {
+      "name": "CityViewRange",
+      "legacy": "m_uCityViewRange",
+      "evidence": "parameter control 1141: "
+    },
+    "484": {
+      "name": "BuildingViewRange",
+      "legacy": "m_uBuildingViewRange",
+      "evidence": "parameter control 1142: "
+    },
+    "488": {
+      "name": "TroopViewRange",
+      "legacy": "m_uTroopViewRange",
+      "evidence": "parameter control 1143: "
+    },
+    "492": {
+      "name": "SoldierDisplayError",
+      "legacy": "m_uSoldierDisplayError",
+      "evidence": "parameter control 1144: "
+    },
+    "496": {
+      "name": "CounselorReportCoef",
+      "legacy": "m_uCounselorReportCoef",
+      "evidence": "parameter control 1151: "
+    },
+    "4400": {
+      "name": "PersonFriendshipAddress",
+      "legacy": "m_dwAddrPersonFriendship",
+      "evidence": "sub_409E10: friendship configuration write address"
+    },
+    "4720": {
+      "name": "CityMaxSoldierAddress",
+      "legacy": null,
+      "evidence": "sub_409840 / sub_409E10 array initialization and configuration writes"
+    },
+    "4724": {
+      "name": "CityMaxPeopleHeartAddress",
+      "legacy": null,
+      "evidence": "sub_409840 / sub_409E10 array initialization and configuration writes"
+    },
+    "4728": {
+      "name": "InitialCityMaxSoldier",
+      "legacy": null,
+      "evidence": "sub_409840 / sub_409E10 array initialization and configuration writes"
+    },
+    "4778": {
+      "name": "InitialCityMaxPeopleHeart",
+      "legacy": null,
+      "evidence": "sub_409840 / sub_409E10 array initialization and configuration writes"
+    },
+    "5212": {
+      "name": "FormationAttackRangeAddress",
+      "legacy": null,
+      "evidence": "sub_409840 / sub_409E10 array initialization and configuration writes"
+    },
+    "5224": {
+      "name": "CityAddresses",
+      "legacy": null,
+      "evidence": "sub_409840 / sub_409E10 array initialization and configuration writes"
+    },
+    "5424": {
+      "name": "ZoneAddresses",
+      "legacy": null,
+      "evidence": "sub_409840 / sub_409E10 array initialization and configuration writes"
+    },
+    "6232": {
+      "name": "OldTrainNum",
+      "legacy": "m_dwOldTrainNum",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6236": {
+      "name": "CultivateMinPoliticsAddr",
+      "legacy": "m_dwCultivateMinPoliticsAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6240": {
+      "name": "CultivateMinPolitics",
+      "legacy": "m_dwCultivateMinPolitics",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6244": {
+      "name": "OldCultivateMinPolitics",
+      "legacy": "m_dwOldCultivateMinPolitics",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6248": {
+      "name": "BattleExperienceAddr",
+      "legacy": "m_dwBattleExperienceAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6252": {
+      "name": "BattleExperienceCode",
+      "legacy": "m_dwBattleExperienceCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6256": {
+      "name": "BattleExperienceOldCode",
+      "legacy": "m_dwBattleExperienceOldCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6260": {
+      "name": "WaterExperienceAddr",
+      "legacy": "m_dwWaterExperienceAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6264": {
+      "name": "WaterExperienceCode",
+      "legacy": "m_dwWaterExperienceCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6268": {
+      "name": "WaterExperienceOldCode",
+      "legacy": "m_dwWaterExperienceOldCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6272": {
+      "name": "BurnExperienceAddr",
+      "legacy": "m_dwBurnExperienceAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6276": {
+      "name": "BurnExperienceCode",
+      "legacy": "m_dwBurnExperienceCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6280": {
+      "name": "BurnExperienceOldCode",
+      "legacy": "m_dwBurnExperienceOldCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6284": {
+      "name": "RobExperienceAddr",
+      "legacy": "m_dwRobExperienceAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6288": {
+      "name": "RobExperienceCode",
+      "legacy": "m_dwRobExperienceCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6292": {
+      "name": "RobExperienceOldCode",
+      "legacy": "m_dwRobExperienceOldCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6296": {
+      "name": "ReinforceExperienceAddr",
+      "legacy": "m_dwReinforceExperienceAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6300": {
+      "name": "ReinforceExperienceCode",
+      "legacy": "m_dwReinforceExperienceCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6304": {
+      "name": "ReinforceExperienceOldCode",
+      "legacy": "m_dwReinforceExperienceOldCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6308": {
+      "name": "TrainExperienceAddr",
+      "legacy": "m_dwTrainExperienceAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6312": {
+      "name": "TrainExperienceCode",
+      "legacy": "m_dwTrainExperienceCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6316": {
+      "name": "TrainExperienceOldCode",
+      "legacy": "m_dwTrainExperienceOldCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6320": {
+      "name": "RepairExperienceAddr",
+      "legacy": "m_dwRepairExperienceAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6324": {
+      "name": "RepairExperienceCode",
+      "legacy": "m_dwRepairExperienceCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6328": {
+      "name": "RepairExperienceOldCode",
+      "legacy": "m_dwRepairExperienceOldCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6332": {
+      "name": "BuildExperienceAddr",
+      "legacy": "m_dwBuildExperienceAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6336": {
+      "name": "BuildExperienceCode",
+      "legacy": "m_dwBuildExperienceCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6340": {
+      "name": "BuildExperienceOldCode",
+      "legacy": "m_dwBuildExperienceOldCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6344": {
+      "name": "AlienateIntelligenceAddr",
+      "legacy": "m_dwAlienateIntelligenceAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6348": {
+      "name": "AlienateIntelligenceCode",
+      "legacy": "m_dwAlienateIntelligenceCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6352": {
+      "name": "AlienateIntelligenceOldCode",
+      "legacy": "m_dwAlienateIntelligenceOldCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6356": {
+      "name": "GossipIntelligenceAddr",
+      "legacy": "m_dwGossipIntelligenceAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6360": {
+      "name": "GossipIntelligenceCode",
+      "legacy": "m_dwGossipIntelligenceCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6364": {
+      "name": "GossipIntelligenceOldCode",
+      "legacy": "m_dwGossipIntelligenceOldCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6368": {
+      "name": "InspireIntelligenceAddr",
+      "legacy": "m_dwInspireIntelligenceAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6372": {
+      "name": "InspireIntelligenceCode",
+      "legacy": "m_dwInspireIntelligenceCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6376": {
+      "name": "InspireIntelligenceOldCode",
+      "legacy": "m_dwInspireIntelligenceOldCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6380": {
+      "name": "CheatIntelligenceAddr",
+      "legacy": "m_dwCheatIntelligenceAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6384": {
+      "name": "CheatIntelligenceCode",
+      "legacy": "m_dwCheatIntelligenceCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6388": {
+      "name": "CheatIntelligenceOldCode",
+      "legacy": "m_dwCheatIntelligenceOldCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6392": {
+      "name": "DisorderIntelligenceAddr",
+      "legacy": "m_dwDisorderIntelligenceAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6396": {
+      "name": "DisorderIntelligenceCode",
+      "legacy": "m_dwDisorderIntelligenceCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6400": {
+      "name": "DisorderIntelligenceOldCode",
+      "legacy": "m_dwDisorderIntelligenceOldCode",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6404": {
+      "name": "SaveBaseAddr",
+      "legacy": "m_dwSaveBaseAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6408": {
+      "name": "SaveBase",
+      "legacy": "m_dwSaveBase",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6412": {
+      "name": "OldSaveBase",
+      "legacy": "m_dwOldSaveBase",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6416": {
+      "name": "DispatchArrayAddr",
+      "legacy": "m_dwDispatchArrayAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6420": {
+      "name": "DispatchArray",
+      "legacy": "m_dwDispatchArray",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6424": {
+      "name": "OldDispatchArray",
+      "legacy": "m_dwOldDispatchArray",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6428": {
+      "name": "DispatchShipAddr",
+      "legacy": "m_dwDispatchShipAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6432": {
+      "name": "DispatchShip",
+      "legacy": "m_dwDispatchShip",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6436": {
+      "name": "OldDispatchShip",
+      "legacy": "m_dwOldDispatchShip",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6444": {
+      "name": "ResourceInfoAddr",
+      "legacy": "m_dwResourceInfoAddr",
+      "evidence": "sub_409840: VS_FIXEDFILEINFO version signature base"
+    },
+    "6448": {
+      "name": "FixedFileInfoOffset",
+      "legacy": "m_dwFixedFileInfoOffset",
+      "evidence": "sub_409840: VS_FIXEDFILEINFO displacement"
+    },
+    "6452": {
+      "name": "ChaosDayAddr",
+      "legacy": "m_dwChaosDayAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6456": {
+      "name": "ChaosDayCoef",
+      "legacy": "m_dwChaosDayCoef",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6460": {
+      "name": "OldChaosDayCoef",
+      "legacy": "m_dwOldChaosDayCoef",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6464": {
+      "name": "LowerTrickAddr",
+      "legacy": "m_dwLowerTrickAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6468": {
+      "name": "LowerTrapAddr",
+      "legacy": "m_dwLowerTrapAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6472": {
+      "name": "LowerTrickCoef",
+      "legacy": "m_dwLowerTrickCoef",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6476": {
+      "name": "OldLowerTrickCoef",
+      "legacy": "m_dwOldLowerTrickCoef",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6492": {
+      "name": "AntiAttackMinSoldierdAddr",
+      "legacy": "m_dwAntiAttackMinSoldierdAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6496": {
+      "name": "AntiAttackMinSoldier",
+      "legacy": "m_dwAntiAttackMinSoldier",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6500": {
+      "name": "OldAntiAttackMinSoldier",
+      "legacy": "m_dwOldAntiAttackMinSoldier",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6516": {
+      "name": "AntiMinTroopSoldierAddr",
+      "legacy": "m_dwAntiMinTroopSoldierAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6520": {
+      "name": "AntiMinTroopSoldier",
+      "legacy": "m_dwAntiMinTroopSoldier",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6524": {
+      "name": "OldAntiMinTroopSoldier",
+      "legacy": "m_dwOldAntiMinTroopSoldier",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6528": {
+      "name": "AntiAttackBarbarismAddr",
+      "legacy": "m_dwAntiAttackBarbarismAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6532": {
+      "name": "AntiAttackBarbarism",
+      "legacy": "m_dwAntiAttackBarbarism",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6536": {
+      "name": "OldAntiAttackBarbarism",
+      "legacy": "m_dwOldAntiAttackBarbarism",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6540": {
+      "name": "AlienateForceNameAddr",
+      "legacy": "m_dwAlienateForceNameAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6544": {
+      "name": "AlienateForceName",
+      "legacy": "m_dwAlienateForceName",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6548": {
+      "name": "OldAlienateForceName",
+      "legacy": "m_dwOldAlienateForceName",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6552": {
+      "name": "OfficerBasicCommandAddr",
+      "legacy": "m_dwOfficerBasicCommandAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6556": {
+      "name": "OfficerBasicCommand",
+      "legacy": "m_dwOfficerBasicCommand",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6560": {
+      "name": "OldOfficerBasicCommand",
+      "legacy": "m_dwOldOfficerBasicCommand",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6564": {
+      "name": "OfficerBasicIntAddr",
+      "legacy": "m_dwOfficerBasicIntAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6568": {
+      "name": "OfficerBasicInt",
+      "legacy": "m_dwOfficerBasicInt",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6572": {
+      "name": "OldOfficerBasicInt",
+      "legacy": "m_dwOldOfficerBasicInt",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6576": {
+      "name": "CheckLeagueProbabilityAddr",
+      "legacy": "m_dwCheckLeagueProbabilityAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6580": {
+      "name": "OldCheckLeagueProbability",
+      "legacy": "m_dwOldCheckLeagueProbability",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6584": {
+      "name": "AllPersonLiveAddr",
+      "legacy": "m_dwAllPersonLiveAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6588": {
+      "name": "AllPersonLive",
+      "legacy": "m_dwAllPersonLive",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6592": {
+      "name": "OldAllPersonLive",
+      "legacy": "m_dwOldAllPersonLive",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6636": {
+      "name": "SearchMinPoliticsAddr",
+      "legacy": "m_dwSearchMinPoliticsAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6640": {
+      "name": "SearchMinPolitics",
+      "legacy": "m_dwSearchMinPolitics",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6644": {
+      "name": "OldSearchMinPolitics",
+      "legacy": "m_dwOldSearchMinPolitics",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6648": {
+      "name": "NpcSearchTreasureAddr",
+      "legacy": "m_dwNpcSearchTreasureAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6652": {
+      "name": "NpcSearchTreasure",
+      "legacy": "m_dwNpcSearchTreasure",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6656": {
+      "name": "OldNpcSearchTreasure",
+      "legacy": "m_dwOldNpcSearchTreasure",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6660": {
+      "name": "NpcDisplayTreasureAddr",
+      "legacy": "m_dwNpcDisplayTreasureAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6664": {
+      "name": "NpcDisplayTreasure",
+      "legacy": "m_dwNpcDisplayTreasure",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6668": {
+      "name": "OldNpcDisplayTreasure",
+      "legacy": "m_dwOldNpcDisplayTreasure",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6672": {
+      "name": "FootAntiElephantAddr",
+      "legacy": "m_dwFootAntiElephantAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6676": {
+      "name": "FootAntiElephant",
+      "legacy": "m_dwFootAntiElephant",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6680": {
+      "name": "OldFootAntiElephant",
+      "legacy": "m_dwOldFootAntiElephant",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6684": {
+      "name": "InspireMaxVigourAddr",
+      "legacy": "m_dwInspireMaxVigourAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6688": {
+      "name": "InspireMaxVigour",
+      "legacy": "m_dwInspireMaxVigour",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6692": {
+      "name": "OldInspireMaxVigour",
+      "legacy": "m_dwOldInspireMaxVigour",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6700": {
+      "name": "MaxBasicAbilityAddr",
+      "legacy": "m_dwMaxBasicAbilityAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6704": {
+      "name": "MaxBasicAbility",
+      "legacy": "m_dwMaxBasicAbility",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6708": {
+      "name": "OldMaxBasicAbility",
+      "legacy": "m_dwOldMaxBasicAbility",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6712": {
+      "name": "MaxSearchAbilityAddr",
+      "legacy": "m_dwMaxSearchAbilityAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6716": {
+      "name": "TroopWoundAddr",
+      "legacy": "m_dwTroopWoundAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6720": {
+      "name": "TroopWound",
+      "legacy": "m_dwTroopWound",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6724": {
+      "name": "OldTroopWound",
+      "legacy": "m_dwOldTroopWound",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6728": {
+      "name": "BuildingWoundAddr",
+      "legacy": "m_dwBuildingWoundAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6732": {
+      "name": "BuildingWound",
+      "legacy": "m_dwBuildingWound",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6736": {
+      "name": "OldBuildingWound",
+      "legacy": "m_dwOldBuildingWound",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6756": {
+      "name": "GossipSubLoyalty",
+      "legacy": "m_dwGossipSubLoyalty",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6760": {
+      "name": "OldGossipSubLoyalty",
+      "legacy": "m_dwOldGossipSubLoyalty",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6764": {
+      "name": "GoalNullCityAddr",
+      "legacy": "m_dwGoalNullCityAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6768": {
+      "name": "GoalNullCity",
+      "legacy": "m_dwGoalNullCity",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6772": {
+      "name": "OldGoalNullCity",
+      "legacy": "m_dwOldGoalNullCity",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6776": {
+      "name": "NullBulidingDangerAddr",
+      "legacy": "m_dwNullBulidingDangerAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6780": {
+      "name": "NullBulidingDanger",
+      "legacy": "m_dwNullBulidingDanger",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6784": {
+      "name": "OldNullBulidingDanger",
+      "legacy": "m_dwOldNullBulidingDanger",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6788": {
+      "name": "AvoidNearCityAddr",
+      "legacy": "m_dwAvoidNearCityAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6792": {
+      "name": "AvoidNearCity",
+      "legacy": "m_dwAvoidNearCity",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6796": {
+      "name": "OldAvoidNearCity",
+      "legacy": "m_dwOldAvoidNearCity",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6800": {
+      "name": "RetreatMinVigourAddr",
+      "legacy": "m_dwRetreatMinVigourAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6804": {
+      "name": "RetreatMinVigour",
+      "legacy": "m_dwRetreatMinVigour",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6808": {
+      "name": "OldRetreatMinVigour",
+      "legacy": "m_dwOldRetreatMinVigour",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6812": {
+      "name": "SelectCleverKillerAddr",
+      "legacy": "m_dwSelectCleverKillerAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6816": {
+      "name": "SelectCleverKiller",
+      "legacy": "m_dwSelectCleverKiller",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6820": {
+      "name": "OldSelectCleverKiller",
+      "legacy": "m_dwOldSelectCleverKiller",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6824": {
+      "name": "NeglectChongCheAddr",
+      "legacy": "m_dwNeglectChongCheAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6828": {
+      "name": "NeglectChongChe",
+      "legacy": "m_dwNeglectChongChe",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6832": {
+      "name": "OldNeglectChongChe",
+      "legacy": "m_dwOldNeglectChongChe",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6836": {
+      "name": "SameForceTroopAddr",
+      "legacy": "m_dwSameForceTroopAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6840": {
+      "name": "SameForceTroopAddr2",
+      "legacy": "m_dwSameForceTroopAddr2",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6844": {
+      "name": "SameForceTroop",
+      "legacy": "m_dwSameForceTroop",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6848": {
+      "name": "OldSameForceTroop",
+      "legacy": "m_dwOldSameForceTroop",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6852": {
+      "name": "DisableNpcPlotForceAddr",
+      "legacy": "m_dwDisableNpcPlotForceAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6856": {
+      "name": "DisableNpcPlotForce",
+      "legacy": "m_dwDisableNpcPlotForce",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6860": {
+      "name": "OldDisableNpcPlotForce",
+      "legacy": "m_dwOldDisableNpcPlotForce",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6864": {
+      "name": "AttackIgnoreAntitrapAddr",
+      "legacy": "m_dwAttackIgnoreAntitrapAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6868": {
+      "name": "AttackIgnoreAntitrap",
+      "legacy": "m_dwAttackIgnoreAntitrap",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6872": {
+      "name": "OldAttackIgnoreAntitrap",
+      "legacy": "m_dwOldAttackIgnoreAntitrap",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6880": {
+      "name": "MunicipalForceDraft",
+      "legacy": "m_dwMunicipalForceDraft",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6884": {
+      "name": "OldMunicipalForceDraft",
+      "legacy": "m_dwOldMunicipalForceDraft",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6888": {
+      "name": "BurnFoodProbabilityAddr",
+      "legacy": "m_dwBurnFoodProbabilityAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6892": {
+      "name": "BurnFoodProbability",
+      "legacy": "m_dwBurnFoodProbability",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6896": {
+      "name": "OldBurnFoodProbability",
+      "legacy": "m_dwOldBurnFoodProbability",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6900": {
+      "name": "BurnFoodEffectAddr",
+      "legacy": "m_dwBurnFoodEffectAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6904": {
+      "name": "BurnFoodEffect",
+      "legacy": "m_dwBurnFoodEffect",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6908": {
+      "name": "OldBurnFoodEffect",
+      "legacy": "m_dwOldBurnFoodEffect",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6912": {
+      "name": "BurnBuildingEffectAddr",
+      "legacy": "m_dwBurnBuildingEffectAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6916": {
+      "name": "BurnBuildingEffect",
+      "legacy": "m_dwBurnBuildingEffect",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6920": {
+      "name": "OldBurnBuildingEffect",
+      "legacy": "m_dwOldBurnBuildingEffect",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6928": {
+      "name": "HomeForceDoorAddr",
+      "legacy": "m_dwHomeForceDoorAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6932": {
+      "name": "HomeForceDoor",
+      "legacy": "m_dwHomeForceDoor",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6936": {
+      "name": "OldHomeForceDoor",
+      "legacy": "m_dwOldHomeForceDoor",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6940": {
+      "name": "AvoidInduceMaxDayAddr",
+      "legacy": "m_dwAvoidInduceMaxDayAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6944": {
+      "name": "AvoidInduceMaxDay",
+      "legacy": "m_dwAvoidInduceMaxDay",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6948": {
+      "name": "OldAvoidInduceMaxDay",
+      "legacy": "m_dwOldAvoidInduceMaxDay",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6952": {
+      "name": "BuildingDefenseCoefAddr",
+      "legacy": "m_dwBuildingDefenseCoefAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6956": {
+      "name": "BuildingDefenseCoef",
+      "legacy": "m_dwBuildingDefenseCoef",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6960": {
+      "name": "OldBuildingDefenseCoef",
+      "legacy": "m_dwOldBuildingDefenseCoef",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6964": {
+      "name": "GetTroopGoalBugAddr",
+      "legacy": "m_dwGetTroopGoalBugAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6968": {
+      "name": "GetTroopGoalBug",
+      "legacy": "m_dwGetTroopGoalBug",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6972": {
+      "name": "OldGetTroopGoalBug",
+      "legacy": "m_dwOldGetTroopGoalBug",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6976": {
+      "name": "GoalToSourceDamageAddr",
+      "legacy": "m_dwGoalToSourceDamageAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6980": {
+      "name": "GoalToSourceDamage",
+      "legacy": "m_dwGoalToSourceDamage",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6984": {
+      "name": "OldGoalToSourceDamage",
+      "legacy": "m_dwOldGoalToSourceDamage",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6988": {
+      "name": "BadBrothersArrayEndAddr",
+      "legacy": "m_dwBadBrothersArrayEndAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6992": {
+      "name": "BadBrothersArrayEnd",
+      "legacy": "m_dwBadBrothersArrayEnd",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "6996": {
+      "name": "OldBadBrothersArrayEnd",
+      "legacy": "m_dwOldBadBrothersArrayEnd",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7000": {
+      "name": "TroopFromBuildingAddr",
+      "legacy": "m_dwTroopFromBuildingAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7004": {
+      "name": "TroopFromBuilding",
+      "legacy": "m_dwTroopFromBuilding",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7008": {
+      "name": "OldTroopFromBuilding",
+      "legacy": "m_dwOldTroopFromBuilding",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7012": {
+      "name": "FalseAntiTroopAddr",
+      "legacy": "m_dwFalseAntiTroopAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7016": {
+      "name": "DisorderAntiTroopAddr",
+      "legacy": "m_dwDisorderAntiTroopAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7020": {
+      "name": "InternalAntiTroop",
+      "legacy": "m_dwInternalAntiTroop",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7024": {
+      "name": "ExternalAntiTroop",
+      "legacy": "m_dwExternalAntiTroop",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7028": {
+      "name": "DeclareAttackTroopAddr",
+      "legacy": "m_dwDeclareAttackTroopAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7032": {
+      "name": "DeclareAttackTroop",
+      "legacy": "m_dwDeclareAttackTroop",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7036": {
+      "name": "OldDeclareAttackTroop",
+      "legacy": "m_dwOldDeclareAttackTroop",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7040": {
+      "name": "InviteSubLoyatyAddr",
+      "legacy": "m_dwInviteSubLoyatyAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7044": {
+      "name": "InviteSubLoyaty",
+      "legacy": "m_dwInviteSubLoyaty",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7048": {
+      "name": "OldInviteSubLoyaty",
+      "legacy": "m_dwOldInviteSubLoyaty",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7064": {
+      "name": "CommandOfficerEndFlagAddr",
+      "legacy": "m_dwCommandOfficerEndFlagAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7068": {
+      "name": "CommandOfficerEndFlag",
+      "legacy": "m_dwCommandOfficerEndFlag",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7072": {
+      "name": "OldCommandOfficerEndFlag",
+      "legacy": "m_dwOldCommandOfficerEndFlag",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7076": {
+      "name": "IntelligenceOfficerEndFlagAddr",
+      "legacy": "m_dwIntelligenceOfficerEndFlagAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7080": {
+      "name": "IntelligenceOfficerEndFlag",
+      "legacy": "m_dwIntelligenceOfficerEndFlag",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7084": {
+      "name": "OldIntelligenceOfficerEndFlag",
+      "legacy": "m_dwOldIntelligenceOfficerEndFlag",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7088": {
+      "name": "ShowCelueKillerAddr",
+      "legacy": "m_dwShowCelueKillerAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7092": {
+      "name": "ShowCelueKiller",
+      "legacy": "m_dwShowCelueKiller",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7096": {
+      "name": "OldShowCelueKiller",
+      "legacy": "m_dwOldShowCelueKiller",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7100": {
+      "name": "SlashDeadCoefAddr",
+      "legacy": "m_dwSlashDeadCoefAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7104": {
+      "name": "OldSlashDeadCoef",
+      "legacy": "m_dwOldSlashDeadCoef",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7108": {
+      "name": "LvbuAttackDoorAddr",
+      "legacy": "m_dwLvbuAttackDoorAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7112": {
+      "name": "LvbuAttackDoor",
+      "legacy": "m_dwLvbuAttackDoor",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7116": {
+      "name": "OldLvbuAttackDoor",
+      "legacy": "m_dwOldLvbuAttackDoor",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7120": {
+      "name": "EnableSecondKillerAddr",
+      "legacy": "m_dwEnableSecondKillerAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7124": {
+      "name": "EnableSecondKiller",
+      "legacy": "m_dwEnableSecondKiller",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7128": {
+      "name": "OldEnableSecondKiller",
+      "legacy": "m_dwOldEnableSecondKiller",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7132": {
+      "name": "TroopGoalBuildingAddr",
+      "legacy": "m_dwTroopGoalBuildingAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7136": {
+      "name": "TroopGoalBuilding",
+      "legacy": "m_dwTroopGoalBuilding",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7140": {
+      "name": "OldTroopGoalBuilding",
+      "legacy": "m_dwOldTroopGoalBuilding",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7144": {
+      "name": "NotGetPersonQuotaAddr",
+      "legacy": "m_dwNotGetPersonQuotaAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7148": {
+      "name": "NotGetPersonQuota",
+      "legacy": "m_dwNotGetPersonQuota",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7152": {
+      "name": "OldNotGetPersonQuota",
+      "legacy": "m_dwOldNotGetPersonQuota",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7156": {
+      "name": "EventMeetHuaTuoAddr",
+      "legacy": "m_dwEventMeetHuaTuoAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7160": {
+      "name": "EventMeetHuaTuo",
+      "legacy": "m_dwEventMeetHuaTuo",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7164": {
+      "name": "OldEventMeetHuaTuo",
+      "legacy": "m_dwOldEventMeetHuaTuo",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7168": {
+      "name": "YearTableInvalidFlagAddr",
+      "legacy": "m_dwYearTableInvalidFlagAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7172": {
+      "name": "YearTableInvalidFlag",
+      "legacy": "m_dwYearTableInvalidFlag",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7176": {
+      "name": "OldYearTableInvalidFlag",
+      "legacy": "m_dwOldYearTableInvalidFlag",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7180": {
+      "name": "TransportGoalInfoAddr",
+      "legacy": "m_dwTransportGoalInfoAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7184": {
+      "name": "TransportGoalInfo",
+      "legacy": "m_dwTransportGoalInfo",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7188": {
+      "name": "OldTransportGoalInfo",
+      "legacy": "m_dwOldTransportGoalInfo",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7192": {
+      "name": "CounselorMinCandidateAddr",
+      "legacy": "m_dwCounselorMinCandidateAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7196": {
+      "name": "CounselorMinCandidate",
+      "legacy": "m_dwCounselorMinCandidate",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7200": {
+      "name": "OldCounselorMinCandidate",
+      "legacy": "m_dwOldCounselorMinCandidate",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7204": {
+      "name": "NoarrayToBuildingAddr",
+      "legacy": "m_dwNoarrayToBuildingAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7208": {
+      "name": "NoarrayToBuildingAddr2",
+      "legacy": "m_dwNoarrayToBuildingAddr2",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7212": {
+      "name": "NoarrayToBuilding",
+      "legacy": "m_dwNoarrayToBuilding",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7216": {
+      "name": "OldNoarrayToBuilding",
+      "legacy": "m_dwOldNoarrayToBuilding",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7220": {
+      "name": "DisableBurnExplorerAddr",
+      "legacy": "m_dwDisableBurnExplorerAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7224": {
+      "name": "DisableBurnExplorer",
+      "legacy": "m_dwDisableBurnExplorer",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7228": {
+      "name": "OldDisableBurnExplorer",
+      "legacy": "m_dwOldDisableBurnExplorer",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7232": {
+      "name": "DisableAttackExplorerAddr",
+      "legacy": "m_dwDisableAttackExplorerAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7236": {
+      "name": "DisableAttackExplorer",
+      "legacy": "m_dwDisableAttackExplorer",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7240": {
+      "name": "OldDisableAttackExplorer",
+      "legacy": "m_dwOldDisableAttackExplorer",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7244": {
+      "name": "MaskPersonWhereAddr",
+      "legacy": "m_dwMaskPersonWhereAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7248": {
+      "name": "MaskPersonWhere",
+      "legacy": "m_dwMaskPersonWhere",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7252": {
+      "name": "OldMaskPersonWhere",
+      "legacy": "m_dwOldMaskPersonWhere",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7256": {
+      "name": "SearchNoResultAddr",
+      "legacy": "m_dwSearchNoResultAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7260": {
+      "name": "SearchNoResult",
+      "legacy": "m_dwSearchNoResult",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7264": {
+      "name": "OldSearchNoResult",
+      "legacy": "m_dwOldSearchNoResult",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7268": {
+      "name": "AttackBuildForceAddr",
+      "legacy": "m_dwAttackBuildForceAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7272": {
+      "name": "AttackBuildForce",
+      "legacy": "m_dwAttackBuildForce",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7276": {
+      "name": "OldAttackBuildForce",
+      "legacy": "m_dwOldAttackBuildForce",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7280": {
+      "name": "BuildMaxArriveDayAddr",
+      "legacy": "m_dwBuildMaxArriveDayAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7284": {
+      "name": "BuildMaxArriveDay",
+      "legacy": "m_dwBuildMaxArriveDay",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7288": {
+      "name": "OldBuildMaxArriveDay",
+      "legacy": "m_dwOldBuildMaxArriveDay",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7292": {
+      "name": "GameEndYearAddr",
+      "legacy": "m_dwGameEndYearAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7296": {
+      "name": "GameEndYear",
+      "legacy": "m_dwGameEndYear",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7300": {
+      "name": "OldGameEndYear",
+      "legacy": "m_dwOldGameEndYear",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7304": {
+      "name": "BuildMinBuildingAddr",
+      "legacy": "m_dwBuildMinBuildingAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7308": {
+      "name": "BuildMinBuilding",
+      "legacy": "m_dwBuildMinBuilding",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7312": {
+      "name": "OldBuildMinBuilding",
+      "legacy": "m_dwOldBuildMinBuilding",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7316": {
+      "name": "UpdateGoalForceAddr",
+      "legacy": "m_dwUpdateGoalForceAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7320": {
+      "name": "UpdateGoalForce",
+      "legacy": "m_dwUpdateGoalForce",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7324": {
+      "name": "OldUpdateGoalForce",
+      "legacy": "m_dwOldUpdateGoalForce",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7328": {
+      "name": "UpdateGoalPropAddr",
+      "legacy": "m_dwUpdateGoalPropAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7332": {
+      "name": "UpdateGoalProp",
+      "legacy": "m_dwUpdateGoalProp",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7336": {
+      "name": "OldUpdateGoalProp",
+      "legacy": "m_dwOldUpdateGoalProp",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7340": {
+      "name": "LeagueTimeAddr",
+      "legacy": "m_dwLeagueTimeAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7344": {
+      "name": "OldLeagueTime",
+      "legacy": "m_dwOldLeagueTime",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7348": {
+      "name": "KillPersonPropAddr",
+      "legacy": "m_dwKillPersonPropAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7352": {
+      "name": "KillPersonProp",
+      "legacy": "m_dwKillPersonProp",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7356": {
+      "name": "OldKillPersonProp",
+      "legacy": "m_dwOldKillPersonProp",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7364": {
+      "name": "SexCoefAddr",
+      "legacy": "m_dwSexCoefAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7368": {
+      "name": "OldSexCoef",
+      "legacy": "m_dwOldSexCoef",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7372": {
+      "name": "EnableGoMenuAddr",
+      "legacy": "m_dwEnableGoMenuAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7376": {
+      "name": "EnableGoMenu",
+      "legacy": "m_dwEnableGoMenu",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7380": {
+      "name": "OldEnableGoMenu",
+      "legacy": "m_dwOldEnableGoMenu",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7384": {
+      "name": "EnableComeMenuAddr",
+      "legacy": "m_dwEnableComeMenuAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7388": {
+      "name": "BlockArrayNumAddr",
+      "legacy": "m_dwBlockArrayNumAddr",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7392": {
+      "name": "BlockArrayNum",
+      "legacy": "m_dwBlockArrayNum",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7396": {
+      "name": "OldBlockArrayNum",
+      "legacy": "m_dwOldBlockArrayNum",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7420": {
+      "name": "NotDisplayExchangeAddr1",
+      "legacy": "m_dwNotDisplayExchangeAddr1",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7424": {
+      "name": "NotDisplayExchangeAddr2",
+      "legacy": "m_dwNotDisplayExchangeAddr2",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7428": {
+      "name": "NotDisplayExchange",
+      "legacy": "m_dwNotDisplayExchange",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7432": {
+      "name": "OldNotDisplayExchange",
+      "legacy": "m_dwOldNotDisplayExchange",
+      "evidence": "sub_408670 constructor / San9PKHardDlg.cpp initializer sequence"
+    },
+    "7472": {
+      "name": "PageSize",
+      "legacy": "m_dwPageSize",
+      "evidence": "sub_409E10: VirtualProtectEx size / VirtualAllocEx multiplication"
+    },
+    "7476": {
+      "name": "AllocPageNum",
+      "legacy": "m_dwAllocPageNum",
+      "evidence": "sub_409E10: VirtualAllocEx multiplication; 2026 uses 11 pages"
+    }
+  },
+  "symbols": {
+    "byte_41F9D0": {
+      "name": "codeMinDurabilityThunk",
+      "legacy": "codeMinDurabilityThunk",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "byte_41FEE8": {
+      "name": "codeEnableDraftThunk",
+      "legacy": "codeEnableDraftThunk",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "byte_420590": {
+      "name": "codeMinDispatchSoldierThunk",
+      "legacy": "codeMinDispatchSoldierThunk",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "byte_41FD08": {
+      "name": "codeRobMoneyThunk",
+      "legacy": "codeRobMoneyThunk",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "byte_41FD60": {
+      "name": "codePersonJudgementThunk",
+      "legacy": "codePersonJudgementThunk",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_42171C": {
+      "name": "codeDefenceHorseWimble",
+      "legacy": "codeDefenceHorseWimble",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_421644": {
+      "name": "codeWisdomAntiBlackArt",
+      "legacy": "codeWisdomAntiBlackArt",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_420514": {
+      "name": "codeLowerBuildExpense",
+      "legacy": "codeLowerBuildExpense",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4215D8": {
+      "name": "codeIntelligenceKillerCoef",
+      "legacy": "codeIntelligenceKillerCoef",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_42160C": {
+      "name": "codeIntelligenceKillerCoef2",
+      "legacy": "codeIntelligenceKillerCoef2",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_42259C": {
+      "name": "codeTreasureValue",
+      "legacy": "codeTreasureValue",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_42388C": {
+      "name": "codeOfficialLoyaty",
+      "legacy": "codeOfficialLoyaty",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4244C4": {
+      "name": "codeBuildRealGoal",
+      "legacy": "codeBuildRealGoal",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422D64": {
+      "name": "codeSetForceGoal",
+      "legacy": "codeSetForceGoal",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_425A14": {
+      "name": "codeGetCityMaxPeopleHeart",
+      "legacy": "codeGetCityMaxPeopleHeart",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_420018": {
+      "name": "codeTestDarkFlag",
+      "legacy": "codeTestDarkFlag",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_42000C": {
+      "name": "btMapKillerPower",
+      "legacy": "btMapKillerPower",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_420054": {
+      "name": "codeChaseFlag",
+      "legacy": "codeChaseFlag",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4201FC": {
+      "name": "codeDispatchPerson",
+      "legacy": "codeDispatchPerson",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_420BE8": {
+      "name": "codeBuildingTotalSoldier",
+      "legacy": "codeBuildingTotalSoldier",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_421680": {
+      "name": "codeEnableCommerce",
+      "legacy": "codeEnableCommerce",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_421800": {
+      "name": "codeCheckAbuse",
+      "legacy": "codeCheckAbuse",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_421B30": {
+      "name": "codeSaveTroopExpense",
+      "legacy": "codeSaveTroopExpense",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_421C84": {
+      "name": "codeEnableCultivate",
+      "legacy": "codeEnableCultivate",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_421F40": {
+      "name": "codeCommandAbility",
+      "legacy": "codeCommandAbility",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4220E0": {
+      "name": "codeJiaXuBack",
+      "legacy": "codeJiaXuBack",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_421D38": {
+      "name": "codeMoveIdlePerson",
+      "legacy": "codeMoveIdlePerson",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_421F00": {
+      "name": "codeCommandIntAbility",
+      "legacy": "codeCommandIntAbility",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4290E8": {
+      "name": "codeCaptiveMoney2",
+      "legacy": "codeCaptiveMoney2",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4223A8": {
+      "name": "codeCaptiveMoney",
+      "legacy": "codeCaptiveMoney",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422550": {
+      "name": "codeInviteNewPerson",
+      "legacy": "codeInviteNewPerson",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4225D0": {
+      "name": "codeUpdateKillerDamage",
+      "legacy": "codeUpdateKillerDamage",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422760": {
+      "name": "codeSaveHarbor",
+      "legacy": "codeSaveHarbor",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4227C0": {
+      "name": "codeGotoNpcCity",
+      "legacy": "codeGotoNpcCity",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422970": {
+      "name": "codeFightToKiller",
+      "legacy": "codeFightToKiller",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422AD8": {
+      "name": "codePreBuildingSoldier",
+      "legacy": "codePreBuildingSoldier",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422CD8": {
+      "name": "codeNearNullCity",
+      "legacy": "codeNearNullCity",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422E90": {
+      "name": "codeAllieAttack",
+      "legacy": "codeAllieAttack",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_423DA4": {
+      "name": "codeDecideAttackOk",
+      "legacy": "codeDecideAttackOk",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_423A68": {
+      "name": "codeOperationPerDay",
+      "legacy": "codeOperationPerDay",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_424298": {
+      "name": "codeLeagueSucceed",
+      "legacy": "codeLeagueSucceed",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_424120": {
+      "name": "codeGoThroughNearBuilding",
+      "legacy": "codeGoThroughNearBuilding",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_423EC8": {
+      "name": "codeSelectWaterWisdom",
+      "legacy": "codeSelectWaterWisdom",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4239F8": {
+      "name": "codeLoadNearMaxSoldier",
+      "legacy": "codeLoadNearMaxSoldier",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_423A30": {
+      "name": "codeLoadNearMaxSoldier2",
+      "legacy": "codeLoadNearMaxSoldier2",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4233A8": {
+      "name": "codeTestRegardedBuilding",
+      "legacy": "codeTestRegardedBuilding",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_424650": {
+      "name": "codeKillerPowerToDamage",
+      "legacy": "codeKillerPowerToDamage",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_425170": {
+      "name": "codeGetBuildingProp",
+      "legacy": "codeGetBuildingProp",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_425530": {
+      "name": "codeGetTransportSoldier",
+      "legacy": "codeGetTransportSoldier",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_424CD8": {
+      "name": "codePhaseErrorAlienate",
+      "legacy": "codePhaseErrorAlienate",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_425A50": {
+      "name": "codeMaxPeopleHeartPush",
+      "legacy": "codeMaxPeopleHeartPush",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_425B18": {
+      "name": "codeMaxPeopleHeartMov",
+      "legacy": "codeMaxPeopleHeartMov",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_425EA0": {
+      "name": "codeAttackTroopSoldier2",
+      "legacy": "codeAttackTroopSoldier2",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_426108": {
+      "name": "codePreBuildingSoldier2",
+      "legacy": "codePreBuildingSoldier2",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4264E8": {
+      "name": "codeSecondKillerInterval",
+      "legacy": "codeSecondKillerInterval",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_426A64": {
+      "name": "codeKillerArrayCoef",
+      "legacy": "codeKillerArrayCoef",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_426C20": {
+      "name": "codeDisplayTroopCondition",
+      "legacy": "codeDisplayTroopCondition",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_426E40": {
+      "name": "codeTroopAtSmallMap",
+      "legacy": "codeTroopAtSmallMap",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_427940": {
+      "name": "codeAllStrongForce",
+      "legacy": "codeAllStrongForce",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_427A88": {
+      "name": "codeKillerDriveProp",
+      "legacy": "codeKillerDriveProp",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_424C98": {
+      "name": "codeDirectBigAnimation",
+      "legacy": "codeDirectBigAnimation",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_427DC8": {
+      "name": "codeUpdateCaptiveProp",
+      "legacy": "codeUpdateCaptiveProp",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_427F38": {
+      "name": "codeRobFood",
+      "legacy": "codeRobFood",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_426E80": {
+      "name": "codeGetTroopViewState",
+      "legacy": "codeGetTroopViewState",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4270E4": {
+      "name": "codeHideDutyPersonNum",
+      "legacy": "codeHideDutyPersonNum",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4272E0": {
+      "name": "codeHideCityMorale",
+      "legacy": "codeHideCityMorale",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4273F0": {
+      "name": "codeCounselorReportProp",
+      "legacy": "codeCounselorReportProp",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_428360": {
+      "name": "codeBuildArriveDay",
+      "legacy": "codeBuildArriveDay",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4201A8": {
+      "name": "codeRetreatSoldierTroop",
+      "legacy": "codeRetreatSoldierTroop",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_428728": {
+      "name": "codeHarvest",
+      "legacy": "codeHarvest",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_428B88": {
+      "name": "codeAutoProcessTask",
+      "legacy": "codeAutoProcessTask",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_428E90": {
+      "name": "codeKillSubPrestige",
+      "legacy": "codeKillSubPrestige",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_428FD8": {
+      "name": "codeAbilityKillerProp",
+      "legacy": "codeAbilityKillerProp",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_429138": {
+      "name": "codeAddWaterKiller",
+      "legacy": "codeAddWaterKiller",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_429190": {
+      "name": "codeEnableWaterKiller",
+      "legacy": "codeEnableWaterKiller",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4292E8": {
+      "name": "codeInvestment",
+      "legacy": "codeInvestment",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_429378": {
+      "name": "codeHeartAttackDamage1",
+      "legacy": "codeHeartAttackDamage1",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4293D0": {
+      "name": "codeHeartAttackDamage2",
+      "legacy": "codeHeartAttackDamage2",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4203A4": {
+      "name": "codeWisdomPerson",
+      "legacy": "codeWisdomPerson",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_420B80": {
+      "name": "codeForceTroopList",
+      "legacy": "codeForceTroopList",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_420E80": {
+      "name": "codeRelayDispatchOk",
+      "legacy": "codeRelayDispatchOk",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_420FF8": {
+      "name": "codeBattleDisableTask",
+      "legacy": "codeBattleDisableTask",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4218A8": {
+      "name": "codeBuildingBackup",
+      "legacy": "codeBuildingBackup",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_421DD8": {
+      "name": "codeCheckOfficerMoney",
+      "legacy": "codeCheckOfficerMoney",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422170": {
+      "name": "codeDegradePerson",
+      "legacy": "codeDegradePerson",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4223E0": {
+      "name": "codeSearchRange",
+      "legacy": "codeSearchRange",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422684": {
+      "name": "codeBuildingKillerPerson",
+      "legacy": "codeBuildingKillerPerson",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4229B0": {
+      "name": "codeDraftMinMoney",
+      "legacy": "codeDraftMinMoney",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422B60": {
+      "name": "codeGoOnAttack",
+      "legacy": "codeGoOnAttack",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422D98": {
+      "name": "codeGetPlayerCity",
+      "legacy": "codeGetPlayerCity",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422F80": {
+      "name": "codeAttackSourceCity",
+      "legacy": "codeAttackSourceCity",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4231A8": {
+      "name": "codeAddCityRelation",
+      "legacy": "codeAddCityRelation",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_423350": {
+      "name": "codeRetryAttackedBuilding",
+      "legacy": "codeRetryAttackedBuilding",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_423828": {
+      "name": "codeLeftCleverKiller",
+      "legacy": "codeLeftCleverKiller",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_423B38": {
+      "name": "codeSelectAttackArray",
+      "legacy": "codeSelectAttackArray",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_423DF0": {
+      "name": "codeSetNearAttackFlag",
+      "legacy": "codeSetNearAttackFlag",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_424468": {
+      "name": "codeDecideBuild",
+      "legacy": "codeDecideBuild",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_423E70": {
+      "name": "codeAdjustAttackSoldier",
+      "legacy": "codeAdjustAttackSoldier",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_423F80": {
+      "name": "codeAntiAttackAntitrap",
+      "legacy": "codeAntiAttackAntitrap",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_424560": {
+      "name": "codeSelectTrainPerson",
+      "legacy": "codeSelectTrainPerson",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4245F8": {
+      "name": "codeRefuseChange",
+      "legacy": "codeRefuseChange",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_423288": {
+      "name": "codeTestAttackGoalForce",
+      "legacy": "codeTestAttackGoalForce",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_42342C": {
+      "name": "codeRegardedBuildingOnAttack",
+      "legacy": "codeRegardedBuildingOnAttack",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_424B08": {
+      "name": "codeLinkageKillerToRecord",
+      "legacy": "codeLinkageKillerToRecord",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_424BC8": {
+      "name": "codeUpdateSeigePower",
+      "legacy": "codeUpdateSeigePower",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_424D38": {
+      "name": "codeForceFightTroop",
+      "legacy": "codeForceFightTroop",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_425198": {
+      "name": "codeGetForceDangerCoef",
+      "legacy": "codeGetForceDangerCoef",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_424750": {
+      "name": "codeStopTaskBug",
+      "legacy": "codeStopTaskBug",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4255A8": {
+      "name": "codeAutoSaveDocname",
+      "legacy": "codeAutoSaveDocname",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4256B8": {
+      "name": "codePersonExperience",
+      "legacy": "codePersonExperience",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4257F0": {
+      "name": "codeIntelligenceOfficerPara",
+      "legacy": "codeIntelligenceOfficerPara",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_425B80": {
+      "name": "codeMaxPeopleHeartBasic",
+      "legacy": "codeMaxPeopleHeartBasic",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_425D18": {
+      "name": "codeDynamicAddProficiency",
+      "legacy": "codeDynamicAddProficiency",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_425F88": {
+      "name": "codePersonCharNum",
+      "legacy": "codePersonCharNum",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_420878": {
+      "name": "codeDeleteBigPerson",
+      "legacy": "codeDeleteBigPerson",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_426D30": {
+      "name": "codeComparePersonName",
+      "legacy": "codeComparePersonName",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_427480": {
+      "name": "codeBlcokProp",
+      "legacy": "codeBlcokProp",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_427B58": {
+      "name": "codeClearTroopCurGoal",
+      "legacy": "codeClearTroopCurGoal",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_427D30": {
+      "name": "codeStrengthKillerBigAnimaiton",
+      "legacy": "codeStrengthKillerBigAnimaiton",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4278F8": {
+      "name": "codeKillerToBuilding",
+      "legacy": "codeKillerToBuilding",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_426E9C": {
+      "name": "codeJourneyGoalTroop",
+      "legacy": "codeJourneyGoalTroop",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4271A0": {
+      "name": "codeHideInfoMenu",
+      "legacy": "codeHideInfoMenu",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_42725C": {
+      "name": "codeHideDownStone",
+      "legacy": "codeHideDownStone",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_427320": {
+      "name": "codeHideCityIncome",
+      "legacy": "codeHideCityIncome",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4280C4": {
+      "name": "codeChaosPowerCoef",
+      "legacy": "codeChaosPowerCoef",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_428534": {
+      "name": "codeAttackPlayerBuild",
+      "legacy": "codeAttackPlayerBuild",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_428BD8": {
+      "name": "codeGetLeagueGoal",
+      "legacy": "codeGetLeagueGoal",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_428EE8": {
+      "name": "codeTrainBasicAbility",
+      "legacy": "codeTrainBasicAbility",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4200E0": {
+      "name": "codeCheckTroopPos",
+      "legacy": "codeCheckTroopPos",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_420ED0": {
+      "name": "codeFastRelay",
+      "legacy": "codeFastRelay",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4208C8": {
+      "name": "codeAntiAttackMinDefence2",
+      "legacy": "codeAntiAttackMinDefence2",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_421BE0": {
+      "name": "codeMaxAntiTroop",
+      "legacy": "codeMaxAntiTroop",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422020": {
+      "name": "codeUndelCommandPerson",
+      "legacy": "codeUndelCommandPerson",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4222C8": {
+      "name": "codeArrayImage",
+      "legacy": "codeArrayImage",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422318": {
+      "name": "codeTroopExperience",
+      "legacy": "codeTroopExperience",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422480": {
+      "name": "codeSearchCondition",
+      "legacy": "codeSearchCondition",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422720": {
+      "name": "codeNotSureCaptive",
+      "legacy": "codeNotSureCaptive",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422850": {
+      "name": "codeNewForceSoldier",
+      "legacy": "codeNewForceSoldier",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422A88": {
+      "name": "codeSafeArriveDay",
+      "legacy": "codeSafeArriveDay",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4229E8": {
+      "name": "codeAttackMinMoney",
+      "legacy": "codeAttackMinMoney",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422FD4": {
+      "name": "codeCircleAttackBuilding",
+      "legacy": "codeCircleAttackBuilding",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_421530": {
+      "name": "codeCheckGoOnAttack",
+      "legacy": "codeCheckGoOnAttack",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4238C0": {
+      "name": "codeAddOfficialLoyaty",
+      "legacy": "codeAddOfficialLoyaty",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_423D08": {
+      "name": "codeAdjustKiller",
+      "legacy": "codeAdjustKiller",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4237E8": {
+      "name": "codeBeingBuild",
+      "legacy": "codeBeingBuild",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_423FD8": {
+      "name": "codeAntiAttackWisdom",
+      "legacy": "codeAntiAttackWisdom",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_423F20": {
+      "name": "codeSelectAttackWisdom",
+      "legacy": "codeSelectAttackWisdom",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4246E8": {
+      "name": "codeDraftFailBug",
+      "legacy": "codeDraftFailBug",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_420658": {
+      "name": "codeCheckMinDefence",
+      "legacy": "codeCheckMinDefence",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_423498": {
+      "name": "codeRegardedBuildingOnAttack2",
+      "legacy": "codeRegardedBuildingOnAttack2",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_424A50": {
+      "name": "codeCheckPersonKillerLevel",
+      "legacy": "codeCheckPersonKillerLevel",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4246A0": {
+      "name": "codeLinkageKillerToDialog",
+      "legacy": "codeLinkageKillerToDialog",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_424BF8": {
+      "name": "codeGetArrayToWall",
+      "legacy": "codeGetArrayToWall",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_424D88": {
+      "name": "codeCheckTransportTask",
+      "legacy": "codeCheckTransportTask",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4255E8": {
+      "name": "codeMultiAlienate",
+      "legacy": "codeMultiAlienate",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_425740": {
+      "name": "codeGetOfficerType",
+      "legacy": "codeGetOfficerType",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_425BC0": {
+      "name": "codeMaxSoldierPush",
+      "legacy": "codeMaxSoldierPush",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_426040": {
+      "name": "codeAttackRatioDoor",
+      "legacy": "codeAttackRatioDoor",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4262E0": {
+      "name": "codeTroopRetreat",
+      "legacy": "codeTroopRetreat",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_426AE8": {
+      "name": "codeGetArrayAttackRange",
+      "legacy": "codeGetArrayAttackRange",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_426D68": {
+      "name": "codeCheckPlayerViewRange",
+      "legacy": "codeCheckPlayerViewRange",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4274C8": {
+      "name": "codeAdjustAttackArray",
+      "legacy": "codeAdjustAttackArray",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4279A8": {
+      "name": "codeCheckLongRangeArray",
+      "legacy": "codeCheckLongRangeArray",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_427BA0": {
+      "name": "codeMoveGuardTroop",
+      "legacy": "codeMoveGuardTroop",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422628": {
+      "name": "codeSoldierCommandKiller",
+      "legacy": "codeSoldierCommandKiller",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_427EF8": {
+      "name": "codeYearTableInfo",
+      "legacy": "codeYearTableInfo",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_427A10": {
+      "name": "codeWaterKillerProp",
+      "legacy": "codeWaterKillerProp",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_426F7C": {
+      "name": "codeFalseGoalTroop",
+      "legacy": "codeFalseGoalTroop",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4271F8": {
+      "name": "codeDamageNumberDown",
+      "legacy": "codeDamageNumberDown",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4272A0": {
+      "name": "codeHideSpecialState",
+      "legacy": "codeHideSpecialState",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_427FD0": {
+      "name": "codeRetreatBuildingCondition",
+      "legacy": "codeRetreatBuildingCondition",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_426CB8": {
+      "name": "codeTestPlayerViewRange",
+      "legacy": "codeTestPlayerViewRange",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_428130": {
+      "name": "codeClearSecondKillerPerson",
+      "legacy": "codeClearSecondKillerPerson",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_428438": {
+      "name": "codeJudgeAttackBuild",
+      "legacy": "codeJudgeAttackBuild",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_428600": {
+      "name": "codeMaxBusiness",
+      "legacy": "codeMaxBusiness",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4288F8": {
+      "name": "codeGetForceMilitaryPop",
+      "legacy": "codeGetForceMilitaryPop",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_428AF0": {
+      "name": "codePhaseErrorInvite",
+      "legacy": "codePhaseErrorInvite",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_428CC0": {
+      "name": "codeFightSubIncome",
+      "legacy": "codeFightSubIncome",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_428F48": {
+      "name": "codeCheckDraftFood",
+      "legacy": "codeCheckDraftFood",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4290A8": {
+      "name": "codeGetMaxCaptive",
+      "legacy": "codeGetMaxCaptive",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4205B8": {
+      "name": "codeAttackTroopCondition",
+      "legacy": "codeAttackTroopCondition",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_420D10": {
+      "name": "codeRelayFailedDispatch",
+      "legacy": "codeRelayFailedDispatch",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4210F0": {
+      "name": "codeCheckAttackTroop",
+      "legacy": "codeCheckAttackTroop",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_421A80": {
+      "name": "codeAdjustPersonPos",
+      "legacy": "codeAdjustPersonPos",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_421C50": {
+      "name": "codeBuildingAntiAttackTroop",
+      "legacy": "codeBuildingAntiAttackTroop",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_421FA0": {
+      "name": "codeJiaXuOfficer",
+      "legacy": "codeJiaXuOfficer",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422130": {
+      "name": "codeIntelligenceAbility",
+      "legacy": "codeIntelligenceAbility",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422220": {
+      "name": "codeStoneStop",
+      "legacy": "codeStoneStop",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4224F8": {
+      "name": "codeSearchInvite",
+      "legacy": "codeSearchInvite",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422898": {
+      "name": "codeSubAntiTrick",
+      "legacy": "codeSubAntiTrick",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422A9C": {
+      "name": "codeGossipToPlayer",
+      "legacy": "codeGossipToPlayer",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422C90": {
+      "name": "codeFilterBuildingSoldier",
+      "legacy": "codeFilterBuildingSoldier",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_423308": {
+      "name": "codeReserveAttackedBuilding",
+      "legacy": "codeReserveAttackedBuilding",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_424500": {
+      "name": "codeMaxBuildMoney",
+      "legacy": "codeMaxBuildMoney",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_423EA8": {
+      "name": "codeCheckWisdomAntitrap",
+      "legacy": "codeCheckWisdomAntitrap",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_424830": {
+      "name": "codeDraftMinFood",
+      "legacy": "codeDraftMinFood",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_422BEC": {
+      "name": "codePreBuildingSoldier3",
+      "legacy": "codePreBuildingSoldier3",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_423230": {
+      "name": "codeTestNotNullCity",
+      "legacy": "codeTestNotNullCity",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_423510": {
+      "name": "codeRegardedBuildingOnAttack3",
+      "legacy": "codeRegardedBuildingOnAttack3",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_424AB8": {
+      "name": "codeJudgeKillerLinkage",
+      "legacy": "codeJudgeKillerLinkage",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_424B48": {
+      "name": "codeMainForceDispatch",
+      "legacy": "codeMainForceDispatch",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_424C48": {
+      "name": "codeGetArrayToGarrison",
+      "legacy": "codeGetArrayToGarrison",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_425458": {
+      "name": "codeCheckTransportBlock",
+      "legacy": "codeCheckTransportBlock",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_425628": {
+      "name": "codeTryInviteCaptive",
+      "legacy": "codeTryInviteCaptive",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_425760": {
+      "name": "codeCommandOfficerPara",
+      "legacy": "codeCommandOfficerPara",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_425944": {
+      "name": "codeMaxPeopleHeartCmp",
+      "legacy": "codeMaxPeopleHeartCmp",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4257B0": {
+      "name": "codeDeleteMaxOfficer",
+      "legacy": "codeDeleteMaxOfficer",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_425CD8": {
+      "name": "codeMaxSoldierCmp",
+      "legacy": "codeMaxSoldierCmp",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_425D88": {
+      "name": "codeAttackTroopSoldier",
+      "legacy": "codeAttackTroopSoldier",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4260A0": {
+      "name": "codeTroopAtGoodPlace",
+      "legacy": "codeTroopAtGoodPlace",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_426328": {
+      "name": "codeSecondKiller",
+      "legacy": "codeSecondKiller",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_426758": {
+      "name": "codeGetAntiAttackGarrison",
+      "legacy": "codeGetAntiAttackGarrison",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_426E04": {
+      "name": "codePersonSmallDialog",
+      "legacy": "codePersonSmallDialog",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_42773C": {
+      "name": "codeGetArrayKillerPower",
+      "legacy": "codeGetArrayKillerPower",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_427860": {
+      "name": "codeChaosLinkageFlag",
+      "legacy": "codeChaosLinkageFlag",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4279CC": {
+      "name": "codeChangeTroopCommand",
+      "legacy": "codeChangeTroopCommand",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_427CD8": {
+      "name": "codeUseBaramArray",
+      "legacy": "codeUseBaramArray",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_427D80": {
+      "name": "codeWeakenLongRangeKiller",
+      "legacy": "codeWeakenLongRangeKiller",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_427C88": {
+      "name": "codeMonthTableInfo",
+      "legacy": "codeMonthTableInfo",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_426F10": {
+      "name": "codeGetInfoDistance",
+      "legacy": "codeGetInfoDistance",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_426FE8": {
+      "name": "codeDisplayBuildingCondition",
+      "legacy": "codeDisplayBuildingCondition",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_427240": {
+      "name": "codeGetPlayerForce",
+      "legacy": "codeGetPlayerForce",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4270C8": {
+      "name": "codeGetBuildingViewState",
+      "legacy": "codeGetBuildingViewState",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_427388": {
+      "name": "codeAllocFreeTroop",
+      "legacy": "codeAllocFreeTroop",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_428168": {
+      "name": "codeSkipArriveDay",
+      "legacy": "codeSkipArriveDay",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_428490": {
+      "name": "codeGetBuildSoldier",
+      "legacy": "codeGetBuildSoldier",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_428690": {
+      "name": "codeIncome",
+      "legacy": "codeIncome",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_428920": {
+      "name": "codeGetForceStrength",
+      "legacy": "codeGetForceStrength",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_428B28": {
+      "name": "codePlayerAutoProcess",
+      "legacy": "codePlayerAutoProcess",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_428D90": {
+      "name": "codeLeaderInspire",
+      "legacy": "codeLeaderInspire",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_428F94": {
+      "name": "codeRetreatChangeArray",
+      "legacy": "codeRetreatChangeArray",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    },
+    "unk_4253C4": {
+      "name": "codeGetPersonFriendship",
+      "legacy": "codeGetPersonFriendship",
+      "evidence": "InsertAsm.h: complete byte array equals the 2026 source bytes"
+    }
+  },
+  "locals": {
+    "409840": {
+      "v2": "cityAddressCursor",
+      "i": "remainingCities",
+      "v4": "previousCityAddress",
+      "v5": "zoneAddressCursor",
+      "j": "remainingZones",
+      "v7": "previousZoneAddress",
+      "Buffer": "versionWord",
+      "v8": "patchCodeCursorAt4204C8",
+      "v9": "patchDescriptorCursorAt42F704",
+      "v10": "patchIndexAt4204B8",
+      "v11": "patchTargetAt4204B8",
+      "v12": "patchCodeCursorAt41F9B0",
+      "v13": "patchDescriptorCursorAt42F584",
+      "v14": "patchIndexAt41F9A0",
+      "v15": "patchTargetAt41F9A0",
+      "v16": "patchCodeCursorAt4210A8",
+      "v17": "patchDescriptorCursorAt42F7BC",
+      "v18": "patchIndexAt421098",
+      "v19": "patchTargetAt421098",
+      "v20": "patchDescriptorCursorAt42F59C",
+      "v21": "patchCodeCursorAt41FB44",
+      "v22": "patchIndexAt41FAEC",
+      "k": "remainingDispatchPatches",
+      "v24": "patchTargetAt41FAEC",
+      "v25": "patchCodeCursorAt41FF30",
+      "v26": "patchDescriptorCursorAt42F6C4",
+      "v27": "patchIndexAt41FF18",
+      "v28": "patchTargetAt41FF18",
+      "v29": "patchCodeCursorAt421EB8",
+      "v30": "patchDescriptorCursorAt42F7EC",
+      "v31": "patchIndexAt421EA8",
+      "v32": "patchTargetAt421EA8",
+      "v33": "patchCodeCursorAt41FE40",
+      "v34": "patchDescriptorCursorAt42F67C",
+      "v35": "patchIndexAt41FE30",
+      "v36": "patchTargetAt41FE30",
+      "v37": "patchCodeCursorAt420FA0",
+      "v38": "patchDescriptorCursorAt42F794",
+      "v39": "patchIndexAt420F88",
+      "v40": "patchTargetAt420F88",
+      "v41": "patchCodeCursorAt41FFC0",
+      "v42": "patchDescriptorCursorAt42F6EC",
+      "v43": "patchIndexAt41FFB0",
+      "v44": "patchTargetAt41FFB0",
+      "v45": "patchCodeCursorAt41FEA8",
+      "v46": "patchDescriptorCursorAt42F694",
+      "v47": "patchIndexAt41FE88",
+      "v48": "patchTargetAt41FE88",
+      "v49": "patchCodeCursorAt420560",
+      "v50": "patchDescriptorCursorAt42F71C",
+      "v51": "patchIndexAt420548",
+      "v52": "patchTargetAt420548",
+      "v53": "patchCodeCursorAt420CB8",
+      "v54": "patchDescriptorCursorAt42F76C",
+      "v55": "patchIndexAt420CA0",
+      "v56": "patchTargetAt420CA0",
+      "v57": "patchCodeCursorAt41FCC8",
+      "v58": "patchDescriptorCursorAt42F61C",
+      "v59": "patchIndexAt41FCA8",
+      "v60": "patchTargetAt41FCA8",
+      "v61": "patchCodeCursorAt421D90",
+      "v62": "patchDescriptorCursorAt42F7D4",
+      "v63": "patchIndexAt421D80",
+      "v64": "patchTargetAt421D80",
+      "v65": "patchCodeCursorAt41FDE8",
+      "v66": "patchDescriptorCursorAt42F664",
+      "v67": "patchIndexAt41FDD8",
+      "v68": "patchTargetAt41FDD8",
+      "v69": "patchCodeCursorAt41FD40",
+      "v70": "patchDescriptorCursorAt42F64C",
+      "v71": "patchIndexAt41FD30",
+      "v72": "patchTargetAt41FD30",
+      "v73": "patchCodeCursorAt420B28",
+      "v74": "patchDescriptorCursorAt42F744",
+      "v75": "patchIndexAt420B10",
+      "v76": "patchTargetAt420B10"
+    },
+    "409E10": {
+      "WindowA": "gameWindow",
+      "v4": "connectTicks",
+      "v5": "gameProcess",
+      "v6": "remoteAllocation",
+      "v35": "messageId",
+      "v36": "messageError",
+      "v59": "writeSucceeded",
+      "v60": "selectedSoldierCommandKillerIndexBias",
+      "v61": "selectedNpcAllieAttackIndexBias",
+      "v62": "selectedDisableBurnIndexBias",
+      "v63": "selectedEnableRelayDispatchIndexBias",
+      "v64": "selectedEnableCityPopulationCoefIndexBias",
+      "v65": "citySkillAddress",
+      "v66": "cityMaxSoldier",
+      "v67": "cityLimitIndex",
+      "v68": "cityMaxPeopleHeart",
+      "v69": "cityFlags",
+      "v70": "citySkill",
+      "v71": "cityLimitsCursor",
+      "v72": "cityIncomeLimit",
+      "v73": "cityHarvestLimit",
+      "v74": "cityMaxDurability",
+      "v75": "skillFlags",
+      "v76": "skillIntervalAddress",
+      "v77": "skillConfigCursor",
+      "v78": "skillProbability",
+      "v79": "skillInterval",
+      "v80": "initialCityLimitCursor",
+      "v81": "cityDefaultsCursor",
+      "v82": "initialMaxSoldier",
+      "v83": "formationFlags",
+      "v84": "formationConfigAddress",
+      "v85": "formationGarrisonAddress",
+      "v86": "formationRangeAndView",
+      "LastError": "lastError",
+      "v88": "formationIndex",
+      "v89": "formationRangeCursor",
+      "v90": "nextStatusTicks",
+      "v91": "statusTicks",
+      "v92": "remainingStatusDots",
+      "flOldProtect": "writeValueOrError",
+      "v94": "statusText",
+      "v95": "configIndex",
+      "v96": "cityConfigCursor",
+      "v97": "gameFlags",
+      "Buffer": "initializationValue",
+      "v99": "stringLifetimeState",
+      "v7": "patchDescriptorCursorAt42F620",
+      "v8": "patchDescriptorCursorAt42F720",
+      "v9": "patchDescriptorCursorAt42F698",
+      "v10": "patchCodeCursorAt41F930",
+      "v11": "patchIndexAt41F920",
+      "v12": "patchDescriptorCursorAt42F748",
+      "v13": "patchDescriptorCursorAt42F6F0",
+      "v14": "patchDescriptorCursorAt42F7D8",
+      "v15": "patchDescriptorCursorAt42F588",
+      "v16": "patchDescriptorCursorAt42F6C8",
+      "v17": "patchDescriptorCursorAt42F610",
+      "v18": "patchDescriptorCursorAt42F770",
+      "v19": "patchDescriptorCursorAt42F708",
+      "v20": "patchDescriptorCursorAt42F5A0",
+      "v21": "patchDescriptorCursorAt42F668",
+      "v22": "patchDescriptorCursorAt42F7C0",
+      "v23": "patchDescriptorCursorAt42F5E0",
+      "v24": "patchDescriptorCursorAt42F5F0",
+      "v25": "patchDescriptorCursorAt42F798",
+      "v26": "patchDescriptorCursorAt42F600",
+      "v27": "patchDescriptorCursorAt42F7F0",
+      "v28": "patchDescriptorCursorAt42F680",
+      "v29": "patchDescriptorCursorAt42F650",
+      "i": "patchIndexAt42B890",
+      "j": "patchIndexAt42B908",
+      "v32": "patchCodeCursorAt42B990",
+      "v33": "patchIndexAt42B970",
+      "k": "patchIndexAt42B9D0",
+      "v37": "patchCodeCursorAt41F848",
+      "v38": "patchIndexAt41F818",
+      "v39": "patchCodeCursorAt425870",
+      "v40": "patchIndexAt425840",
+      "v41": "patchDescriptorCursorAt42CF70",
+      "v42": "patchDescriptorCursorAt41FA60",
+      "v43": "patchDescriptorCursorAt422918",
+      "v44": "patchDescriptorCursorAt42CE40",
+      "m": "patchIndexAt4258D0",
+      "v46": "patchDescriptorCursorAt426698",
+      "n": "patchIndexAt428000",
+      "v48": "patchDescriptorCursorAt42B698",
+      "ii": "patchIndexAt42C134",
+      "jj": "patchIndexAt42CA78",
+      "kk": "patchIndexAt42CADC",
+      "mm": "patchIndexAt42CB74",
+      "v53": "patchDescriptorCursorAt42CD48",
+      "v54": "patchDescriptorCursorAt42D0C8",
+      "v55": "patchDescriptorCursorAt42D340",
+      "v56": "patchDescriptorCursorAt42D7C0",
+      "v57": "patchDescriptorCursorAt42C258",
+      "v58": "patchDescriptorCursorAt42C620"
+    },
+    "41A1F0": {
+      "a2": "enabled",
+      "v3": "firstZoneCityIndexBias",
+      "v5": "fourthZoneCityIndexBias",
+      "result": "writeSucceeded"
+    }
+  },
+  "labels": {
+    "LABEL_2113": "applyConfiguration",
+    "LABEL_2144": "applySkills",
+    "LABEL_2164": "cityWriteFailed",
+    "LABEL_2166": "applyFormations",
+    "LABEL_2178": "applyZoneCorrection",
+    "LABEL_2181": "reportWriteFailure",
+    "LABEL_2187": "animateStatus",
+    "LABEL_2193": "displayStatus",
+    "LABEL_2194": "finishModification"
+  }
+}

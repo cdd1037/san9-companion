@@ -1,0 +1,64 @@
+{
+  "sample": {
+    "path": "../recovery/sample-2026/San9PKHard.exe",
+    "size": 208896,
+    "image_base": 4194304,
+    "entry_va": 4303037,
+    "coff_timestamp": 1770625879,
+    "sections": [
+      {
+        "name": ".text",
+        "va": 4198400,
+        "rva": 4096,
+        "virtual_size": 107266,
+        "raw_size": 110592,
+        "raw_offset": 4096,
+        "flags": 1610612768
+      },
+      {
+        "name": ".rdata",
+        "va": 4308992,
+        "rva": 114688,
+        "virtual_size": 9402,
+        "raw_size": 12288,
+        "raw_offset": 114688,
+        "flags": 1073741888
+      },
+      {
+        "name": ".data",
+        "va": 4321280,
+        "rva": 126976,
+        "virtual_size": 67624,
+        "raw_size": 65536,
+        "raw_offset": 126976,
+        "flags": 3221225536
+      },
+      {
+        "name": ".rsrc",
+        "va": 4390912,
+        "rva": 196608,
+        "virtual_size": 13472,
+        "raw_size": 16384,
+        "raw_offset": 192512,
+        "flags": 1073741888
+      }
+    ]
+  },
+  "architecture": "x86 / PE32 / MFC42 / ANSI",
+  "functions": 929,
+  "decompiled": 928,
+  "memory_api_calls": 1542,
+  "write_calls": 1525,
+  "static_byte_calls": 1087,
+  "dynamic_calls": 438,
+  "static_initializers": 317,
+  "relocation_entries": 969,
+  "relocation_object_fields": 7,
+  "allocation_size": 45056,
+  "original_injection_base": 655360,
+  "resources": 11,
+  "dialogs": 6,
+  "source_is_original_author_source": false,
+  "live_validation": false,
+  "executable_replacement": false
+}

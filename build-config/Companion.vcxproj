@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32"><Configuration>Debug</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32"><Configuration>Release</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Publish|Win32"><Configuration>Publish</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8F478A10-33DF-42C1-854A-41F1F2026001}</ProjectGuid>
+    <RootNamespace>San9Companion</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="Toolchain.props" />
+  <PropertyGroup><CharacterSet>Unicode</CharacterSet></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="Compiler.props" />
+  <PropertyGroup>
+    <OutDir>$(ProjectDir)..\build\app\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\build\obj\app\$(Configuration)\</IntDir>
+    <TargetName>San9Companion</TargetName>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\assets\ui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>user32.lib;comctl32.lib;comdlg32.lib;shell32.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/MANIFESTDEPENDENCY:"type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'" %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\app\platform\NativeWidgets.cpp" />
+    <ClCompile Include="..\src\app\application\Controller.cpp" />
+    <ClCompile Include="..\src\app\ui\Pages.cpp" />
+    <ClCompile Include="..\src\app\ui\MainWindow.cpp" />
+    <ClCompile Include="..\src\app\ui\RuntimeStatusText.cpp" />
+    <ResourceCompile Include="..\assets\ui\companion.rc" />
+    <ClInclude Include="..\assets\ui\*.h" />
+    <ClInclude Include="..\src\app\platform\*.h" />
+    <ClInclude Include="..\src\app\application\*.h" />
+    <ClInclude Include="..\src\app\ui\*.h" />
+    <None Include="..\assets\ui\*.ico" />
+    <None Include="..\assets\ui\dialogs.rc" />
+    <ConfigFile Include="..\assets\config\*.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Runtime.vcxproj">
+      <Project>{8F478A10-33DF-42C1-854A-41F1F2026003}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Target Name="CopyConfigurationFiles" AfterTargets="Build">
+    <Copy SourceFiles="@(ConfigFile)" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true" />
+  </Target>
+</Project>

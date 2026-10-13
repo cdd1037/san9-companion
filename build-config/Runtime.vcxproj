@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32"><Configuration>Debug</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32"><Configuration>Release</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Publish|Win32"><Configuration>Publish</Configuration><Platform>Win32</Platform></ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8F478A10-33DF-42C1-854A-41F1F2026003}</ProjectGuid>
+    <RootNamespace>San9Runtime</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="Toolchain.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="Compiler.props" />
+  <PropertyGroup>
+    <OutDir>$(ProjectDir)..\build\runtime\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\build\obj\runtime\$(Configuration)\</IntDir>
+    <TargetName>San9Runtime</TargetName>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\runtime\Runtime2026.cpp" />
+    <ClCompile Include="..\src\runtime\RuntimeVersion2026.cpp" />
+    <ClCompile Include="..\src\runtime\RuntimeInjection2026.cpp" />
+    <ClCompile Include="..\src\runtime\RuntimeConfiguration2026.cpp" />
+    <ClCompile Include="..\src\runtime\RuntimeZone2026.cpp" />
+    <ClCompile Include="..\src\runtime\GameText.cpp" />
+    <ClCompile Include="..\src\runtime\GameSnapshots2026.cpp" />
+    <ClCompile Include="..\src\model\ParameterConfig.cpp" />
+    <ClCompile Include="..\src\model\CityConfig.cpp" />
+    <ClCompile Include="..\src\model\SkillConfig.cpp" />
+    <ClCompile Include="..\src\model\FormationConfig.cpp" />
+    <ClCompile Include="..\src\model\PersonConfig.cpp" />
+    <ClCompile Include="..\src\model\PersonSnapshot.cpp" />
+    <ClCompile Include="..\src\model\PackedConfigIO.cpp" />
+    <ClCompile Include="..\src\model\PatchImage.cpp" />
+    <ClInclude Include="..\src\runtime\*.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

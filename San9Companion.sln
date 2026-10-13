@@ -1,0 +1,37 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.0.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{BC8A1FFA-BEE3-4634-8014-F334798102B3}") = "Companion", "build-config\Companion.vcxproj", "{8F478A10-33DF-42C1-854A-41F1F2026001}"
+EndProject
+Project("{BC8A1FFA-BEE3-4634-8014-F334798102B3}") = "Runtime", "build-config\Runtime.vcxproj", "{8F478A10-33DF-42C1-854A-41F1F2026003}"
+EndProject
+Project("{BC8A1FFA-BEE3-4634-8014-F334798102B3}") = "RuntimeTests", "build-config\RuntimeTests.vcxproj", "{8F478A10-33DF-42C1-854A-41F1F2026002}"
+EndProject
+Global
+    GlobalSection(SolutionConfigurationPlatforms) = preSolution
+        Debug|Win32 = Debug|Win32
+        Release|Win32 = Release|Win32
+        Publish|Win32 = Publish|Win32
+    EndGlobalSection
+    GlobalSection(ProjectConfigurationPlatforms) = postSolution
+        {8F478A10-33DF-42C1-854A-41F1F2026002}.Release|Win32.ActiveCfg = Release|Win32
+        {8F478A10-33DF-42C1-854A-41F1F2026002}.Release|Win32.Build.0 = Release|Win32
+        {8F478A10-33DF-42C1-854A-41F1F2026002}.Debug|Win32.ActiveCfg = Debug|Win32
+        {8F478A10-33DF-42C1-854A-41F1F2026002}.Debug|Win32.Build.0 = Debug|Win32
+        {8F478A10-33DF-42C1-854A-41F1F2026002}.Publish|Win32.ActiveCfg = Publish|Win32
+        {8F478A10-33DF-42C1-854A-41F1F2026002}.Publish|Win32.Build.0 = Publish|Win32
+        {8F478A10-33DF-42C1-854A-41F1F2026003}.Debug|Win32.ActiveCfg = Debug|Win32
+        {8F478A10-33DF-42C1-854A-41F1F2026003}.Debug|Win32.Build.0 = Debug|Win32
+        {8F478A10-33DF-42C1-854A-41F1F2026003}.Release|Win32.ActiveCfg = Release|Win32
+        {8F478A10-33DF-42C1-854A-41F1F2026003}.Release|Win32.Build.0 = Release|Win32
+        {8F478A10-33DF-42C1-854A-41F1F2026003}.Publish|Win32.ActiveCfg = Publish|Win32
+        {8F478A10-33DF-42C1-854A-41F1F2026003}.Publish|Win32.Build.0 = Publish|Win32
+        {8F478A10-33DF-42C1-854A-41F1F2026001}.Debug|Win32.ActiveCfg = Debug|Win32
+        {8F478A10-33DF-42C1-854A-41F1F2026001}.Debug|Win32.Build.0 = Debug|Win32
+        {8F478A10-33DF-42C1-854A-41F1F2026001}.Release|Win32.ActiveCfg = Release|Win32
+        {8F478A10-33DF-42C1-854A-41F1F2026001}.Publish|Win32.ActiveCfg = Publish|Win32
+        {8F478A10-33DF-42C1-854A-41F1F2026001}.Release|Win32.Build.0 = Release|Win32
+        {8F478A10-33DF-42C1-854A-41F1F2026001}.Publish|Win32.Build.0 = Publish|Win32
+    EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+# Preserve source/evidence bytes and their original encodings on every checkout.
+* -text
+*.exe binary
+*.bin binary
+*.res binary
+*.ico binary
+*.zip binary

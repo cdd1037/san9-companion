@@ -1,0 +1,5012 @@
+[
+  {
+    "resource": {
+      "keys": [
+        5,
+        102,
+        2052
+      ],
+      "va": 4391584,
+      "size": 226,
+      "codepage": 0,
+      "file": "5_102_2052.bin"
+    },
+    "dialog": {
+      "extended": true,
+      "help_id": 0,
+      "style": 2429157568,
+      "exstyle": 262144,
+      "rect": [
+        0,
+        0,
+        150,
+        100
+      ],
+      "menu": "",
+      "window_class": "",
+      "title": "高难度优化伴侣><",
+      "font": {
+        "point_size": 9,
+        "weight": 0,
+        "italic": 0,
+        "charset": 1,
+        "face": "宋体"
+      },
+      "controls": [
+        {
+          "id": 1001,
+          "rect": [
+            14,
+            55,
+            120,
+            16
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "",
+          "style": 1342312960,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1011,
+          "rect": [
+            102,
+            20,
+            32,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "设置",
+          "style": 1342242816,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1012,
+          "rect": [
+            14,
+            20,
+            40,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "启动39",
+          "style": 1342242816,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            39,
+            82,
+            65,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "2026年2月9日更新",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        }
+      ],
+      "parsed_size": 226
+    }
+  },
+  {
+    "resource": {
+      "keys": [
+        5,
+        131,
+        2052
+      ],
+      "va": 4391816,
+      "size": 5364,
+      "codepage": 0,
+      "file": "5_131_2052.bin"
+    },
+    "dialog": {
+      "extended": true,
+      "help_id": 0,
+      "style": 2160591040,
+      "exstyle": 0,
+      "rect": [
+        0,
+        0,
+        625,
+        340
+      ],
+      "menu": "",
+      "window_class": "",
+      "title": "设置",
+      "font": {
+        "point_size": 9,
+        "weight": 0,
+        "italic": 0,
+        "charset": 1,
+        "face": "宋体"
+      },
+      "controls": [
+        {
+          "id": 1017,
+          "rect": [
+            18,
+            28,
+            61,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "武将长生不老",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1018,
+          "rect": [
+            18,
+            44,
+            71,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "高能武将可阵亡",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1032,
+          "rect": [
+            18,
+            76,
+            64,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "禁止电脑离间",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1040,
+          "rect": [
+            18,
+            92,
+            64,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "禁止电脑烧夷",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1015,
+          "rect": [
+            18,
+            108,
+            66,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "士兵数和统率增加兵法伤害",
+          "style": 1342251011,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1029,
+          "rect": [
+            18,
+            132,
+            81,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "“第二兵法”系统",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1034,
+          "rect": [
+            18,
+            148,
+            89,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "武将与君主的相性差影响离间和登用",
+          "style": 1342251011,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1030,
+          "rect": [
+            18,
+            172,
+            62,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "减少伤兵率",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1037,
+          "rect": [
+            18,
+            188,
+            78,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "禁止电脑划分军团",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1038,
+          "rect": [
+            18,
+            204,
+            85,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "烧夷增加烧兵粮效果",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1042,
+          "rect": [
+            18,
+            220,
+            84,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "禁止玩家委任军团运输和救援",
+          "style": 1342251011,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1048,
+          "rect": [
+            18,
+            244,
+            87,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "增加耐久的普防系数",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1050,
+          "rect": [
+            18,
+            260,
+            84,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "都市兵役人口不累加",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1051,
+          "rect": [
+            18,
+            276,
+            84,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "同系物理兵法联动",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1031,
+          "rect": [
+            115,
+            28,
+            89,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "动态增加兵法熟练度",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1,
+          "rect": [
+            560,
+            274,
+            35,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "确认",
+          "style": 1342242816,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 2,
+          "rect": [
+            560,
+            299,
+            35,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "取消",
+          "style": 1342242816,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            336,
+            13,
+            89,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "资金增长分隔点(×4096)",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1020,
+          "rect": [
+            337,
+            25,
+            22,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1021,
+          "rect": [
+            359,
+            25,
+            22,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1022,
+          "rect": [
+            381,
+            25,
+            22,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            336,
+            43,
+            89,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "兵粮增长分隔点(×8192)",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1023,
+          "rect": [
+            337,
+            55,
+            22,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1024,
+          "rect": [
+            359,
+            55,
+            22,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1025,
+          "rect": [
+            381,
+            55,
+            22,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            336,
+            73,
+            93,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "兵役增长分隔点(×16384)",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1026,
+          "rect": [
+            337,
+            85,
+            22,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1027,
+          "rect": [
+            359,
+            85,
+            22,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1028,
+          "rect": [
+            381,
+            85,
+            22,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1004,
+          "rect": [
+            553,
+            239,
+            48,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "保存设置",
+          "style": 1342242816,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            220,
+            13,
+            105,
+            310
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "难度选项",
+          "style": 1342177287,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            11,
+            13,
+            200,
+            310
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "系统选项",
+          "style": 1342177287,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1013,
+          "rect": [
+            229,
+            28,
+            62,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "开启小兵培养",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1016,
+          "rect": [
+            229,
+            44,
+            77,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "禁止电脑处斩俘虏",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1033,
+          "rect": [
+            229,
+            60,
+            48,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "电脑群攻",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1039,
+          "rect": [
+            387,
+            113,
+            28,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            335,
+            116,
+            49,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "游戏年份差值",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1006,
+          "rect": [
+            556,
+            15,
+            48,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "武将配置",
+          "style": 1342242816,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1049,
+          "rect": [
+            229,
+            76,
+            74,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "军师准确判断的智力=110",
+          "style": 1342251011,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1046,
+          "rect": [
+            229,
+            100,
+            81,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "加倍电脑钱粮收入",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1052,
+          "rect": [
+            229,
+            116,
+            81,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "允许电脑接力救援",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1053,
+          "rect": [
+            229,
+            132,
+            85,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "电脑与玩家势力接壤的都设重点部署兵力",
+          "style": 1342251011,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1007,
+          "rect": [
+            556,
+            45,
+            48,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "都市配置",
+          "style": 1342242816,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1010,
+          "rect": [
+            553,
+            203,
+            50,
+            20
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "玩家势力",
+          "style": 1342242816,
+          "exstyle": 512,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            335,
+            136,
+            49,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "兵法伤害系数",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1045,
+          "rect": [
+            387,
+            133,
+            22,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1041,
+          "rect": [
+            115,
+            44,
+            83,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "动态增加武将能力",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            335,
+            156,
+            49,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "单挑阵亡系数",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1137,
+          "rect": [
+            387,
+            153,
+            22,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            335,
+            176,
+            49,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "无爵位的俸禄",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1138,
+          "rect": [
+            387,
+            173,
+            22,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1008,
+          "rect": [
+            556,
+            105,
+            48,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "兵法配置",
+          "style": 1342242816,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1009,
+          "rect": [
+            556,
+            75,
+            48,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "阵型配置",
+          "style": 1342242816,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1054,
+          "rect": [
+            229,
+            156,
+            81,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "禁止“遇到华佗”",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1043,
+          "rect": [
+            115,
+            60,
+            84,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "部队最高统率决定部队普通攻防",
+          "style": 1342251011,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1044,
+          "rect": [
+            229,
+            188,
+            78,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "增加武将能力上限",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1047,
+          "rect": [
+            229,
+            172,
+            82,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "启用电脑蛮族阵型",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1055,
+          "rect": [
+            115,
+            84,
+            70,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "减少远程兵法对设施的伤害",
+          "style": 1342251011,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            335,
+            196,
+            49,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "阻击概率系数",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1139,
+          "rect": [
+            387,
+            193,
+            22,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1056,
+          "rect": [
+            115,
+            108,
+            80,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "重视内政委任军团可征兵",
+          "style": 1342251011,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1057,
+          "rect": [
+            229,
+            204,
+            85,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "减少玩家攻陷都市时所获钱粮",
+          "style": 1342251011,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1058,
+          "rect": [
+            115,
+            132,
+            87,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "调整水军兵法发动率",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1059,
+          "rect": [
+            448,
+            29,
+            47,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "开启迷雾",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            438,
+            13,
+            91,
+            115
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "大地图迷雾",
+          "style": 1342177287,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            448,
+            49,
+            73,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "都市/设施/部队视野",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1141,
+          "rect": [
+            448,
+            62,
+            18,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1142,
+          "rect": [
+            467,
+            62,
+            18,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1143,
+          "rect": [
+            486,
+            62,
+            18,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            448,
+            85,
+            49,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "兵力显示误差",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1144,
+          "rect": [
+            499,
+            82,
+            18,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            335,
+            216,
+            49,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "电脑乱战系数",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1140,
+          "rect": [
+            387,
+            213,
+            22,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            437,
+            140,
+            89,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "部队武将数兵法概率系数",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1145,
+          "rect": [
+            437,
+            151,
+            15,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1146,
+          "rect": [
+            455,
+            151,
+            15,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1147,
+          "rect": [
+            473,
+            151,
+            15,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1148,
+          "rect": [
+            491,
+            151,
+            15,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1149,
+          "rect": [
+            509,
+            151,
+            15,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1060,
+          "rect": [
+            115,
+            148,
+            87,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "设施耐久为0即破城",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1061,
+          "rect": [
+            115,
+            164,
+            87,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "修正地域所属都市",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1062,
+          "rect": [
+            115,
+            180,
+            87,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "士气影响兵法发动率",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1063,
+          "rect": [
+            229,
+            228,
+            87,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "玩家按常规概率抓获灭亡势力的武将",
+          "style": 1342251011,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1064,
+          "rect": [
+            115,
+            196,
+            83,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "萁型利于兵法联动雁行附加阻击概率",
+          "style": 1342251011,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1065,
+          "rect": [
+            229,
+            252,
+            86,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "无守将都市减少内政",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            335,
+            236,
+            49,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "相性同化系数",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1150,
+          "rect": [
+            387,
+            233,
+            22,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            448,
+            105,
+            49,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "军师报告系数",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1151,
+          "rect": [
+            499,
+            102,
+            18,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1066,
+          "rect": [
+            229,
+            268,
+            86,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "电脑可探索宝物",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1067,
+          "rect": [
+            115,
+            220,
+            87,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "士兵数减少兵法伤害",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1068,
+          "rect": [
+            229,
+            284,
+            63,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "电脑自动征兵",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1069,
+          "rect": [
+            115,
+            236,
+            62,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "玩家自动内政",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            436,
+            216,
+            57,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "反玩家联盟系数",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1152,
+          "rect": [
+            503,
+            213,
+            22,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            436,
+            236,
+            49,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "联盟时间(旬)",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1153,
+          "rect": [
+            503,
+            233,
+            22,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            436,
+            256,
+            65,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "交战破坏内政系数",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1154,
+          "rect": [
+            503,
+            253,
+            22,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1070,
+          "rect": [
+            115,
+            252,
+            73,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "都设耐久很低时较易陷入混乱",
+          "style": 1342251011,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1071,
+          "rect": [
+            115,
+            276,
+            73,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "君主/都督交战时随机发动鼓舞",
+          "style": 1342251011,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            436,
+            176,
+            67,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "小兵基础能力系数",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1155,
+          "rect": [
+            503,
+            173,
+            22,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1072,
+          "rect": [
+            18,
+            292,
+            80,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "发动兵法时才增加兵法熟练度",
+          "style": 1342251011,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            436,
+            196,
+            67,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "小兵男生比例(%)",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1156,
+          "rect": [
+            503,
+            193,
+            22,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1073,
+          "rect": [
+            229,
+            300,
+            63,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "禁止武将飞调",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1019,
+          "rect": [
+            18,
+            60,
+            71,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "部队大将可阵亡",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1074,
+          "rect": [
+            115,
+            300,
+            73,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "统率和智力影响兵法发动概率",
+          "style": 1342251011,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 4294967295,
+          "rect": [
+            335,
+            256,
+            49,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "最大俘虏系数",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1157,
+          "rect": [
+            387,
+            253,
+            22,
+            13
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1158,
+          "rect": [
+            335,
+            276,
+            85,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "蛮族灭亡武将不消失",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1159,
+          "rect": [
+            335,
+            292,
+            89,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "艨艟可以发动“箭雨”",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1160,
+          "rect": [
+            335,
+            308,
+            89,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "鬥舰不能发动“箭岚”",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1161,
+          "rect": [
+            436,
+            276,
+            85,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "不观看单挑过程",
+          "style": 1073807363,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1162,
+          "rect": [
+            436,
+            292,
+            85,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "简化俘虏交还对话",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1163,
+          "rect": [
+            436,
+            308,
+            85,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "启用都市人口系数",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1164,
+          "rect": [
+            18,
+            312,
+            84,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "禁止电脑势力合并",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1165,
+          "rect": [
+            229,
+            312,
+            91,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "电脑出征部队数目不限",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        }
+      ],
+      "parsed_size": 5364
+    }
+  },
+  {
+    "resource": {
+      "keys": [
+        5,
+        132,
+        2052
+      ],
+      "va": 4397184,
+      "size": 2874,
+      "codepage": 0,
+      "file": "5_132_2052.bin"
+    },
+    "dialog": {
+      "extended": false,
+      "help_id": 0,
+      "style": 2160591040,
+      "exstyle": 0,
+      "rect": [
+        0,
+        0,
+        333,
+        337
+      ],
+      "menu": "",
+      "window_class": "",
+      "title": "武将配置",
+      "font": {
+        "point_size": 9,
+        "face": "宋体"
+      },
+      "controls": [
+        {
+          "id": 1119,
+          "rect": [
+            251,
+            12,
+            68,
+            311
+          ],
+          "window_class": {
+            "ordinal": 131
+          },
+          "title": "",
+          "style": 1352728833,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1043,
+          "rect": [
+            23,
+            29,
+            50,
+            15
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1135,
+          "rect": [
+            41,
+            53,
+            30,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1092,
+          "rect": [
+            96,
+            32,
+            17,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1093,
+          "rect": [
+            137,
+            32,
+            17,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1094,
+          "rect": [
+            177,
+            32,
+            17,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1095,
+          "rect": [
+            219,
+            32,
+            17,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1055,
+          "rect": [
+            194,
+            305,
+            50,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "确定",
+          "style": 1342242816,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            16,
+            84,
+            171,
+            160
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "可习得最高级别兵法",
+          "style": 1342177287,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            23,
+            103,
+            17,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "步兵",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            23,
+            118,
+            17,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "骑兵",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            23,
+            133,
+            17,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "弓骑",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            23,
+            148,
+            17,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "弩兵",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            23,
+            163,
+            17,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "水军",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            23,
+            193,
+            17,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "智略",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            23,
+            208,
+            17,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "谋略",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            23,
+            223,
+            17,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "策略",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            23,
+            178,
+            17,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "攻城",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1136,
+          "rect": [
+            134,
+            305,
+            50,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "保存配置",
+          "style": 1342242816,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1056,
+          "rect": [
+            45,
+            102,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "奋战",
+          "style": 1342308361,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1057,
+          "rect": [
+            80,
+            102,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "奋斗",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1058,
+          "rect": [
+            115,
+            102,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "奋迅",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1059,
+          "rect": [
+            150,
+            102,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "精进",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1060,
+          "rect": [
+            45,
+            117,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "突破",
+          "style": 1342308361,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1061,
+          "rect": [
+            80,
+            117,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "突进",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1062,
+          "rect": [
+            115,
+            117,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "突击",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1063,
+          "rect": [
+            150,
+            117,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "精进",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1064,
+          "rect": [
+            45,
+            132,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "骑射",
+          "style": 1342308361,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1065,
+          "rect": [
+            80,
+            132,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "奔射",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1066,
+          "rect": [
+            115,
+            132,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "飞射",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1067,
+          "rect": [
+            150,
+            132,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "精进",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1068,
+          "rect": [
+            45,
+            147,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "齐射",
+          "style": 1342308361,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1069,
+          "rect": [
+            80,
+            147,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "连射",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1070,
+          "rect": [
+            115,
+            147,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "连弩",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1071,
+          "rect": [
+            150,
+            147,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "精进",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1072,
+          "rect": [
+            45,
+            162,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "艨艟",
+          "style": 1342308361,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1073,
+          "rect": [
+            80,
+            162,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "楼船",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1074,
+          "rect": [
+            115,
+            162,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "斗舰",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1075,
+          "rect": [
+            150,
+            162,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "精进",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1076,
+          "rect": [
+            45,
+            177,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "井栏",
+          "style": 1342308361,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1077,
+          "rect": [
+            80,
+            177,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "冲车",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1078,
+          "rect": [
+            115,
+            177,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "发石",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1079,
+          "rect": [
+            150,
+            177,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "象兵",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1080,
+          "rect": [
+            45,
+            192,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "营造",
+          "style": 1342308361,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1081,
+          "rect": [
+            80,
+            192,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "石兵",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1082,
+          "rect": [
+            115,
+            192,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "破陷",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1083,
+          "rect": [
+            150,
+            192,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "教论",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1084,
+          "rect": [
+            45,
+            207,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "混乱",
+          "style": 1342308361,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1085,
+          "rect": [
+            80,
+            207,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "陷阱",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1086,
+          "rect": [
+            115,
+            207,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "攻心",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1087,
+          "rect": [
+            150,
+            207,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "幻术",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1088,
+          "rect": [
+            45,
+            222,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "辱骂",
+          "style": 1342308361,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1089,
+          "rect": [
+            80,
+            222,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "鼓舞",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1090,
+          "rect": [
+            115,
+            222,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "治疗",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1091,
+          "rect": [
+            150,
+            222,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "妖术",
+          "style": 1342177289,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            16,
+            12,
+            228,
+            61
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "基本信息",
+          "style": 1342177287,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            79,
+            34,
+            16,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "统率",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            120,
+            34,
+            16,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "武力",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            160,
+            34,
+            16,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "智力",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            202,
+            34,
+            16,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "政治",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            186,
+            84,
+            57,
+            160
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "精通 熟练度",
+          "style": 1342177287,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1096,
+          "rect": [
+            196,
+            102,
+            8,
+            8
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "",
+          "style": 1342242818,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1097,
+          "rect": [
+            196,
+            117,
+            8,
+            8
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "",
+          "style": 1342242818,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1098,
+          "rect": [
+            196,
+            132,
+            8,
+            8
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "",
+          "style": 1342242818,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1099,
+          "rect": [
+            196,
+            147,
+            8,
+            8
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "",
+          "style": 1342242818,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1100,
+          "rect": [
+            196,
+            162,
+            8,
+            8
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "",
+          "style": 1342242818,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1101,
+          "rect": [
+            196,
+            177,
+            8,
+            8
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "",
+          "style": 1342242818,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1102,
+          "rect": [
+            196,
+            192,
+            8,
+            8
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "",
+          "style": 1342242818,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1103,
+          "rect": [
+            196,
+            207,
+            8,
+            8
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "",
+          "style": 1342242818,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1104,
+          "rect": [
+            196,
+            222,
+            8,
+            8
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "",
+          "style": 1342242818,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1105,
+          "rect": [
+            213,
+            100,
+            20,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350633600,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1106,
+          "rect": [
+            213,
+            115,
+            20,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350633600,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1107,
+          "rect": [
+            213,
+            130,
+            20,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350633600,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1108,
+          "rect": [
+            213,
+            145,
+            20,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350633600,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1109,
+          "rect": [
+            213,
+            160,
+            20,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350633600,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1110,
+          "rect": [
+            213,
+            175,
+            20,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350633600,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1111,
+          "rect": [
+            213,
+            190,
+            20,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350633600,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1112,
+          "rect": [
+            213,
+            205,
+            20,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350633600,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1113,
+          "rect": [
+            213,
+            220,
+            20,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350633600,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            16,
+            255,
+            99,
+            67
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "武将亲密度",
+          "style": 1342177287,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1115,
+          "rect": [
+            57,
+            300,
+            43,
+            12
+          ],
+          "window_class": {
+            "ordinal": 132
+          },
+          "title": "",
+          "style": 1342177280,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            58,
+            273,
+            18,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "序号",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            81,
+            273,
+            16,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "序号",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            27,
+            273,
+            24,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "亲密度",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1116,
+          "rect": [
+            57,
+            283,
+            21,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1117,
+          "rect": [
+            79,
+            283,
+            21,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1118,
+          "rect": [
+            31,
+            283,
+            18,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1045,
+          "rect": [
+            31,
+            300,
+            18,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350633600,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            133,
+            269,
+            81,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "“精进”熟练度上限 =",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1120,
+          "rect": [
+            217,
+            267,
+            25,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            23,
+            55,
+            17,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "身份",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        }
+      ],
+      "parsed_size": 2874
+    }
+  },
+  {
+    "resource": {
+      "keys": [
+        5,
+        133,
+        2052
+      ],
+      "va": 4400064,
+      "size": 1230,
+      "codepage": 0,
+      "file": "5_133_2052.bin"
+    },
+    "dialog": {
+      "extended": false,
+      "help_id": 0,
+      "style": 2160591040,
+      "exstyle": 0,
+      "rect": [
+        0,
+        0,
+        250,
+        310
+      ],
+      "menu": "",
+      "window_class": "",
+      "title": "都市配置",
+      "font": {
+        "point_size": 9,
+        "face": "宋体"
+      },
+      "controls": [
+        {
+          "id": 1121,
+          "rect": [
+            182,
+            12,
+            56,
+            281
+          ],
+          "window_class": {
+            "ordinal": 131
+          },
+          "title": "",
+          "style": 1352728835,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1122,
+          "rect": [
+            40,
+            27,
+            40,
+            100
+          ],
+          "window_class": {
+            "ordinal": 133
+          },
+          "title": "",
+          "style": 1344339971,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1123,
+          "rect": [
+            99,
+            29,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "落石",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1124,
+          "rect": [
+            134,
+            29,
+            32,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "射台",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1125,
+          "rect": [
+            63,
+            49,
+            18,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1126,
+          "rect": [
+            134,
+            49,
+            18,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1127,
+          "rect": [
+            56,
+            102,
+            18,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1128,
+          "rect": [
+            134,
+            102,
+            18,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1129,
+          "rect": [
+            56,
+            123,
+            18,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1130,
+          "rect": [
+            99,
+            124,
+            48,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "商人常驻",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1133,
+          "rect": [
+            97,
+            250,
+            76,
+            10
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "自动同步配置信息",
+          "style": 1342242819,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1131,
+          "rect": [
+            26,
+            246,
+            50,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "保存配置",
+          "style": 1342242816,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1132,
+          "rect": [
+            26,
+            276,
+            50,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "读取配置",
+          "style": 1342242816,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1,
+          "rect": [
+            111,
+            276,
+            50,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "确定",
+          "style": 1342242816,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            20,
+            30,
+            17,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "兵法",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            20,
+            51,
+            41,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "最大士兵数",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            99,
+            51,
+            33,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "最大耐久",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            13,
+            12,
+            160,
+            62
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "战力",
+          "style": 1342177287,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            13,
+            86,
+            160,
+            62
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "内政",
+          "style": 1342177287,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            20,
+            104,
+            33,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "最大收益",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            99,
+            104,
+            33,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "最大收获",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            20,
+            125,
+            33,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "最大民心",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            83,
+            51,
+            8,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "万",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            154,
+            51,
+            8,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "百",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            76,
+            104,
+            8,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "百",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            154,
+            104,
+            8,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "百",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            76,
+            125,
+            8,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "百",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            13,
+            160,
+            160,
+            61
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "攻防关系",
+          "style": 1342177287,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1134,
+          "rect": [
+            20,
+            178,
+            18,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1135,
+          "rect": [
+            38,
+            178,
+            18,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1136,
+          "rect": [
+            56,
+            178,
+            18,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1137,
+          "rect": [
+            73,
+            178,
+            18,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1138,
+          "rect": [
+            91,
+            178,
+            18,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1139,
+          "rect": [
+            109,
+            178,
+            18,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1140,
+          "rect": [
+            127,
+            178,
+            18,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1141,
+          "rect": [
+            145,
+            178,
+            18,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            20,
+            200,
+            65,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "进攻最大到达天数",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1142,
+          "rect": [
+            86,
+            198,
+            18,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        }
+      ],
+      "parsed_size": 1230
+    }
+  },
+  {
+    "resource": {
+      "keys": [
+        5,
+        134,
+        2052
+      ],
+      "va": 4401296,
+      "size": 328,
+      "codepage": 0,
+      "file": "5_134_2052.bin"
+    },
+    "dialog": {
+      "extended": false,
+      "help_id": 0,
+      "style": 2160591040,
+      "exstyle": 0,
+      "rect": [
+        0,
+        0,
+        155,
+        190
+      ],
+      "menu": "",
+      "window_class": "",
+      "title": "兵法配置",
+      "font": {
+        "point_size": 9,
+        "face": "宋体"
+      },
+      "controls": [
+        {
+          "id": 1138,
+          "rect": [
+            12,
+            12,
+            55,
+            165
+          ],
+          "window_class": {
+            "ordinal": 131
+          },
+          "title": "",
+          "style": 1352728835,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1139,
+          "rect": [
+            122,
+            18,
+            20,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1140,
+          "rect": [
+            122,
+            38,
+            20,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1141,
+          "rect": [
+            122,
+            58,
+            20,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1142,
+          "rect": [
+            88,
+            130,
+            50,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "保存配置",
+          "style": 1342242816,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1,
+          "rect": [
+            88,
+            159,
+            50,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "确定",
+          "style": 1342242816,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            78,
+            20,
+            33,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "兵法威力",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            78,
+            40,
+            33,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "兵法间隔",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            78,
+            60,
+            41,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "习得熟练度",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        }
+      ],
+      "parsed_size": 328
+    }
+  },
+  {
+    "resource": {
+      "keys": [
+        5,
+        135,
+        2052
+      ],
+      "va": 4401624,
+      "size": 674,
+      "codepage": 0,
+      "file": "5_135_2052.bin"
+    },
+    "dialog": {
+      "extended": false,
+      "help_id": 0,
+      "style": 2160591040,
+      "exstyle": 0,
+      "rect": [
+        0,
+        0,
+        203,
+        177
+      ],
+      "menu": "",
+      "window_class": "",
+      "title": "阵型配置",
+      "font": {
+        "point_size": 9,
+        "face": "宋体"
+      },
+      "controls": [
+        {
+          "id": 1149,
+          "rect": [
+            136,
+            14,
+            55,
+            147
+          ],
+          "window_class": {
+            "ordinal": 131
+          },
+          "title": "",
+          "style": 1352728835,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1143,
+          "rect": [
+            40,
+            16,
+            20,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1144,
+          "rect": [
+            106,
+            16,
+            20,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1145,
+          "rect": [
+            40,
+            36,
+            20,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1146,
+          "rect": [
+            106,
+            36,
+            20,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1147,
+          "rect": [
+            40,
+            56,
+            20,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1150,
+          "rect": [
+            40,
+            76,
+            20,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1151,
+          "rect": [
+            106,
+            76,
+            20,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1148,
+          "rect": [
+            40,
+            96,
+            30,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1152,
+          "rect": [
+            106,
+            96,
+            20,
+            12
+          ],
+          "window_class": {
+            "ordinal": 129
+          },
+          "title": "",
+          "style": 1350631552,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1153,
+          "rect": [
+            17,
+            143,
+            50,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "保存配置",
+          "style": 1342242816,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 1,
+          "rect": [
+            76,
+            143,
+            50,
+            18
+          ],
+          "window_class": {
+            "ordinal": 128
+          },
+          "title": "确定",
+          "style": 1342242816,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            12,
+            18,
+            25,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "对部队",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            78,
+            18,
+            25,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "对守兵",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            12,
+            38,
+            25,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "对城壁",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            78,
+            38,
+            25,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "守备力",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            12,
+            58,
+            25,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "机动力",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            20,
+            98,
+            17,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "费用",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            20,
+            78,
+            17,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "视距",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            86,
+            78,
+            17,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "视角",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        },
+        {
+          "id": 65535,
+          "rect": [
+            86,
+            98,
+            17,
+            8
+          ],
+          "window_class": {
+            "ordinal": 130
+          },
+          "title": "射程",
+          "style": 1342308352,
+          "exstyle": 0,
+          "help_id": 0,
+          "creation_data": ""
+        }
+      ],
+      "parsed_size": 674
+    }
+  }
+]

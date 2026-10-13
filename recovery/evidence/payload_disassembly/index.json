@@ -1,0 +1,7546 @@
+[
+  {
+    "source_va": 4331292,
+    "target_va": 4934849,
+    "size": 15,
+    "file": "0042171C_004B4CC1_F.asm",
+    "decoded_instructions": 4,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4331076,
+    "target_va": 4750610,
+    "size": 14,
+    "file": "00421644_00487D12_E.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4326676,
+    "target_va": 4518035,
+    "size": 9,
+    "file": "00420514_0044F093_9.asm",
+    "decoded_instructions": 4,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4330968,
+    "target_va": 4536593,
+    "size": 8,
+    "file": "004215D8_00453911_8.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4331020,
+    "target_va": 4536502,
+    "size": 9,
+    "file": "0042160C_004538B6_9.asm",
+    "decoded_instructions": 6,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4335004,
+    "target_va": 4444007,
+    "size": 9,
+    "file": "0042259C_0043CF67_9.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4339852,
+    "target_va": 4571061,
+    "size": 11,
+    "file": "0042388C_0045BFB5_B.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342980,
+    "target_va": 4537697,
+    "size": 15,
+    "file": "004244C4_00453D61_F.asm",
+    "decoded_instructions": 4,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4336996,
+    "target_va": 4574437,
+    "size": 11,
+    "file": "00422D64_0045CCE5_B.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348436,
+    "target_va": 4578737,
+    "size": 15,
+    "file": "00425A14_0045DDB1_F.asm",
+    "decoded_instructions": 4,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4364472,
+    "target_va": 661320,
+    "size": 54,
+    "file": "004298B8_000A1748_36.asm",
+    "decoded_instructions": 19,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4364568,
+    "target_va": 658016,
+    "size": 20,
+    "file": "00429918_000A0A60_14.asm",
+    "decoded_instructions": 7,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4325400,
+    "target_va": 4524323,
+    "size": 13,
+    "file": "00420018_00450923_D.asm",
+    "decoded_instructions": 4,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4325820,
+    "target_va": 656640,
+    "size": 32,
+    "file": "004201BC_000A0500_20.asm",
+    "decoded_instructions": 5,
+    "raw_bytes": 22
+  },
+  {
+    "source_va": 4325852,
+    "target_va": 656672,
+    "size": 32,
+    "file": "004201DC_000A0520_20.asm",
+    "decoded_instructions": 4,
+    "raw_bytes": 23
+  },
+  {
+    "source_va": 4341132,
+    "target_va": 667560,
+    "size": 24,
+    "file": "00423D8C_000A2FA8_18.asm",
+    "decoded_instructions": 9,
+    "raw_bytes": 4
+  },
+  {
+    "source_va": 4325388,
+    "target_va": 4577511,
+    "size": 8,
+    "file": "0042000C_0045D8E7_8.asm",
+    "decoded_instructions": 4,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4325460,
+    "target_va": 670400,
+    "size": 57,
+    "file": "00420054_000A3AC0_39.asm",
+    "decoded_instructions": 16,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4325884,
+    "target_va": 656736,
+    "size": 134,
+    "file": "004201FC_000A0560_86.asm",
+    "decoded_instructions": 63,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4326064,
+    "target_va": 656896,
+    "size": 244,
+    "file": "004202B0_000A0600_F4.asm",
+    "decoded_instructions": 101,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4328424,
+    "target_va": 663040,
+    "size": 143,
+    "file": "00420BE8_000A1E00_8F.asm",
+    "decoded_instructions": 47,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4330032,
+    "target_va": 659456,
+    "size": 724,
+    "file": "00421230_000A1000_2D4.asm",
+    "decoded_instructions": 234,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4331136,
+    "target_va": 665344,
+    "size": 106,
+    "file": "00421680_000A2700_6A.asm",
+    "decoded_instructions": 39,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4331520,
+    "target_va": 665504,
+    "size": 82,
+    "file": "00421800_000A27A0_52.asm",
+    "decoded_instructions": 29,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4332336,
+    "target_va": 665456,
+    "size": 47,
+    "file": "00421B30_000A2770_2F.asm",
+    "decoded_instructions": 18,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4332676,
+    "target_va": 669952,
+    "size": 133,
+    "file": "00421C84_000A3900_85.asm",
+    "decoded_instructions": 46,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4333376,
+    "target_va": 658368,
+    "size": 63,
+    "file": "00421F40_000A0BC0_3F.asm",
+    "decoded_instructions": 25,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4333792,
+    "target_va": 662640,
+    "size": 38,
+    "file": "004220E0_000A1C70_26.asm",
+    "decoded_instructions": 10,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4332856,
+    "target_va": 662752,
+    "size": 26,
+    "file": "00421D38_000A1CE0_1A.asm",
+    "decoded_instructions": 8,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4333312,
+    "target_va": 663008,
+    "size": 30,
+    "file": "00421F00_000A1DE0_1E.asm",
+    "decoded_instructions": 12,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362472,
+    "target_va": 687008,
+    "size": 38,
+    "file": "004290E8_000A7BA0_26.asm",
+    "decoded_instructions": 9,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4334504,
+    "target_va": 661440,
+    "size": 13,
+    "file": "004223A8_000A17C0_D.asm",
+    "decoded_instructions": 5,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4334928,
+    "target_va": 663424,
+    "size": 32,
+    "file": "00422550_000A1F80_20.asm",
+    "decoded_instructions": 9,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4335056,
+    "target_va": 661632,
+    "size": 47,
+    "file": "004225D0_000A1880_2F.asm",
+    "decoded_instructions": 16,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4335456,
+    "target_va": 668616,
+    "size": 49,
+    "file": "00422760_000A33C8_31.asm",
+    "decoded_instructions": 18,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4335552,
+    "target_va": 664160,
+    "size": 102,
+    "file": "004227C0_000A2260_66.asm",
+    "decoded_instructions": 37,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4335984,
+    "target_va": 665152,
+    "size": 23,
+    "file": "00422970_000A2640_17.asm",
+    "decoded_instructions": 7,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4336344,
+    "target_va": 664912,
+    "size": 92,
+    "file": "00422AD8_000A2550_5C.asm",
+    "decoded_instructions": 30,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4336856,
+    "target_va": 670816,
+    "size": 93,
+    "file": "00422CD8_000A3C60_5D.asm",
+    "decoded_instructions": 39,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4337296,
+    "target_va": 665808,
+    "size": 40,
+    "file": "00422E90_000A28D0_28.asm",
+    "decoded_instructions": 14,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4337936,
+    "target_va": 661504,
+    "size": 102,
+    "file": "00423110_000A1800_66.asm",
+    "decoded_instructions": 45,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4341156,
+    "target_va": 679168,
+    "size": 32,
+    "file": "00423DA4_000A5D00_20.asm",
+    "decoded_instructions": 9,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4339624,
+    "target_va": 665320,
+    "size": 24,
+    "file": "004237A8_000A26E8_18.asm",
+    "decoded_instructions": 8,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4340328,
+    "target_va": 668672,
+    "size": 166,
+    "file": "00423A68_000A3400_A6.asm",
+    "decoded_instructions": 60,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342424,
+    "target_va": 668160,
+    "size": 79,
+    "file": "00424298_000A3200_4F.asm",
+    "decoded_instructions": 26,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342816,
+    "target_va": 668240,
+    "size": 29,
+    "file": "00424420_000A3250_1D.asm",
+    "decoded_instructions": 10,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342048,
+    "target_va": 668416,
+    "size": 195,
+    "file": "00424120_000A3300_C3.asm",
+    "decoded_instructions": 76,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4341448,
+    "target_va": 664064,
+    "size": 47,
+    "file": "00423EC8_000A2200_2F.asm",
+    "decoded_instructions": 16,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4336560,
+    "target_va": 669184,
+    "size": 60,
+    "file": "00422BB0_000A3600_3C.asm",
+    "decoded_instructions": 27,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343920,
+    "target_va": 670208,
+    "size": 186,
+    "file": "00424870_000A3A00_BA.asm",
+    "decoded_instructions": 74,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4340216,
+    "target_va": 656608,
+    "size": 16,
+    "file": "004239F8_000A04E0_10.asm",
+    "decoded_instructions": 6,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4340272,
+    "target_va": 656624,
+    "size": 16,
+    "file": "00423A30_000A04F0_10.asm",
+    "decoded_instructions": 6,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4338600,
+    "target_va": 670976,
+    "size": 129,
+    "file": "004233A8_000A3D00_81.asm",
+    "decoded_instructions": 58,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343376,
+    "target_va": 670172,
+    "size": 36,
+    "file": "00424650_000A39DC_24.asm",
+    "decoded_instructions": 11,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4346224,
+    "target_va": 669264,
+    "size": 40,
+    "file": "00425170_000A3650_28.asm",
+    "decoded_instructions": 12,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4346616,
+    "target_va": 675776,
+    "size": 40,
+    "file": "004252F8_000A4FC0_28.asm",
+    "decoded_instructions": 14,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347184,
+    "target_va": 679088,
+    "size": 80,
+    "file": "00425530_000A5CB0_50.asm",
+    "decoded_instructions": 29,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4345048,
+    "target_va": 669312,
+    "size": 52,
+    "file": "00424CD8_000A3680_34.asm",
+    "decoded_instructions": 22,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348496,
+    "target_va": 677584,
+    "size": 38,
+    "file": "00425A50_000A56D0_26.asm",
+    "decoded_instructions": 18,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348696,
+    "target_va": 677632,
+    "size": 18,
+    "file": "00425B18_000A5700_12.asm",
+    "decoded_instructions": 7,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4349600,
+    "target_va": 678144,
+    "size": 189,
+    "file": "00425EA0_000A5900_BD.asm",
+    "decoded_instructions": 73,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4350216,
+    "target_va": 678464,
+    "size": 280,
+    "file": "00426108_000A5A40_118.asm",
+    "decoded_instructions": 105,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4351208,
+    "target_va": 681424,
+    "size": 46,
+    "file": "004264E8_000A65D0_2E.asm",
+    "decoded_instructions": 20,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4352612,
+    "target_va": 667904,
+    "size": 130,
+    "file": "00426A64_000A3100_82.asm",
+    "decoded_instructions": 49,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353056,
+    "target_va": 684544,
+    "size": 106,
+    "file": "00426C20_000A7200_6A.asm",
+    "decoded_instructions": 44,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353600,
+    "target_va": 681216,
+    "size": 22,
+    "file": "00426E40_000A6500_16.asm",
+    "decoded_instructions": 9,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356008,
+    "target_va": 679232,
+    "size": 181,
+    "file": "004277A8_000A5D40_B5.asm",
+    "decoded_instructions": 78,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356416,
+    "target_va": 679008,
+    "size": 58,
+    "file": "00427940_000A5C60_3A.asm",
+    "decoded_instructions": 21,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356744,
+    "target_va": 671232,
+    "size": 122,
+    "file": "00427A88_000A3E00_7A.asm",
+    "decoded_instructions": 53,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344984,
+    "target_va": 667880,
+    "size": 22,
+    "file": "00424C98_000A30E8_16.asm",
+    "decoded_instructions": 10,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4357576,
+    "target_va": 671712,
+    "size": 31,
+    "file": "00427DC8_000A3FE0_1F.asm",
+    "decoded_instructions": 16,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4357944,
+    "target_va": 686848,
+    "size": 106,
+    "file": "00427F38_000A7B00_6A.asm",
+    "decoded_instructions": 38,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353664,
+    "target_va": 679200,
+    "size": 27,
+    "file": "00426E80_000A5D20_1B.asm",
+    "decoded_instructions": 8,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354276,
+    "target_va": 683920,
+    "size": 62,
+    "file": "004270E4_000A6F90_3E.asm",
+    "decoded_instructions": 23,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354784,
+    "target_va": 684032,
+    "size": 24,
+    "file": "004272E0_000A7000_18.asm",
+    "decoded_instructions": 8,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4355056,
+    "target_va": 684160,
+    "size": 99,
+    "file": "004273F0_000A7080_63.asm",
+    "decoded_instructions": 41,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4359008,
+    "target_va": 684352,
+    "size": 169,
+    "file": "00428360_000A7140_A9.asm",
+    "decoded_instructions": 62,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4325800,
+    "target_va": 655568,
+    "size": 20,
+    "file": "004201A8_000A00D0_14.asm",
+    "decoded_instructions": 8,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4359976,
+    "target_va": 675200,
+    "size": 114,
+    "file": "00428728_000A4D80_72.asm",
+    "decoded_instructions": 45,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4361096,
+    "target_va": 686032,
+    "size": 38,
+    "file": "00428B88_000A77D0_26.asm",
+    "decoded_instructions": 11,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4361872,
+    "target_va": 657152,
+    "size": 46,
+    "file": "00428E90_000A0700_2E.asm",
+    "decoded_instructions": 19,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362200,
+    "target_va": 669872,
+    "size": 76,
+    "file": "00428FD8_000A38B0_4C.asm",
+    "decoded_instructions": 27,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362552,
+    "target_va": 687056,
+    "size": 53,
+    "file": "00429138_000A7BD0_35.asm",
+    "decoded_instructions": 17,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362640,
+    "target_va": 687120,
+    "size": 16,
+    "file": "00429190_000A7C10_10.asm",
+    "decoded_instructions": 7,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362784,
+    "target_va": 687136,
+    "size": 154,
+    "file": "00429220_000A7C20_9A.asm",
+    "decoded_instructions": 65,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362984,
+    "target_va": 687304,
+    "size": 98,
+    "file": "004292E8_000A7CC8_62.asm",
+    "decoded_instructions": 37,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4363128,
+    "target_va": 687408,
+    "size": 40,
+    "file": "00429378_000A7D30_28.asm",
+    "decoded_instructions": 13,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4363216,
+    "target_va": 687448,
+    "size": 19,
+    "file": "004293D0_000A7D58_13.asm",
+    "decoded_instructions": 5,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4363280,
+    "target_va": 687472,
+    "size": 103,
+    "file": "00429410_000A7D70_67.asm",
+    "decoded_instructions": 35,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4363504,
+    "target_va": 690176,
+    "size": 244,
+    "file": "004294F0_000A8800_F4.asm",
+    "decoded_instructions": 87,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4363792,
+    "target_va": 687696,
+    "size": 90,
+    "file": "00429610_000A7E50_5A.asm",
+    "decoded_instructions": 27,
+    "raw_bytes": 6
+  },
+  {
+    "source_va": 4363920,
+    "target_va": 687584,
+    "size": 112,
+    "file": "00429690_000A7DE0_70.asm",
+    "decoded_instructions": 44,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4364072,
+    "target_va": 687792,
+    "size": 72,
+    "file": "00429728_000A7EB0_48.asm",
+    "decoded_instructions": 28,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4364184,
+    "target_va": 687872,
+    "size": 244,
+    "file": "00429798_000A7F00_F4.asm",
+    "decoded_instructions": 86,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4371440,
+    "target_va": 693248,
+    "size": 236,
+    "file": "0042B3F0_000A9400_EC.asm",
+    "decoded_instructions": 65,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4371912,
+    "target_va": 669696,
+    "size": 152,
+    "file": "0042B5C8_000A3800_98.asm",
+    "decoded_instructions": 58,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4372188,
+    "target_va": 4999029,
+    "size": 16,
+    "file": "0042B6DC_004C4775_10.asm",
+    "decoded_instructions": 6,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4372248,
+    "target_va": 658112,
+    "size": 79,
+    "file": "0042B718_000A0AC0_4F.asm",
+    "decoded_instructions": 25,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4372412,
+    "target_va": 695344,
+    "size": 64,
+    "file": "0042B7BC_000A9C30_40.asm",
+    "decoded_instructions": 23,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4372560,
+    "target_va": 695472,
+    "size": 23,
+    "file": "0042B850_000A9CB0_17.asm",
+    "decoded_instructions": 8,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4373064,
+    "target_va": 696320,
+    "size": 856,
+    "file": "0042BA48_000AA000_358.asm",
+    "decoded_instructions": 288,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4373984,
+    "target_va": 697184,
+    "size": 416,
+    "file": "0042BDE0_000AA360_1A0.asm",
+    "decoded_instructions": 136,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4374440,
+    "target_va": 698112,
+    "size": 160,
+    "file": "0042BFA8_000AA700_A0.asm",
+    "decoded_instructions": 47,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4374640,
+    "target_va": 696064,
+    "size": 196,
+    "file": "0042C070_000A9F00_C4.asm",
+    "decoded_instructions": 80,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4375792,
+    "target_va": 698288,
+    "size": 78,
+    "file": "0042C4F0_000AA7B0_4E.asm",
+    "decoded_instructions": 24,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4375912,
+    "target_va": 665040,
+    "size": 46,
+    "file": "0042C568_000A25D0_2E.asm",
+    "decoded_instructions": 20,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4376000,
+    "target_va": 665088,
+    "size": 42,
+    "file": "0042C5C0_000A2600_2A.asm",
+    "decoded_instructions": 12,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4376524,
+    "target_va": 4278664,
+    "size": 8,
+    "file": "0042C7CC_00414988_8.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4376532,
+    "target_va": 694672,
+    "size": 190,
+    "file": "0042C7D4_000A9990_BE.asm",
+    "decoded_instructions": 68,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4376724,
+    "target_va": 694864,
+    "size": 136,
+    "file": "0042C894_000A9A50_88.asm",
+    "decoded_instructions": 46,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4377040,
+    "target_va": 695264,
+    "size": 32,
+    "file": "0042C9D0_000A9BE0_20.asm",
+    "decoded_instructions": 8,
+    "raw_bytes": 4
+  },
+  {
+    "source_va": 4377112,
+    "target_va": 669136,
+    "size": 46,
+    "file": "0042CA18_000A35D0_2E.asm",
+    "decoded_instructions": 17,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4377744,
+    "target_va": 664576,
+    "size": 114,
+    "file": "0042CC90_000A2400_72.asm",
+    "decoded_instructions": 46,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4378216,
+    "target_va": 698000,
+    "size": 110,
+    "file": "0042CE68_000AA690_6E.asm",
+    "decoded_instructions": 37,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4378608,
+    "target_va": 698560,
+    "size": 158,
+    "file": "0042CFF0_000AA8C0_9E.asm",
+    "decoded_instructions": 62,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4380008,
+    "target_va": 698368,
+    "size": 174,
+    "file": "0042D568_000AA800_AE.asm",
+    "decoded_instructions": 68,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4366776,
+    "target_va": 689744,
+    "size": 36,
+    "file": "0042A1B8_000A8650_24.asm",
+    "decoded_instructions": 18,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366812,
+    "target_va": 689152,
+    "size": 52,
+    "file": "0042A1DC_000A8400_34.asm",
+    "decoded_instructions": 22,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366864,
+    "target_va": 689216,
+    "size": 236,
+    "file": "0042A210_000A8440_EC.asm",
+    "decoded_instructions": 89,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4367100,
+    "target_va": 689456,
+    "size": 274,
+    "file": "0042A2FC_000A8530_112.asm",
+    "decoded_instructions": 83,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4367376,
+    "target_va": 689792,
+    "size": 318,
+    "file": "0042A410_000A8680_13E.asm",
+    "decoded_instructions": 123,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4367736,
+    "target_va": 690112,
+    "size": 50,
+    "file": "0042A578_000A87C0_32.asm",
+    "decoded_instructions": 19,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4367832,
+    "target_va": 694272,
+    "size": 396,
+    "file": "0042A5D8_000A9800_18C.asm",
+    "decoded_instructions": 154,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4368280,
+    "target_va": 690432,
+    "size": 1728,
+    "file": "0042A798_000A8900_6C0.asm",
+    "decoded_instructions": 667,
+    "raw_bytes": 24
+  },
+  {
+    "source_va": 4370008,
+    "target_va": 693088,
+    "size": 152,
+    "file": "0042AE58_000A9360_98.asm",
+    "decoded_instructions": 63,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4370160,
+    "target_va": 688992,
+    "size": 156,
+    "file": "0042AEF0_000A8360_9C.asm",
+    "decoded_instructions": 47,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4370360,
+    "target_va": 692224,
+    "size": 252,
+    "file": "0042AFB8_000A9000_FC.asm",
+    "decoded_instructions": 101,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4370888,
+    "target_va": 692736,
+    "size": 158,
+    "file": "0042B1C8_000A9200_9E.asm",
+    "decoded_instructions": 65,
+    "raw_bytes": 5
+  },
+  {
+    "source_va": 4371128,
+    "target_va": 692896,
+    "size": 188,
+    "file": "0042B2B8_000A92A0_BC.asm",
+    "decoded_instructions": 55,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4364760,
+    "target_va": 688264,
+    "size": 186,
+    "file": "004299D8_000A8088_BA.asm",
+    "decoded_instructions": 70,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365592,
+    "target_va": 688464,
+    "size": 136,
+    "file": "00429D18_000A8150_88.asm",
+    "decoded_instructions": 53,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365768,
+    "target_va": 688608,
+    "size": 20,
+    "file": "00429DC8_000A81E0_14.asm",
+    "decoded_instructions": 7,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365788,
+    "target_va": 688640,
+    "size": 136,
+    "file": "00429DDC_000A8200_88.asm",
+    "decoded_instructions": 52,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366408,
+    "target_va": 688784,
+    "size": 26,
+    "file": "0042A048_000A8290_1A.asm",
+    "decoded_instructions": 8,
+    "raw_bytes": 4
+  },
+  {
+    "source_va": 4366488,
+    "target_va": 688816,
+    "size": 110,
+    "file": "0042A098_000A82B0_6E.asm",
+    "decoded_instructions": 42,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366680,
+    "target_va": 688928,
+    "size": 52,
+    "file": "0042A158_000A8320_34.asm",
+    "decoded_instructions": 19,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4326308,
+    "target_va": 656048,
+    "size": 73,
+    "file": "004203A4_000A02B0_49.asm",
+    "decoded_instructions": 21,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4327872,
+    "target_va": 657920,
+    "size": 89,
+    "file": "004209C0_000A0A00_59.asm",
+    "decoded_instructions": 33,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4328320,
+    "target_va": 658432,
+    "size": 64,
+    "file": "00420B80_000A0C00_40.asm",
+    "decoded_instructions": 23,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4329088,
+    "target_va": 659136,
+    "size": 39,
+    "file": "00420E80_000A0EC0_27.asm",
+    "decoded_instructions": 10,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4329464,
+    "target_va": 659200,
+    "size": 114,
+    "file": "00420FF8_000A0F00_72.asm",
+    "decoded_instructions": 44,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4331688,
+    "target_va": 661904,
+    "size": 106,
+    "file": "004218A8_000A1990_6A.asm",
+    "decoded_instructions": 43,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4332424,
+    "target_va": 664864,
+    "size": 46,
+    "file": "00421B88_000A2520_2E.asm",
+    "decoded_instructions": 17,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4333016,
+    "target_va": 662336,
+    "size": 167,
+    "file": "00421DD8_000A1B40_A7.asm",
+    "decoded_instructions": 59,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4333936,
+    "target_va": 661760,
+    "size": 132,
+    "file": "00422170_000A1900_84.asm",
+    "decoded_instructions": 50,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4334560,
+    "target_va": 663296,
+    "size": 120,
+    "file": "004223E0_000A1F00_78.asm",
+    "decoded_instructions": 34,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4335236,
+    "target_va": 663808,
+    "size": 110,
+    "file": "00422684_000A2100_6E.asm",
+    "decoded_instructions": 43,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4336048,
+    "target_va": 665136,
+    "size": 16,
+    "file": "004229B0_000A2630_10.asm",
+    "decoded_instructions": 6,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4336480,
+    "target_va": 655600,
+    "size": 77,
+    "file": "00422B60_000A00F0_4D.asm",
+    "decoded_instructions": 25,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4337048,
+    "target_va": 665600,
+    "size": 205,
+    "file": "00422D98_000A2800_CD.asm",
+    "decoded_instructions": 70,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4337536,
+    "target_va": 671192,
+    "size": 36,
+    "file": "00422F80_000A3DD8_24.asm",
+    "decoded_instructions": 10,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4338088,
+    "target_va": 666112,
+    "size": 92,
+    "file": "004231A8_000A2A00_5C.asm",
+    "decoded_instructions": 42,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4338512,
+    "target_va": 662784,
+    "size": 43,
+    "file": "00423350_000A1D00_2B.asm",
+    "decoded_instructions": 15,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4339752,
+    "target_va": 666304,
+    "size": 53,
+    "file": "00423828_000A2AC0_35.asm",
+    "decoded_instructions": 19,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4340536,
+    "target_va": 667136,
+    "size": 418,
+    "file": "00423B38_000A2E00_1A2.asm",
+    "decoded_instructions": 178,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4341232,
+    "target_va": 667792,
+    "size": 84,
+    "file": "00423DF0_000A3090_54.asm",
+    "decoded_instructions": 36,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342888,
+    "target_va": 661456,
+    "size": 41,
+    "file": "00424468_000A17D0_29.asm",
+    "decoded_instructions": 14,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4341360,
+    "target_va": 668928,
+    "size": 12,
+    "file": "00423E70_000A3500_C.asm",
+    "decoded_instructions": 5,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4341632,
+    "target_va": 664112,
+    "size": 41,
+    "file": "00423F80_000A2230_29.asm",
+    "decoded_instructions": 13,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343136,
+    "target_va": 669608,
+    "size": 35,
+    "file": "00424560_000A37A8_23.asm",
+    "decoded_instructions": 9,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343288,
+    "target_va": 669484,
+    "size": 41,
+    "file": "004245F8_000A372C_29.asm",
+    "decoded_instructions": 16,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344152,
+    "target_va": 670464,
+    "size": 208,
+    "file": "00424958_000A3B00_D0.asm",
+    "decoded_instructions": 75,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4338312,
+    "target_va": 663680,
+    "size": 127,
+    "file": "00423288_000A2080_7F.asm",
+    "decoded_instructions": 48,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4338732,
+    "target_va": 671120,
+    "size": 62,
+    "file": "0042342C_000A3D90_3E.asm",
+    "decoded_instructions": 22,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344584,
+    "target_va": 666088,
+    "size": 22,
+    "file": "00424B08_000A29E8_16.asm",
+    "decoded_instructions": 6,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344776,
+    "target_va": 667056,
+    "size": 48,
+    "file": "00424BC8_000A2DB0_30.asm",
+    "decoded_instructions": 18,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4345144,
+    "target_va": 674944,
+    "size": 42,
+    "file": "00424D38_000A4C80_2A.asm",
+    "decoded_instructions": 14,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4346264,
+    "target_va": 675584,
+    "size": 91,
+    "file": "00425198_000A4F00_5B.asm",
+    "decoded_instructions": 31,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343632,
+    "target_va": 683232,
+    "size": 22,
+    "file": "00424750_000A6CE0_16.asm",
+    "decoded_instructions": 9,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347304,
+    "target_va": 675816,
+    "size": 21,
+    "file": "004255A8_000A4FE8_15.asm",
+    "decoded_instructions": 5,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347576,
+    "target_va": 663952,
+    "size": 93,
+    "file": "004256B8_000A2190_5D.asm",
+    "decoded_instructions": 32,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347888,
+    "target_va": 677376,
+    "size": 47,
+    "file": "004257F0_000A5600_2F.asm",
+    "decoded_instructions": 19,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348800,
+    "target_va": 677656,
+    "size": 23,
+    "file": "00425B80_000A5718_17.asm",
+    "decoded_instructions": 10,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4349208,
+    "target_va": 677232,
+    "size": 70,
+    "file": "00425D18_000A5570_46.asm",
+    "decoded_instructions": 27,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4349832,
+    "target_va": 682336,
+    "size": 140,
+    "file": "00425F88_000A6960_8C.asm",
+    "decoded_instructions": 48,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4350496,
+    "target_va": 678752,
+    "size": 189,
+    "file": "00426220_000A5B60_BD.asm",
+    "decoded_instructions": 73,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4351296,
+    "target_va": 697600,
+    "size": 256,
+    "file": "00426540_000AA500_100.asm",
+    "decoded_instructions": 85,
+    "raw_bytes": 3
+  },
+  {
+    "source_va": 4327544,
+    "target_va": 657832,
+    "size": 79,
+    "file": "00420878_000A09A8_4F.asm",
+    "decoded_instructions": 27,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353328,
+    "target_va": 680736,
+    "size": 53,
+    "file": "00426D30_000A6320_35.asm",
+    "decoded_instructions": 28,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4355200,
+    "target_va": 681248,
+    "size": 30,
+    "file": "00427480_000A6520_1E.asm",
+    "decoded_instructions": 11,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356952,
+    "target_va": 671360,
+    "size": 25,
+    "file": "00427B58_000A3E80_19.asm",
+    "decoded_instructions": 11,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4357424,
+    "target_va": 666268,
+    "size": 33,
+    "file": "00427D30_000A2A9C_21.asm",
+    "decoded_instructions": 12,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356344,
+    "target_va": 679904,
+    "size": 29,
+    "file": "004278F8_000A5FE0_1D.asm",
+    "decoded_instructions": 10,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353692,
+    "target_va": 682720,
+    "size": 29,
+    "file": "00426E9C_000A6AE0_1D.asm",
+    "decoded_instructions": 10,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354464,
+    "target_va": 683120,
+    "size": 45,
+    "file": "004271A0_000A6C70_2D.asm",
+    "decoded_instructions": 19,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354652,
+    "target_va": 683200,
+    "size": 26,
+    "file": "0042725C_000A6CC0_1A.asm",
+    "decoded_instructions": 10,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354848,
+    "target_va": 684064,
+    "size": 23,
+    "file": "00427320_000A7020_17.asm",
+    "decoded_instructions": 9,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4358340,
+    "target_va": 675136,
+    "size": 64,
+    "file": "004280C4_000A4D40_40.asm",
+    "decoded_instructions": 26,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4359476,
+    "target_va": 685568,
+    "size": 164,
+    "file": "00428534_000A7600_A4.asm",
+    "decoded_instructions": 61,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360136,
+    "target_va": 686504,
+    "size": 88,
+    "file": "004287C8_000A79A8_58.asm",
+    "decoded_instructions": 42,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360532,
+    "target_va": 675392,
+    "size": 96,
+    "file": "00428954_000A4E40_60.asm",
+    "decoded_instructions": 37,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360672,
+    "target_va": 685760,
+    "size": 34,
+    "file": "004289E0_000A76C0_22.asm",
+    "decoded_instructions": 13,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360752,
+    "target_va": 685880,
+    "size": 152,
+    "file": "00428A30_000A7738_98.asm",
+    "decoded_instructions": 52,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4361176,
+    "target_va": 686144,
+    "size": 188,
+    "file": "00428BD8_000A7840_BC.asm",
+    "decoded_instructions": 68,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4361960,
+    "target_va": 657200,
+    "size": 55,
+    "file": "00428EE8_000A0730_37.asm",
+    "decoded_instructions": 23,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362320,
+    "target_va": 686960,
+    "size": 45,
+    "file": "00429050_000A7B70_2D.asm",
+    "decoded_instructions": 17,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4325600,
+    "target_va": 655408,
+    "size": 155,
+    "file": "004200E0_000A0030_9B.asm",
+    "decoded_instructions": 62,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4329168,
+    "target_va": 656464,
+    "size": 139,
+    "file": "00420ED0_000A0450_8B.asm",
+    "decoded_instructions": 53,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4327080,
+    "target_va": 657408,
+    "size": 417,
+    "file": "004206A8_000A0800_1A1.asm",
+    "decoded_instructions": 158,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4327624,
+    "target_va": 662016,
+    "size": 199,
+    "file": "004208C8_000A1A00_C7.asm",
+    "decoded_instructions": 75,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4331796,
+    "target_va": 660736,
+    "size": 318,
+    "file": "00421914_000A1500_13E.asm",
+    "decoded_instructions": 116,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4332512,
+    "target_va": 661168,
+    "size": 71,
+    "file": "00421BE0_000A16B0_47.asm",
+    "decoded_instructions": 26,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4333600,
+    "target_va": 662688,
+    "size": 25,
+    "file": "00422020_000A1CA0_19.asm",
+    "decoded_instructions": 10,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4334280,
+    "target_va": 661280,
+    "size": 35,
+    "file": "004222C8_000A1720_23.asm",
+    "decoded_instructions": 11,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4334360,
+    "target_va": 662832,
+    "size": 60,
+    "file": "00422318_000A1D30_3C.asm",
+    "decoded_instructions": 23,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4334720,
+    "target_va": 662896,
+    "size": 81,
+    "file": "00422480_000A1D70_51.asm",
+    "decoded_instructions": 29,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4335392,
+    "target_va": 663920,
+    "size": 19,
+    "file": "00422720_000A2170_13.asm",
+    "decoded_instructions": 8,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4335696,
+    "target_va": 678976,
+    "size": 26,
+    "file": "00422850_000A5C40_1A.asm",
+    "decoded_instructions": 8,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4336264,
+    "target_va": 658496,
+    "size": 20,
+    "file": "00422A88_000A0C40_14.asm",
+    "decoded_instructions": 6,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4336104,
+    "target_va": 664744,
+    "size": 113,
+    "file": "004229E8_000A24A8_71.asm",
+    "decoded_instructions": 46,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4337376,
+    "target_va": 665296,
+    "size": 24,
+    "file": "00422EE0_000A26D0_18.asm",
+    "decoded_instructions": 9,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4337620,
+    "target_va": 4635121,
+    "size": 15,
+    "file": "00422FD4_0046B9F1_F.asm",
+    "decoded_instructions": 7,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4330800,
+    "target_va": 666368,
+    "size": 162,
+    "file": "00421530_000A2B00_A2.asm",
+    "decoded_instructions": 58,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4339056,
+    "target_va": 666624,
+    "size": 430,
+    "file": "00423570_000A2C00_1AE.asm",
+    "decoded_instructions": 176,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4339904,
+    "target_va": 670672,
+    "size": 38,
+    "file": "004238C0_000A3BD0_26.asm",
+    "decoded_instructions": 12,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4341000,
+    "target_va": 667648,
+    "size": 85,
+    "file": "00423D08_000A3000_55.asm",
+    "decoded_instructions": 39,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4341856,
+    "target_va": 668304,
+    "size": 107,
+    "file": "00424060_000A3290_6B.asm",
+    "decoded_instructions": 41,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4339688,
+    "target_va": 668272,
+    "size": 19,
+    "file": "004237E8_000A3270_13.asm",
+    "decoded_instructions": 7,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4341720,
+    "target_va": 669008,
+    "size": 96,
+    "file": "00423FD8_000A3550_60.asm",
+    "decoded_instructions": 28,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4341536,
+    "target_va": 669644,
+    "size": 49,
+    "file": "00423F20_000A37CC_31.asm",
+    "decoded_instructions": 20,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343528,
+    "target_va": 675328,
+    "size": 59,
+    "file": "004246E8_000A4E00_3B.asm",
+    "decoded_instructions": 20,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342544,
+    "target_va": 669420,
+    "size": 18,
+    "file": "00424310_000A36EC_12.asm",
+    "decoded_instructions": 6,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4327000,
+    "target_va": 655360,
+    "size": 35,
+    "file": "00420658_000A0000_23.asm",
+    "decoded_instructions": 9,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4338840,
+    "target_va": 655680,
+    "size": 78,
+    "file": "00423498_000A0140_4E.asm",
+    "decoded_instructions": 29,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344400,
+    "target_va": 665216,
+    "size": 64,
+    "file": "00424A50_000A2680_40.asm",
+    "decoded_instructions": 25,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343456,
+    "target_va": 668944,
+    "size": 29,
+    "file": "004246A0_000A3510_1D.asm",
+    "decoded_instructions": 9,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344824,
+    "target_va": 668975,
+    "size": 33,
+    "file": "00424BF8_000A352F_21.asm",
+    "decoded_instructions": 13,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4345224,
+    "target_va": 675072,
+    "size": 63,
+    "file": "00424D88_000A4D00_3F.asm",
+    "decoded_instructions": 26,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4346356,
+    "target_va": 677040,
+    "size": 80,
+    "file": "004251F4_000A54B0_50.asm",
+    "decoded_instructions": 27,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4346876,
+    "target_va": 669368,
+    "size": 52,
+    "file": "004253FC_000A36B8_34.asm",
+    "decoded_instructions": 16,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347368,
+    "target_va": 676784,
+    "size": 22,
+    "file": "004255E8_000A53B0_16.asm",
+    "decoded_instructions": 9,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347712,
+    "target_va": 677312,
+    "size": 32,
+    "file": "00425740_000A55C0_20.asm",
+    "decoded_instructions": 15,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348864,
+    "target_va": 677680,
+    "size": 20,
+    "file": "00425BC0_000A5730_14.asm",
+    "decoded_instructions": 10,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348968,
+    "target_va": 677536,
+    "size": 24,
+    "file": "00425C28_000A56A0_18.asm",
+    "decoded_instructions": 9,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4349056,
+    "target_va": 677560,
+    "size": 18,
+    "file": "00425C80_000A56B8_12.asm",
+    "decoded_instructions": 8,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4350016,
+    "target_va": 678336,
+    "size": 53,
+    "file": "00426040_000A59C0_35.asm",
+    "decoded_instructions": 19,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4350688,
+    "target_va": 678944,
+    "size": 28,
+    "file": "004262E0_000A5C20_1C.asm",
+    "decoded_instructions": 10,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4351756,
+    "target_va": 665008,
+    "size": 30,
+    "file": "0042670C_000A25B0_1E.asm",
+    "decoded_instructions": 13,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4352744,
+    "target_va": 676736,
+    "size": 48,
+    "file": "00426AE8_000A5380_30.asm",
+    "decoded_instructions": 14,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353384,
+    "target_va": 680800,
+    "size": 155,
+    "file": "00426D68_000A6360_9B.asm",
+    "decoded_instructions": 67,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4355272,
+    "target_va": 681472,
+    "size": 628,
+    "file": "004274C8_000A6600_274.asm",
+    "decoded_instructions": 229,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356520,
+    "target_va": 662272,
+    "size": 36,
+    "file": "004279A8_000A1B00_24.asm",
+    "decoded_instructions": 16,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4357024,
+    "target_va": 682496,
+    "size": 188,
+    "file": "00427BA0_000A6A00_BC.asm",
+    "decoded_instructions": 65,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4335144,
+    "target_va": 671536,
+    "size": 89,
+    "file": "00422628_000A3F30_59.asm",
+    "decoded_instructions": 35,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4357880,
+    "target_va": 657384,
+    "size": 23,
+    "file": "00427EF8_000A07E8_17.asm",
+    "decoded_instructions": 10,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356624,
+    "target_va": 661056,
+    "size": 78,
+    "file": "00427A10_000A1640_4E.asm",
+    "decoded_instructions": 30,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353916,
+    "target_va": 682688,
+    "size": 26,
+    "file": "00426F7C_000A6AC0_1A.asm",
+    "decoded_instructions": 10,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354552,
+    "target_va": 683168,
+    "size": 26,
+    "file": "004271F8_000A6CA0_1A.asm",
+    "decoded_instructions": 10,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354720,
+    "target_va": 684000,
+    "size": 23,
+    "file": "004272A0_000A6FE0_17.asm",
+    "decoded_instructions": 8,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4358096,
+    "target_va": 664048,
+    "size": 16,
+    "file": "00427FD0_000A21F0_10.asm",
+    "decoded_instructions": 7,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353208,
+    "target_va": 684672,
+    "size": 117,
+    "file": "00426CB8_000A7280_75.asm",
+    "decoded_instructions": 47,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4358448,
+    "target_va": 678128,
+    "size": 13,
+    "file": "00428130_000A58F0_D.asm",
+    "decoded_instructions": 4,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4359224,
+    "target_va": 685264,
+    "size": 47,
+    "file": "00428438_000A74D0_2F.asm",
+    "decoded_instructions": 15,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4359680,
+    "target_va": 685488,
+    "size": 71,
+    "file": "00428600_000A75B0_47.asm",
+    "decoded_instructions": 30,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360440,
+    "target_va": 675504,
+    "size": 40,
+    "file": "004288F8_000A4EB0_28.asm",
+    "decoded_instructions": 18,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360944,
+    "target_va": 675488,
+    "size": 10,
+    "file": "00428AF0_000A4EA0_A.asm",
+    "decoded_instructions": 5,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4361408,
+    "target_va": 686400,
+    "size": 100,
+    "file": "00428CC0_000A7940_64.asm",
+    "decoded_instructions": 38,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362056,
+    "target_va": 655760,
+    "size": 76,
+    "file": "00428F48_000A0190_4C.asm",
+    "decoded_instructions": 30,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362408,
+    "target_va": 686816,
+    "size": 23,
+    "file": "004290A8_000A7AE0_17.asm",
+    "decoded_instructions": 7,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4326840,
+    "target_va": 657264,
+    "size": 120,
+    "file": "004205B8_000A0770_78.asm",
+    "decoded_instructions": 46,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4328064,
+    "target_va": 658208,
+    "size": 100,
+    "file": "00420A80_000A0B20_64.asm",
+    "decoded_instructions": 28,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4328720,
+    "target_va": 656128,
+    "size": 326,
+    "file": "00420D10_000A0300_146.asm",
+    "decoded_instructions": 123,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4328008,
+    "target_va": 658048,
+    "size": 54,
+    "file": "00420A48_000A0A80_36.asm",
+    "decoded_instructions": 18,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4329712,
+    "target_va": 659328,
+    "size": 107,
+    "file": "004210F0_000A0F80_6B.asm",
+    "decoded_instructions": 36,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4332160,
+    "target_va": 658528,
+    "size": 133,
+    "file": "00421A80_000A0C60_85.asm",
+    "decoded_instructions": 58,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4332624,
+    "target_va": 661376,
+    "size": 52,
+    "file": "00421C50_000A1780_34.asm",
+    "decoded_instructions": 23,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4327824,
+    "target_va": 681104,
+    "size": 46,
+    "file": "00420990_000A6490_2E.asm",
+    "decoded_instructions": 20,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4333472,
+    "target_va": 662528,
+    "size": 84,
+    "file": "00421FA0_000A1C00_54.asm",
+    "decoded_instructions": 31,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4333872,
+    "target_va": 662720,
+    "size": 30,
+    "file": "00422130_000A1CC0_1E.asm",
+    "decoded_instructions": 12,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4334112,
+    "target_va": 663552,
+    "size": 125,
+    "file": "00422220_000A2000_7D.asm",
+    "decoded_instructions": 44,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4334840,
+    "target_va": 663456,
+    "size": 41,
+    "file": "004224F8_000A1FA0_29.asm",
+    "decoded_instructions": 12,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4335768,
+    "target_va": 664704,
+    "size": 38,
+    "file": "00422898_000A2480_26.asm",
+    "decoded_instructions": 15,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4336284,
+    "target_va": 665184,
+    "size": 19,
+    "file": "00422A9C_000A2660_13.asm",
+    "decoded_instructions": 9,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4336784,
+    "target_va": 666536,
+    "size": 25,
+    "file": "00422C90_000A2BA8_19.asm",
+    "decoded_instructions": 10,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4337440,
+    "target_va": 666208,
+    "size": 56,
+    "file": "00422F20_000A2A60_38.asm",
+    "decoded_instructions": 19,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4337680,
+    "target_va": 665856,
+    "size": 212,
+    "file": "00423010_000A2900_D4.asm",
+    "decoded_instructions": 76,
+    "raw_bytes": 6
+  },
+  {
+    "source_va": 4338440,
+    "target_va": 670096,
+    "size": 28,
+    "file": "00423308_000A3990_1C.asm",
+    "decoded_instructions": 10,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4377996,
+    "target_va": 697856,
+    "size": 134,
+    "file": "0042CD8C_000AA600_86.asm",
+    "decoded_instructions": 49,
+    "raw_bytes": 4
+  },
+  {
+    "source_va": 4339528,
+    "target_va": 671480,
+    "size": 54,
+    "file": "00423748_000A3EF8_36.asm",
+    "decoded_instructions": 19,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4339984,
+    "target_va": 670712,
+    "size": 104,
+    "file": "00423910_000A3BF8_68.asm",
+    "decoded_instructions": 47,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4341088,
+    "target_va": 667744,
+    "size": 42,
+    "file": "00423D60_000A3060_2A.asm",
+    "decoded_instructions": 15,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342360,
+    "target_va": 669104,
+    "size": 20,
+    "file": "00424258_000A35B0_14.asm",
+    "decoded_instructions": 8,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343040,
+    "target_va": 666568,
+    "size": 49,
+    "file": "00424500_000A2BC8_31.asm",
+    "decoded_instructions": 19,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4341416,
+    "target_va": 667104,
+    "size": 30,
+    "file": "00423EA8_000A2DE0_1E.asm",
+    "decoded_instructions": 15,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343216,
+    "target_va": 655840,
+    "size": 32,
+    "file": "004245B0_000A01E0_20.asm",
+    "decoded_instructions": 9,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343856,
+    "target_va": 656872,
+    "size": 19,
+    "file": "00424830_000A05E8_13.asm",
+    "decoded_instructions": 8,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4340152,
+    "target_va": 667624,
+    "size": 22,
+    "file": "004239B8_000A2FE8_16.asm",
+    "decoded_instructions": 8,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4336620,
+    "target_va": 655872,
+    "size": 162,
+    "file": "00422BEC_000A0200_A2.asm",
+    "decoded_instructions": 56,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4338224,
+    "target_va": 670128,
+    "size": 41,
+    "file": "00423230_000A39B0_29.asm",
+    "decoded_instructions": 18,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4338960,
+    "target_va": 668848,
+    "size": 52,
+    "file": "00423510_000A34B0_34.asm",
+    "decoded_instructions": 20,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344504,
+    "target_va": 668040,
+    "size": 37,
+    "file": "00424AB8_000A3188_25.asm",
+    "decoded_instructions": 12,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344648,
+    "target_va": 674986,
+    "size": 85,
+    "file": "00424B48_000A4CAA_55.asm",
+    "decoded_instructions": 31,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344904,
+    "target_va": 682944,
+    "size": 33,
+    "file": "00424C48_000A6BC0_21.asm",
+    "decoded_instructions": 14,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4345328,
+    "target_va": 675840,
+    "size": 854,
+    "file": "00424DF0_000A5000_356.asm",
+    "decoded_instructions": 299,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4346480,
+    "target_va": 675680,
+    "size": 96,
+    "file": "00425270_000A4F60_60.asm",
+    "decoded_instructions": 34,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4346968,
+    "target_va": 676864,
+    "size": 172,
+    "file": "00425458_000A5400_AC.asm",
+    "decoded_instructions": 61,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347432,
+    "target_va": 677120,
+    "size": 104,
+    "file": "00425628_000A5500_68.asm",
+    "decoded_instructions": 40,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347744,
+    "target_va": 676816,
+    "size": 43,
+    "file": "00425760_000A53D0_2B.asm",
+    "decoded_instructions": 19,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348228,
+    "target_va": 663504,
+    "size": 39,
+    "file": "00425944_000A1FD0_27.asm",
+    "decoded_instructions": 19,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347824,
+    "target_va": 677344,
+    "size": 18,
+    "file": "004257B0_000A55E0_12.asm",
+    "decoded_instructions": 7,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4349144,
+    "target_va": 677704,
+    "size": 17,
+    "file": "00425CD8_000A5748_11.asm",
+    "decoded_instructions": 6,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4349320,
+    "target_va": 677888,
+    "size": 234,
+    "file": "00425D88_000A5800_EA.asm",
+    "decoded_instructions": 90,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4350112,
+    "target_va": 678400,
+    "size": 63,
+    "file": "004260A0_000A5A00_3F.asm",
+    "decoded_instructions": 26,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4350760,
+    "target_va": 679424,
+    "size": 408,
+    "file": "00426328_000A5E00_198.asm",
+    "decoded_instructions": 143,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4351832,
+    "target_va": 679936,
+    "size": 779,
+    "file": "00426758_000A6000_30B.asm",
+    "decoded_instructions": 280,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4352832,
+    "target_va": 682104,
+    "size": 224,
+    "file": "00426B40_000A6878_E0.asm",
+    "decoded_instructions": 84,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353540,
+    "target_va": 681200,
+    "size": 16,
+    "file": "00426E04_000A64F0_10.asm",
+    "decoded_instructions": 7,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4355900,
+    "target_va": 681280,
+    "size": 108,
+    "file": "0042773C_000A6540_6C.asm",
+    "decoded_instructions": 48,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356192,
+    "target_va": 681392,
+    "size": 23,
+    "file": "00427860_000A65B0_17.asm",
+    "decoded_instructions": 6,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356556,
+    "target_va": 661248,
+    "size": 28,
+    "file": "004279CC_000A1700_1C.asm",
+    "decoded_instructions": 11,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4357336,
+    "target_va": 671392,
+    "size": 88,
+    "file": "00427CD8_000A3EA0_58.asm",
+    "decoded_instructions": 36,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4357504,
+    "target_va": 671632,
+    "size": 72,
+    "file": "00427D80_000A3F90_48.asm",
+    "decoded_instructions": 27,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4357256,
+    "target_va": 667584,
+    "size": 34,
+    "file": "00427C88_000A2FC0_22.asm",
+    "decoded_instructions": 9,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353808,
+    "target_va": 683008,
+    "size": 108,
+    "file": "00426F10_000A6C00_6C.asm",
+    "decoded_instructions": 43,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354024,
+    "target_va": 683264,
+    "size": 184,
+    "file": "00426FE8_000A6D00_B8.asm",
+    "decoded_instructions": 67,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354624,
+    "target_va": 681168,
+    "size": 27,
+    "file": "00427240_000A64D0_1B.asm",
+    "decoded_instructions": 10,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354248,
+    "target_va": 675552,
+    "size": 28,
+    "file": "004270C8_000A4EE0_1C.asm",
+    "decoded_instructions": 9,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354952,
+    "target_va": 684096,
+    "size": 57,
+    "file": "00427388_000A7040_39.asm",
+    "decoded_instructions": 17,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4358504,
+    "target_va": 684800,
+    "size": 457,
+    "file": "00428168_000A7300_1C9.asm",
+    "decoded_instructions": 158,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4359312,
+    "target_va": 685312,
+    "size": 164,
+    "file": "00428490_000A7500_A4.asm",
+    "decoded_instructions": 62,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4359824,
+    "target_va": 677744,
+    "size": 107,
+    "file": "00428690_000A5770_6B.asm",
+    "decoded_instructions": 36,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360480,
+    "target_va": 685824,
+    "size": 50,
+    "file": "00428920_000A7700_32.asm",
+    "decoded_instructions": 19,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4361000,
+    "target_va": 686080,
+    "size": 51,
+    "file": "00428B28_000A7800_33.asm",
+    "decoded_instructions": 16,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4361616,
+    "target_va": 686592,
+    "size": 209,
+    "file": "00428D90_000A7A00_D1.asm",
+    "decoded_instructions": 82,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362132,
+    "target_va": 679872,
+    "size": 27,
+    "file": "00428F94_000A5FC0_1B.asm",
+    "decoded_instructions": 8,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4323664,
+    "target_va": 4747441,
+    "size": 6,
+    "file": "0041F950_004870B1_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4324180,
+    "target_va": 4825392,
+    "size": 5,
+    "file": "0041FB54_0049A130_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4334464,
+    "target_va": 5240487,
+    "size": 5,
+    "file": "00422380_004FF6A7_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4334420,
+    "target_va": 5240661,
+    "size": 5,
+    "file": "00422354_004FF755_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4324248,
+    "target_va": 4798341,
+    "size": 5,
+    "file": "0041FB98_00493785_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4324288,
+    "target_va": 4800067,
+    "size": 5,
+    "file": "0041FBC0_00493E43_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4324352,
+    "target_va": 4779966,
+    "size": 5,
+    "file": "0041FC00_0048EFBE_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4324416,
+    "target_va": 4787934,
+    "size": 5,
+    "file": "0041FC40_00490EDE_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4324480,
+    "target_va": 4778357,
+    "size": 5,
+    "file": "0041FC80_0048E975_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4324616,
+    "target_va": 4776259,
+    "size": 6,
+    "file": "0041FD08_0048E143_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4324704,
+    "target_va": 5278848,
+    "size": 47,
+    "file": "0041FD60_00508C80_2F.asm",
+    "decoded_instructions": 13,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4324872,
+    "target_va": 5152293,
+    "size": 5,
+    "file": "0041FE08_004E9E25_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4324960,
+    "target_va": 4590266,
+    "size": 5,
+    "file": "0041FE60_00460ABA_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4325096,
+    "target_va": 4848102,
+    "size": 9,
+    "file": "0041FEE8_0049F9E6_9.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4330756,
+    "target_va": 5304686,
+    "size": 5,
+    "file": "00421504_0050F16E_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4331244,
+    "target_va": 4928598,
+    "size": 6,
+    "file": "004216EC_004B3456_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4332812,
+    "target_va": 4896486,
+    "size": 6,
+    "file": "00421D0C_004AB6E6_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4325216,
+    "target_va": 4919493,
+    "size": 25,
+    "file": "0041FF60_004B10C5_19.asm",
+    "decoded_instructions": 9,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4325344,
+    "target_va": 4767416,
+    "size": 5,
+    "file": "0041FFE0_0048BEB8_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4325520,
+    "target_va": 4608559,
+    "size": 5,
+    "file": "00420090_0046522F_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4325560,
+    "target_va": 4619149,
+    "size": 5,
+    "file": "004200B8_00467B8D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4327036,
+    "target_va": 4842923,
+    "size": 6,
+    "file": "0042067C_0049E5AB_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4325756,
+    "target_va": 4607760,
+    "size": 5,
+    "file": "0042017C_00464F10_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4326632,
+    "target_va": 5237726,
+    "size": 5,
+    "file": "004204E8_004FEBDE_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4326384,
+    "target_va": 5235060,
+    "size": 6,
+    "file": "004203F0_004FE174_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4326424,
+    "target_va": 5245685,
+    "size": 6,
+    "file": "00420418_00500AF5_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4326464,
+    "target_va": 5263936,
+    "size": 6,
+    "file": "00420440_00505240_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4326504,
+    "target_va": 5270742,
+    "size": 6,
+    "file": "00420468_00506CD6_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4326544,
+    "target_va": 5273892,
+    "size": 6,
+    "file": "00420490_00507924_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4326020,
+    "target_va": 4865800,
+    "size": 5,
+    "file": "00420284_004A3F08_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4326800,
+    "target_va": 4865963,
+    "size": 6,
+    "file": "00420590_004A3FAB_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4326688,
+    "target_va": 4757437,
+    "size": 6,
+    "file": "00420520_004897BD_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4326960,
+    "target_va": 4859158,
+    "size": 6,
+    "file": "00420630_004A2516_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4328164,
+    "target_va": 4889645,
+    "size": 5,
+    "file": "00420AE4_004A9C2D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4327500,
+    "target_va": 4865453,
+    "size": 6,
+    "file": "0042084C_004A3DAD_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4327964,
+    "target_va": 4920241,
+    "size": 5,
+    "file": "00420A1C_004B13B1_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4328280,
+    "target_va": 4889521,
+    "size": 5,
+    "file": "00420B58_004A9BB1_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4328384,
+    "target_va": 4889384,
+    "size": 5,
+    "file": "00420BC0_004A9B28_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4328568,
+    "target_va": 4889576,
+    "size": 5,
+    "file": "00420C78_004A9BE8_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344736,
+    "target_va": 4863650,
+    "size": 5,
+    "file": "00424BA0_004A36A2_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4328680,
+    "target_va": 4863919,
+    "size": 5,
+    "file": "00420CE8_004A37AF_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4329048,
+    "target_va": 4864670,
+    "size": 5,
+    "file": "00420E58_004A3A9E_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4329128,
+    "target_va": 4863762,
+    "size": 5,
+    "file": "00420EA8_004A3712_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4329308,
+    "target_va": 4864099,
+    "size": 6,
+    "file": "00420F5C_004A3863_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4329424,
+    "target_va": 4859599,
+    "size": 5,
+    "file": "00420FD0_004A26CF_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4329672,
+    "target_va": 4922775,
+    "size": 5,
+    "file": "004210C8_004B1D97_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4329820,
+    "target_va": 4862245,
+    "size": 4,
+    "file": "0042115C_004A3125_4.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4329820,
+    "target_va": 4862979,
+    "size": 4,
+    "file": "0042115C_004A3403_4.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4329580,
+    "target_va": 4916089,
+    "size": 7,
+    "file": "0042106C_004B0379_7.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4330976,
+    "target_va": 4856761,
+    "size": 6,
+    "file": "004215E0_004A1BB9_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4331032,
+    "target_va": 4948645,
+    "size": 5,
+    "file": "00421618_004B82A5_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4331092,
+    "target_va": 4857084,
+    "size": 5,
+    "file": "00421654_004A1CFC_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4331308,
+    "target_va": 4858459,
+    "size": 5,
+    "file": "0042172C_004A225B_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4331604,
+    "target_va": 4856716,
+    "size": 5,
+    "file": "00421854_004A1B8C_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4331648,
+    "target_va": 4856670,
+    "size": 5,
+    "file": "00421880_004A1B5E_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4332116,
+    "target_va": 4860811,
+    "size": 5,
+    "file": "00421A54_004A2B8B_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4332296,
+    "target_va": 4860944,
+    "size": 6,
+    "file": "00421B08_004A2C10_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4332384,
+    "target_va": 4794163,
+    "size": 5,
+    "file": "00421B60_00492733_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4332472,
+    "target_va": 4862470,
+    "size": 5,
+    "file": "00421BB8_004A3206_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4332584,
+    "target_va": 4859473,
+    "size": 5,
+    "file": "00421C28_004A2651_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4336436,
+    "target_va": 4854432,
+    "size": 6,
+    "file": "00422B34_004A12A0_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4333184,
+    "target_va": 4927408,
+    "size": 5,
+    "file": "00421E80_004B2FB0_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4333272,
+    "target_va": 4927472,
+    "size": 5,
+    "file": "00421ED8_004B2FF0_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4333440,
+    "target_va": 4926654,
+    "size": 4,
+    "file": "00421F80_004B2CBE_4.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4333556,
+    "target_va": 4926658,
+    "size": 5,
+    "file": "00421FF4_004B2CC2_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4333628,
+    "target_va": 4926751,
+    "size": 5,
+    "file": "0042203C_004B2D1F_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4333672,
+    "target_va": 4926833,
+    "size": 5,
+    "file": "00422068_004B2D71_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4333832,
+    "target_va": 4926863,
+    "size": 5,
+    "file": "00422108_004B2D8F_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4333712,
+    "target_va": 4926989,
+    "size": 5,
+    "file": "00422090_004B2E0D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4333752,
+    "target_va": 4927087,
+    "size": 5,
+    "file": "004220B8_004B2E6F_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4333904,
+    "target_va": 4926882,
+    "size": 4,
+    "file": "00422150_004B2DA2_4.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4334068,
+    "target_va": 4927189,
+    "size": 5,
+    "file": "004221F4_004B2ED5_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4332884,
+    "target_va": 4888764,
+    "size": 5,
+    "file": "00421D54_004A98BC_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4332976,
+    "target_va": 4888855,
+    "size": 5,
+    "file": "00421DB0_004A9917_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4334316,
+    "target_va": 5438021,
+    "size": 5,
+    "file": "004222EC_0052FA45_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4334240,
+    "target_va": 4837497,
+    "size": 5,
+    "file": "004222A0_0049D079_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4333344,
+    "target_va": 4926461,
+    "size": 4,
+    "file": "00421F20_004B2BFD_4.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362512,
+    "target_va": 5217759,
+    "size": 5,
+    "file": "00429110_004F9DDF_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4334520,
+    "target_va": 4781554,
+    "size": 5,
+    "file": "004223B8_0048F5F2_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4334680,
+    "target_va": 4942817,
+    "size": 5,
+    "file": "00422458_004B6BE1_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4334804,
+    "target_va": 4942889,
+    "size": 4,
+    "file": "004224D4_004B6C29_4.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4334884,
+    "target_va": 4802278,
+    "size": 6,
+    "file": "00422524_004946E6_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4334960,
+    "target_va": 4805390,
+    "size": 5,
+    "file": "00422570_0049530E_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4335016,
+    "target_va": 4782048,
+    "size": 5,
+    "file": "004225A8_0048F7E0_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4335104,
+    "target_va": 5238556,
+    "size": 5,
+    "file": "00422600_004FEF1C_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4335348,
+    "target_va": 5267534,
+    "size": 6,
+    "file": "004226F4_0050604E_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4335508,
+    "target_va": 4862319,
+    "size": 5,
+    "file": "00422794_004A316F_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4335724,
+    "target_va": 4473747,
+    "size": 5,
+    "file": "0042286C_00444393_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4329820,
+    "target_va": 4846014,
+    "size": 4,
+    "file": "0042115C_0049F1BE_4.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4329820,
+    "target_va": 4865334,
+    "size": 4,
+    "file": "0042115C_004A3D36_4.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4329820,
+    "target_va": 4864012,
+    "size": 4,
+    "file": "0042115C_004A380C_4.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4329820,
+    "target_va": 4931676,
+    "size": 4,
+    "file": "0042115C_004B405C_4.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4329820,
+    "target_va": 4937955,
+    "size": 4,
+    "file": "0042115C_004B58E3_4.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4329820,
+    "target_va": 4946013,
+    "size": 4,
+    "file": "0042115C_004B785D_4.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4335656,
+    "target_va": 4532177,
+    "size": 5,
+    "file": "00422828_004527D1_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4335808,
+    "target_va": 5237829,
+    "size": 5,
+    "file": "004228C0_004FEC45_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4335848,
+    "target_va": 5238152,
+    "size": 5,
+    "file": "004228E8_004FED88_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4335944,
+    "target_va": 4446752,
+    "size": 2,
+    "file": "00422948_0043DA20_2.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4336064,
+    "target_va": 4848364,
+    "size": 5,
+    "file": "004229C0_0049FAEC_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4336220,
+    "target_va": 4937127,
+    "size": 7,
+    "file": "00422A5C_004B55A7_7.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4336304,
+    "target_va": 4799815,
+    "size": 5,
+    "file": "00422AB0_00493D47_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4336812,
+    "target_va": 4939206,
+    "size": 5,
+    "file": "00422CAC_004B5DC6_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4336952,
+    "target_va": 4940296,
+    "size": 5,
+    "file": "00422D38_004B6208_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4337256,
+    "target_va": 4940269,
+    "size": 5,
+    "file": "00422E68_004B61ED_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4337400,
+    "target_va": 4932526,
+    "size": 5,
+    "file": "00422EF8_004B43AE_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4337496,
+    "target_va": 4949847,
+    "size": 5,
+    "file": "00422F58_004B8757_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4337336,
+    "target_va": 4931994,
+    "size": 6,
+    "file": "00422EB8_004B419A_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4337572,
+    "target_va": 4940939,
+    "size": 5,
+    "file": "00422FA4_004B648B_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4337636,
+    "target_va": 4936054,
+    "size": 5,
+    "file": "00422FE4_004B5176_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4337892,
+    "target_va": 4936480,
+    "size": 5,
+    "file": "004230E4_004B5320_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4338040,
+    "target_va": 4946847,
+    "size": 9,
+    "file": "00423178_004B7B9F_9.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4371840,
+    "target_va": 4934792,
+    "size": 23,
+    "file": "0042B580_004B4C88_17.asm",
+    "decoded_instructions": 6,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4338180,
+    "target_va": 4435920,
+    "size": 5,
+    "file": "00423204_0043AFD0_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4338468,
+    "target_va": 4939272,
+    "size": 5,
+    "file": "00423324_004B5E08_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4341188,
+    "target_va": 4941338,
+    "size": 5,
+    "file": "00423DC4_004B661A_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4338556,
+    "target_va": 4941236,
+    "size": 6,
+    "file": "0042337C_004B65B4_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4339488,
+    "target_va": 4935077,
+    "size": 5,
+    "file": "00423720_004B4DA5_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4339584,
+    "target_va": 4934386,
+    "size": 5,
+    "file": "00423780_004B4AF2_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4339648,
+    "target_va": 4932395,
+    "size": 5,
+    "file": "004237C0_004B432B_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4339808,
+    "target_va": 4948855,
+    "size": 5,
+    "file": "00423860_004B8377_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4339864,
+    "target_va": 4572643,
+    "size": 5,
+    "file": "00423898_0045C5E3_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4339944,
+    "target_va": 4763377,
+    "size": 5,
+    "file": "004238E8_0048AEF1_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4340088,
+    "target_va": 4938172,
+    "size": 20,
+    "file": "00423978_004B59BC_14.asm",
+    "decoded_instructions": 6,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4340956,
+    "target_va": 4950460,
+    "size": 5,
+    "file": "00423CDC_004B89BC_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4341316,
+    "target_va": 4937606,
+    "size": 5,
+    "file": "00423E44_004B5786_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4341964,
+    "target_va": 4606836,
+    "size": 5,
+    "file": "004240CC_00464B74_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342380,
+    "target_va": 4556788,
+    "size": 5,
+    "file": "0042426C_004587F4_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342504,
+    "target_va": 4558100,
+    "size": 5,
+    "file": "004242E8_00458D14_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342848,
+    "target_va": 4933528,
+    "size": 6,
+    "file": "00424440_004B4798_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342932,
+    "target_va": 4934072,
+    "size": 6,
+    "file": "00424494_004B49B8_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4339708,
+    "target_va": 4932454,
+    "size": 5,
+    "file": "004237FC_004B4366_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342008,
+    "target_va": 4690814,
+    "size": 5,
+    "file": "004240F8_0047937E_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342996,
+    "target_va": 4933043,
+    "size": 5,
+    "file": "004244D4_004B45B3_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343092,
+    "target_va": 4930877,
+    "size": 5,
+    "file": "00424534_004B3D3D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342244,
+    "target_va": 4690800,
+    "size": 5,
+    "file": "004241E4_00479370_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342288,
+    "target_va": 4690752,
+    "size": 5,
+    "file": "00424210_00479340_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4341372,
+    "target_va": 4935243,
+    "size": 5,
+    "file": "00423E7C_004B4E4B_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4341496,
+    "target_va": 4948114,
+    "size": 5,
+    "file": "00423EF8_004B8092_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4341676,
+    "target_va": 4856832,
+    "size": 5,
+    "file": "00423FAC_004A1C00_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4341816,
+    "target_va": 4857105,
+    "size": 5,
+    "file": "00424038_004A1D11_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343172,
+    "target_va": 4907520,
+    "size": 5,
+    "file": "00424584_004AE200_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4341588,
+    "target_va": 4948749,
+    "size": 5,
+    "file": "00423F54_004B830D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343248,
+    "target_va": 5397469,
+    "size": 5,
+    "file": "004245D0_00525BDD_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343332,
+    "target_va": 4781680,
+    "size": 5,
+    "file": "00424624_0048F670_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343588,
+    "target_va": 4848279,
+    "size": 6,
+    "file": "00424724_0049FA97_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343876,
+    "target_va": 4848416,
+    "size": 5,
+    "file": "00424844_0049FB20_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344108,
+    "target_va": 4938279,
+    "size": 6,
+    "file": "0042492C_004B5A27_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344360,
+    "target_va": 4938342,
+    "size": 5,
+    "file": "00424A28_004B5A66_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342564,
+    "target_va": 4933399,
+    "size": 6,
+    "file": "00424324_004B4717_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4340176,
+    "target_va": 4938215,
+    "size": 5,
+    "file": "004239D0_004B59E7_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4340232,
+    "target_va": 4934585,
+    "size": 6,
+    "file": "00423A08_004B4BB9_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4340288,
+    "target_va": 4935131,
+    "size": 6,
+    "file": "00423A40_004B4DDB_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4337008,
+    "target_va": 4884083,
+    "size": 5,
+    "file": "00422D70_004A8673_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4338268,
+    "target_va": 4940089,
+    "size": 5,
+    "file": "0042325C_004B6139_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4338796,
+    "target_va": 4937905,
+    "size": 5,
+    "file": "0042346C_004B58B1_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4338920,
+    "target_va": 4934600,
+    "size": 5,
+    "file": "004234E8_004B4BC8_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4339012,
+    "target_va": 4935154,
+    "size": 7,
+    "file": "00423544_004B4DF2_7.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344464,
+    "target_va": 4513879,
+    "size": 5,
+    "file": "00424A90_0044E057_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344544,
+    "target_va": 5252053,
+    "size": 6,
+    "file": "00424AE0_005023D5_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343412,
+    "target_va": 5238422,
+    "size": 5,
+    "file": "00424674_004FEE96_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344608,
+    "target_va": 5241501,
+    "size": 5,
+    "file": "00424B20_004FFA9D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343488,
+    "target_va": 5256485,
+    "size": 5,
+    "file": "004246C0_00503525_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344860,
+    "target_va": 4825192,
+    "size": 7,
+    "file": "00424C1C_0049A068_7.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344940,
+    "target_va": 4826247,
+    "size": 6,
+    "file": "00424C6C_0049A487_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4345008,
+    "target_va": 5477252,
+    "size": 5,
+    "file": "00424CB0_00539384_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4345188,
+    "target_va": 4964248,
+    "size": 4,
+    "file": "00424D64_004BBF98_4.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4347264,
+    "target_va": 4962028,
+    "size": 6,
+    "file": "00425580_004BB6EC_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4345288,
+    "target_va": 4964851,
+    "size": 5,
+    "file": "00424DC8_004BC1F3_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4346184,
+    "target_va": 4964558,
+    "size": 5,
+    "file": "00425148_004BC0CE_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4346436,
+    "target_va": 4963395,
+    "size": 8,
+    "file": "00425244_004BBC43_8.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4346576,
+    "target_va": 4963893,
+    "size": 5,
+    "file": "004252D0_004BBE35_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4346656,
+    "target_va": 4964004,
+    "size": 4,
+    "file": "00425320_004BBEA4_4.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343656,
+    "target_va": 4907457,
+    "size": 5,
+    "file": "00424768_004AE1C1_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343696,
+    "target_va": 4928769,
+    "size": 5,
+    "file": "00424790_004B3501_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343736,
+    "target_va": 4896657,
+    "size": 5,
+    "file": "004247B8_004AB791_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343776,
+    "target_va": 4894401,
+    "size": 5,
+    "file": "004247E0_004AAEC1_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343816,
+    "target_va": 4898001,
+    "size": 5,
+    "file": "00424808_004ABCD1_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4346928,
+    "target_va": 4578721,
+    "size": 6,
+    "file": "00425430_0045DDA1_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347140,
+    "target_va": 4962378,
+    "size": 5,
+    "file": "00425504_004BB84A_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347328,
+    "target_va": 4568334,
+    "size": 5,
+    "file": "004255C0_0045B50E_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347392,
+    "target_va": 4920050,
+    "size": 5,
+    "file": "00425600_004B12F2_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347672,
+    "target_va": 4508067,
+    "size": 6,
+    "file": "00425718_0044C9A3_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347788,
+    "target_va": 4926669,
+    "size": 4,
+    "file": "0042578C_004B2CCD_4.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4347844,
+    "target_va": 4926624,
+    "size": 5,
+    "file": "004257C4_004B2CA0_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347936,
+    "target_va": 4926897,
+    "size": 4,
+    "file": "00425820_004B2DB1_4.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4348268,
+    "target_va": 4987397,
+    "size": 5,
+    "file": "0042596C_004C1A05_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348312,
+    "target_va": 4752991,
+    "size": 5,
+    "file": "00425998_0048865F_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348352,
+    "target_va": 4753187,
+    "size": 6,
+    "file": "004259C0_00488723_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348392,
+    "target_va": 4894223,
+    "size": 5,
+    "file": "004259E8_004AAE0F_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348452,
+    "target_va": 4433072,
+    "size": 5,
+    "file": "00425A24_0043A4B0_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348536,
+    "target_va": 5023048,
+    "size": 5,
+    "file": "00425A78_004CA548_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348576,
+    "target_va": 5813114,
+    "size": 5,
+    "file": "00425AA0_0058B37A_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348616,
+    "target_va": 4433037,
+    "size": 5,
+    "file": "00425AC8_0043A48D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348656,
+    "target_va": 4625457,
+    "size": 5,
+    "file": "00425AF0_00469431_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348716,
+    "target_va": 4753231,
+    "size": 5,
+    "file": "00425B2C_0048874F_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348760,
+    "target_va": 4753306,
+    "size": 5,
+    "file": "00425B58_0048879A_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348824,
+    "target_va": 4752645,
+    "size": 5,
+    "file": "00425B98_00488505_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348884,
+    "target_va": 5813303,
+    "size": 5,
+    "file": "00425BD4_0058B437_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348928,
+    "target_va": 5811704,
+    "size": 5,
+    "file": "00425C00_0058ADF8_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348992,
+    "target_va": 5859764,
+    "size": 5,
+    "file": "00425C40_005969B4_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4349024,
+    "target_va": 5868506,
+    "size": 5,
+    "file": "00425C60_00598BDA_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4349076,
+    "target_va": 5811762,
+    "size": 5,
+    "file": "00425C94_0058AE32_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4349112,
+    "target_va": 5813357,
+    "size": 5,
+    "file": "00425CB8_0058B46D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4349164,
+    "target_va": 4848120,
+    "size": 6,
+    "file": "00425CEC_0049F9F8_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4349280,
+    "target_va": 4523513,
+    "size": 6,
+    "file": "00425D60_004505F9_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4349556,
+    "target_va": 4934659,
+    "size": 6,
+    "file": "00425E74_004B4C03_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4349792,
+    "target_va": 4935230,
+    "size": 6,
+    "file": "00425F60_004B4E3E_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4349972,
+    "target_va": 4528732,
+    "size": 5,
+    "file": "00426014_00451A5C_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4350072,
+    "target_va": 4938484,
+    "size": 5,
+    "file": "00426078_004B5AF4_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4350176,
+    "target_va": 4604353,
+    "size": 5,
+    "file": "004260E0_004641C1_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4350716,
+    "target_va": 4608262,
+    "size": 5,
+    "file": "004262FC_00465106_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4351256,
+    "target_va": 5238917,
+    "size": 5,
+    "file": "00426518_004FF085_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4351788,
+    "target_va": 4931975,
+    "size": 5,
+    "file": "0042672C_004B4187_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4352792,
+    "target_va": 4599872,
+    "size": 6,
+    "file": "00426B18_00463040_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353164,
+    "target_va": 5438232,
+    "size": 5,
+    "file": "00426C8C_0052FB18_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353556,
+    "target_va": 4405708,
+    "size": 6,
+    "file": "00426E14_004339CC_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353624,
+    "target_va": 5839583,
+    "size": 5,
+    "file": "00426E58_00591ADF_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353984,
+    "target_va": 4673497,
+    "size": 5,
+    "file": "00426FC0_00474FD9_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4355232,
+    "target_va": 5255421,
+    "size": 5,
+    "file": "004274A0_005030FD_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356216,
+    "target_va": 5263370,
+    "size": 10,
+    "file": "00427878_0050500A_A.asm",
+    "decoded_instructions": 6,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356264,
+    "target_va": 5266410,
+    "size": 6,
+    "file": "004278A8_00505BEA_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356304,
+    "target_va": 5265277,
+    "size": 10,
+    "file": "004278D0_0050577D_A.asm",
+    "decoded_instructions": 6,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356476,
+    "target_va": 4973635,
+    "size": 5,
+    "file": "0042797C_004BE443_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4364528,
+    "target_va": 4567525,
+    "size": 5,
+    "file": "004298F0_0045B1E5_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356868,
+    "target_va": 5268244,
+    "size": 5,
+    "file": "00427B04_00506314_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356912,
+    "target_va": 5268395,
+    "size": 5,
+    "file": "00427B30_005063AB_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4364588,
+    "target_va": 4484201,
+    "size": 5,
+    "file": "0042992C_00446C69_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356980,
+    "target_va": 4855948,
+    "size": 5,
+    "file": "00427B74_004A188C_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4357212,
+    "target_va": 4837313,
+    "size": 5,
+    "file": "00427C5C_0049CFC1_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4357460,
+    "target_va": 5269524,
+    "size": 5,
+    "file": "00427D54_00506814_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4357608,
+    "target_va": 4518903,
+    "size": 5,
+    "file": "00427DE8_0044F3F7_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4357836,
+    "target_va": 4430404,
+    "size": 5,
+    "file": "00427ECC_00439A44_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4357904,
+    "target_va": 4502069,
+    "size": 5,
+    "file": "00427F10_0044B235_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4357292,
+    "target_va": 4391326,
+    "size": 5,
+    "file": "00427CAC_0043019E_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4358052,
+    "target_va": 4556444,
+    "size": 5,
+    "file": "00427FA4_0045869C_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356376,
+    "target_va": 5262325,
+    "size": 5,
+    "file": "00427918_00504BF5_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353724,
+    "target_va": 4655806,
+    "size": 5,
+    "file": "00426EBC_00470ABE_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353944,
+    "target_va": 4673139,
+    "size": 5,
+    "file": "00426F98_00474E73_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354208,
+    "target_va": 5433193,
+    "size": 5,
+    "file": "004270A0_0052E769_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354340,
+    "target_va": 5409967,
+    "size": 5,
+    "file": "00427124_00528CAF_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354384,
+    "target_va": 5412122,
+    "size": 5,
+    "file": "00427150_0052951A_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4325416,
+    "target_va": 5436594,
+    "size": 5,
+    "file": "00420028_0052F4B2_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353768,
+    "target_va": 4656111,
+    "size": 5,
+    "file": "00426EE8_00470BEF_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354512,
+    "target_va": 5323759,
+    "size": 5,
+    "file": "004271D0_00513BEF_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354580,
+    "target_va": 5278661,
+    "size": 5,
+    "file": "00427214_00508BC5_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354680,
+    "target_va": 5276924,
+    "size": 5,
+    "file": "00427278_005084FC_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354744,
+    "target_va": 4499957,
+    "size": 5,
+    "file": "004272B8_0044A9F5_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4358112,
+    "target_va": 4844059,
+    "size": 4,
+    "file": "00427FE0_0049EA1B_4.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4354808,
+    "target_va": 5408683,
+    "size": 5,
+    "file": "004272F8_005287AB_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354872,
+    "target_va": 5408875,
+    "size": 5,
+    "file": "00427338_0052886B_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354912,
+    "target_va": 5409090,
+    "size": 5,
+    "file": "00427360_00528942_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4355012,
+    "target_va": 4535177,
+    "size": 7,
+    "file": "004273C4_00453389_7.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4355156,
+    "target_va": 5329123,
+    "size": 5,
+    "file": "00427454_005150E3_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4358404,
+    "target_va": 5263268,
+    "size": 5,
+    "file": "00428104_00504FA4_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4358464,
+    "target_va": 5237140,
+    "size": 5,
+    "file": "00428140_004FE994_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4358964,
+    "target_va": 4859145,
+    "size": 5,
+    "file": "00428334_004A2509_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4359180,
+    "target_va": 4861342,
+    "size": 5,
+    "file": "0042840C_004A2D9E_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4359272,
+    "target_va": 4861774,
+    "size": 6,
+    "file": "00428468_004A2F4E_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4359760,
+    "target_va": 4745642,
+    "size": 5,
+    "file": "00428650_004869AA_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4359792,
+    "target_va": 4745866,
+    "size": 5,
+    "file": "00428670_00486A8A_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4359932,
+    "target_va": 4433392,
+    "size": 5,
+    "file": "004286FC_0043A5F0_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360092,
+    "target_va": 4433558,
+    "size": 5,
+    "file": "0042879C_0043A696_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360232,
+    "target_va": 4436791,
+    "size": 6,
+    "file": "00428828_0043B337_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360264,
+    "target_va": 4437017,
+    "size": 6,
+    "file": "00428848_0043B419_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360296,
+    "target_va": 4717531,
+    "size": 6,
+    "file": "00428868_0047FBDB_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360328,
+    "target_va": 4717821,
+    "size": 6,
+    "file": "00428888_0047FCFD_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360360,
+    "target_va": 4717829,
+    "size": 6,
+    "file": "004288A8_0047FD05_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360400,
+    "target_va": 4717859,
+    "size": 8,
+    "file": "004288D0_0047FD23_8.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360628,
+    "target_va": 4437030,
+    "size": 6,
+    "file": "004289B4_0043B426_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360708,
+    "target_va": 4717842,
+    "size": 5,
+    "file": "00428A04_0047FD12_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4361364,
+    "target_va": 5747152,
+    "size": 5,
+    "file": "00428C94_0057B1D0_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4361516,
+    "target_va": 4832618,
+    "size": 5,
+    "file": "00428D2C_0049BD6A_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4361552,
+    "target_va": 4832658,
+    "size": 5,
+    "file": "00428D50_0049BD92_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4361584,
+    "target_va": 4832698,
+    "size": 5,
+    "file": "00428D70_0049BDBA_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4340496,
+    "target_va": 5284682,
+    "size": 5,
+    "file": "00423B10_0050A34A_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4361920,
+    "target_va": 4763883,
+    "size": 5,
+    "file": "00428EC0_0048B0EB_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4361136,
+    "target_va": 4971918,
+    "size": 5,
+    "file": "00428BB0_004BDD8E_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362016,
+    "target_va": 4242890,
+    "size": 5,
+    "file": "00428F20_0040BDCA_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362160,
+    "target_va": 5000419,
+    "size": 5,
+    "file": "00428FB0_004C4CE3_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362368,
+    "target_va": 4612027,
+    "size": 6,
+    "file": "00429080_00465FBB_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362432,
+    "target_va": 4612603,
+    "size": 5,
+    "file": "004290C0_004661FB_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362656,
+    "target_va": 5257383,
+    "size": 5,
+    "file": "004291A0_005038A7_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362940,
+    "target_va": 5149191,
+    "size": 5,
+    "file": "004292BC_004E9207_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4363084,
+    "target_va": 5768051,
+    "size": 5,
+    "file": "0042934C_00580373_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4363168,
+    "target_va": 5264275,
+    "size": 12,
+    "file": "004293A0_00505393_C.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4363236,
+    "target_va": 5264325,
+    "size": 5,
+    "file": "004293E4_005053C5_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4363384,
+    "target_va": 5234893,
+    "size": 7,
+    "file": "00429478_004FE0CD_7.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4363424,
+    "target_va": 5242193,
+    "size": 7,
+    "file": "004294A0_004FFD51_7.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4363464,
+    "target_va": 5242236,
+    "size": 7,
+    "file": "004294C8_004FFD7C_7.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4363748,
+    "target_va": 4767792,
+    "size": 5,
+    "file": "004295E4_0048C030_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4363884,
+    "target_va": 5153504,
+    "size": 4,
+    "file": "0042966C_004EA2E0_4.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4364032,
+    "target_va": 5153540,
+    "size": 5,
+    "file": "00429700_004EA304_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4364144,
+    "target_va": 4544504,
+    "size": 5,
+    "file": "00429770_004557F8_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4364428,
+    "target_va": 4567783,
+    "size": 5,
+    "file": "0042988C_0045B2E7_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4371676,
+    "target_va": 5218856,
+    "size": 14,
+    "file": "0042B4DC_004FA228_E.asm",
+    "decoded_instructions": 4,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4371736,
+    "target_va": 4511479,
+    "size": 5,
+    "file": "0042B518_0044D6F7_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4371736,
+    "target_va": 4730292,
+    "size": 5,
+    "file": "0042B518_00482DB4_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4371800,
+    "target_va": 5199675,
+    "size": 5,
+    "file": "0042B558_004F573B_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4372328,
+    "target_va": 4999242,
+    "size": 5,
+    "file": "0042B768_004C484A_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4372476,
+    "target_va": 5405797,
+    "size": 5,
+    "file": "0042B7FC_00527C65_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4372520,
+    "target_va": 5406054,
+    "size": 5,
+    "file": "0042B828_00527D66_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4372584,
+    "target_va": 5323023,
+    "size": 5,
+    "file": "0042B868_0051390F_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4373920,
+    "target_va": 4893302,
+    "size": 19,
+    "file": "0042BDA0_004AAA76_13.asm",
+    "decoded_instructions": 8,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4374400,
+    "target_va": 4750743,
+    "size": 5,
+    "file": "0042BF80_00487D97_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4374600,
+    "target_va": 4472465,
+    "size": 5,
+    "file": "0042C048_00443E91_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4375872,
+    "target_va": 5439713,
+    "size": 5,
+    "file": "0042C540_005300E1_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4375960,
+    "target_va": 4294282,
+    "size": 5,
+    "file": "0042C598_0041868A_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4376044,
+    "target_va": 5677244,
+    "size": 5,
+    "file": "0042C5EC_0056A0BC_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4376860,
+    "target_va": 5372435,
+    "size": 7,
+    "file": "0042C91C_0051FA13_7.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4376904,
+    "target_va": 5422154,
+    "size": 54,
+    "file": "0042C948_0052BC4A_36.asm",
+    "decoded_instructions": 17,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4377072,
+    "target_va": 5380285,
+    "size": 5,
+    "file": "0042C9F0_005218BD_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4377160,
+    "target_va": 4889482,
+    "size": 9,
+    "file": "0042CA48_004A9B8A_9.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4377620,
+    "target_va": 4973076,
+    "size": 48,
+    "file": "0042CC14_004BE214_30.asm",
+    "decoded_instructions": 19,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4379024,
+    "target_va": 4624371,
+    "size": 5,
+    "file": "0042D190_00468FF3_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4379064,
+    "target_va": 4915472,
+    "size": 10,
+    "file": "0042D1B8_004B0110_A.asm",
+    "decoded_instructions": 5,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366436,
+    "target_va": 5137008,
+    "size": 11,
+    "file": "0042A064_004E6270_B.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366600,
+    "target_va": 4742582,
+    "size": 5,
+    "file": "0042A108_00485DB6_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366640,
+    "target_va": 4806493,
+    "size": 5,
+    "file": "0042A130_0049575D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366732,
+    "target_va": 4742679,
+    "size": 5,
+    "file": "0042A18C_00485E17_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365924,
+    "target_va": 5162004,
+    "size": 5,
+    "file": "00429E64_004EC414_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365968,
+    "target_va": 5165230,
+    "size": 5,
+    "file": "00429E90_004ED0AE_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366008,
+    "target_va": 5110955,
+    "size": 5,
+    "file": "00429EB8_004DFCAB_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366048,
+    "target_va": 5044155,
+    "size": 5,
+    "file": "00429EE0_004CF7BB_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366088,
+    "target_va": 5169067,
+    "size": 5,
+    "file": "00429F08_004EDFAB_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366128,
+    "target_va": 5116459,
+    "size": 5,
+    "file": "00429F30_004E122B_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366168,
+    "target_va": 5049998,
+    "size": 5,
+    "file": "00429F58_004D0E8E_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366208,
+    "target_va": 5051211,
+    "size": 5,
+    "file": "00429F80_004D134B_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366248,
+    "target_va": 5092331,
+    "size": 5,
+    "file": "00429FA8_004DB3EB_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366288,
+    "target_va": 5096299,
+    "size": 5,
+    "file": "00429FD0_004DC36B_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366328,
+    "target_va": 5119803,
+    "size": 5,
+    "file": "00429FF8_004E1F3B_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366368,
+    "target_va": 5137453,
+    "size": 5,
+    "file": "0042A020_004E642D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4364948,
+    "target_va": 5161944,
+    "size": 5,
+    "file": "00429A94_004EC3D8_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4364992,
+    "target_va": 5165173,
+    "size": 5,
+    "file": "00429AC0_004ED075_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365032,
+    "target_va": 5054119,
+    "size": 5,
+    "file": "00429AE8_004D1EA7_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365072,
+    "target_va": 5052125,
+    "size": 5,
+    "file": "00429B10_004D16DD_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365112,
+    "target_va": 5095015,
+    "size": 5,
+    "file": "00429B38_004DBE67_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365152,
+    "target_va": 5093245,
+    "size": 5,
+    "file": "00429B60_004DB77D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365192,
+    "target_va": 5113578,
+    "size": 5,
+    "file": "00429B88_004E06EA_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365232,
+    "target_va": 5111869,
+    "size": 5,
+    "file": "00429BB0_004E003D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365272,
+    "target_va": 5049850,
+    "size": 5,
+    "file": "00429BD8_004D0DFA_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365312,
+    "target_va": 5047949,
+    "size": 5,
+    "file": "00429C00_004D068D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365352,
+    "target_va": 5046637,
+    "size": 5,
+    "file": "00429C28_004D016D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365392,
+    "target_va": 5045005,
+    "size": 5,
+    "file": "00429C50_004CFB0D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365432,
+    "target_va": 5171533,
+    "size": 5,
+    "file": "00429C78_004EE94D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365472,
+    "target_va": 5169997,
+    "size": 5,
+    "file": "00429CA0_004EE34D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365512,
+    "target_va": 5116402,
+    "size": 5,
+    "file": "00429CC8_004E11F2_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365552,
+    "target_va": 5096152,
+    "size": 5,
+    "file": "00429CF0_004DC2D8_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365728,
+    "target_va": 5122014,
+    "size": 5,
+    "file": "00429DA0_004E27DE_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4323536,
+    "target_va": 5310157,
+    "size": 5,
+    "file": "0041F8D0_005106CD_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4323576,
+    "target_va": 5636974,
+    "size": 5,
+    "file": "0041F8F8_0056036E_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4323496,
+    "target_va": 5641729,
+    "size": 5,
+    "file": "0041F8A8_00561601_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4367696,
+    "target_va": 5376818,
+    "size": 5,
+    "file": "0042A550_00520B32_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4367788,
+    "target_va": 5370007,
+    "size": 5,
+    "file": "0042A5AC_0051F097_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4370316,
+    "target_va": 4325755,
+    "size": 5,
+    "file": "0042AF8C_0042017B_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4370848,
+    "target_va": 5997910,
+    "size": 5,
+    "file": "0042B1A0_005B8556_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4371048,
+    "target_va": 4291292,
+    "size": 5,
+    "file": "0042B268_00417ADC_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4371088,
+    "target_va": 4297243,
+    "size": 5,
+    "file": "0042B290_0041921B_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4371316,
+    "target_va": 4290308,
+    "size": 5,
+    "file": "0042B374_00417704_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4371360,
+    "target_va": 4296673,
+    "size": 5,
+    "file": "0042B3A0_00418FE1_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4371400,
+    "target_va": 4296704,
+    "size": 5,
+    "file": "0042B3C8_00419000_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4323704,
+    "target_va": 5747392,
+    "size": 8,
+    "file": "0041F978_0057B2C0_8.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4331352,
+    "target_va": 4858221,
+    "size": 22,
+    "file": "00421758_004A216D_16.asm",
+    "decoded_instructions": 5,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4331424,
+    "target_va": 4858537,
+    "size": 10,
+    "file": "004217A0_004A22A9_A.asm",
+    "decoded_instructions": 5,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4331472,
+    "target_va": 4858566,
+    "size": 10,
+    "file": "004217D0_004A22C6_A.asm",
+    "decoded_instructions": 5,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342320,
+    "target_va": 5237572,
+    "size": 6,
+    "file": "00424230_004FEB44_6.asm",
+    "decoded_instructions": 4,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342608,
+    "target_va": 4933971,
+    "size": 5,
+    "file": "00424350_004B4953_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342648,
+    "target_va": 4963246,
+    "size": 50,
+    "file": "00424378_004BBBAE_32.asm",
+    "decoded_instructions": 20,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342776,
+    "target_va": 4965217,
+    "size": 7,
+    "file": "004243F8_004BC361_7.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4346688,
+    "target_va": 4965302,
+    "size": 98,
+    "file": "00425340_004BC3B6_62.asm",
+    "decoded_instructions": 35,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4346820,
+    "target_va": 5240720,
+    "size": 56,
+    "file": "004253C4_004FF790_38.asm",
+    "decoded_instructions": 21,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354424,
+    "target_va": 5453704,
+    "size": 8,
+    "file": "00427178_00533788_8.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4387172,
+    "target_va": 681152,
+    "size": 9,
+    "file": "0042F164_000A64C0_9.asm",
+    "decoded_instructions": 0,
+    "raw_bytes": 9
+  },
+  {
+    "source_va": 4371864,
+    "target_va": 4934792,
+    "size": 23,
+    "file": "0042B598_004B4C88_17.asm",
+    "decoded_instructions": 6,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4359648,
+    "target_va": 5252089,
+    "size": 6,
+    "file": "004285E0_005023F9_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354432,
+    "target_va": 5453704,
+    "size": 8,
+    "file": "00427180_00533788_8.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4387532,
+    "target_va": 4965302,
+    "size": 98,
+    "file": "0042F2CC_004BC3B6_62.asm",
+    "decoded_instructions": 0,
+    "raw_bytes": 98
+  },
+  {
+    "source_va": 4342784,
+    "target_va": 4965217,
+    "size": 7,
+    "file": "00424400_004BC361_7.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342700,
+    "target_va": 4963246,
+    "size": 50,
+    "file": "004243AC_004BBBAE_32.asm",
+    "decoded_instructions": 27,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342616,
+    "target_va": 4933971,
+    "size": 5,
+    "file": "00424358_004B4953_5.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342328,
+    "target_va": 5237572,
+    "size": 6,
+    "file": "00424238_004FEB44_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4331484,
+    "target_va": 4858566,
+    "size": 10,
+    "file": "004217DC_004A22C6_A.asm",
+    "decoded_instructions": 5,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4331436,
+    "target_va": 4858537,
+    "size": 10,
+    "file": "004217AC_004A22A9_A.asm",
+    "decoded_instructions": 5,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4331376,
+    "target_va": 4858221,
+    "size": 22,
+    "file": "00421770_004A216D_16.asm",
+    "decoded_instructions": 5,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4323712,
+    "target_va": 5747392,
+    "size": 8,
+    "file": "0041F980_0057B2C0_8.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4323504,
+    "target_va": 5641729,
+    "size": 5,
+    "file": "0041F8B0_00561601_5.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4323584,
+    "target_va": 5636974,
+    "size": 5,
+    "file": "0041F900_0056036E_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4323544,
+    "target_va": 5310157,
+    "size": 5,
+    "file": "0041F8D8_005106CD_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4371324,
+    "target_va": 4290308,
+    "size": 5,
+    "file": "0042B37C_00417704_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4371368,
+    "target_va": 4296673,
+    "size": 5,
+    "file": "0042B3A8_00418FE1_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4371408,
+    "target_va": 4296704,
+    "size": 5,
+    "file": "0042B3D0_00419000_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4371056,
+    "target_va": 4291292,
+    "size": 5,
+    "file": "0042B270_00417ADC_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4371096,
+    "target_va": 4297243,
+    "size": 5,
+    "file": "0042B298_0041921B_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4370856,
+    "target_va": 5997910,
+    "size": 5,
+    "file": "0042B1A8_005B8556_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4370324,
+    "target_va": 4325755,
+    "size": 5,
+    "file": "0042AF94_0042017B_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4368240,
+    "target_va": 5376576,
+    "size": 12,
+    "file": "0042A770_00520A40_C.asm",
+    "decoded_instructions": 4,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4367796,
+    "target_va": 5370007,
+    "size": 5,
+    "file": "0042A5B4_0051F097_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4367704,
+    "target_va": 5376818,
+    "size": 5,
+    "file": "0042A558_00520B32_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365736,
+    "target_va": 5122014,
+    "size": 5,
+    "file": "00429DA8_004E27DE_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365560,
+    "target_va": 5096152,
+    "size": 5,
+    "file": "00429CF8_004DC2D8_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365520,
+    "target_va": 5116402,
+    "size": 5,
+    "file": "00429CD0_004E11F2_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365480,
+    "target_va": 5169997,
+    "size": 5,
+    "file": "00429CA8_004EE34D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365440,
+    "target_va": 5171533,
+    "size": 5,
+    "file": "00429C80_004EE94D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365400,
+    "target_va": 5045005,
+    "size": 5,
+    "file": "00429C58_004CFB0D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365360,
+    "target_va": 5046637,
+    "size": 5,
+    "file": "00429C30_004D016D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365320,
+    "target_va": 5047949,
+    "size": 5,
+    "file": "00429C08_004D068D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365280,
+    "target_va": 5049850,
+    "size": 5,
+    "file": "00429BE0_004D0DFA_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365240,
+    "target_va": 5111869,
+    "size": 5,
+    "file": "00429BB8_004E003D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365200,
+    "target_va": 5113578,
+    "size": 5,
+    "file": "00429B90_004E06EA_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365160,
+    "target_va": 5093245,
+    "size": 5,
+    "file": "00429B68_004DB77D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365120,
+    "target_va": 5095015,
+    "size": 5,
+    "file": "00429B40_004DBE67_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365080,
+    "target_va": 5052125,
+    "size": 5,
+    "file": "00429B18_004D16DD_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365040,
+    "target_va": 5054119,
+    "size": 5,
+    "file": "00429AF0_004D1EA7_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365000,
+    "target_va": 5165173,
+    "size": 5,
+    "file": "00429AC8_004ED075_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4364956,
+    "target_va": 5161944,
+    "size": 5,
+    "file": "00429A9C_004EC3D8_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366376,
+    "target_va": 5137453,
+    "size": 5,
+    "file": "0042A028_004E642D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366336,
+    "target_va": 5119803,
+    "size": 5,
+    "file": "0042A000_004E1F3B_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366296,
+    "target_va": 5096299,
+    "size": 5,
+    "file": "00429FD8_004DC36B_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366256,
+    "target_va": 5092331,
+    "size": 5,
+    "file": "00429FB0_004DB3EB_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366216,
+    "target_va": 5051211,
+    "size": 5,
+    "file": "00429F88_004D134B_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366176,
+    "target_va": 5049998,
+    "size": 5,
+    "file": "00429F60_004D0E8E_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366136,
+    "target_va": 5116459,
+    "size": 5,
+    "file": "00429F38_004E122B_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366096,
+    "target_va": 5169067,
+    "size": 5,
+    "file": "00429F10_004EDFAB_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366056,
+    "target_va": 5044155,
+    "size": 5,
+    "file": "00429EE8_004CF7BB_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366016,
+    "target_va": 5110955,
+    "size": 5,
+    "file": "00429EC0_004DFCAB_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365976,
+    "target_va": 5165230,
+    "size": 5,
+    "file": "00429E98_004ED0AE_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4365932,
+    "target_va": 5162004,
+    "size": 5,
+    "file": "00429E6C_004EC414_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366740,
+    "target_va": 4742679,
+    "size": 5,
+    "file": "0042A194_00485E17_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366648,
+    "target_va": 4806493,
+    "size": 5,
+    "file": "0042A138_0049575D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366608,
+    "target_va": 4742582,
+    "size": 5,
+    "file": "0042A110_00485DB6_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4366448,
+    "target_va": 5137008,
+    "size": 11,
+    "file": "0042A070_004E6270_B.asm",
+    "decoded_instructions": 7,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4379076,
+    "target_va": 4915472,
+    "size": 4,
+    "file": "0042D1C4_004B0110_4.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4379032,
+    "target_va": 4624371,
+    "size": 5,
+    "file": "0042D198_00468FF3_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4377668,
+    "target_va": 4973076,
+    "size": 48,
+    "file": "0042CC44_004BE214_30.asm",
+    "decoded_instructions": 20,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4377172,
+    "target_va": 4889482,
+    "size": 9,
+    "file": "0042CA54_004A9B8A_9.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4376868,
+    "target_va": 5372435,
+    "size": 7,
+    "file": "0042C924_0051FA13_7.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4377080,
+    "target_va": 5380285,
+    "size": 5,
+    "file": "0042C9F8_005218BD_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4376960,
+    "target_va": 5422154,
+    "size": 54,
+    "file": "0042C980_0052BC4A_36.asm",
+    "decoded_instructions": 19,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4376052,
+    "target_va": 5677244,
+    "size": 5,
+    "file": "0042C5F4_0056A0BC_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4375968,
+    "target_va": 4294282,
+    "size": 5,
+    "file": "0042C5A0_0041868A_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4375880,
+    "target_va": 5439713,
+    "size": 5,
+    "file": "0042C548_005300E1_5.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4374608,
+    "target_va": 4472465,
+    "size": 5,
+    "file": "0042C050_00443E91_5.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4374408,
+    "target_va": 4750743,
+    "size": 5,
+    "file": "0042BF88_00487D97_5.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4373940,
+    "target_va": 4893302,
+    "size": 19,
+    "file": "0042BDB4_004AAA76_13.asm",
+    "decoded_instructions": 9,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4372592,
+    "target_va": 5323023,
+    "size": 5,
+    "file": "0042B870_0051390F_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4372484,
+    "target_va": 5405797,
+    "size": 5,
+    "file": "0042B804_00527C65_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4372528,
+    "target_va": 5406054,
+    "size": 5,
+    "file": "0042B830_00527D66_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4372336,
+    "target_va": 4999242,
+    "size": 5,
+    "file": "0042B770_004C484A_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4372204,
+    "target_va": 4999029,
+    "size": 16,
+    "file": "0042B6EC_004C4775_10.asm",
+    "decoded_instructions": 6,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4371808,
+    "target_va": 5199675,
+    "size": 5,
+    "file": "0042B560_004F573B_5.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 2
+  },
+  {
+    "source_va": 4371744,
+    "target_va": 4730292,
+    "size": 5,
+    "file": "0042B520_00482DB4_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4371744,
+    "target_va": 4511479,
+    "size": 5,
+    "file": "0042B520_0044D6F7_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4371692,
+    "target_va": 5218856,
+    "size": 14,
+    "file": "0042B4EC_004FA228_E.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4364436,
+    "target_va": 4567783,
+    "size": 5,
+    "file": "00429894_0045B2E7_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4364152,
+    "target_va": 4544504,
+    "size": 5,
+    "file": "00429778_004557F8_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4364040,
+    "target_va": 5153540,
+    "size": 5,
+    "file": "00429708_004EA304_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4363888,
+    "target_va": 5153504,
+    "size": 4,
+    "file": "00429670_004EA2E0_4.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 2
+  },
+  {
+    "source_va": 4363756,
+    "target_va": 4767792,
+    "size": 5,
+    "file": "004295EC_0048C030_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4363472,
+    "target_va": 5242236,
+    "size": 7,
+    "file": "004294D0_004FFD7C_7.asm",
+    "decoded_instructions": 5,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4363432,
+    "target_va": 5242193,
+    "size": 7,
+    "file": "004294A8_004FFD51_7.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4363392,
+    "target_va": 5234893,
+    "size": 7,
+    "file": "00429480_004FE0CD_7.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4363244,
+    "target_va": 5264325,
+    "size": 5,
+    "file": "004293EC_005053C5_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4363180,
+    "target_va": 5264275,
+    "size": 12,
+    "file": "004293AC_00505393_C.asm",
+    "decoded_instructions": 4,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4363092,
+    "target_va": 5768051,
+    "size": 5,
+    "file": "00429354_00580373_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362948,
+    "target_va": 5149191,
+    "size": 5,
+    "file": "004292C4_004E9207_5.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362728,
+    "target_va": 4951030,
+    "size": 31,
+    "file": "004291E8_004B8BF6_1F.asm",
+    "decoded_instructions": 11,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362664,
+    "target_va": 5257383,
+    "size": 5,
+    "file": "004291A8_005038A7_5.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362612,
+    "target_va": 5251452,
+    "size": 4,
+    "file": "00429174_0050217C_4.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4362440,
+    "target_va": 4612603,
+    "size": 5,
+    "file": "004290C8_004661FB_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362376,
+    "target_va": 4612027,
+    "size": 6,
+    "file": "00429088_00465FBB_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362284,
+    "target_va": 5237440,
+    "size": 6,
+    "file": "0042902C_004FEAC0_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362168,
+    "target_va": 5000419,
+    "size": 5,
+    "file": "00428FB8_004C4CE3_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4362024,
+    "target_va": 4242890,
+    "size": 5,
+    "file": "00428F28_0040BDCA_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4361144,
+    "target_va": 4971918,
+    "size": 5,
+    "file": "00428BB8_004BDD8E_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4361928,
+    "target_va": 4763883,
+    "size": 5,
+    "file": "00428EC8_0048B0EB_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4361836,
+    "target_va": 4831719,
+    "size": 5,
+    "file": "00428E6C_0049B9E7_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4340504,
+    "target_va": 5284682,
+    "size": 5,
+    "file": "00423B18_0050A34A_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4361508,
+    "target_va": 4832698,
+    "size": 5,
+    "file": "00428D24_0049BDBA_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4361508,
+    "target_va": 4832658,
+    "size": 5,
+    "file": "00428D24_0049BD92_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4361508,
+    "target_va": 4832618,
+    "size": 5,
+    "file": "00428D24_0049BD6A_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4361372,
+    "target_va": 5747152,
+    "size": 5,
+    "file": "00428C9C_0057B1D0_5.asm",
+    "decoded_instructions": 4,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4361060,
+    "target_va": 5303516,
+    "size": 5,
+    "file": "00428B64_0050ECDC_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360964,
+    "target_va": 4805679,
+    "size": 5,
+    "file": "00428B04_0049542F_5.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360912,
+    "target_va": 4731181,
+    "size": 6,
+    "file": "00428AD0_0048312D_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360716,
+    "target_va": 4717842,
+    "size": 5,
+    "file": "00428A0C_0047FD12_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360636,
+    "target_va": 4437030,
+    "size": 6,
+    "file": "004289BC_0043B426_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360368,
+    "target_va": 4717829,
+    "size": 6,
+    "file": "004288B0_0047FD05_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360408,
+    "target_va": 4717859,
+    "size": 8,
+    "file": "004288D8_0047FD23_8.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360224,
+    "target_va": 4717821,
+    "size": 6,
+    "file": "00428820_0047FCFD_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360224,
+    "target_va": 4717531,
+    "size": 6,
+    "file": "00428820_0047FBDB_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360224,
+    "target_va": 4437017,
+    "size": 6,
+    "file": "00428820_0043B419_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360224,
+    "target_va": 4436791,
+    "size": 6,
+    "file": "00428820_0043B337_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4360100,
+    "target_va": 4433558,
+    "size": 5,
+    "file": "004287A4_0043A696_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4359940,
+    "target_va": 4433392,
+    "size": 5,
+    "file": "00428704_0043A5F0_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4359752,
+    "target_va": 4745866,
+    "size": 5,
+    "file": "00428648_00486A8A_5.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4359752,
+    "target_va": 4745642,
+    "size": 5,
+    "file": "00428648_004869AA_5.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4359280,
+    "target_va": 4861774,
+    "size": 6,
+    "file": "00428470_004A2F4E_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4359188,
+    "target_va": 4861342,
+    "size": 5,
+    "file": "00428414_004A2D9E_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4358972,
+    "target_va": 4859145,
+    "size": 5,
+    "file": "0042833C_004A2509_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4358472,
+    "target_va": 5237140,
+    "size": 5,
+    "file": "00428148_004FE994_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4358412,
+    "target_va": 5263268,
+    "size": 5,
+    "file": "0042810C_00504FA4_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4355164,
+    "target_va": 5329123,
+    "size": 5,
+    "file": "0042745C_005150E3_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4355020,
+    "target_va": 4535177,
+    "size": 7,
+    "file": "004273CC_00453389_7.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354920,
+    "target_va": 5409090,
+    "size": 5,
+    "file": "00427368_00528942_5.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354880,
+    "target_va": 5408875,
+    "size": 5,
+    "file": "00427340_0052886B_5.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354816,
+    "target_va": 5408683,
+    "size": 5,
+    "file": "00427300_005287AB_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4358116,
+    "target_va": 4844059,
+    "size": 4,
+    "file": "00427FE4_0049EA1B_4.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4354752,
+    "target_va": 4499957,
+    "size": 5,
+    "file": "004272C0_0044A9F5_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354688,
+    "target_va": 5276924,
+    "size": 5,
+    "file": "00427280_005084FC_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354588,
+    "target_va": 5278661,
+    "size": 5,
+    "file": "0042721C_00508BC5_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354520,
+    "target_va": 5323759,
+    "size": 5,
+    "file": "004271D8_00513BEF_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353776,
+    "target_va": 4656111,
+    "size": 5,
+    "file": "00426EF0_00470BEF_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4325424,
+    "target_va": 5436594,
+    "size": 5,
+    "file": "00420030_0052F4B2_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354392,
+    "target_va": 5412122,
+    "size": 5,
+    "file": "00427158_0052951A_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354348,
+    "target_va": 5409967,
+    "size": 5,
+    "file": "0042712C_00528CAF_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4354216,
+    "target_va": 5433193,
+    "size": 5,
+    "file": "004270A8_0052E769_5.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353952,
+    "target_va": 4673139,
+    "size": 5,
+    "file": "00426FA0_00474E73_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353732,
+    "target_va": 4655806,
+    "size": 5,
+    "file": "00426EC4_00470ABE_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356712,
+    "target_va": 5267716,
+    "size": 5,
+    "file": "00427A68_00506104_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356384,
+    "target_va": 5262325,
+    "size": 5,
+    "file": "00427920_00504BF5_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4358060,
+    "target_va": 4556444,
+    "size": 5,
+    "file": "00427FAC_0045869C_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4357300,
+    "target_va": 4391326,
+    "size": 5,
+    "file": "00427CB4_0043019E_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4357912,
+    "target_va": 4502069,
+    "size": 5,
+    "file": "00427F18_0044B235_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4357844,
+    "target_va": 4430404,
+    "size": 5,
+    "file": "00427ED4_00439A44_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4357616,
+    "target_va": 4518903,
+    "size": 5,
+    "file": "00427DF0_0044F3F7_5.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4357468,
+    "target_va": 5269524,
+    "size": 5,
+    "file": "00427D5C_00506814_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4357220,
+    "target_va": 4837313,
+    "size": 5,
+    "file": "00427C64_0049CFC1_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356988,
+    "target_va": 4855948,
+    "size": 5,
+    "file": "00427B7C_004A188C_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356920,
+    "target_va": 5268395,
+    "size": 5,
+    "file": "00427B38_005063AB_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356876,
+    "target_va": 5268244,
+    "size": 5,
+    "file": "00427B0C_00506314_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356592,
+    "target_va": 4582198,
+    "size": 6,
+    "file": "004279F0_0045EB36_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4364596,
+    "target_va": 4484201,
+    "size": 5,
+    "file": "00429934_00446C69_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4364536,
+    "target_va": 4567525,
+    "size": 5,
+    "file": "004298F8_0045B1E5_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356484,
+    "target_va": 4973635,
+    "size": 5,
+    "file": "00427984_004BE443_5.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356228,
+    "target_va": 5265277,
+    "size": 10,
+    "file": "00427884_0050577D_A.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356272,
+    "target_va": 5266410,
+    "size": 6,
+    "file": "004278B0_00505BEA_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4356228,
+    "target_va": 5263370,
+    "size": 10,
+    "file": "00427884_0050500A_A.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4355240,
+    "target_va": 5255421,
+    "size": 5,
+    "file": "004274A8_005030FD_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353992,
+    "target_va": 4673497,
+    "size": 5,
+    "file": "00426FC8_00474FD9_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353632,
+    "target_va": 5839583,
+    "size": 5,
+    "file": "00426E60_00591ADF_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353564,
+    "target_va": 4405708,
+    "size": 6,
+    "file": "00426E1C_004339CC_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4353172,
+    "target_va": 5438232,
+    "size": 5,
+    "file": "00426C94_0052FB18_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4352800,
+    "target_va": 4599872,
+    "size": 6,
+    "file": "00426B20_00463040_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4351796,
+    "target_va": 4931975,
+    "size": 5,
+    "file": "00426734_004B4187_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4351264,
+    "target_va": 5238917,
+    "size": 5,
+    "file": "00426520_004FF085_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4351176,
+    "target_va": 5268558,
+    "size": 5,
+    "file": "004264C8_0050644E_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4350724,
+    "target_va": 4608262,
+    "size": 5,
+    "file": "00426304_00465106_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4350184,
+    "target_va": 4604353,
+    "size": 5,
+    "file": "004260E8_004641C1_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4350080,
+    "target_va": 4938484,
+    "size": 5,
+    "file": "00426080_004B5AF4_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4349980,
+    "target_va": 4528732,
+    "size": 5,
+    "file": "0042601C_00451A5C_5.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4349800,
+    "target_va": 4935230,
+    "size": 6,
+    "file": "00425F68_004B4E3E_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4349564,
+    "target_va": 4934659,
+    "size": 6,
+    "file": "00425E7C_004B4C03_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4349288,
+    "target_va": 4523513,
+    "size": 6,
+    "file": "00425D68_004505F9_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4349172,
+    "target_va": 4848120,
+    "size": 6,
+    "file": "00425CF4_0049F9F8_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348892,
+    "target_va": 5813357,
+    "size": 5,
+    "file": "00425BDC_0058B46D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348936,
+    "target_va": 5811762,
+    "size": 5,
+    "file": "00425C08_0058AE32_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348892,
+    "target_va": 5868506,
+    "size": 5,
+    "file": "00425BDC_00598BDA_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348936,
+    "target_va": 5859764,
+    "size": 5,
+    "file": "00425C08_005969B4_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348936,
+    "target_va": 5811704,
+    "size": 5,
+    "file": "00425C08_0058ADF8_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348892,
+    "target_va": 5813303,
+    "size": 5,
+    "file": "00425BDC_0058B437_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348832,
+    "target_va": 4752645,
+    "size": 5,
+    "file": "00425BA0_00488505_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348768,
+    "target_va": 4753306,
+    "size": 5,
+    "file": "00425B60_0048879A_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348724,
+    "target_va": 4753231,
+    "size": 5,
+    "file": "00425B34_0048874F_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348664,
+    "target_va": 4625457,
+    "size": 5,
+    "file": "00425AF8_00469431_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348624,
+    "target_va": 4433037,
+    "size": 5,
+    "file": "00425AD0_0043A48D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348584,
+    "target_va": 5813114,
+    "size": 5,
+    "file": "00425AA8_0058B37A_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348544,
+    "target_va": 5023048,
+    "size": 5,
+    "file": "00425A80_004CA548_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348460,
+    "target_va": 4433072,
+    "size": 5,
+    "file": "00425A2C_0043A4B0_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348400,
+    "target_va": 4894223,
+    "size": 5,
+    "file": "004259F0_004AAE0F_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348360,
+    "target_va": 4753187,
+    "size": 6,
+    "file": "004259C8_00488723_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348320,
+    "target_va": 4752991,
+    "size": 5,
+    "file": "004259A0_0048865F_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4348276,
+    "target_va": 4987397,
+    "size": 5,
+    "file": "00425974_004C1A05_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347940,
+    "target_va": 4926897,
+    "size": 4,
+    "file": "00425824_004B2DB1_4.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4347852,
+    "target_va": 4926624,
+    "size": 5,
+    "file": "004257CC_004B2CA0_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347792,
+    "target_va": 4926669,
+    "size": 4,
+    "file": "00425790_004B2CCD_4.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4347680,
+    "target_va": 4508067,
+    "size": 6,
+    "file": "00425720_0044C9A3_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4345108,
+    "target_va": 4797664,
+    "size": 5,
+    "file": "00424D14_004934E0_5.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347544,
+    "target_va": 4945078,
+    "size": 5,
+    "file": "00425698_004B74B6_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347400,
+    "target_va": 4920050,
+    "size": 5,
+    "file": "00425608_004B12F2_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347336,
+    "target_va": 4568334,
+    "size": 5,
+    "file": "004255C8_0045B50E_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347148,
+    "target_va": 4962378,
+    "size": 5,
+    "file": "0042550C_004BB84A_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4346936,
+    "target_va": 4578721,
+    "size": 6,
+    "file": "00425438_0045DDA1_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343824,
+    "target_va": 4898001,
+    "size": 5,
+    "file": "00424810_004ABCD1_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343784,
+    "target_va": 4894401,
+    "size": 5,
+    "file": "004247E8_004AAEC1_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343744,
+    "target_va": 4896657,
+    "size": 5,
+    "file": "004247C0_004AB791_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343704,
+    "target_va": 4928769,
+    "size": 5,
+    "file": "00424798_004B3501_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343664,
+    "target_va": 4907457,
+    "size": 5,
+    "file": "00424770_004AE1C1_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4346660,
+    "target_va": 4964004,
+    "size": 4,
+    "file": "00425324_004BBEA4_4.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 3
+  },
+  {
+    "source_va": 4346584,
+    "target_va": 4963893,
+    "size": 5,
+    "file": "004252D8_004BBE35_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4346444,
+    "target_va": 4963395,
+    "size": 8,
+    "file": "0042524C_004BBC43_8.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4346192,
+    "target_va": 4964558,
+    "size": 5,
+    "file": "00425150_004BC0CE_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4345296,
+    "target_va": 4964851,
+    "size": 5,
+    "file": "00424DD0_004BC1F3_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4347272,
+    "target_va": 4962028,
+    "size": 6,
+    "file": "00425588_004BB6EC_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4345192,
+    "target_va": 4964248,
+    "size": 4,
+    "file": "00424D68_004BBF98_4.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 1
+  },
+  {
+    "source_va": 4345016,
+    "target_va": 5477252,
+    "size": 5,
+    "file": "00424CB8_00539384_5.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344948,
+    "target_va": 4826247,
+    "size": 6,
+    "file": "00424C74_0049A487_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344868,
+    "target_va": 4825192,
+    "size": 7,
+    "file": "00424C24_0049A068_7.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343496,
+    "target_va": 5256485,
+    "size": 5,
+    "file": "004246C8_00503525_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344616,
+    "target_va": 5241501,
+    "size": 5,
+    "file": "00424B28_004FFA9D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343420,
+    "target_va": 5238422,
+    "size": 5,
+    "file": "0042467C_004FEE96_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344552,
+    "target_va": 5252053,
+    "size": 6,
+    "file": "00424AE8_005023D5_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344472,
+    "target_va": 4513879,
+    "size": 5,
+    "file": "00424A98_0044E057_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4339020,
+    "target_va": 4935154,
+    "size": 7,
+    "file": "0042354C_004B4DF2_7.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4338928,
+    "target_va": 4934600,
+    "size": 5,
+    "file": "004234F0_004B4BC8_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4338804,
+    "target_va": 4937905,
+    "size": 5,
+    "file": "00423474_004B58B1_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4338276,
+    "target_va": 4940089,
+    "size": 5,
+    "file": "00423264_004B6139_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4337016,
+    "target_va": 4884083,
+    "size": 5,
+    "file": "00422D78_004A8673_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4340296,
+    "target_va": 4935131,
+    "size": 6,
+    "file": "00423A48_004B4DDB_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4340240,
+    "target_va": 4934585,
+    "size": 6,
+    "file": "00423A10_004B4BB9_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4340184,
+    "target_va": 4938215,
+    "size": 5,
+    "file": "004239D8_004B59E7_5.asm",
+    "decoded_instructions": 3,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4342572,
+    "target_va": 4933399,
+    "size": 6,
+    "file": "0042432C_004B4717_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344368,
+    "target_va": 4938342,
+    "size": 5,
+    "file": "00424A30_004B5A66_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4344116,
+    "target_va": 4938279,
+    "size": 6,
+    "file": "00424934_004B5A27_6.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343884,
+    "target_va": 4848416,
+    "size": 5,
+    "file": "0042484C_0049FB20_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343596,
+    "target_va": 4848279,
+    "size": 6,
+    "file": "0042472C_0049FA97_6.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343340,
+    "target_va": 4781680,
+    "size": 5,
+    "file": "0042462C_0048F670_5.asm",
+    "decoded_instructions": 2,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343256,
+    "target_va": 5397469,
+    "size": 5,
+    "file": "004245D8_00525BDD_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4341596,
+    "target_va": 4948749,
+    "size": 5,
+    "file": "00423F5C_004B830D_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  },
+  {
+    "source_va": 4343180,
+    "target_va": 4907520,
+    "size": 5,
+    "file": "0042458C_004AE200_5.asm",
+    "decoded_instructions": 1,
+    "raw_bytes": 0
+  }
+]

@@ -1,0 +1,5 @@
+#include <windows.h>
+#pragma code_page(65001)
+128 ICON "companion.ico"
+#include "dialogs.rc"
+LANGUAGE 4, 2

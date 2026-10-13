@@ -1,0 +1,1292 @@
+[
+  {
+    "va": 4309228,
+    "module": "MFC42",
+    "name": "__imp_??0CDialog@@QAE@IPAVCWnd@@@Z",
+    "ordinal": 324
+  },
+  {
+    "va": 4309324,
+    "module": "MFC42",
+    "name": "__imp_??0CFileDialog@@QAE@HPBD0K0PAVCWnd@@@Z",
+    "ordinal": 355
+  },
+  {
+    "va": 4309592,
+    "module": "MFC42",
+    "name": "__imp_??0CPaintDC@@QAE@PAVCWnd@@@Z",
+    "ordinal": 470
+  },
+  {
+    "va": 4309328,
+    "module": "MFC42",
+    "name": "__imp_??0CStdioFile@@QAE@XZ",
+    "ordinal": 533
+  },
+  {
+    "va": 4309608,
+    "module": "MFC42",
+    "name": "__imp_??0CString@@QAE@PBD@Z",
+    "ordinal": 537
+  },
+  {
+    "va": 4309272,
+    "module": "MFC42",
+    "name": "__imp_??0CString@@QAE@XZ",
+    "ordinal": 540
+  },
+  {
+    "va": 4309560,
+    "module": "MFC42",
+    "name": "__imp_??0CWinApp@@QAE@PBD@Z",
+    "ordinal": 561
+  },
+  {
+    "va": 4309224,
+    "module": "MFC42",
+    "name": "__imp_??0CWnd@@QAE@XZ",
+    "ordinal": 567
+  },
+  {
+    "va": 4309220,
+    "module": "MFC42",
+    "name": "__imp_??1CDialog@@UAE@XZ",
+    "ordinal": 641
+  },
+  {
+    "va": 4309568,
+    "module": "MFC42",
+    "name": "__imp_??1CEdit@@UAE@XZ",
+    "ordinal": 656
+  },
+  {
+    "va": 4309236,
+    "module": "MFC42",
+    "name": "__imp_??1CListBox@@UAE@XZ",
+    "ordinal": 692
+  },
+  {
+    "va": 4309588,
+    "module": "MFC42",
+    "name": "__imp_??1CPaintDC@@UAE@XZ",
+    "ordinal": 755
+  },
+  {
+    "va": 4309384,
+    "module": "MFC42",
+    "name": "__imp_??1CScrollBar@@UAE@XZ",
+    "ordinal": 783
+  },
+  {
+    "va": 4309300,
+    "module": "MFC42",
+    "name": "__imp_??1CStdioFile@@UAE@XZ",
+    "ordinal": 798
+  },
+  {
+    "va": 4309256,
+    "module": "MFC42",
+    "name": "__imp_??1CString@@QAE@XZ",
+    "ordinal": 800
+  },
+  {
+    "va": 4309564,
+    "module": "MFC42",
+    "name": "__imp_??1CWinApp@@UAE@XZ",
+    "ordinal": 815
+  },
+  {
+    "va": 4309612,
+    "module": "MFC42",
+    "name": "__imp_??2@YAPAXI@Z",
+    "ordinal": 823
+  },
+  {
+    "va": 4309232,
+    "module": "MFC42",
+    "name": "__imp_??3@YAXPAX@Z",
+    "ordinal": 825
+  },
+  {
+    "va": 4309464,
+    "module": "MFC42",
+    "name": "__imp_??4CString@@QAEABV0@ABV0@@Z",
+    "ordinal": 858
+  },
+  {
+    "va": 4309408,
+    "module": "MFC42",
+    "name": "__imp_??4CString@@QAEABV0@PBD@Z",
+    "ordinal": 860
+  },
+  {
+    "va": 4309600,
+    "module": "MFC42",
+    "name": "__imp_??YCString@@QAEABV0@PBD@Z",
+    "ordinal": 941
+  },
+  {
+    "va": 4309504,
+    "module": "MFC42",
+    "name": "__imp_?AddToRecentFileList@CWinApp@@UAEXPBD@Z",
+    "ordinal": 1089
+  },
+  {
+    "va": 4309580,
+    "module": "MFC42",
+    "name": "__imp_?AfxFindResourceHandle@@YGPAUHINSTANCE__@@PBD0@Z",
+    "ordinal": 1146
+  },
+  {
+    "va": 4309268,
+    "module": "MFC42",
+    "name": "__imp_?AfxGetModuleState@@YGPAVAFX_MODULE_STATE@@XZ",
+    "ordinal": 1168
+  },
+  {
+    "va": 4309264,
+    "module": "MFC42",
+    "name": "__imp_?AfxMessageBox@@YGHPBDII@Z",
+    "ordinal": 1200
+  },
+  {
+    "va": 4309688,
+    "module": "MFC42",
+    "name": "__imp_?AfxWinMain@@YGHPAUHINSTANCE__@@0PADH@Z",
+    "ordinal": 1576
+  },
+  {
+    "va": 4309412,
+    "module": "MFC42",
+    "name": "__imp_?Attach@CGdiObject@@QAEHPAX@Z",
+    "ordinal": 1641
+  },
+  {
+    "va": 4309396,
+    "module": "MFC42",
+    "name": "__imp_?Attach@CMenu@@QAEHPAUHMENU__@@@Z",
+    "ordinal": 1644
+  },
+  {
+    "va": 4309132,
+    "module": "MFC42",
+    "name": "__imp_?CalcWindowRect@CWnd@@UAEXPAUtagRECT@@I@Z",
+    "ordinal": 1727
+  },
+  {
+    "va": 4309684,
+    "module": "MFC42",
+    "name": "__imp_?CharToItem@CListBox@@UAEHII@Z",
+    "ordinal": 1771
+  },
+  {
+    "va": 4309068,
+    "module": "MFC42",
+    "name": "__imp_?CheckAutoCenter@CDialog@@UAEHXZ",
+    "ordinal": 1775
+  },
+  {
+    "va": 4309652,
+    "module": "MFC42",
+    "name": "__imp_?CheckAutoCenter@CWnd@@UAEHXZ",
+    "ordinal": 1776
+  },
+  {
+    "va": 4309304,
+    "module": "MFC42",
+    "name": "__imp_?Close@CStdioFile@@UAEXXZ",
+    "ordinal": 1997
+  },
+  {
+    "va": 4309668,
+    "module": "MFC42",
+    "name": "__imp_?CompareItem@CListBox@@UAEHPAUtagCOMPAREITEMSTRUCT@@@Z",
+    "ordinal": 2024
+  },
+  {
+    "va": 4309116,
+    "module": "MFC42",
+    "name": "__imp_?ContinueModal@CWnd@@UAEHXZ",
+    "ordinal": 2055
+  },
+  {
+    "va": 4309144,
+    "module": "MFC42",
+    "name": "__imp_?Create@CWnd@@UAEHPBD0KABUtagRECT@@PAV1@IPAUCCreateContext@@@Z",
+    "ordinal": 2124
+  },
+  {
+    "va": 4309436,
+    "module": "MFC42",
+    "name": "__imp_?DDV_MaxChars@@YGXPAVCDataExchange@@ABVCString@@H@Z",
+    "ordinal": 2289
+  },
+  {
+    "va": 4309424,
+    "module": "MFC42",
+    "name": "__imp_?DDV_MinMaxByte@@YGXPAVCDataExchange@@EEE@Z",
+    "ordinal": 2290
+  },
+  {
+    "va": 4309360,
+    "module": "MFC42",
+    "name": "__imp_?DDV_MinMaxInt@@YGXPAVCDataExchange@@HHH@Z",
+    "ordinal": 2294
+  },
+  {
+    "va": 4309240,
+    "module": "MFC42",
+    "name": "__imp_?DDV_MinMaxUInt@@YGXPAVCDataExchange@@III@Z",
+    "ordinal": 2297
+  },
+  {
+    "va": 4309680,
+    "module": "MFC42",
+    "name": "__imp_?DDX_CBIndex@@YGXPAVCDataExchange@@HAAH@Z",
+    "ordinal": 2298
+  },
+  {
+    "va": 4309336,
+    "module": "MFC42",
+    "name": "__imp_?DDX_Check@@YGXPAVCDataExchange@@HAAH@Z",
+    "ordinal": 2301
+  },
+  {
+    "va": 4309248,
+    "module": "MFC42",
+    "name": "__imp_?DDX_Control@@YGXPAVCDataExchange@@HAAVCWnd@@@Z",
+    "ordinal": 2302
+  },
+  {
+    "va": 4309432,
+    "module": "MFC42",
+    "name": "__imp_?DDX_Radio@@YGXPAVCDataExchange@@HAAH@Z",
+    "ordinal": 2358
+  },
+  {
+    "va": 4309428,
+    "module": "MFC42",
+    "name": "__imp_?DDX_Text@@YGXPAVCDataExchange@@HAAE@Z",
+    "ordinal": 2360
+  },
+  {
+    "va": 4309420,
+    "module": "MFC42",
+    "name": "__imp_?DDX_Text@@YGXPAVCDataExchange@@HAAF@Z",
+    "ordinal": 2361
+  },
+  {
+    "va": 4309364,
+    "module": "MFC42",
+    "name": "__imp_?DDX_Text@@YGXPAVCDataExchange@@HAAH@Z",
+    "ordinal": 2362
+  },
+  {
+    "va": 4309244,
+    "module": "MFC42",
+    "name": "__imp_?DDX_Text@@YGXPAVCDataExchange@@HAAI@Z",
+    "ordinal": 2363
+  },
+  {
+    "va": 4309440,
+    "module": "MFC42",
+    "name": "__imp_?DDX_Text@@YGXPAVCDataExchange@@HAAVCString@@@Z",
+    "ordinal": 2370
+  },
+  {
+    "va": 4309584,
+    "module": "MFC42",
+    "name": "__imp_?Default@CWnd@@IAEJXZ",
+    "ordinal": 2379
+  },
+  {
+    "va": 4309080,
+    "module": "MFC42",
+    "name": "__imp_?DefWindowProcA@CWnd@@MAEJIIJ@Z",
+    "ordinal": 2385
+  },
+  {
+    "va": 4309512,
+    "module": "MFC42",
+    "name": "__imp_?Delete@CWinThread@@UAEXXZ",
+    "ordinal": 2396
+  },
+  {
+    "va": 4309672,
+    "module": "MFC42",
+    "name": "__imp_?DeleteItem@CListBox@@UAEXPAUtagDELETEITEMSTRUCT@@@Z",
+    "ordinal": 2413
+  },
+  {
+    "va": 4309388,
+    "module": "MFC42",
+    "name": "__imp_?DeleteObject@CGdiObject@@QAEHXZ",
+    "ordinal": 2414
+  },
+  {
+    "va": 4309356,
+    "module": "MFC42",
+    "name": "__imp_?DestroyMenu@CMenu@@QAEHXZ",
+    "ordinal": 2438
+  },
+  {
+    "va": 4309140,
+    "module": "MFC42",
+    "name": "__imp_?DestroyWindow@CWnd@@UAEHXZ",
+    "ordinal": 2446
+  },
+  {
+    "va": 4309492,
+    "module": "MFC42",
+    "name": "__imp_?DoMessageBox@CWinApp@@UAEHPBDII@Z",
+    "ordinal": 2512
+  },
+  {
+    "va": 4309616,
+    "module": "MFC42",
+    "name": "__imp_?DoModal@CDialog@@UAEHXZ",
+    "ordinal": 2514
+  },
+  {
+    "va": 4309320,
+    "module": "MFC42",
+    "name": "__imp_?DoModal@CFileDialog@@UAEHXZ",
+    "ordinal": 2515
+  },
+  {
+    "va": 4309488,
+    "module": "MFC42",
+    "name": "__imp_?DoWaitCursor@CWinApp@@UAEXH@Z",
+    "ordinal": 2554
+  },
+  {
+    "va": 4309660,
+    "module": "MFC42",
+    "name": "__imp_?DrawItem@CListBox@@UAEXPAUtagDRAWITEMSTRUCT@@@Z",
+    "ordinal": 2581
+  },
+  {
+    "va": 4309348,
+    "module": "MFC42",
+    "name": "__imp_?DrawItem@CMenu@@UAEXPAUtagDRAWITEMSTRUCT@@@Z",
+    "ordinal": 2584
+  },
+  {
+    "va": 4309572,
+    "module": "MFC42",
+    "name": "__imp_?Enable3dControls@CWinApp@@IAEHXZ",
+    "ordinal": 2621
+  },
+  {
+    "va": 4309368,
+    "module": "MFC42",
+    "name": "__imp_?EndDialog@CDialog@@QAEXH@Z",
+    "ordinal": 2645
+  },
+  {
+    "va": 4309112,
+    "module": "MFC42",
+    "name": "__imp_?EndModalLoop@CWnd@@UAEXH@Z",
+    "ordinal": 2648
+  },
+  {
+    "va": 4309528,
+    "module": "MFC42",
+    "name": "__imp_?ExitInstance@CWinApp@@UAEHXZ",
+    "ordinal": 2725
+  },
+  {
+    "va": 4309460,
+    "module": "MFC42",
+    "name": "__imp_?Find@CString@@QBEHPBD@Z",
+    "ordinal": 2764
+  },
+  {
+    "va": 4309260,
+    "module": "MFC42",
+    "name": "__imp_?Format@CString@@QAAXPBDZZ",
+    "ordinal": 2818
+  },
+  {
+    "va": 4309416,
+    "module": "MFC42",
+    "name": "__imp_?FromHandle@CGdiObject@@SGPAV1@PAX@Z",
+    "ordinal": 2860
+  },
+  {
+    "va": 4309472,
+    "module": "MFC42",
+    "name": "__imp_?FromHandle@CWnd@@SGPAV1@PAUHWND__@@@Z",
+    "ordinal": 2864
+  },
+  {
+    "va": 4309184,
+    "module": "MFC42",
+    "name": "__imp_?GetCommandMap@CCmdTarget@@MBEPBUAFX_OLECMDMAP@@XZ",
+    "ordinal": 2976
+  },
+  {
+    "va": 4309152,
+    "module": "MFC42",
+    "name": "__imp_?GetConnectionHook@CCmdTarget@@MAEPAUIConnectionPoint@@ABU_GUID@@@Z",
+    "ordinal": 2982
+  },
+  {
+    "va": 4309176,
+    "module": "MFC42",
+    "name": "__imp_?GetConnectionMap@CCmdTarget@@MBEPBUAFX_CONNECTIONMAP@@XZ",
+    "ordinal": 2985
+  },
+  {
+    "va": 4309200,
+    "module": "MFC42",
+    "name": "__imp_?GetDispatchIID@CCmdTarget@@UAEHPAU_GUID@@@Z",
+    "ordinal": 3079
+  },
+  {
+    "va": 4309180,
+    "module": "MFC42",
+    "name": "__imp_?GetDispatchMap@CCmdTarget@@MBEPBUAFX_DISPMAP@@XZ",
+    "ordinal": 3081
+  },
+  {
+    "va": 4309468,
+    "module": "MFC42",
+    "name": "__imp_?GetDlgCtrlID@CWnd@@QBEHXZ",
+    "ordinal": 3089
+  },
+  {
+    "va": 4309376,
+    "module": "MFC42",
+    "name": "__imp_?GetDlgItem@CWnd@@QBEPAV1@H@Z",
+    "ordinal": 3092
+  },
+  {
+    "va": 4309288,
+    "module": "MFC42",
+    "name": "__imp_?GetErrorMessage@CFileException@@UAEHPADIPAI@Z",
+    "ordinal": 3127
+  },
+  {
+    "va": 4309168,
+    "module": "MFC42",
+    "name": "__imp_?GetEventSinkMap@CCmdTarget@@MBEPBUAFX_EVENTSINKMAP@@XZ",
+    "ordinal": 3136
+  },
+  {
+    "va": 4309156,
+    "module": "MFC42",
+    "name": "__imp_?GetExtraConnectionPoints@CCmdTarget@@MAEHPAVCPtrArray@@@Z",
+    "ordinal": 3147
+  },
+  {
+    "va": 4309160,
+    "module": "MFC42",
+    "name": "__imp_?GetInterfaceHook@CCmdTarget@@UAEPAUIUnknown@@PBX@Z",
+    "ordinal": 3259
+  },
+  {
+    "va": 4309172,
+    "module": "MFC42",
+    "name": "__imp_?GetInterfaceMap@CCmdTarget@@MBEPBUAFX_INTERFACEMAP@@XZ",
+    "ordinal": 3262
+  },
+  {
+    "va": 4309516,
+    "module": "MFC42",
+    "name": "__imp_?GetMainWnd@CWinThread@@UAEPAVCWnd@@XZ",
+    "ordinal": 3346
+  },
+  {
+    "va": 4309640,
+    "module": "MFC42",
+    "name": "__imp_?GetMessageMap@CWnd@@MBEPBUAFX_MSGMAP@@XZ",
+    "ordinal": 3402
+  },
+  {
+    "va": 4309316,
+    "module": "MFC42",
+    "name": "__imp_?GetPathName@CFileDialog@@QBE?AVCString@@XZ",
+    "ordinal": 3499
+  },
+  {
+    "va": 4309216,
+    "module": "MFC42",
+    "name": "__imp_?GetRuntimeClass@CDialog@@UBEPAUCRuntimeClass@@XZ",
+    "ordinal": 3597
+  },
+  {
+    "va": 4309576,
+    "module": "MFC42",
+    "name": "__imp_?GetRuntimeClass@CEdit@@UBEPAUCRuntimeClass@@XZ",
+    "ordinal": 3610
+  },
+  {
+    "va": 4309292,
+    "module": "MFC42",
+    "name": "__imp_?GetRuntimeClass@CFileException@@UBEPAUCRuntimeClass@@XZ",
+    "ordinal": 3616
+  },
+  {
+    "va": 4309404,
+    "module": "MFC42",
+    "name": "__imp_?GetRuntimeClass@CFont@@UBEPAUCRuntimeClass@@XZ",
+    "ordinal": 3619
+  },
+  {
+    "va": 4309380,
+    "module": "MFC42",
+    "name": "__imp_?GetRuntimeClass@CGdiObject@@UBEPAUCRuntimeClass@@XZ",
+    "ordinal": 3626
+  },
+  {
+    "va": 4309632,
+    "module": "MFC42",
+    "name": "__imp_?GetRuntimeClass@CListBox@@UBEPAUCRuntimeClass@@XZ",
+    "ordinal": 3639
+  },
+  {
+    "va": 4309352,
+    "module": "MFC42",
+    "name": "__imp_?GetRuntimeClass@CMenu@@UBEPAUCRuntimeClass@@XZ",
+    "ordinal": 3654
+  },
+  {
+    "va": 4309296,
+    "module": "MFC42",
+    "name": "__imp_?GetRuntimeClass@CObject@@UBEPAUCRuntimeClass@@XZ",
+    "ordinal": 3663
+  },
+  {
+    "va": 4309400,
+    "module": "MFC42",
+    "name": "__imp_?GetRuntimeClass@CScrollBar@@UBEPAUCRuntimeClass@@XZ",
+    "ordinal": 3711
+  },
+  {
+    "va": 4309556,
+    "module": "MFC42",
+    "name": "__imp_?GetRuntimeClass@CWinApp@@UBEPAUCRuntimeClass@@XZ",
+    "ordinal": 3738
+  },
+  {
+    "va": 4309124,
+    "module": "MFC42",
+    "name": "__imp_?GetScrollBarCtrl@CWnd@@UBEPAVCScrollBar@@H@Z",
+    "ordinal": 3749
+  },
+  {
+    "va": 4309452,
+    "module": "MFC42",
+    "name": "__imp_?GetStyle@CWnd@@QBEKXZ",
+    "ordinal": 3797
+  },
+  {
+    "va": 4309100,
+    "module": "MFC42",
+    "name": "__imp_?GetSuperWndProcAddr@CWnd@@MAEPAP6GJPAUHWND__@@IIJ@ZXZ",
+    "ordinal": 3798
+  },
+  {
+    "va": 4309196,
+    "module": "MFC42",
+    "name": "__imp_?GetTypeInfoCount@CCmdTarget@@UAEIXZ",
+    "ordinal": 3825
+  },
+  {
+    "va": 4309188,
+    "module": "MFC42",
+    "name": "__imp_?GetTypeLib@CCmdTarget@@UAEJKPAPAUITypeLib@@@Z",
+    "ordinal": 3830
+  },
+  {
+    "va": 4309192,
+    "module": "MFC42",
+    "name": "__imp_?GetTypeLibCache@CCmdTarget@@UAEPAVCTypeLibCache@@XZ",
+    "ordinal": 3831
+  },
+  {
+    "va": 4309500,
+    "module": "MFC42",
+    "name": "__imp_?InitApplication@CWinApp@@UAEHXZ",
+    "ordinal": 3922
+  },
+  {
+    "va": 4309064,
+    "module": "MFC42",
+    "name": "__imp_?IsFrameWnd@CWnd@@UBEHXZ",
+    "ordinal": 4078
+  },
+  {
+    "va": 4309532,
+    "module": "MFC42",
+    "name": "__imp_?IsIdleMessage@CWinThread@@UAEHPAUtagMSG@@@Z",
+    "ordinal": 4079
+  },
+  {
+    "va": 4309204,
+    "module": "MFC42",
+    "name": "__imp_?IsInvokeAllowed@CCmdTarget@@UAEHJ@Z",
+    "ordinal": 4080
+  },
+  {
+    "va": 4309456,
+    "module": "MFC42",
+    "name": "__imp_?Left@CString@@QBE?AV1@H@Z",
+    "ordinal": 4129
+  },
+  {
+    "va": 4309664,
+    "module": "MFC42",
+    "name": "__imp_?MeasureItem@CListBox@@UAEXPAUtagMEASUREITEMSTRUCT@@@Z",
+    "ordinal": 4219
+  },
+  {
+    "va": 4309344,
+    "module": "MFC42",
+    "name": "__imp_?MeasureItem@CMenu@@UAEXPAUtagMEASUREITEMSTRUCT@@@Z",
+    "ordinal": 4220
+  },
+  {
+    "va": 4309252,
+    "module": "MFC42",
+    "name": "?messageMap@CDialog@@1UAFX_MSGMAP@@B",
+    "ordinal": 4234
+  },
+  {
+    "va": 4309476,
+    "module": "MFC42",
+    "name": "?messageMap@CWinApp@@1UAFX_MSGMAP@@B",
+    "ordinal": 4274
+  },
+  {
+    "va": 4309448,
+    "module": "MFC42",
+    "name": "__imp_?ModifyStyle@CWnd@@QAEHKKI@Z",
+    "ordinal": 4284
+  },
+  {
+    "va": 4309092,
+    "module": "MFC42",
+    "name": "__imp_?OnAmbientProperty@CWnd@@UAEHPAVCOleControlSite@@JPAUtagVARIANT@@@Z",
+    "ordinal": 4353
+  },
+  {
+    "va": 4309624,
+    "module": "MFC42",
+    "name": "__imp_?OnCancel@CDialog@@MAEXXZ",
+    "ordinal": 4376
+  },
+  {
+    "va": 4309648,
+    "module": "MFC42",
+    "name": "__imp_?OnChildNotify@CListBox@@MAEHIIJPAJ@Z",
+    "ordinal": 4401
+  },
+  {
+    "va": 4309072,
+    "module": "MFC42",
+    "name": "__imp_?OnChildNotify@CWnd@@MAEHIIJPAJ@Z",
+    "ordinal": 4407
+  },
+  {
+    "va": 4309636,
+    "module": "MFC42",
+    "name": "__imp_?OnCmdMsg@CCmdTarget@@UAEHIHPAXPAUAFX_CMDHANDLERINFO@@@Z",
+    "ordinal": 4424
+  },
+  {
+    "va": 4309212,
+    "module": "MFC42",
+    "name": "__imp_?OnCmdMsg@CDialog@@UAEHIHPAXPAUAFX_CMDHANDLERINFO@@@Z",
+    "ordinal": 4425
+  },
+  {
+    "va": 4309108,
+    "module": "MFC42",
+    "name": "__imp_?OnCommand@CWnd@@MAEHIJ@Z",
+    "ordinal": 4441
+  },
+  {
+    "va": 4309164,
+    "module": "MFC42",
+    "name": "__imp_?OnCreateAggregates@CCmdTarget@@UAEHXZ",
+    "ordinal": 4465
+  },
+  {
+    "va": 4309484,
+    "module": "MFC42",
+    "name": "__imp_?OnDDECommand@CWinApp@@UAEHPAD@Z",
+    "ordinal": 4486
+  },
+  {
+    "va": 4309552,
+    "module": "MFC42",
+    "name": "__imp_?OnFinalRelease@CCmdTarget@@UAEXXZ",
+    "ordinal": 4622
+  },
+  {
+    "va": 4309208,
+    "module": "MFC42",
+    "name": "__imp_?OnFinalRelease@CWnd@@UAEXXZ",
+    "ordinal": 4627
+  },
+  {
+    "va": 4309444,
+    "module": "MFC42",
+    "name": "__imp_?OnHScroll@CWnd@@IAEXIIPAVCScrollBar@@@Z",
+    "ordinal": 4694
+  },
+  {
+    "va": 4309536,
+    "module": "MFC42",
+    "name": "__imp_?OnIdle@CWinApp@@UAEHJ@Z",
+    "ordinal": 4698
+  },
+  {
+    "va": 4309276,
+    "module": "MFC42",
+    "name": "__imp_?OnInitDialog@CDialog@@UAEHXZ",
+    "ordinal": 4710
+  },
+  {
+    "va": 4309104,
+    "module": "MFC42",
+    "name": "__imp_?OnNotify@CWnd@@MAEHIJPAJ@Z",
+    "ordinal": 4837
+  },
+  {
+    "va": 4309332,
+    "module": "MFC42",
+    "name": "__imp_?OnOK@CDialog@@MAEXXZ",
+    "ordinal": 4853
+  },
+  {
+    "va": 4309620,
+    "module": "MFC42",
+    "name": "__imp_?OnSetFont@CDialog@@UAEXPAVCFont@@@Z",
+    "ordinal": 4998
+  },
+  {
+    "va": 4309128,
+    "module": "MFC42",
+    "name": "__imp_?OnToolHitTest@CWnd@@UBEHVCPoint@@PAUtagTOOLINFOA@@@Z",
+    "ordinal": 5065
+  },
+  {
+    "va": 4309084,
+    "module": "MFC42",
+    "name": "__imp_?OnWndMsg@CWnd@@MAEHIIJPAJ@Z",
+    "ordinal": 5163
+  },
+  {
+    "va": 4309312,
+    "module": "MFC42",
+    "name": "__imp_?Open@CStdioFile@@UAEHPBDIPAVCFileException@@@Z",
+    "ordinal": 5194
+  },
+  {
+    "va": 4309508,
+    "module": "MFC42",
+    "name": "__imp_?OpenDocumentFile@CWinApp@@UAEPAVCDocument@@PBD@Z",
+    "ordinal": 5199
+  },
+  {
+    "va": 4309076,
+    "module": "MFC42",
+    "name": "__imp_?PostNcDestroy@CWnd@@MAEXXZ",
+    "ordinal": 5241
+  },
+  {
+    "va": 4309136,
+    "module": "MFC42",
+    "name": "__imp_?PreCreateWindow@CWnd@@UAEHAAUtagCREATESTRUCTA@@@Z",
+    "ordinal": 5261
+  },
+  {
+    "va": 4309628,
+    "module": "MFC42",
+    "name": "__imp_?PreInitDialog@CDialog@@MAEXXZ",
+    "ordinal": 5265
+  },
+  {
+    "va": 4309148,
+    "module": "MFC42",
+    "name": "__imp_?PreSubclassWindow@CWnd@@UAEXXZ",
+    "ordinal": 5277
+  },
+  {
+    "va": 4309096,
+    "module": "MFC42",
+    "name": "__imp_?PreTranslateMessage@CDialog@@UAEHPAUtagMSG@@@Z",
+    "ordinal": 5280
+  },
+  {
+    "va": 4309544,
+    "module": "MFC42",
+    "name": "__imp_?PreTranslateMessage@CWinThread@@UAEHPAUtagMSG@@@Z",
+    "ordinal": 5289
+  },
+  {
+    "va": 4309644,
+    "module": "MFC42",
+    "name": "__imp_?PreTranslateMessage@CWnd@@UAEHPAUtagMSG@@@Z",
+    "ordinal": 5290
+  },
+  {
+    "va": 4309520,
+    "module": "MFC42",
+    "name": "__imp_?ProcessMessageFilter@CWinThread@@UAEHHPAUtagMSG@@@Z",
+    "ordinal": 5300
+  },
+  {
+    "va": 4309524,
+    "module": "MFC42",
+    "name": "__imp_?ProcessWndProcException@CWinApp@@UAEJPAVCException@@PBUtagMSG@@@Z",
+    "ordinal": 5302
+  },
+  {
+    "va": 4309540,
+    "module": "MFC42",
+    "name": "__imp_?PumpMessage@CWinThread@@UAEHXZ",
+    "ordinal": 5307
+  },
+  {
+    "va": 4309604,
+    "module": "MFC42",
+    "name": "__imp_?ReadString@CStdioFile@@UAEHAAVCString@@@Z",
+    "ordinal": 5465
+  },
+  {
+    "va": 4309284,
+    "module": "MFC42",
+    "name": "__imp_?ReportError@CException@@UAEHII@Z",
+    "ordinal": 5651
+  },
+  {
+    "va": 4309548,
+    "module": "MFC42",
+    "name": "__imp_?Run@CWinApp@@UAEHXZ",
+    "ordinal": 5714
+  },
+  {
+    "va": 4309496,
+    "module": "MFC42",
+    "name": "__imp_?SaveAllModified@CWinApp@@UAEHXZ",
+    "ordinal": 5731
+  },
+  {
+    "va": 4309372,
+    "module": "MFC42",
+    "name": "__imp_?SetFocus@CWnd@@QAEPAV1@XZ",
+    "ordinal": 5981
+  },
+  {
+    "va": 4309340,
+    "module": "MFC42",
+    "name": "__imp_?SetOccDialogInfo@CDialog@@MAEHPAU_AFX_OCC_DIALOG_INFO@@@Z",
+    "ordinal": 6052
+  },
+  {
+    "va": 4309656,
+    "module": "MFC42",
+    "name": "__imp_?SetOccDialogInfo@CWnd@@MAEHPAU_AFX_OCC_DIALOG_INFO@@@Z",
+    "ordinal": 6055
+  },
+  {
+    "va": 4309596,
+    "module": "MFC42",
+    "name": "__imp_?SetWindowTextA@CWnd@@QAEXPBD@Z",
+    "ordinal": 6199
+  },
+  {
+    "va": 4309392,
+    "module": "MFC42",
+    "name": "__imp_?TrackPopupMenu@CMenu@@QAEHIHHPAVCWnd@@PBUtagRECT@@@Z",
+    "ordinal": 6270
+  },
+  {
+    "va": 4309280,
+    "module": "MFC42",
+    "name": "__imp_?UpdateData@CWnd@@QAEHH@Z",
+    "ordinal": 6334
+  },
+  {
+    "va": 4309676,
+    "module": "MFC42",
+    "name": "__imp_?VKeyToItem@CListBox@@UAEHII@Z",
+    "ordinal": 6366
+  },
+  {
+    "va": 4309088,
+    "module": "MFC42",
+    "name": "__imp_?WindowProc@CWnd@@MAEJIIJ@Z",
+    "ordinal": 6374
+  },
+  {
+    "va": 4309480,
+    "module": "MFC42",
+    "name": "__imp_?WinHelpA@CWinApp@@UAEXKI@Z",
+    "ordinal": 6375
+  },
+  {
+    "va": 4309120,
+    "module": "MFC42",
+    "name": "__imp_?WinHelpA@CWnd@@UAEXKI@Z",
+    "ordinal": 6376
+  },
+  {
+    "va": 4309308,
+    "module": "MFC42",
+    "name": "__imp_?WriteString@CStdioFile@@UAEXPBD@Z",
+    "ordinal": 6407
+  },
+  {
+    "va": 4309696,
+    "module": "MSVCRT",
+    "name": "_controlfp",
+    "ordinal": 0
+  },
+  {
+    "va": 4309700,
+    "module": "MSVCRT",
+    "name": "__set_app_type",
+    "ordinal": 0
+  },
+  {
+    "va": 4309704,
+    "module": "MSVCRT",
+    "name": "__p__fmode",
+    "ordinal": 0
+  },
+  {
+    "va": 4309708,
+    "module": "MSVCRT",
+    "name": "__p__commode",
+    "ordinal": 0
+  },
+  {
+    "va": 4309712,
+    "module": "MSVCRT",
+    "name": "_adjust_fdiv",
+    "ordinal": 0
+  },
+  {
+    "va": 4309716,
+    "module": "MSVCRT",
+    "name": "__setusermatherr",
+    "ordinal": 0
+  },
+  {
+    "va": 4309720,
+    "module": "MSVCRT",
+    "name": "_initterm",
+    "ordinal": 0
+  },
+  {
+    "va": 4309724,
+    "module": "MSVCRT",
+    "name": "__getmainargs",
+    "ordinal": 0
+  },
+  {
+    "va": 4309728,
+    "module": "MSVCRT",
+    "name": "_acmdln",
+    "ordinal": 0
+  },
+  {
+    "va": 4309732,
+    "module": "MSVCRT",
+    "name": "exit",
+    "ordinal": 0
+  },
+  {
+    "va": 4309736,
+    "module": "MSVCRT",
+    "name": "_XcptFilter",
+    "ordinal": 0
+  },
+  {
+    "va": 4309740,
+    "module": "MSVCRT",
+    "name": "_exit",
+    "ordinal": 0
+  },
+  {
+    "va": 4309744,
+    "module": "MSVCRT",
+    "name": "_onexit",
+    "ordinal": 0
+  },
+  {
+    "va": 4309748,
+    "module": "MSVCRT",
+    "name": "__dllonexit",
+    "ordinal": 0
+  },
+  {
+    "va": 4309752,
+    "module": "MSVCRT",
+    "name": "??1type_info@@UAE@XZ",
+    "ordinal": 0
+  },
+  {
+    "va": 4309756,
+    "module": "MSVCRT",
+    "name": "atoi",
+    "ordinal": 0
+  },
+  {
+    "va": 4309760,
+    "module": "MSVCRT",
+    "name": "_setmbcp",
+    "ordinal": 0
+  },
+  {
+    "va": 4309764,
+    "module": "MSVCRT",
+    "name": "__CxxFrameHandler",
+    "ordinal": 0
+  },
+  {
+    "va": 4309768,
+    "module": "MSVCRT",
+    "name": "sprintf",
+    "ordinal": 0
+  },
+  {
+    "va": 4309772,
+    "module": "MSVCRT",
+    "name": "_mbscmp",
+    "ordinal": 0
+  },
+  {
+    "va": 4309776,
+    "module": "MSVCRT",
+    "name": "_except_handler3",
+    "ordinal": 0
+  },
+  {
+    "va": 4309004,
+    "module": "KERNEL32",
+    "name": "VirtualProtectEx",
+    "ordinal": 0
+  },
+  {
+    "va": 4309008,
+    "module": "KERNEL32",
+    "name": "CloseHandle",
+    "ordinal": 0
+  },
+  {
+    "va": 4309012,
+    "module": "KERNEL32",
+    "name": "OpenProcess",
+    "ordinal": 0
+  },
+  {
+    "va": 4309016,
+    "module": "KERNEL32",
+    "name": "VirtualFreeEx",
+    "ordinal": 0
+  },
+  {
+    "va": 4309020,
+    "module": "KERNEL32",
+    "name": "LCMapStringA",
+    "ordinal": 0
+  },
+  {
+    "va": 4309024,
+    "module": "KERNEL32",
+    "name": "VirtualAllocEx",
+    "ordinal": 0
+  },
+  {
+    "va": 4309028,
+    "module": "KERNEL32",
+    "name": "MultiByteToWideChar",
+    "ordinal": 0
+  },
+  {
+    "va": 4309032,
+    "module": "KERNEL32",
+    "name": "WinExec",
+    "ordinal": 0
+  },
+  {
+    "va": 4309036,
+    "module": "KERNEL32",
+    "name": "GetModuleHandleA",
+    "ordinal": 0
+  },
+  {
+    "va": 4309040,
+    "module": "KERNEL32",
+    "name": "GetStartupInfoA",
+    "ordinal": 0
+  },
+  {
+    "va": 4309044,
+    "module": "KERNEL32",
+    "name": "GetLastError",
+    "ordinal": 0
+  },
+  {
+    "va": 4309048,
+    "module": "KERNEL32",
+    "name": "WideCharToMultiByte",
+    "ordinal": 0
+  },
+  {
+    "va": 4309052,
+    "module": "KERNEL32",
+    "name": "ReadProcessMemory",
+    "ordinal": 0
+  },
+  {
+    "va": 4309056,
+    "module": "KERNEL32",
+    "name": "WriteProcessMemory",
+    "ordinal": 0
+  },
+  {
+    "va": 4309784,
+    "module": "USER32",
+    "name": "SetScrollPos",
+    "ordinal": 0
+  },
+  {
+    "va": 4309788,
+    "module": "USER32",
+    "name": "SetScrollRange",
+    "ordinal": 0
+  },
+  {
+    "va": 4309792,
+    "module": "USER32",
+    "name": "RedrawWindow",
+    "ordinal": 0
+  },
+  {
+    "va": 4309796,
+    "module": "USER32",
+    "name": "GetFocus",
+    "ordinal": 0
+  },
+  {
+    "va": 4309800,
+    "module": "USER32",
+    "name": "ShowWindow",
+    "ordinal": 0
+  },
+  {
+    "va": 4309804,
+    "module": "USER32",
+    "name": "SetForegroundWindow",
+    "ordinal": 0
+  },
+  {
+    "va": 4309808,
+    "module": "USER32",
+    "name": "FindWindowA",
+    "ordinal": 0
+  },
+  {
+    "va": 4309812,
+    "module": "USER32",
+    "name": "LoadIconA",
+    "ordinal": 0
+  },
+  {
+    "va": 4309816,
+    "module": "USER32",
+    "name": "SetTimer",
+    "ordinal": 0
+  },
+  {
+    "va": 4309820,
+    "module": "USER32",
+    "name": "RegisterWindowMessageA",
+    "ordinal": 0
+  },
+  {
+    "va": 4309824,
+    "module": "USER32",
+    "name": "DrawIcon",
+    "ordinal": 0
+  },
+  {
+    "va": 4309828,
+    "module": "USER32",
+    "name": "GetClientRect",
+    "ordinal": 0
+  },
+  {
+    "va": 4309832,
+    "module": "USER32",
+    "name": "GetSystemMetrics",
+    "ordinal": 0
+  },
+  {
+    "va": 4309836,
+    "module": "USER32",
+    "name": "IsIconic",
+    "ordinal": 0
+  },
+  {
+    "va": 4309840,
+    "module": "USER32",
+    "name": "GetWindowThreadProcessId",
+    "ordinal": 0
+  },
+  {
+    "va": 4309844,
+    "module": "USER32",
+    "name": "KillTimer",
+    "ordinal": 0
+  },
+  {
+    "va": 4309848,
+    "module": "USER32",
+    "name": "AppendMenuA",
+    "ordinal": 0
+  },
+  {
+    "va": 4309852,
+    "module": "USER32",
+    "name": "GetWindowRect",
+    "ordinal": 0
+  },
+  {
+    "va": 4309856,
+    "module": "USER32",
+    "name": "EnableWindow",
+    "ordinal": 0
+  },
+  {
+    "va": 4309860,
+    "module": "USER32",
+    "name": "SendMessageA",
+    "ordinal": 0
+  },
+  {
+    "va": 4309864,
+    "module": "USER32",
+    "name": "CreatePopupMenu",
+    "ordinal": 0
+  },
+  {
+    "va": 4308992,
+    "module": "GDI32",
+    "name": "CreateFontIndirectA",
+    "ordinal": 0
+  },
+  {
+    "va": 4308996,
+    "module": "GDI32",
+    "name": "GetObjectA",
+    "ordinal": 0
+  }
+]

@@ -1,0 +1,91 @@
+{
+  "image_base": 4194304,
+  "functions": 929,
+  "memory_calls": 1397,
+  "decompile_errors": [
+    {
+      "va": 4302348,
+      "name": "?Format@CString@@QAAXPBDZZ",
+      "size": 6,
+      "chunks": [
+        [
+          4302348,
+          4302354
+        ]
+      ],
+      "flags": 21696,
+      "assembly": "disassembly/0041A60C.asm",
+      "decompile_error": "decompile returned None"
+    }
+  ],
+  "analysis_repairs": [
+    {
+      "va": 4279872,
+      "end": 4294400,
+      "mfc_entry": null,
+      "reason": "UndoModify direct call"
+    },
+    {
+      "va": 4200096,
+      "end": 4200174,
+      "mfc_entry": 4309880,
+      "reason": "MFC message-map handler"
+    },
+    {
+      "va": 4203280,
+      "end": 4203358,
+      "mfc_entry": 4310440,
+      "reason": "MFC message-map handler"
+    },
+    {
+      "va": 4204048,
+      "end": 4204098,
+      "mfc_entry": 4310488,
+      "reason": "MFC message-map handler"
+    },
+    {
+      "va": 4205584,
+      "end": 4205662,
+      "mfc_entry": 4310784,
+      "reason": "MFC message-map handler"
+    },
+    {
+      "va": 4211392,
+      "end": 4211780,
+      "mfc_entry": 4311128,
+      "reason": "MFC message-map handler"
+    },
+    {
+      "va": 4216736,
+      "end": 4216860,
+      "mfc_entry": 4311544,
+      "reason": "MFC message-map handler"
+    },
+    {
+      "va": 4217872,
+      "end": 4217889,
+      "mfc_entry": 4311592,
+      "reason": "MFC message-map handler"
+    },
+    {
+      "va": 4217968,
+      "end": 4218002,
+      "mfc_entry": 4311712,
+      "reason": "MFC message-map handler"
+    },
+    {
+      "va": 4218016,
+      "end": 4218050,
+      "mfc_entry": 4311736,
+      "reason": "MFC message-map handler"
+    },
+    {
+      "va": 4234736,
+      "end": 4234768,
+      "mfc_entry": 4312864,
+      "reason": "MFC message-map handler"
+    }
+  ],
+  "unowned_recognized_code": [],
+  "database_saved": false
+}

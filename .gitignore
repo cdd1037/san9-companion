@@ -1,0 +1,32 @@
+# 本机配置
+/.codex/
+
+# 构建、报告和临时分发产物
+*.zip
+/build/
+/out/
+**/__pycache__/
+*.pyc
+
+# Visual Studio 本机缓存
+.vs/
+*.vcxproj.user
+*.suo
+*.VC.db
+*.VC.opendb
+*.aps
+*.ncb
+*.opt
+*.plg
+
+# IDA 本机数据库
+*.idb
+*.i64
+*.id0
+*.id1
+*.id2
+*.nam
+*.til
+
+# Portable per-user preferences
+San9PKHardSettings.ini

@@ -1,0 +1,2221 @@
+[
+  {
+    "function_va": 4218592,
+    "instruction_va": 4218602,
+    "destination": 4388216,
+    "value": 670400,
+    "expression": "(char *)lpAddress + 15040"
+  },
+  {
+    "function_va": 4218624,
+    "instruction_va": 4218632,
+    "destination": 4388212,
+    "value": 655408,
+    "expression": "(char *)lpAddress + 48"
+  },
+  {
+    "function_va": 4218656,
+    "instruction_va": 4218666,
+    "destination": 4388208,
+    "value": 655568,
+    "expression": "(char *)lpAddress + 208"
+  },
+  {
+    "function_va": 4218688,
+    "instruction_va": 4218698,
+    "destination": 4388204,
+    "value": 656640,
+    "expression": "(char *)lpAddress + 1280"
+  },
+  {
+    "function_va": 4218720,
+    "instruction_va": 4218730,
+    "destination": 4388200,
+    "value": 656672,
+    "expression": "(char *)lpAddress + 1312"
+  },
+  {
+    "function_va": 4218752,
+    "instruction_va": 4218762,
+    "destination": 4388196,
+    "value": 656736,
+    "expression": "(char *)lpAddress + 1376"
+  },
+  {
+    "function_va": 4218784,
+    "instruction_va": 4218794,
+    "destination": 4388192,
+    "value": 656896,
+    "expression": "(char *)lpAddress + 1536"
+  },
+  {
+    "function_va": 4218816,
+    "instruction_va": 4218826,
+    "destination": 4388188,
+    "value": 656048,
+    "expression": "(char *)lpAddress + 688"
+  },
+  {
+    "function_va": 4218848,
+    "instruction_va": 4218858,
+    "destination": 4388184,
+    "value": 657264,
+    "expression": "(char *)lpAddress + 1904"
+  },
+  {
+    "function_va": 4218880,
+    "instruction_va": 4218885,
+    "destination": 4388180,
+    "value": 655360,
+    "expression": "(LPVOID)lpAddress"
+  },
+  {
+    "function_va": 4218912,
+    "instruction_va": 4218922,
+    "destination": 4388176,
+    "value": 657408,
+    "expression": "(char *)lpAddress + 2048"
+  },
+  {
+    "function_va": 4218944,
+    "instruction_va": 4218954,
+    "destination": 4388172,
+    "value": 657832,
+    "expression": "(char *)lpAddress + 2472"
+  },
+  {
+    "function_va": 4218976,
+    "instruction_va": 4218986,
+    "destination": 4388168,
+    "value": 662016,
+    "expression": "(char *)lpAddress + 6656"
+  },
+  {
+    "function_va": 4219008,
+    "instruction_va": 4219018,
+    "destination": 4388164,
+    "value": 681104,
+    "expression": "(char *)lpAddress + 25744"
+  },
+  {
+    "function_va": 4219040,
+    "instruction_va": 4219050,
+    "destination": 4388160,
+    "value": 657920,
+    "expression": "(char *)lpAddress + 2560"
+  },
+  {
+    "function_va": 4219072,
+    "instruction_va": 4219082,
+    "destination": 4388156,
+    "value": 658048,
+    "expression": "(char *)lpAddress + 2688"
+  },
+  {
+    "function_va": 4219104,
+    "instruction_va": 4219114,
+    "destination": 4388152,
+    "value": 658208,
+    "expression": "(char *)lpAddress + 2848"
+  },
+  {
+    "function_va": 4219136,
+    "instruction_va": 4219146,
+    "destination": 4388148,
+    "value": 658432,
+    "expression": "(char *)lpAddress + 3072"
+  },
+  {
+    "function_va": 4219168,
+    "instruction_va": 4219178,
+    "destination": 4388144,
+    "value": 663040,
+    "expression": "(char *)lpAddress + 7680"
+  },
+  {
+    "function_va": 4219200,
+    "instruction_va": 4219210,
+    "destination": 4388140,
+    "value": 656128,
+    "expression": "(char *)lpAddress + 768"
+  },
+  {
+    "function_va": 4219232,
+    "instruction_va": 4219242,
+    "destination": 4388136,
+    "value": 658944,
+    "expression": "(int)lpAddress + 3584"
+  },
+  {
+    "function_va": 4219264,
+    "instruction_va": 4219274,
+    "destination": 4388132,
+    "value": 659136,
+    "expression": "(LPVOID)(dword_42F528 + 192)"
+  },
+  {
+    "function_va": 4219296,
+    "instruction_va": 4219306,
+    "destination": 4388128,
+    "value": 656464,
+    "expression": "(char *)lpAddress + 1104"
+  },
+  {
+    "function_va": 4219328,
+    "instruction_va": 4219338,
+    "destination": 4388124,
+    "value": 659200,
+    "expression": "(char *)lpAddress + 3840"
+  },
+  {
+    "function_va": 4219360,
+    "instruction_va": 4219370,
+    "destination": 4388120,
+    "value": 659328,
+    "expression": "(char *)lpAddress + 3968"
+  },
+  {
+    "function_va": 4219392,
+    "instruction_va": 4219402,
+    "destination": 4388116,
+    "value": 659456,
+    "expression": "(char *)lpAddress + 4096"
+  },
+  {
+    "function_va": 4219424,
+    "instruction_va": 4219434,
+    "destination": 4388112,
+    "value": 666368,
+    "expression": "(char *)lpAddress + 11008"
+  },
+  {
+    "function_va": 4219456,
+    "instruction_va": 4219466,
+    "destination": 4388108,
+    "value": 665344,
+    "expression": "(char *)lpAddress + 9984"
+  },
+  {
+    "function_va": 4219488,
+    "instruction_va": 4219498,
+    "destination": 4388104,
+    "value": 665504,
+    "expression": "(char *)lpAddress + 10144"
+  },
+  {
+    "function_va": 4219520,
+    "instruction_va": 4219530,
+    "destination": 4388100,
+    "value": 661904,
+    "expression": "(char *)lpAddress + 6544"
+  },
+  {
+    "function_va": 4219552,
+    "instruction_va": 4219562,
+    "destination": 4388096,
+    "value": 660736,
+    "expression": "(char *)lpAddress + 5376"
+  },
+  {
+    "function_va": 4219584,
+    "instruction_va": 4219594,
+    "destination": 4388092,
+    "value": 658528,
+    "expression": "(char *)lpAddress + 3168"
+  },
+  {
+    "function_va": 4219616,
+    "instruction_va": 4219626,
+    "destination": 4388088,
+    "value": 665456,
+    "expression": "(char *)lpAddress + 10096"
+  },
+  {
+    "function_va": 4219648,
+    "instruction_va": 4219658,
+    "destination": 4388084,
+    "value": 664864,
+    "expression": "(char *)lpAddress + 9504"
+  },
+  {
+    "function_va": 4219680,
+    "instruction_va": 4219690,
+    "destination": 4388080,
+    "value": 661168,
+    "expression": "(char *)lpAddress + 5808"
+  },
+  {
+    "function_va": 4219712,
+    "instruction_va": 4219722,
+    "destination": 4388076,
+    "value": 661376,
+    "expression": "(char *)lpAddress + 6016"
+  },
+  {
+    "function_va": 4219744,
+    "instruction_va": 4219754,
+    "destination": 4388072,
+    "value": 669952,
+    "expression": "(char *)lpAddress + 14592"
+  },
+  {
+    "function_va": 4219776,
+    "instruction_va": 4219786,
+    "destination": 4388068,
+    "value": 662752,
+    "expression": "(char *)lpAddress + 7392"
+  },
+  {
+    "function_va": 4219808,
+    "instruction_va": 4219818,
+    "destination": 4388064,
+    "value": 662336,
+    "expression": "(char *)lpAddress + 6976"
+  },
+  {
+    "function_va": 4219840,
+    "instruction_va": 4219850,
+    "destination": 4388060,
+    "value": 663008,
+    "expression": "(char *)lpAddress + 7648"
+  },
+  {
+    "function_va": 4219872,
+    "instruction_va": 4219882,
+    "destination": 4388056,
+    "value": 658368,
+    "expression": "(char *)lpAddress + 3008"
+  },
+  {
+    "function_va": 4219904,
+    "instruction_va": 4219914,
+    "destination": 4388052,
+    "value": 662528,
+    "expression": "(char *)lpAddress + 7168"
+  },
+  {
+    "function_va": 4219936,
+    "instruction_va": 4219946,
+    "destination": 4388048,
+    "value": 662688,
+    "expression": "(char *)lpAddress + 7328"
+  },
+  {
+    "function_va": 4219968,
+    "instruction_va": 4219978,
+    "destination": 4388044,
+    "value": 662640,
+    "expression": "(char *)lpAddress + 7280"
+  },
+  {
+    "function_va": 4220000,
+    "instruction_va": 4220010,
+    "destination": 4388040,
+    "value": 662720,
+    "expression": "(char *)lpAddress + 7360"
+  },
+  {
+    "function_va": 4220032,
+    "instruction_va": 4220042,
+    "destination": 4388036,
+    "value": 661760,
+    "expression": "(char *)lpAddress + 6400"
+  },
+  {
+    "function_va": 4220064,
+    "instruction_va": 4220074,
+    "destination": 4388032,
+    "value": 663552,
+    "expression": "(char *)lpAddress + 0x2000"
+  },
+  {
+    "function_va": 4220096,
+    "instruction_va": 4220106,
+    "destination": 4388028,
+    "value": 661280,
+    "expression": "(char *)lpAddress + 5920"
+  },
+  {
+    "function_va": 4220128,
+    "instruction_va": 4220138,
+    "destination": 4388024,
+    "value": 662832,
+    "expression": "(char *)lpAddress + 7472"
+  },
+  {
+    "function_va": 4220160,
+    "instruction_va": 4220170,
+    "destination": 4388020,
+    "value": 661440,
+    "expression": "(char *)lpAddress + 6080"
+  },
+  {
+    "function_va": 4220192,
+    "instruction_va": 4220202,
+    "destination": 4388016,
+    "value": 663296,
+    "expression": "(char *)lpAddress + 7936"
+  },
+  {
+    "function_va": 4220224,
+    "instruction_va": 4220234,
+    "destination": 4388012,
+    "value": 662896,
+    "expression": "(char *)lpAddress + 7536"
+  },
+  {
+    "function_va": 4220256,
+    "instruction_va": 4220266,
+    "destination": 4388008,
+    "value": 663456,
+    "expression": "(char *)lpAddress + 8096"
+  },
+  {
+    "function_va": 4220288,
+    "instruction_va": 4220298,
+    "destination": 4388004,
+    "value": 663424,
+    "expression": "(char *)lpAddress + 8064"
+  },
+  {
+    "function_va": 4220320,
+    "instruction_va": 4220330,
+    "destination": 4388000,
+    "value": 661632,
+    "expression": "(char *)lpAddress + 6272"
+  },
+  {
+    "function_va": 4220352,
+    "instruction_va": 4220362,
+    "destination": 4387996,
+    "value": 671536,
+    "expression": "(char *)lpAddress + 16176"
+  },
+  {
+    "function_va": 4220384,
+    "instruction_va": 4220394,
+    "destination": 4387992,
+    "value": 663808,
+    "expression": "(char *)lpAddress + 8448"
+  },
+  {
+    "function_va": 4220416,
+    "instruction_va": 4220426,
+    "destination": 4387988,
+    "value": 663920,
+    "expression": "(char *)lpAddress + 8560"
+  },
+  {
+    "function_va": 4220448,
+    "instruction_va": 4220458,
+    "destination": 4387984,
+    "value": 668616,
+    "expression": "(char *)lpAddress + 13256"
+  },
+  {
+    "function_va": 4220480,
+    "instruction_va": 4220490,
+    "destination": 4387980,
+    "value": 664160,
+    "expression": "(char *)lpAddress + 8800"
+  },
+  {
+    "function_va": 4220512,
+    "instruction_va": 4220522,
+    "destination": 4387976,
+    "value": 678976,
+    "expression": "(char *)lpAddress + 23616"
+  },
+  {
+    "function_va": 4220544,
+    "instruction_va": 4220554,
+    "destination": 4387972,
+    "value": 664704,
+    "expression": "(char *)lpAddress + 9344"
+  },
+  {
+    "function_va": 4220576,
+    "instruction_va": 4220586,
+    "destination": 4387968,
+    "value": 665152,
+    "expression": "(char *)lpAddress + 9792"
+  },
+  {
+    "function_va": 4220608,
+    "instruction_va": 4220618,
+    "destination": 4387964,
+    "value": 665136,
+    "expression": "(char *)lpAddress + 9776"
+  },
+  {
+    "function_va": 4220640,
+    "instruction_va": 4220650,
+    "destination": 4387960,
+    "value": 664744,
+    "expression": "(char *)lpAddress + 9384"
+  },
+  {
+    "function_va": 4220672,
+    "instruction_va": 4220682,
+    "destination": 4387956,
+    "value": 658496,
+    "expression": "(char *)lpAddress + 3136"
+  },
+  {
+    "function_va": 4220704,
+    "instruction_va": 4220714,
+    "destination": 4387952,
+    "value": 665184,
+    "expression": "(char *)lpAddress + 9824"
+  },
+  {
+    "function_va": 4220736,
+    "instruction_va": 4220746,
+    "destination": 4387948,
+    "value": 664912,
+    "expression": "(char *)lpAddress + 9552"
+  },
+  {
+    "function_va": 4220768,
+    "instruction_va": 4220778,
+    "destination": 4387944,
+    "value": 655600,
+    "expression": "(char *)lpAddress + 240"
+  },
+  {
+    "function_va": 4220800,
+    "instruction_va": 4220810,
+    "destination": 4387940,
+    "value": 669184,
+    "expression": "(char *)lpAddress + 13824"
+  },
+  {
+    "function_va": 4220832,
+    "instruction_va": 4220842,
+    "destination": 4387936,
+    "value": 655872,
+    "expression": "(char *)lpAddress + 512"
+  },
+  {
+    "function_va": 4220864,
+    "instruction_va": 4220874,
+    "destination": 4387932,
+    "value": 666536,
+    "expression": "(char *)lpAddress + 11176"
+  },
+  {
+    "function_va": 4220896,
+    "instruction_va": 4220906,
+    "destination": 4387928,
+    "value": 670816,
+    "expression": "(char *)lpAddress + 15456"
+  },
+  {
+    "function_va": 4220928,
+    "instruction_va": 4220938,
+    "destination": 4387924,
+    "value": 665600,
+    "expression": "(char *)lpAddress + 10240"
+  },
+  {
+    "function_va": 4220960,
+    "instruction_va": 4220970,
+    "destination": 4387920,
+    "value": 665808,
+    "expression": "(char *)lpAddress + 10448"
+  },
+  {
+    "function_va": 4220992,
+    "instruction_va": 4221002,
+    "destination": 4387916,
+    "value": 665296,
+    "expression": "(char *)lpAddress + 9936"
+  },
+  {
+    "function_va": 4221024,
+    "instruction_va": 4221034,
+    "destination": 4387912,
+    "value": 666208,
+    "expression": "(char *)lpAddress + 10848"
+  },
+  {
+    "function_va": 4221056,
+    "instruction_va": 4221066,
+    "destination": 4387908,
+    "value": 671192,
+    "expression": "(char *)lpAddress + 15832"
+  },
+  {
+    "function_va": 4221088,
+    "instruction_va": 4221098,
+    "destination": 4387904,
+    "value": 665856,
+    "expression": "(char *)lpAddress + 10496"
+  },
+  {
+    "function_va": 4221120,
+    "instruction_va": 4221130,
+    "destination": 4387900,
+    "value": 661504,
+    "expression": "(char *)lpAddress + 6144"
+  },
+  {
+    "function_va": 4221152,
+    "instruction_va": 4221162,
+    "destination": 4387896,
+    "value": 666112,
+    "expression": "(char *)lpAddress + 10752"
+  },
+  {
+    "function_va": 4221184,
+    "instruction_va": 4221194,
+    "destination": 4387892,
+    "value": 670128,
+    "expression": "(char *)lpAddress + 14768"
+  },
+  {
+    "function_va": 4221216,
+    "instruction_va": 4221226,
+    "destination": 4387888,
+    "value": 663680,
+    "expression": "(char *)lpAddress + 8320"
+  },
+  {
+    "function_va": 4221248,
+    "instruction_va": 4221258,
+    "destination": 4387884,
+    "value": 670096,
+    "expression": "(char *)lpAddress + 14736"
+  },
+  {
+    "function_va": 4221280,
+    "instruction_va": 4221290,
+    "destination": 4387880,
+    "value": 662784,
+    "expression": "(char *)lpAddress + 7424"
+  },
+  {
+    "function_va": 4221312,
+    "instruction_va": 4221322,
+    "destination": 4387876,
+    "value": 670976,
+    "expression": "(char *)lpAddress + 15616"
+  },
+  {
+    "function_va": 4221344,
+    "instruction_va": 4221354,
+    "destination": 4387872,
+    "value": 671120,
+    "expression": "(char *)lpAddress + 15760"
+  },
+  {
+    "function_va": 4221376,
+    "instruction_va": 4221386,
+    "destination": 4387868,
+    "value": 655680,
+    "expression": "(char *)lpAddress + 320"
+  },
+  {
+    "function_va": 4221408,
+    "instruction_va": 4221418,
+    "destination": 4387864,
+    "value": 668848,
+    "expression": "(char *)lpAddress + 13488"
+  },
+  {
+    "function_va": 4221440,
+    "instruction_va": 4221450,
+    "destination": 4387860,
+    "value": 666624,
+    "expression": "(char *)lpAddress + 11264"
+  },
+  {
+    "function_va": 4221472,
+    "instruction_va": 4221482,
+    "destination": 4387856,
+    "value": 671480,
+    "expression": "(char *)lpAddress + 16120"
+  },
+  {
+    "function_va": 4221504,
+    "instruction_va": 4221514,
+    "destination": 4387852,
+    "value": 665320,
+    "expression": "(char *)lpAddress + 9960"
+  },
+  {
+    "function_va": 4221536,
+    "instruction_va": 4221546,
+    "destination": 4387848,
+    "value": 668272,
+    "expression": "(char *)lpAddress + 12912"
+  },
+  {
+    "function_va": 4221568,
+    "instruction_va": 4221578,
+    "destination": 4387844,
+    "value": 666304,
+    "expression": "(char *)lpAddress + 10944"
+  },
+  {
+    "function_va": 4221600,
+    "instruction_va": 4221610,
+    "destination": 4387840,
+    "value": 670672,
+    "expression": "(char *)lpAddress + 15312"
+  },
+  {
+    "function_va": 4221632,
+    "instruction_va": 4221642,
+    "destination": 4387836,
+    "value": 670712,
+    "expression": "(char *)lpAddress + 15352"
+  },
+  {
+    "function_va": 4221664,
+    "instruction_va": 4221674,
+    "destination": 4387832,
+    "value": 667624,
+    "expression": "(char *)lpAddress + 12264"
+  },
+  {
+    "function_va": 4221696,
+    "instruction_va": 4221706,
+    "destination": 4387828,
+    "value": 656608,
+    "expression": "(char *)lpAddress + 1248"
+  },
+  {
+    "function_va": 4221728,
+    "instruction_va": 4221738,
+    "destination": 4387824,
+    "value": 656624,
+    "expression": "(char *)lpAddress + 1264"
+  },
+  {
+    "function_va": 4221760,
+    "instruction_va": 4221770,
+    "destination": 4387820,
+    "value": 668672,
+    "expression": "(char *)lpAddress + 13312"
+  },
+  {
+    "function_va": 4221792,
+    "instruction_va": 4221802,
+    "destination": 4387816,
+    "value": 667136,
+    "expression": "(char *)lpAddress + 11776"
+  },
+  {
+    "function_va": 4221824,
+    "instruction_va": 4221834,
+    "destination": 4387812,
+    "value": 667648,
+    "expression": "(char *)lpAddress + 12288"
+  },
+  {
+    "function_va": 4221856,
+    "instruction_va": 4221866,
+    "destination": 4387808,
+    "value": 667744,
+    "expression": "(char *)lpAddress + 12384"
+  },
+  {
+    "function_va": 4221888,
+    "instruction_va": 4221898,
+    "destination": 4387804,
+    "value": 667560,
+    "expression": "(char *)lpAddress + 12200"
+  },
+  {
+    "function_va": 4221920,
+    "instruction_va": 4221930,
+    "destination": 4387800,
+    "value": 679168,
+    "expression": "(char *)lpAddress + 23808"
+  },
+  {
+    "function_va": 4221952,
+    "instruction_va": 4221962,
+    "destination": 4387796,
+    "value": 667792,
+    "expression": "(char *)lpAddress + 12432"
+  },
+  {
+    "function_va": 4221984,
+    "instruction_va": 4221994,
+    "destination": 4387792,
+    "value": 668928,
+    "expression": "(char *)lpAddress + 13568"
+  },
+  {
+    "function_va": 4222016,
+    "instruction_va": 4222026,
+    "destination": 4387788,
+    "value": 667104,
+    "expression": "(char *)lpAddress + 11744"
+  },
+  {
+    "function_va": 4222048,
+    "instruction_va": 4222058,
+    "destination": 4387784,
+    "value": 664064,
+    "expression": "(char *)lpAddress + 8704"
+  },
+  {
+    "function_va": 4222080,
+    "instruction_va": 4222090,
+    "destination": 4387780,
+    "value": 669644,
+    "expression": "(char *)lpAddress + 14284"
+  },
+  {
+    "function_va": 4222112,
+    "instruction_va": 4222122,
+    "destination": 4387776,
+    "value": 664112,
+    "expression": "(char *)lpAddress + 8752"
+  },
+  {
+    "function_va": 4222144,
+    "instruction_va": 4222154,
+    "destination": 4387772,
+    "value": 669008,
+    "expression": "(char *)lpAddress + 13648"
+  },
+  {
+    "function_va": 4222176,
+    "instruction_va": 4222186,
+    "destination": 4387768,
+    "value": 668304,
+    "expression": "(char *)lpAddress + 12944"
+  },
+  {
+    "function_va": 4222208,
+    "instruction_va": 4222218,
+    "destination": 4387764,
+    "value": 668416,
+    "expression": "(char *)lpAddress + 13056"
+  },
+  {
+    "function_va": 4222240,
+    "instruction_va": 4222250,
+    "destination": 4387760,
+    "value": 669104,
+    "expression": "(char *)lpAddress + 13744"
+  },
+  {
+    "function_va": 4222272,
+    "instruction_va": 4222282,
+    "destination": 4387756,
+    "value": 668160,
+    "expression": "(char *)lpAddress + 12800"
+  },
+  {
+    "function_va": 4222304,
+    "instruction_va": 4222314,
+    "destination": 4387752,
+    "value": 669420,
+    "expression": "(char *)lpAddress + 14060"
+  },
+  {
+    "function_va": 4222336,
+    "instruction_va": 4222346,
+    "destination": 4387748,
+    "value": 668240,
+    "expression": "(char *)lpAddress + 12880"
+  },
+  {
+    "function_va": 4222368,
+    "instruction_va": 4222378,
+    "destination": 4387744,
+    "value": 661456,
+    "expression": "(char *)lpAddress + 6096"
+  },
+  {
+    "function_va": 4222400,
+    "instruction_va": 4222410,
+    "destination": 4387740,
+    "value": 666568,
+    "expression": "(char *)lpAddress + 11208"
+  },
+  {
+    "function_va": 4222432,
+    "instruction_va": 4222442,
+    "destination": 4387736,
+    "value": 669608,
+    "expression": "(char *)lpAddress + 14248"
+  },
+  {
+    "function_va": 4222464,
+    "instruction_va": 4222474,
+    "destination": 4387732,
+    "value": 655840,
+    "expression": "(char *)lpAddress + 480"
+  },
+  {
+    "function_va": 4222496,
+    "instruction_va": 4222506,
+    "destination": 4387728,
+    "value": 669484,
+    "expression": "(char *)lpAddress + 14124"
+  },
+  {
+    "function_va": 4222528,
+    "instruction_va": 4222538,
+    "destination": 4387724,
+    "value": 670172,
+    "expression": "(char *)lpAddress + 14812"
+  },
+  {
+    "function_va": 4222560,
+    "instruction_va": 4222570,
+    "destination": 4387720,
+    "value": 668944,
+    "expression": "(char *)lpAddress + 13584"
+  },
+  {
+    "function_va": 4222592,
+    "instruction_va": 4222602,
+    "destination": 4387716,
+    "value": 675328,
+    "expression": "(char *)lpAddress + 19968"
+  },
+  {
+    "function_va": 4222624,
+    "instruction_va": 4222634,
+    "destination": 4387712,
+    "value": 683232,
+    "expression": "(char *)lpAddress + 27872"
+  },
+  {
+    "function_va": 4222656,
+    "instruction_va": 4222666,
+    "destination": 4387708,
+    "value": 656872,
+    "expression": "(char *)lpAddress + 1512"
+  },
+  {
+    "function_va": 4222688,
+    "instruction_va": 4222698,
+    "destination": 4387704,
+    "value": 670208,
+    "expression": "(char *)lpAddress + 14848"
+  },
+  {
+    "function_va": 4222720,
+    "instruction_va": 4222730,
+    "destination": 4387700,
+    "value": 670464,
+    "expression": "(char *)lpAddress + 15104"
+  },
+  {
+    "function_va": 4222752,
+    "instruction_va": 4222762,
+    "destination": 4387696,
+    "value": 665216,
+    "expression": "(char *)lpAddress + 9856"
+  },
+  {
+    "function_va": 4222784,
+    "instruction_va": 4222794,
+    "destination": 4387692,
+    "value": 668040,
+    "expression": "(char *)lpAddress + 12680"
+  },
+  {
+    "function_va": 4222816,
+    "instruction_va": 4222826,
+    "destination": 4387688,
+    "value": 666088,
+    "expression": "(char *)lpAddress + 10728"
+  },
+  {
+    "function_va": 4222848,
+    "instruction_va": 4222858,
+    "destination": 4387684,
+    "value": 674986,
+    "expression": "(char *)lpAddress + 19626"
+  },
+  {
+    "function_va": 4222880,
+    "instruction_va": 4222890,
+    "destination": 4387680,
+    "value": 667056,
+    "expression": "(char *)lpAddress + 11696"
+  },
+  {
+    "function_va": 4222912,
+    "instruction_va": 4222922,
+    "destination": 4387676,
+    "value": 668975,
+    "expression": "(char *)lpAddress + 13615"
+  },
+  {
+    "function_va": 4222944,
+    "instruction_va": 4222954,
+    "destination": 4387672,
+    "value": 682944,
+    "expression": "(char *)lpAddress + 27584"
+  },
+  {
+    "function_va": 4222976,
+    "instruction_va": 4222986,
+    "destination": 4387668,
+    "value": 667880,
+    "expression": "(char *)lpAddress + 12520"
+  },
+  {
+    "function_va": 4223008,
+    "instruction_va": 4223018,
+    "destination": 4387664,
+    "value": 669312,
+    "expression": "(char *)lpAddress + 13952"
+  },
+  {
+    "function_va": 4223040,
+    "instruction_va": 4223050,
+    "destination": 4387660,
+    "value": 674944,
+    "expression": "(char *)lpAddress + 19584"
+  },
+  {
+    "function_va": 4223072,
+    "instruction_va": 4223082,
+    "destination": 4387656,
+    "value": 675072,
+    "expression": "(char *)lpAddress + 19712"
+  },
+  {
+    "function_va": 4223104,
+    "instruction_va": 4223114,
+    "destination": 4387652,
+    "value": 675840,
+    "expression": "(char *)lpAddress + 20480"
+  },
+  {
+    "function_va": 4223136,
+    "instruction_va": 4223146,
+    "destination": 4387648,
+    "value": 669264,
+    "expression": "(char *)lpAddress + 13904"
+  },
+  {
+    "function_va": 4223168,
+    "instruction_va": 4223178,
+    "destination": 4387644,
+    "value": 675584,
+    "expression": "(char *)lpAddress + 20224"
+  },
+  {
+    "function_va": 4223200,
+    "instruction_va": 4223210,
+    "destination": 4387640,
+    "value": 677040,
+    "expression": "(char *)lpAddress + 21680"
+  },
+  {
+    "function_va": 4223232,
+    "instruction_va": 4223242,
+    "destination": 4387636,
+    "value": 675680,
+    "expression": "(char *)lpAddress + 20320"
+  },
+  {
+    "function_va": 4223264,
+    "instruction_va": 4223274,
+    "destination": 4387632,
+    "value": 675776,
+    "expression": "(char *)lpAddress + 20416"
+  },
+  {
+    "function_va": 4223296,
+    "instruction_va": 4223306,
+    "destination": 4387528,
+    "value": 669368,
+    "expression": "(char *)lpAddress + 14008"
+  },
+  {
+    "function_va": 4223328,
+    "instruction_va": 4223338,
+    "destination": 4387524,
+    "value": 676864,
+    "expression": "(char *)lpAddress + 21504"
+  },
+  {
+    "function_va": 4223360,
+    "instruction_va": 4223370,
+    "destination": 4387520,
+    "value": 679088,
+    "expression": "(char *)lpAddress + 23728"
+  },
+  {
+    "function_va": 4223392,
+    "instruction_va": 4223402,
+    "destination": 4387516,
+    "value": 675816,
+    "expression": "(char *)lpAddress + 20456"
+  },
+  {
+    "function_va": 4223424,
+    "instruction_va": 4223434,
+    "destination": 4387512,
+    "value": 676784,
+    "expression": "(char *)lpAddress + 21424"
+  },
+  {
+    "function_va": 4223456,
+    "instruction_va": 4223466,
+    "destination": 4387508,
+    "value": 677120,
+    "expression": "(char *)lpAddress + 21760"
+  },
+  {
+    "function_va": 4223488,
+    "instruction_va": 4223498,
+    "destination": 4387504,
+    "value": 663952,
+    "expression": "(char *)lpAddress + 8592"
+  },
+  {
+    "function_va": 4223520,
+    "instruction_va": 4223530,
+    "destination": 4387500,
+    "value": 677312,
+    "expression": "(char *)lpAddress + 21952"
+  },
+  {
+    "function_va": 4223552,
+    "instruction_va": 4223562,
+    "destination": 4387496,
+    "value": 676816,
+    "expression": "(char *)lpAddress + 21456"
+  },
+  {
+    "function_va": 4223584,
+    "instruction_va": 4223594,
+    "destination": 4387492,
+    "value": 677344,
+    "expression": "(char *)lpAddress + 21984"
+  },
+  {
+    "function_va": 4223616,
+    "instruction_va": 4223626,
+    "destination": 4387488,
+    "value": 677376,
+    "expression": "(char *)lpAddress + 22016"
+  },
+  {
+    "function_va": 4223648,
+    "instruction_va": 4223658,
+    "destination": 4387484,
+    "value": 663504,
+    "expression": "(char *)lpAddress + 8144"
+  },
+  {
+    "function_va": 4223680,
+    "instruction_va": 4223690,
+    "destination": 4387480,
+    "value": 677584,
+    "expression": "(char *)lpAddress + 22224"
+  },
+  {
+    "function_va": 4223712,
+    "instruction_va": 4223722,
+    "destination": 4387476,
+    "value": 677632,
+    "expression": "(char *)lpAddress + 22272"
+  },
+  {
+    "function_va": 4223744,
+    "instruction_va": 4223754,
+    "destination": 4387472,
+    "value": 677656,
+    "expression": "(char *)lpAddress + 22296"
+  },
+  {
+    "function_va": 4223776,
+    "instruction_va": 4223786,
+    "destination": 4387468,
+    "value": 677680,
+    "expression": "(char *)lpAddress + 22320"
+  },
+  {
+    "function_va": 4223808,
+    "instruction_va": 4223818,
+    "destination": 4387464,
+    "value": 677536,
+    "expression": "(char *)lpAddress + 22176"
+  },
+  {
+    "function_va": 4223840,
+    "instruction_va": 4223850,
+    "destination": 4387460,
+    "value": 677560,
+    "expression": "(char *)lpAddress + 22200"
+  },
+  {
+    "function_va": 4223872,
+    "instruction_va": 4223882,
+    "destination": 4387456,
+    "value": 677704,
+    "expression": "(char *)lpAddress + 22344"
+  },
+  {
+    "function_va": 4223904,
+    "instruction_va": 4223914,
+    "destination": 4387452,
+    "value": 677232,
+    "expression": "(char *)lpAddress + 21872"
+  },
+  {
+    "function_va": 4223936,
+    "instruction_va": 4223946,
+    "destination": 4387448,
+    "value": 677888,
+    "expression": "(char *)lpAddress + 22528"
+  },
+  {
+    "function_va": 4223968,
+    "instruction_va": 4223978,
+    "destination": 4387444,
+    "value": 678144,
+    "expression": "(char *)lpAddress + 22784"
+  },
+  {
+    "function_va": 4224000,
+    "instruction_va": 4224010,
+    "destination": 4387440,
+    "value": 682336,
+    "expression": "(char *)lpAddress + 26976"
+  },
+  {
+    "function_va": 4224032,
+    "instruction_va": 4224042,
+    "destination": 4387436,
+    "value": 678336,
+    "expression": "(char *)lpAddress + 22976"
+  },
+  {
+    "function_va": 4224064,
+    "instruction_va": 4224074,
+    "destination": 4387432,
+    "value": 678400,
+    "expression": "(char *)lpAddress + 23040"
+  },
+  {
+    "function_va": 4224096,
+    "instruction_va": 4224106,
+    "destination": 4387428,
+    "value": 678464,
+    "expression": "(char *)lpAddress + 23104"
+  },
+  {
+    "function_va": 4224128,
+    "instruction_va": 4224138,
+    "destination": 4387424,
+    "value": 678752,
+    "expression": "(char *)lpAddress + 23392"
+  },
+  {
+    "function_va": 4224160,
+    "instruction_va": 4224170,
+    "destination": 4387420,
+    "value": 678944,
+    "expression": "(char *)lpAddress + 23584"
+  },
+  {
+    "function_va": 4224192,
+    "instruction_va": 4224202,
+    "destination": 4387416,
+    "value": 679424,
+    "expression": "(char *)lpAddress + 24064"
+  },
+  {
+    "function_va": 4224224,
+    "instruction_va": 4224234,
+    "destination": 4387412,
+    "value": 681424,
+    "expression": "(char *)lpAddress + 26064"
+  },
+  {
+    "function_va": 4224256,
+    "instruction_va": 4224266,
+    "destination": 4387408,
+    "value": 697600,
+    "expression": "(char *)lpAddress + 42240"
+  },
+  {
+    "function_va": 4224288,
+    "instruction_va": 4224298,
+    "destination": 4387404,
+    "value": 665008,
+    "expression": "(char *)lpAddress + 9648"
+  },
+  {
+    "function_va": 4224320,
+    "instruction_va": 4224330,
+    "destination": 4387400,
+    "value": 679936,
+    "expression": "(char *)lpAddress + 24576"
+  },
+  {
+    "function_va": 4224352,
+    "instruction_va": 4224362,
+    "destination": 4387396,
+    "value": 667904,
+    "expression": "(char *)lpAddress + 12544"
+  },
+  {
+    "function_va": 4224384,
+    "instruction_va": 4224394,
+    "destination": 4387392,
+    "value": 676736,
+    "expression": "(char *)lpAddress + 21376"
+  },
+  {
+    "function_va": 4224416,
+    "instruction_va": 4224426,
+    "destination": 4387388,
+    "value": 682104,
+    "expression": "(char *)lpAddress + 26744"
+  },
+  {
+    "function_va": 4224448,
+    "instruction_va": 4224458,
+    "destination": 4387384,
+    "value": 684544,
+    "expression": "(char *)lpAddress + 29184"
+  },
+  {
+    "function_va": 4224480,
+    "instruction_va": 4224490,
+    "destination": 4387380,
+    "value": 684672,
+    "expression": "(char *)lpAddress + 29312"
+  },
+  {
+    "function_va": 4224512,
+    "instruction_va": 4224522,
+    "destination": 4387376,
+    "value": 680736,
+    "expression": "(char *)lpAddress + 25376"
+  },
+  {
+    "function_va": 4224544,
+    "instruction_va": 4224554,
+    "destination": 4387372,
+    "value": 680800,
+    "expression": "(char *)lpAddress + 25440"
+  },
+  {
+    "function_va": 4224576,
+    "instruction_va": 4224586,
+    "destination": 4387368,
+    "value": 681200,
+    "expression": "(char *)lpAddress + 25840"
+  },
+  {
+    "function_va": 4224608,
+    "instruction_va": 4224618,
+    "destination": 4387364,
+    "value": 681216,
+    "expression": "(char *)lpAddress + 25856"
+  },
+  {
+    "function_va": 4224640,
+    "instruction_va": 4224650,
+    "destination": 4387360,
+    "value": 679200,
+    "expression": "(char *)lpAddress + 23840"
+  },
+  {
+    "function_va": 4224672,
+    "instruction_va": 4224682,
+    "destination": 4387356,
+    "value": 682720,
+    "expression": "(char *)lpAddress + 27360"
+  },
+  {
+    "function_va": 4224704,
+    "instruction_va": 4224714,
+    "destination": 4387352,
+    "value": 683008,
+    "expression": "(char *)lpAddress + 27648"
+  },
+  {
+    "function_va": 4224736,
+    "instruction_va": 4224746,
+    "destination": 4387348,
+    "value": 682688,
+    "expression": "(char *)lpAddress + 27328"
+  },
+  {
+    "function_va": 4224768,
+    "instruction_va": 4224778,
+    "destination": 4387344,
+    "value": 683264,
+    "expression": "(char *)lpAddress + 27904"
+  },
+  {
+    "function_va": 4224800,
+    "instruction_va": 4224810,
+    "destination": 4387340,
+    "value": 675552,
+    "expression": "(char *)lpAddress + 20192"
+  },
+  {
+    "function_va": 4224832,
+    "instruction_va": 4224842,
+    "destination": 4387336,
+    "value": 683920,
+    "expression": "(char *)lpAddress + 28560"
+  },
+  {
+    "function_va": 4224864,
+    "instruction_va": 4224874,
+    "destination": 4387332,
+    "value": 683120,
+    "expression": "(char *)lpAddress + 27760"
+  },
+  {
+    "function_va": 4224896,
+    "instruction_va": 4224906,
+    "destination": 4387328,
+    "value": 683168,
+    "expression": "(char *)lpAddress + 27808"
+  },
+  {
+    "function_va": 4224928,
+    "instruction_va": 4224938,
+    "destination": 4387324,
+    "value": 681168,
+    "expression": "(char *)lpAddress + 25808"
+  },
+  {
+    "function_va": 4224960,
+    "instruction_va": 4224970,
+    "destination": 4387320,
+    "value": 683200,
+    "expression": "(char *)lpAddress + 27840"
+  },
+  {
+    "function_va": 4224992,
+    "instruction_va": 4225002,
+    "destination": 4387316,
+    "value": 684000,
+    "expression": "(char *)lpAddress + 28640"
+  },
+  {
+    "function_va": 4225024,
+    "instruction_va": 4225034,
+    "destination": 4387312,
+    "value": 684032,
+    "expression": "(char *)lpAddress + 28672"
+  },
+  {
+    "function_va": 4225056,
+    "instruction_va": 4225066,
+    "destination": 4387308,
+    "value": 684064,
+    "expression": "(char *)lpAddress + 28704"
+  },
+  {
+    "function_va": 4225088,
+    "instruction_va": 4225098,
+    "destination": 4387304,
+    "value": 684096,
+    "expression": "(char *)lpAddress + 28736"
+  },
+  {
+    "function_va": 4225120,
+    "instruction_va": 4225130,
+    "destination": 4387300,
+    "value": 684160,
+    "expression": "(char *)lpAddress + 28800"
+  },
+  {
+    "function_va": 4225152,
+    "instruction_va": 4225162,
+    "destination": 4387296,
+    "value": 681248,
+    "expression": "(char *)lpAddress + 25888"
+  },
+  {
+    "function_va": 4225184,
+    "instruction_va": 4225194,
+    "destination": 4387292,
+    "value": 681472,
+    "expression": "(char *)lpAddress + 26112"
+  },
+  {
+    "function_va": 4225216,
+    "instruction_va": 4225226,
+    "destination": 4387288,
+    "value": 681280,
+    "expression": "(char *)lpAddress + 25920"
+  },
+  {
+    "function_va": 4225248,
+    "instruction_va": 4225258,
+    "destination": 4387284,
+    "value": 679232,
+    "expression": "(char *)lpAddress + 23872"
+  },
+  {
+    "function_va": 4225280,
+    "instruction_va": 4225290,
+    "destination": 4387280,
+    "value": 681392,
+    "expression": "(char *)lpAddress + 26032"
+  },
+  {
+    "function_va": 4225312,
+    "instruction_va": 4225322,
+    "destination": 4387276,
+    "value": 679904,
+    "expression": "(char *)lpAddress + 24544"
+  },
+  {
+    "function_va": 4225344,
+    "instruction_va": 4225354,
+    "destination": 4387272,
+    "value": 679008,
+    "expression": "(char *)lpAddress + 23648"
+  },
+  {
+    "function_va": 4225376,
+    "instruction_va": 4225386,
+    "destination": 4387268,
+    "value": 662272,
+    "expression": "(char *)lpAddress + 6912"
+  },
+  {
+    "function_va": 4225408,
+    "instruction_va": 4225418,
+    "destination": 4387264,
+    "value": 661248,
+    "expression": "(char *)lpAddress + 5888"
+  },
+  {
+    "function_va": 4225440,
+    "instruction_va": 4225450,
+    "destination": 4387260,
+    "value": 661056,
+    "expression": "(char *)lpAddress + 5696"
+  },
+  {
+    "function_va": 4225472,
+    "instruction_va": 4225482,
+    "destination": 4387256,
+    "value": 671232,
+    "expression": "(char *)lpAddress + 15872"
+  },
+  {
+    "function_va": 4225504,
+    "instruction_va": 4225514,
+    "destination": 4387252,
+    "value": 671360,
+    "expression": "(char *)lpAddress + 16000"
+  },
+  {
+    "function_va": 4225536,
+    "instruction_va": 4225546,
+    "destination": 4387248,
+    "value": 682496,
+    "expression": "(char *)lpAddress + 27136"
+  },
+  {
+    "function_va": 4225568,
+    "instruction_va": 4225578,
+    "destination": 4387244,
+    "value": 667584,
+    "expression": "(char *)lpAddress + 12224"
+  },
+  {
+    "function_va": 4225600,
+    "instruction_va": 4225610,
+    "destination": 4387240,
+    "value": 671392,
+    "expression": "(char *)lpAddress + 16032"
+  },
+  {
+    "function_va": 4225632,
+    "instruction_va": 4225642,
+    "destination": 4387236,
+    "value": 666268,
+    "expression": "(char *)lpAddress + 10908"
+  },
+  {
+    "function_va": 4225664,
+    "instruction_va": 4225674,
+    "destination": 4387232,
+    "value": 671632,
+    "expression": "(char *)lpAddress + 16272"
+  },
+  {
+    "function_va": 4225696,
+    "instruction_va": 4225706,
+    "destination": 4387228,
+    "value": 671712,
+    "expression": "(char *)lpAddress + 16352"
+  },
+  {
+    "function_va": 4225728,
+    "instruction_va": 4225738,
+    "destination": 4387224,
+    "value": 682752,
+    "expression": "(char *)lpAddress + 27392"
+  },
+  {
+    "function_va": 4225760,
+    "instruction_va": 4225770,
+    "destination": 4387220,
+    "value": 657384,
+    "expression": "(char *)lpAddress + 2024"
+  },
+  {
+    "function_va": 4225792,
+    "instruction_va": 4225802,
+    "destination": 4387216,
+    "value": 686848,
+    "expression": "(char *)lpAddress + 31488"
+  },
+  {
+    "function_va": 4225824,
+    "instruction_va": 4225834,
+    "destination": 4387212,
+    "value": 664048,
+    "expression": "(char *)lpAddress + 8688"
+  },
+  {
+    "function_va": 4225856,
+    "instruction_va": 4225866,
+    "destination": 4387208,
+    "value": 675136,
+    "expression": "(char *)lpAddress + 19776"
+  },
+  {
+    "function_va": 4225888,
+    "instruction_va": 4225898,
+    "destination": 4387204,
+    "value": 678128,
+    "expression": "(char *)lpAddress + 22768"
+  },
+  {
+    "function_va": 4225920,
+    "instruction_va": 4225930,
+    "destination": 4387200,
+    "value": 684800,
+    "expression": "(char *)lpAddress + 29440"
+  },
+  {
+    "function_va": 4225952,
+    "instruction_va": 4225962,
+    "destination": 4387196,
+    "value": 684352,
+    "expression": "(char *)lpAddress + 28992"
+  },
+  {
+    "function_va": 4225984,
+    "instruction_va": 4225994,
+    "destination": 4387192,
+    "value": 685264,
+    "expression": "(char *)lpAddress + 29904"
+  },
+  {
+    "function_va": 4226016,
+    "instruction_va": 4226026,
+    "destination": 4387188,
+    "value": 685312,
+    "expression": "(char *)lpAddress + 29952"
+  },
+  {
+    "function_va": 4226048,
+    "instruction_va": 4226058,
+    "destination": 4387184,
+    "value": 685568,
+    "expression": "(char *)lpAddress + 30208"
+  },
+  {
+    "function_va": 4226080,
+    "instruction_va": 4226090,
+    "destination": 4387168,
+    "value": 681152,
+    "expression": "(char *)lpAddress + 25792"
+  },
+  {
+    "function_va": 4226112,
+    "instruction_va": 4226122,
+    "destination": 4387164,
+    "value": 685488,
+    "expression": "(char *)lpAddress + 30128"
+  },
+  {
+    "function_va": 4226144,
+    "instruction_va": 4226154,
+    "destination": 4387160,
+    "value": 677744,
+    "expression": "(char *)lpAddress + 22384"
+  },
+  {
+    "function_va": 4226176,
+    "instruction_va": 4226186,
+    "destination": 4387156,
+    "value": 675200,
+    "expression": "(char *)lpAddress + 19840"
+  },
+  {
+    "function_va": 4226208,
+    "instruction_va": 4226218,
+    "destination": 4387152,
+    "value": 686504,
+    "expression": "(char *)lpAddress + 31144"
+  },
+  {
+    "function_va": 4226240,
+    "instruction_va": 4226250,
+    "destination": 4387148,
+    "value": 675504,
+    "expression": "(char *)lpAddress + 20144"
+  },
+  {
+    "function_va": 4226272,
+    "instruction_va": 4226282,
+    "destination": 4387144,
+    "value": 685824,
+    "expression": "(char *)lpAddress + 30464"
+  },
+  {
+    "function_va": 4226304,
+    "instruction_va": 4226314,
+    "destination": 4387140,
+    "value": 675392,
+    "expression": "(char *)lpAddress + 20032"
+  },
+  {
+    "function_va": 4226336,
+    "instruction_va": 4226346,
+    "destination": 4387136,
+    "value": 685760,
+    "expression": "(char *)lpAddress + 30400"
+  },
+  {
+    "function_va": 4226368,
+    "instruction_va": 4226378,
+    "destination": 4387132,
+    "value": 685880,
+    "expression": "(char *)lpAddress + 30520"
+  },
+  {
+    "function_va": 4226400,
+    "instruction_va": 4226410,
+    "destination": 4387128,
+    "value": 675488,
+    "expression": "(char *)lpAddress + 20128"
+  },
+  {
+    "function_va": 4226432,
+    "instruction_va": 4226442,
+    "destination": 4387124,
+    "value": 686080,
+    "expression": "(char *)lpAddress + 30720"
+  },
+  {
+    "function_va": 4226464,
+    "instruction_va": 4226474,
+    "destination": 4387120,
+    "value": 686032,
+    "expression": "(char *)lpAddress + 30672"
+  },
+  {
+    "function_va": 4226496,
+    "instruction_va": 4226506,
+    "destination": 4387116,
+    "value": 686144,
+    "expression": "(char *)lpAddress + 30784"
+  },
+  {
+    "function_va": 4226528,
+    "instruction_va": 4226538,
+    "destination": 4387112,
+    "value": 686400,
+    "expression": "(char *)lpAddress + 31040"
+  },
+  {
+    "function_va": 4226560,
+    "instruction_va": 4226570,
+    "destination": 4387108,
+    "value": 686592,
+    "expression": "(char *)lpAddress + 31232"
+  },
+  {
+    "function_va": 4226592,
+    "instruction_va": 4226602,
+    "destination": 4387104,
+    "value": 657152,
+    "expression": "(char *)lpAddress + 1792"
+  },
+  {
+    "function_va": 4226624,
+    "instruction_va": 4226634,
+    "destination": 4387100,
+    "value": 657200,
+    "expression": "(char *)lpAddress + 1840"
+  },
+  {
+    "function_va": 4226656,
+    "instruction_va": 4226666,
+    "destination": 4387096,
+    "value": 655760,
+    "expression": "(char *)lpAddress + 400"
+  },
+  {
+    "function_va": 4226688,
+    "instruction_va": 4226698,
+    "destination": 4387092,
+    "value": 679872,
+    "expression": "(char *)lpAddress + 24512"
+  },
+  {
+    "function_va": 4226720,
+    "instruction_va": 4226730,
+    "destination": 4387088,
+    "value": 669872,
+    "expression": "(char *)lpAddress + 14512"
+  },
+  {
+    "function_va": 4226752,
+    "instruction_va": 4226762,
+    "destination": 4387084,
+    "value": 686960,
+    "expression": "(char *)lpAddress + 31600"
+  },
+  {
+    "function_va": 4226784,
+    "instruction_va": 4226794,
+    "destination": 4387080,
+    "value": 686816,
+    "expression": "(char *)lpAddress + 31456"
+  },
+  {
+    "function_va": 4226816,
+    "instruction_va": 4226826,
+    "destination": 4387076,
+    "value": 687008,
+    "expression": "(char *)lpAddress + 31648"
+  },
+  {
+    "function_va": 4226848,
+    "instruction_va": 4226858,
+    "destination": 4387072,
+    "value": 687056,
+    "expression": "(char *)lpAddress + 31696"
+  },
+  {
+    "function_va": 4226880,
+    "instruction_va": 4226890,
+    "destination": 4387068,
+    "value": 687120,
+    "expression": "(char *)lpAddress + 31760"
+  },
+  {
+    "function_va": 4226912,
+    "instruction_va": 4226922,
+    "destination": 4387064,
+    "value": 687136,
+    "expression": "(char *)lpAddress + 31776"
+  },
+  {
+    "function_va": 4226944,
+    "instruction_va": 4226954,
+    "destination": 4387060,
+    "value": 687304,
+    "expression": "(char *)lpAddress + 31944"
+  },
+  {
+    "function_va": 4226976,
+    "instruction_va": 4226986,
+    "destination": 4387056,
+    "value": 687408,
+    "expression": "(char *)lpAddress + 32048"
+  },
+  {
+    "function_va": 4227008,
+    "instruction_va": 4227018,
+    "destination": 4387052,
+    "value": 687448,
+    "expression": "(char *)lpAddress + 32088"
+  },
+  {
+    "function_va": 4227040,
+    "instruction_va": 4227050,
+    "destination": 4387048,
+    "value": 687472,
+    "expression": "(char *)lpAddress + 32112"
+  },
+  {
+    "function_va": 4227072,
+    "instruction_va": 4227082,
+    "destination": 4387044,
+    "value": 690176,
+    "expression": "(char *)lpAddress + 34816"
+  },
+  {
+    "function_va": 4227104,
+    "instruction_va": 4227114,
+    "destination": 4387040,
+    "value": 687696,
+    "expression": "(char *)lpAddress + 32336"
+  },
+  {
+    "function_va": 4227136,
+    "instruction_va": 4227146,
+    "destination": 4387036,
+    "value": 687584,
+    "expression": "(char *)lpAddress + 32224"
+  },
+  {
+    "function_va": 4227168,
+    "instruction_va": 4227178,
+    "destination": 4387032,
+    "value": 687792,
+    "expression": "(char *)lpAddress + 32432"
+  },
+  {
+    "function_va": 4227200,
+    "instruction_va": 4227210,
+    "destination": 4387028,
+    "value": 687872,
+    "expression": "(char *)lpAddress + 32512"
+  },
+  {
+    "function_va": 4227232,
+    "instruction_va": 4227242,
+    "destination": 4387024,
+    "value": 661320,
+    "expression": "(char *)lpAddress + 5960"
+  },
+  {
+    "function_va": 4227264,
+    "instruction_va": 4227274,
+    "destination": 4387020,
+    "value": 658016,
+    "expression": "(char *)lpAddress + 2656"
+  },
+  {
+    "function_va": 4227296,
+    "instruction_va": 4227306,
+    "destination": 4387016,
+    "value": 688128,
+    "expression": "(char *)lpAddress + 0x8000"
+  },
+  {
+    "function_va": 4227328,
+    "instruction_va": 4227338,
+    "destination": 4387012,
+    "value": 688264,
+    "expression": "(char *)lpAddress + 32904"
+  },
+  {
+    "function_va": 4227360,
+    "instruction_va": 4227370,
+    "destination": 4387008,
+    "value": 688464,
+    "expression": "(char *)lpAddress + 33104"
+  },
+  {
+    "function_va": 4227392,
+    "instruction_va": 4227402,
+    "destination": 4387004,
+    "value": 688608,
+    "expression": "(char *)lpAddress + 33248"
+  },
+  {
+    "function_va": 4227424,
+    "instruction_va": 4227434,
+    "destination": 4387000,
+    "value": 688640,
+    "expression": "(char *)lpAddress + 33280"
+  },
+  {
+    "function_va": 4227456,
+    "instruction_va": 4227466,
+    "destination": 4386996,
+    "value": 688784,
+    "expression": "(char *)lpAddress + 33424"
+  },
+  {
+    "function_va": 4227488,
+    "instruction_va": 4227498,
+    "destination": 4386992,
+    "value": 688816,
+    "expression": "(char *)lpAddress + 33456"
+  },
+  {
+    "function_va": 4227520,
+    "instruction_va": 4227530,
+    "destination": 4386988,
+    "value": 688928,
+    "expression": "(char *)lpAddress + 33568"
+  },
+  {
+    "function_va": 4227552,
+    "instruction_va": 4227562,
+    "destination": 4386984,
+    "value": 689744,
+    "expression": "(char *)lpAddress + 34384"
+  },
+  {
+    "function_va": 4227584,
+    "instruction_va": 4227594,
+    "destination": 4386980,
+    "value": 689152,
+    "expression": "(char *)lpAddress + 33792"
+  },
+  {
+    "function_va": 4227616,
+    "instruction_va": 4227626,
+    "destination": 4386976,
+    "value": 689216,
+    "expression": "(char *)lpAddress + 33856"
+  },
+  {
+    "function_va": 4227648,
+    "instruction_va": 4227658,
+    "destination": 4386972,
+    "value": 689456,
+    "expression": "(char *)lpAddress + 34096"
+  },
+  {
+    "function_va": 4227680,
+    "instruction_va": 4227690,
+    "destination": 4386968,
+    "value": 689792,
+    "expression": "(char *)lpAddress + 34432"
+  },
+  {
+    "function_va": 4227712,
+    "instruction_va": 4227722,
+    "destination": 4386964,
+    "value": 690112,
+    "expression": "(char *)lpAddress + 34752"
+  },
+  {
+    "function_va": 4227744,
+    "instruction_va": 4227754,
+    "destination": 4386960,
+    "value": 694272,
+    "expression": "(char *)lpAddress + 38912"
+  },
+  {
+    "function_va": 4227776,
+    "instruction_va": 4227786,
+    "destination": 4386956,
+    "value": 690432,
+    "expression": "(char *)lpAddress + 35072"
+  },
+  {
+    "function_va": 4227808,
+    "instruction_va": 4227818,
+    "destination": 4386952,
+    "value": 693088,
+    "expression": "(char *)lpAddress + 37728"
+  },
+  {
+    "function_va": 4227840,
+    "instruction_va": 4227850,
+    "destination": 4386948,
+    "value": 688992,
+    "expression": "(char *)lpAddress + 33632"
+  },
+  {
+    "function_va": 4227872,
+    "instruction_va": 4227882,
+    "destination": 4386944,
+    "value": 692224,
+    "expression": "(char *)lpAddress + 36864"
+  },
+  {
+    "function_va": 4227904,
+    "instruction_va": 4227914,
+    "destination": 4386940,
+    "value": 692496,
+    "expression": "(char *)lpAddress + 37136"
+  },
+  {
+    "function_va": 4227936,
+    "instruction_va": 4227946,
+    "destination": 4386936,
+    "value": 692736,
+    "expression": "(char *)lpAddress + 37376"
+  },
+  {
+    "function_va": 4227968,
+    "instruction_va": 4227978,
+    "destination": 4386932,
+    "value": 692896,
+    "expression": "(char *)lpAddress + 37536"
+  },
+  {
+    "function_va": 4228000,
+    "instruction_va": 4228010,
+    "destination": 4386928,
+    "value": 693248,
+    "expression": "(char *)lpAddress + 37888"
+  },
+  {
+    "function_va": 4228032,
+    "instruction_va": 4228042,
+    "destination": 4386924,
+    "value": 669696,
+    "expression": "(char *)lpAddress + 14336"
+  },
+  {
+    "function_va": 4228064,
+    "instruction_va": 4228074,
+    "destination": 4386920,
+    "value": 658112,
+    "expression": "(char *)lpAddress + 2752"
+  },
+  {
+    "function_va": 4228096,
+    "instruction_va": 4228106,
+    "destination": 4386916,
+    "value": 695296,
+    "expression": "(char *)lpAddress + 39936"
+  },
+  {
+    "function_va": 4228128,
+    "instruction_va": 4228138,
+    "destination": 4386912,
+    "value": 695344,
+    "expression": "(char *)lpAddress + 39984"
+  },
+  {
+    "function_va": 4228160,
+    "instruction_va": 4228170,
+    "destination": 4386908,
+    "value": 695472,
+    "expression": "(char *)lpAddress + 40112"
+  },
+  {
+    "function_va": 4228192,
+    "instruction_va": 4228202,
+    "destination": 4386904,
+    "value": 696320,
+    "expression": "(char *)lpAddress + 40960"
+  },
+  {
+    "function_va": 4228224,
+    "instruction_va": 4228234,
+    "destination": 4386900,
+    "value": 697184,
+    "expression": "(char *)lpAddress + 41824"
+  },
+  {
+    "function_va": 4228256,
+    "instruction_va": 4228266,
+    "destination": 4386896,
+    "value": 698112,
+    "expression": "(char *)lpAddress + 42752"
+  },
+  {
+    "function_va": 4228288,
+    "instruction_va": 4228298,
+    "destination": 4386892,
+    "value": 696064,
+    "expression": "(char *)lpAddress + 40704"
+  },
+  {
+    "function_va": 4228320,
+    "instruction_va": 4228330,
+    "destination": 4386888,
+    "value": 698288,
+    "expression": "(char *)lpAddress + 42928"
+  },
+  {
+    "function_va": 4228352,
+    "instruction_va": 4228362,
+    "destination": 4386884,
+    "value": 665040,
+    "expression": "(char *)lpAddress + 9680"
+  },
+  {
+    "function_va": 4228384,
+    "instruction_va": 4228394,
+    "destination": 4386880,
+    "value": 665088,
+    "expression": "(char *)lpAddress + 9728"
+  },
+  {
+    "function_va": 4228416,
+    "instruction_va": 4228426,
+    "destination": 4386876,
+    "value": 694672,
+    "expression": "(char *)lpAddress + 39312"
+  },
+  {
+    "function_va": 4228448,
+    "instruction_va": 4228458,
+    "destination": 4386872,
+    "value": 694864,
+    "expression": "(char *)lpAddress + 39504"
+  },
+  {
+    "function_va": 4228480,
+    "instruction_va": 4228490,
+    "destination": 4386868,
+    "value": 695264,
+    "expression": "(char *)lpAddress + 39904"
+  },
+  {
+    "function_va": 4228512,
+    "instruction_va": 4228522,
+    "destination": 4386864,
+    "value": 669136,
+    "expression": "(char *)lpAddress + 13776"
+  },
+  {
+    "function_va": 4228544,
+    "instruction_va": 4228554,
+    "destination": 4386860,
+    "value": 664576,
+    "expression": "(char *)lpAddress + 9216"
+  },
+  {
+    "function_va": 4228576,
+    "instruction_va": 4228586,
+    "destination": 4386856,
+    "value": 697856,
+    "expression": "(char *)lpAddress + 42496"
+  },
+  {
+    "function_va": 4228608,
+    "instruction_va": 4228618,
+    "destination": 4386852,
+    "value": 698000,
+    "expression": "(char *)lpAddress + 42640"
+  },
+  {
+    "function_va": 4228640,
+    "instruction_va": 4228650,
+    "destination": 4386848,
+    "value": 698560,
+    "expression": "(char *)lpAddress + 43200"
+  },
+  {
+    "function_va": 4228672,
+    "instruction_va": 4228682,
+    "destination": 4386844,
+    "value": 680960,
+    "expression": "(char *)lpAddress + 25600"
+  },
+  {
+    "function_va": 4228704,
+    "instruction_va": 4228714,
+    "destination": 4386840,
+    "value": 698368,
+    "expression": "(LPVOID)(lpAddress + 43008)"
+  }
+]

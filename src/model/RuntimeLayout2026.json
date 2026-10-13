@@ -1,0 +1,144 @@
+{
+  "state_size": 7692,
+  "configuration": [
+    {
+      "name": "PersonLevels",
+      "offset": 500,
+      "size": 3200,
+      "evidence": "0x4191C0 / 0x4050B0"
+    },
+    {
+      "name": "PersonFriendships",
+      "offset": 3704,
+      "size": 696,
+      "evidence": "0x4191C0 / 0x405530"
+    },
+    {
+      "name": "MaxExperience",
+      "offset": 4408,
+      "size": 2,
+      "evidence": "0x4191C0 / 0x404C70"
+    },
+    {
+      "name": "CityAutomatic",
+      "offset": 4412,
+      "size": 4,
+      "evidence": "0x409E10"
+    },
+    {
+      "name": "CityPending",
+      "offset": 4416,
+      "size": 4,
+      "evidence": "0x419D36"
+    },
+    {
+      "name": "CityLimits",
+      "offset": 4420,
+      "size": 300,
+      "evidence": "0x419BE0"
+    },
+    {
+      "name": "SkillFlags",
+      "offset": 4836,
+      "size": 1,
+      "evidence": "0x419E70 / 0x409E10"
+    },
+    {
+      "name": "SkillEntries",
+      "offset": 4838,
+      "size": 156,
+      "evidence": "0x419E70"
+    },
+    {
+      "name": "FormationFlags",
+      "offset": 4994,
+      "size": 1,
+      "evidence": "0x419FB0 / 0x409E10"
+    },
+    {
+      "name": "FormationEntries",
+      "offset": 4996,
+      "size": 216,
+      "evidence": "0x419FB0"
+    }
+  ],
+  "lifecycle": [
+    {
+      "name": "AllocationBase",
+      "offset": 96,
+      "size": 4,
+      "evidence": "0x409E10 / VirtualAllocEx",
+      "retention": "baseline"
+    },
+    {
+      "name": "TargetWindow",
+      "offset": 108,
+      "size": 4,
+      "evidence": "0x409E10 / FindWindowA",
+      "retention": "reset"
+    },
+    {
+      "name": "ProcessHandle",
+      "offset": 112,
+      "size": 4,
+      "evidence": "0x409E10 / OpenProcess",
+      "retention": "reset"
+    },
+    {
+      "name": "ProcessId",
+      "offset": 116,
+      "size": 4,
+      "evidence": "0x409E10 / GetWindowThreadProcessId",
+      "retention": "reset"
+    },
+    {
+      "name": "OwnerWindow",
+      "offset": 120,
+      "size": 4,
+      "evidence": "0x409430",
+      "retention": "preserve"
+    },
+    {
+      "name": "MessageId",
+      "offset": 124,
+      "size": 4,
+      "evidence": "0x409430 / RegisterWindowMessageA",
+      "retention": "preserve"
+    },
+    {
+      "name": "CallbackReturnStub",
+      "offset": 128,
+      "size": 4,
+      "evidence": "0x409430 / 0xC3C3C3C3",
+      "retention": "preserve"
+    },
+    {
+      "name": "EventSequence",
+      "offset": 132,
+      "size": 4,
+      "evidence": "0x418730 / window message state",
+      "retention": "reset"
+    },
+    {
+      "name": "ConnectTicks",
+      "offset": 136,
+      "size": 4,
+      "evidence": "0x409E10 / connection retry counter",
+      "retention": "reset"
+    },
+    {
+      "name": "ErrorCount",
+      "offset": 140,
+      "size": 4,
+      "evidence": "0x409E10 / error status",
+      "retention": "reset"
+    },
+    {
+      "name": "StatusTicks",
+      "offset": 144,
+      "size": 4,
+      "evidence": "0x409E10 / status update counter",
+      "retention": "reset"
+    }
+  ]
+}

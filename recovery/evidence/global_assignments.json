@@ -1,0 +1,9589 @@
+[
+  {
+    "function_va": 4218592,
+    "instruction_va": 4218602,
+    "destination": 4388216,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 15040",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "15040",
+        "value": 15040
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4218624,
+    "instruction_va": 4218632,
+    "destination": 4388212,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 48",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "48",
+        "value": 48
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4218656,
+    "instruction_va": 4218666,
+    "destination": 4388208,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 208",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "208",
+        "value": 208
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4218688,
+    "instruction_va": 4218698,
+    "destination": 4388204,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 1280",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "1280",
+        "value": 1280
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4218720,
+    "instruction_va": 4218730,
+    "destination": 4388200,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 1312",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "1312",
+        "value": 1312
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4218752,
+    "instruction_va": 4218762,
+    "destination": 4388196,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 1376",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "1376",
+        "value": 1376
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4218784,
+    "instruction_va": 4218794,
+    "destination": 4388192,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 1536",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "1536",
+        "value": 1536
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4218816,
+    "instruction_va": 4218826,
+    "destination": 4388188,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 688",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "688",
+        "value": 688
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4218848,
+    "instruction_va": 4218858,
+    "destination": 4388184,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 1904",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "1904",
+        "value": 1904
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4218880,
+    "instruction_va": 4218885,
+    "destination": 4388180,
+    "size": 4,
+    "value": {
+      "op": "cast",
+      "text": "(LPVOID)lpAddress",
+      "x": {
+        "op": "obj",
+        "text": "lpAddress",
+        "va": 4325456,
+        "size": 4,
+        "array": false
+      },
+      "size": 4
+    }
+  },
+  {
+    "function_va": 4218912,
+    "instruction_va": 4218922,
+    "destination": 4388176,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 2048",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "2048",
+        "value": 2048
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4218944,
+    "instruction_va": 4218954,
+    "destination": 4388172,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 2472",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "2472",
+        "value": 2472
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4218976,
+    "instruction_va": 4218986,
+    "destination": 4388168,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 6656",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "6656",
+        "value": 6656
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219008,
+    "instruction_va": 4219018,
+    "destination": 4388164,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 25744",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "25744",
+        "value": 25744
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219040,
+    "instruction_va": 4219050,
+    "destination": 4388160,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 2560",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "2560",
+        "value": 2560
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219072,
+    "instruction_va": 4219082,
+    "destination": 4388156,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 2688",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "2688",
+        "value": 2688
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219104,
+    "instruction_va": 4219114,
+    "destination": 4388152,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 2848",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "2848",
+        "value": 2848
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219136,
+    "instruction_va": 4219146,
+    "destination": 4388148,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 3072",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "3072",
+        "value": 3072
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219168,
+    "instruction_va": 4219178,
+    "destination": 4388144,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 7680",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "7680",
+        "value": 7680
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219200,
+    "instruction_va": 4219210,
+    "destination": 4388140,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 768",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "768",
+        "value": 768
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219232,
+    "instruction_va": 4219242,
+    "destination": 4388136,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(int)lpAddress + 3584",
+      "x": {
+        "op": "cast",
+        "text": "(int)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "3584",
+        "value": 3584
+      }
+    }
+  },
+  {
+    "function_va": 4219264,
+    "instruction_va": 4219274,
+    "destination": 4388132,
+    "size": 4,
+    "value": {
+      "op": "cast",
+      "text": "(LPVOID)(dword_42F528 + 192)",
+      "x": {
+        "op": "add",
+        "text": "dword_42F528 + 192",
+        "x": {
+          "op": "obj",
+          "text": "dword_42F528",
+          "va": 4388136,
+          "size": 4,
+          "array": false
+        },
+        "y": {
+          "op": "num",
+          "text": "192",
+          "value": 192
+        }
+      },
+      "size": 4
+    }
+  },
+  {
+    "function_va": 4219296,
+    "instruction_va": 4219306,
+    "destination": 4388128,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 1104",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "1104",
+        "value": 1104
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219328,
+    "instruction_va": 4219338,
+    "destination": 4388124,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 3840",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "3840",
+        "value": 3840
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219360,
+    "instruction_va": 4219370,
+    "destination": 4388120,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 3968",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "3968",
+        "value": 3968
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219392,
+    "instruction_va": 4219402,
+    "destination": 4388116,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 4096",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "4096",
+        "value": 4096
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219424,
+    "instruction_va": 4219434,
+    "destination": 4388112,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 11008",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "11008",
+        "value": 11008
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219456,
+    "instruction_va": 4219466,
+    "destination": 4388108,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 9984",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "9984",
+        "value": 9984
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219488,
+    "instruction_va": 4219498,
+    "destination": 4388104,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 10144",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "10144",
+        "value": 10144
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219520,
+    "instruction_va": 4219530,
+    "destination": 4388100,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 6544",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "6544",
+        "value": 6544
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219552,
+    "instruction_va": 4219562,
+    "destination": 4388096,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 5376",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "5376",
+        "value": 5376
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219584,
+    "instruction_va": 4219594,
+    "destination": 4388092,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 3168",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "3168",
+        "value": 3168
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219616,
+    "instruction_va": 4219626,
+    "destination": 4388088,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 10096",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "10096",
+        "value": 10096
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219648,
+    "instruction_va": 4219658,
+    "destination": 4388084,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 9504",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "9504",
+        "value": 9504
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219680,
+    "instruction_va": 4219690,
+    "destination": 4388080,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 5808",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "5808",
+        "value": 5808
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219712,
+    "instruction_va": 4219722,
+    "destination": 4388076,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 6016",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "6016",
+        "value": 6016
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219744,
+    "instruction_va": 4219754,
+    "destination": 4388072,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 14592",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "14592",
+        "value": 14592
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219776,
+    "instruction_va": 4219786,
+    "destination": 4388068,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 7392",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "7392",
+        "value": 7392
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219808,
+    "instruction_va": 4219818,
+    "destination": 4388064,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 6976",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "6976",
+        "value": 6976
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219840,
+    "instruction_va": 4219850,
+    "destination": 4388060,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 7648",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "7648",
+        "value": 7648
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219872,
+    "instruction_va": 4219882,
+    "destination": 4388056,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 3008",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "3008",
+        "value": 3008
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219904,
+    "instruction_va": 4219914,
+    "destination": 4388052,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 7168",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "7168",
+        "value": 7168
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219936,
+    "instruction_va": 4219946,
+    "destination": 4388048,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 7328",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "7328",
+        "value": 7328
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4219968,
+    "instruction_va": 4219978,
+    "destination": 4388044,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 7280",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "7280",
+        "value": 7280
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220000,
+    "instruction_va": 4220010,
+    "destination": 4388040,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 7360",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "7360",
+        "value": 7360
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220032,
+    "instruction_va": 4220042,
+    "destination": 4388036,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 6400",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "6400",
+        "value": 6400
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220064,
+    "instruction_va": 4220074,
+    "destination": 4388032,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 0x2000",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "0x2000",
+        "value": 8192
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220096,
+    "instruction_va": 4220106,
+    "destination": 4388028,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 5920",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "5920",
+        "value": 5920
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220128,
+    "instruction_va": 4220138,
+    "destination": 4388024,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 7472",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "7472",
+        "value": 7472
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220160,
+    "instruction_va": 4220170,
+    "destination": 4388020,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 6080",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "6080",
+        "value": 6080
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220192,
+    "instruction_va": 4220202,
+    "destination": 4388016,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 7936",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "7936",
+        "value": 7936
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220224,
+    "instruction_va": 4220234,
+    "destination": 4388012,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 7536",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "7536",
+        "value": 7536
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220256,
+    "instruction_va": 4220266,
+    "destination": 4388008,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 8096",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "8096",
+        "value": 8096
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220288,
+    "instruction_va": 4220298,
+    "destination": 4388004,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 8064",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "8064",
+        "value": 8064
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220320,
+    "instruction_va": 4220330,
+    "destination": 4388000,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 6272",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "6272",
+        "value": 6272
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220352,
+    "instruction_va": 4220362,
+    "destination": 4387996,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 16176",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "16176",
+        "value": 16176
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220384,
+    "instruction_va": 4220394,
+    "destination": 4387992,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 8448",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "8448",
+        "value": 8448
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220416,
+    "instruction_va": 4220426,
+    "destination": 4387988,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 8560",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "8560",
+        "value": 8560
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220448,
+    "instruction_va": 4220458,
+    "destination": 4387984,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 13256",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "13256",
+        "value": 13256
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220480,
+    "instruction_va": 4220490,
+    "destination": 4387980,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 8800",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "8800",
+        "value": 8800
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220512,
+    "instruction_va": 4220522,
+    "destination": 4387976,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 23616",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "23616",
+        "value": 23616
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220544,
+    "instruction_va": 4220554,
+    "destination": 4387972,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 9344",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "9344",
+        "value": 9344
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220576,
+    "instruction_va": 4220586,
+    "destination": 4387968,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 9792",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "9792",
+        "value": 9792
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220608,
+    "instruction_va": 4220618,
+    "destination": 4387964,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 9776",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "9776",
+        "value": 9776
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220640,
+    "instruction_va": 4220650,
+    "destination": 4387960,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 9384",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "9384",
+        "value": 9384
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220672,
+    "instruction_va": 4220682,
+    "destination": 4387956,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 3136",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "3136",
+        "value": 3136
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220704,
+    "instruction_va": 4220714,
+    "destination": 4387952,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 9824",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "9824",
+        "value": 9824
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220736,
+    "instruction_va": 4220746,
+    "destination": 4387948,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 9552",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "9552",
+        "value": 9552
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220768,
+    "instruction_va": 4220778,
+    "destination": 4387944,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 240",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "240",
+        "value": 240
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220800,
+    "instruction_va": 4220810,
+    "destination": 4387940,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 13824",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "13824",
+        "value": 13824
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220832,
+    "instruction_va": 4220842,
+    "destination": 4387936,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 512",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "512",
+        "value": 512
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220864,
+    "instruction_va": 4220874,
+    "destination": 4387932,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 11176",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "11176",
+        "value": 11176
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220896,
+    "instruction_va": 4220906,
+    "destination": 4387928,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 15456",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "15456",
+        "value": 15456
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220928,
+    "instruction_va": 4220938,
+    "destination": 4387924,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 10240",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "10240",
+        "value": 10240
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220960,
+    "instruction_va": 4220970,
+    "destination": 4387920,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 10448",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "10448",
+        "value": 10448
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4220992,
+    "instruction_va": 4221002,
+    "destination": 4387916,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 9936",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "9936",
+        "value": 9936
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221024,
+    "instruction_va": 4221034,
+    "destination": 4387912,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 10848",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "10848",
+        "value": 10848
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221056,
+    "instruction_va": 4221066,
+    "destination": 4387908,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 15832",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "15832",
+        "value": 15832
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221088,
+    "instruction_va": 4221098,
+    "destination": 4387904,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 10496",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "10496",
+        "value": 10496
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221120,
+    "instruction_va": 4221130,
+    "destination": 4387900,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 6144",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "6144",
+        "value": 6144
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221152,
+    "instruction_va": 4221162,
+    "destination": 4387896,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 10752",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "10752",
+        "value": 10752
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221184,
+    "instruction_va": 4221194,
+    "destination": 4387892,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 14768",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "14768",
+        "value": 14768
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221216,
+    "instruction_va": 4221226,
+    "destination": 4387888,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 8320",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "8320",
+        "value": 8320
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221248,
+    "instruction_va": 4221258,
+    "destination": 4387884,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 14736",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "14736",
+        "value": 14736
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221280,
+    "instruction_va": 4221290,
+    "destination": 4387880,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 7424",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "7424",
+        "value": 7424
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221312,
+    "instruction_va": 4221322,
+    "destination": 4387876,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 15616",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "15616",
+        "value": 15616
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221344,
+    "instruction_va": 4221354,
+    "destination": 4387872,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 15760",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "15760",
+        "value": 15760
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221376,
+    "instruction_va": 4221386,
+    "destination": 4387868,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 320",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "320",
+        "value": 320
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221408,
+    "instruction_va": 4221418,
+    "destination": 4387864,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 13488",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "13488",
+        "value": 13488
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221440,
+    "instruction_va": 4221450,
+    "destination": 4387860,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 11264",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "11264",
+        "value": 11264
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221472,
+    "instruction_va": 4221482,
+    "destination": 4387856,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 16120",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "16120",
+        "value": 16120
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221504,
+    "instruction_va": 4221514,
+    "destination": 4387852,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 9960",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "9960",
+        "value": 9960
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221536,
+    "instruction_va": 4221546,
+    "destination": 4387848,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 12912",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "12912",
+        "value": 12912
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221568,
+    "instruction_va": 4221578,
+    "destination": 4387844,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 10944",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "10944",
+        "value": 10944
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221600,
+    "instruction_va": 4221610,
+    "destination": 4387840,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 15312",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "15312",
+        "value": 15312
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221632,
+    "instruction_va": 4221642,
+    "destination": 4387836,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 15352",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "15352",
+        "value": 15352
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221664,
+    "instruction_va": 4221674,
+    "destination": 4387832,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 12264",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "12264",
+        "value": 12264
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221696,
+    "instruction_va": 4221706,
+    "destination": 4387828,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 1248",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "1248",
+        "value": 1248
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221728,
+    "instruction_va": 4221738,
+    "destination": 4387824,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 1264",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "1264",
+        "value": 1264
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221760,
+    "instruction_va": 4221770,
+    "destination": 4387820,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 13312",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "13312",
+        "value": 13312
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221792,
+    "instruction_va": 4221802,
+    "destination": 4387816,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 11776",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "11776",
+        "value": 11776
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221824,
+    "instruction_va": 4221834,
+    "destination": 4387812,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 12288",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "12288",
+        "value": 12288
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221856,
+    "instruction_va": 4221866,
+    "destination": 4387808,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 12384",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "12384",
+        "value": 12384
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221888,
+    "instruction_va": 4221898,
+    "destination": 4387804,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 12200",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "12200",
+        "value": 12200
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221920,
+    "instruction_va": 4221930,
+    "destination": 4387800,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 23808",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "23808",
+        "value": 23808
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221952,
+    "instruction_va": 4221962,
+    "destination": 4387796,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 12432",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "12432",
+        "value": 12432
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4221984,
+    "instruction_va": 4221994,
+    "destination": 4387792,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 13568",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "13568",
+        "value": 13568
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222016,
+    "instruction_va": 4222026,
+    "destination": 4387788,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 11744",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "11744",
+        "value": 11744
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222048,
+    "instruction_va": 4222058,
+    "destination": 4387784,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 8704",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "8704",
+        "value": 8704
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222080,
+    "instruction_va": 4222090,
+    "destination": 4387780,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 14284",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "14284",
+        "value": 14284
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222112,
+    "instruction_va": 4222122,
+    "destination": 4387776,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 8752",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "8752",
+        "value": 8752
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222144,
+    "instruction_va": 4222154,
+    "destination": 4387772,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 13648",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "13648",
+        "value": 13648
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222176,
+    "instruction_va": 4222186,
+    "destination": 4387768,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 12944",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "12944",
+        "value": 12944
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222208,
+    "instruction_va": 4222218,
+    "destination": 4387764,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 13056",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "13056",
+        "value": 13056
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222240,
+    "instruction_va": 4222250,
+    "destination": 4387760,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 13744",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "13744",
+        "value": 13744
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222272,
+    "instruction_va": 4222282,
+    "destination": 4387756,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 12800",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "12800",
+        "value": 12800
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222304,
+    "instruction_va": 4222314,
+    "destination": 4387752,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 14060",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "14060",
+        "value": 14060
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222336,
+    "instruction_va": 4222346,
+    "destination": 4387748,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 12880",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "12880",
+        "value": 12880
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222368,
+    "instruction_va": 4222378,
+    "destination": 4387744,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 6096",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "6096",
+        "value": 6096
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222400,
+    "instruction_va": 4222410,
+    "destination": 4387740,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 11208",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "11208",
+        "value": 11208
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222432,
+    "instruction_va": 4222442,
+    "destination": 4387736,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 14248",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "14248",
+        "value": 14248
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222464,
+    "instruction_va": 4222474,
+    "destination": 4387732,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 480",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "480",
+        "value": 480
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222496,
+    "instruction_va": 4222506,
+    "destination": 4387728,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 14124",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "14124",
+        "value": 14124
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222528,
+    "instruction_va": 4222538,
+    "destination": 4387724,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 14812",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "14812",
+        "value": 14812
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222560,
+    "instruction_va": 4222570,
+    "destination": 4387720,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 13584",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "13584",
+        "value": 13584
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222592,
+    "instruction_va": 4222602,
+    "destination": 4387716,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 19968",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "19968",
+        "value": 19968
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222624,
+    "instruction_va": 4222634,
+    "destination": 4387712,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 27872",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "27872",
+        "value": 27872
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222656,
+    "instruction_va": 4222666,
+    "destination": 4387708,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 1512",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "1512",
+        "value": 1512
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222688,
+    "instruction_va": 4222698,
+    "destination": 4387704,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 14848",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "14848",
+        "value": 14848
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222720,
+    "instruction_va": 4222730,
+    "destination": 4387700,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 15104",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "15104",
+        "value": 15104
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222752,
+    "instruction_va": 4222762,
+    "destination": 4387696,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 9856",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "9856",
+        "value": 9856
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222784,
+    "instruction_va": 4222794,
+    "destination": 4387692,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 12680",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "12680",
+        "value": 12680
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222816,
+    "instruction_va": 4222826,
+    "destination": 4387688,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 10728",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "10728",
+        "value": 10728
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222848,
+    "instruction_va": 4222858,
+    "destination": 4387684,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 19626",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "19626",
+        "value": 19626
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222880,
+    "instruction_va": 4222890,
+    "destination": 4387680,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 11696",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "11696",
+        "value": 11696
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222912,
+    "instruction_va": 4222922,
+    "destination": 4387676,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 13615",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "13615",
+        "value": 13615
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222944,
+    "instruction_va": 4222954,
+    "destination": 4387672,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 27584",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "27584",
+        "value": 27584
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4222976,
+    "instruction_va": 4222986,
+    "destination": 4387668,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 12520",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "12520",
+        "value": 12520
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223008,
+    "instruction_va": 4223018,
+    "destination": 4387664,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 13952",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "13952",
+        "value": 13952
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223040,
+    "instruction_va": 4223050,
+    "destination": 4387660,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 19584",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "19584",
+        "value": 19584
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223072,
+    "instruction_va": 4223082,
+    "destination": 4387656,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 19712",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "19712",
+        "value": 19712
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223104,
+    "instruction_va": 4223114,
+    "destination": 4387652,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 20480",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "20480",
+        "value": 20480
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223136,
+    "instruction_va": 4223146,
+    "destination": 4387648,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 13904",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "13904",
+        "value": 13904
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223168,
+    "instruction_va": 4223178,
+    "destination": 4387644,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 20224",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "20224",
+        "value": 20224
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223200,
+    "instruction_va": 4223210,
+    "destination": 4387640,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 21680",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "21680",
+        "value": 21680
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223232,
+    "instruction_va": 4223242,
+    "destination": 4387636,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 20320",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "20320",
+        "value": 20320
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223264,
+    "instruction_va": 4223274,
+    "destination": 4387632,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 20416",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "20416",
+        "value": 20416
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223296,
+    "instruction_va": 4223306,
+    "destination": 4387528,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 14008",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "14008",
+        "value": 14008
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223328,
+    "instruction_va": 4223338,
+    "destination": 4387524,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 21504",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "21504",
+        "value": 21504
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223360,
+    "instruction_va": 4223370,
+    "destination": 4387520,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 23728",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "23728",
+        "value": 23728
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223392,
+    "instruction_va": 4223402,
+    "destination": 4387516,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 20456",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "20456",
+        "value": 20456
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223424,
+    "instruction_va": 4223434,
+    "destination": 4387512,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 21424",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "21424",
+        "value": 21424
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223456,
+    "instruction_va": 4223466,
+    "destination": 4387508,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 21760",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "21760",
+        "value": 21760
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223488,
+    "instruction_va": 4223498,
+    "destination": 4387504,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 8592",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "8592",
+        "value": 8592
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223520,
+    "instruction_va": 4223530,
+    "destination": 4387500,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 21952",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "21952",
+        "value": 21952
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223552,
+    "instruction_va": 4223562,
+    "destination": 4387496,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 21456",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "21456",
+        "value": 21456
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223584,
+    "instruction_va": 4223594,
+    "destination": 4387492,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 21984",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "21984",
+        "value": 21984
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223616,
+    "instruction_va": 4223626,
+    "destination": 4387488,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 22016",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "22016",
+        "value": 22016
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223648,
+    "instruction_va": 4223658,
+    "destination": 4387484,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 8144",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "8144",
+        "value": 8144
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223680,
+    "instruction_va": 4223690,
+    "destination": 4387480,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 22224",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "22224",
+        "value": 22224
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223712,
+    "instruction_va": 4223722,
+    "destination": 4387476,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 22272",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "22272",
+        "value": 22272
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223744,
+    "instruction_va": 4223754,
+    "destination": 4387472,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 22296",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "22296",
+        "value": 22296
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223776,
+    "instruction_va": 4223786,
+    "destination": 4387468,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 22320",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "22320",
+        "value": 22320
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223808,
+    "instruction_va": 4223818,
+    "destination": 4387464,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 22176",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "22176",
+        "value": 22176
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223840,
+    "instruction_va": 4223850,
+    "destination": 4387460,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 22200",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "22200",
+        "value": 22200
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223872,
+    "instruction_va": 4223882,
+    "destination": 4387456,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 22344",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "22344",
+        "value": 22344
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223904,
+    "instruction_va": 4223914,
+    "destination": 4387452,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 21872",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "21872",
+        "value": 21872
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223936,
+    "instruction_va": 4223946,
+    "destination": 4387448,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 22528",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "22528",
+        "value": 22528
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4223968,
+    "instruction_va": 4223978,
+    "destination": 4387444,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 22784",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "22784",
+        "value": 22784
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224000,
+    "instruction_va": 4224010,
+    "destination": 4387440,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 26976",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "26976",
+        "value": 26976
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224032,
+    "instruction_va": 4224042,
+    "destination": 4387436,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 22976",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "22976",
+        "value": 22976
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224064,
+    "instruction_va": 4224074,
+    "destination": 4387432,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 23040",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "23040",
+        "value": 23040
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224096,
+    "instruction_va": 4224106,
+    "destination": 4387428,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 23104",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "23104",
+        "value": 23104
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224128,
+    "instruction_va": 4224138,
+    "destination": 4387424,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 23392",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "23392",
+        "value": 23392
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224160,
+    "instruction_va": 4224170,
+    "destination": 4387420,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 23584",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "23584",
+        "value": 23584
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224192,
+    "instruction_va": 4224202,
+    "destination": 4387416,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 24064",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "24064",
+        "value": 24064
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224224,
+    "instruction_va": 4224234,
+    "destination": 4387412,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 26064",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "26064",
+        "value": 26064
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224256,
+    "instruction_va": 4224266,
+    "destination": 4387408,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 42240",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "42240",
+        "value": 42240
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224288,
+    "instruction_va": 4224298,
+    "destination": 4387404,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 9648",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "9648",
+        "value": 9648
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224320,
+    "instruction_va": 4224330,
+    "destination": 4387400,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 24576",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "24576",
+        "value": 24576
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224352,
+    "instruction_va": 4224362,
+    "destination": 4387396,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 12544",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "12544",
+        "value": 12544
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224384,
+    "instruction_va": 4224394,
+    "destination": 4387392,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 21376",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "21376",
+        "value": 21376
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224416,
+    "instruction_va": 4224426,
+    "destination": 4387388,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 26744",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "26744",
+        "value": 26744
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224448,
+    "instruction_va": 4224458,
+    "destination": 4387384,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 29184",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "29184",
+        "value": 29184
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224480,
+    "instruction_va": 4224490,
+    "destination": 4387380,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 29312",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "29312",
+        "value": 29312
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224512,
+    "instruction_va": 4224522,
+    "destination": 4387376,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 25376",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "25376",
+        "value": 25376
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224544,
+    "instruction_va": 4224554,
+    "destination": 4387372,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 25440",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "25440",
+        "value": 25440
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224576,
+    "instruction_va": 4224586,
+    "destination": 4387368,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 25840",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "25840",
+        "value": 25840
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224608,
+    "instruction_va": 4224618,
+    "destination": 4387364,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 25856",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "25856",
+        "value": 25856
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224640,
+    "instruction_va": 4224650,
+    "destination": 4387360,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 23840",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "23840",
+        "value": 23840
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224672,
+    "instruction_va": 4224682,
+    "destination": 4387356,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 27360",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "27360",
+        "value": 27360
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224704,
+    "instruction_va": 4224714,
+    "destination": 4387352,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 27648",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "27648",
+        "value": 27648
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224736,
+    "instruction_va": 4224746,
+    "destination": 4387348,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 27328",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "27328",
+        "value": 27328
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224768,
+    "instruction_va": 4224778,
+    "destination": 4387344,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 27904",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "27904",
+        "value": 27904
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224800,
+    "instruction_va": 4224810,
+    "destination": 4387340,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 20192",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "20192",
+        "value": 20192
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224832,
+    "instruction_va": 4224842,
+    "destination": 4387336,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 28560",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "28560",
+        "value": 28560
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224864,
+    "instruction_va": 4224874,
+    "destination": 4387332,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 27760",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "27760",
+        "value": 27760
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224896,
+    "instruction_va": 4224906,
+    "destination": 4387328,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 27808",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "27808",
+        "value": 27808
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224928,
+    "instruction_va": 4224938,
+    "destination": 4387324,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 25808",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "25808",
+        "value": 25808
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224960,
+    "instruction_va": 4224970,
+    "destination": 4387320,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 27840",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "27840",
+        "value": 27840
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4224992,
+    "instruction_va": 4225002,
+    "destination": 4387316,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 28640",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "28640",
+        "value": 28640
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225024,
+    "instruction_va": 4225034,
+    "destination": 4387312,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 28672",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "28672",
+        "value": 28672
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225056,
+    "instruction_va": 4225066,
+    "destination": 4387308,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 28704",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "28704",
+        "value": 28704
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225088,
+    "instruction_va": 4225098,
+    "destination": 4387304,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 28736",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "28736",
+        "value": 28736
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225120,
+    "instruction_va": 4225130,
+    "destination": 4387300,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 28800",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "28800",
+        "value": 28800
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225152,
+    "instruction_va": 4225162,
+    "destination": 4387296,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 25888",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "25888",
+        "value": 25888
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225184,
+    "instruction_va": 4225194,
+    "destination": 4387292,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 26112",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "26112",
+        "value": 26112
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225216,
+    "instruction_va": 4225226,
+    "destination": 4387288,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 25920",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "25920",
+        "value": 25920
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225248,
+    "instruction_va": 4225258,
+    "destination": 4387284,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 23872",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "23872",
+        "value": 23872
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225280,
+    "instruction_va": 4225290,
+    "destination": 4387280,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 26032",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "26032",
+        "value": 26032
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225312,
+    "instruction_va": 4225322,
+    "destination": 4387276,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 24544",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "24544",
+        "value": 24544
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225344,
+    "instruction_va": 4225354,
+    "destination": 4387272,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 23648",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "23648",
+        "value": 23648
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225376,
+    "instruction_va": 4225386,
+    "destination": 4387268,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 6912",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "6912",
+        "value": 6912
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225408,
+    "instruction_va": 4225418,
+    "destination": 4387264,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 5888",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "5888",
+        "value": 5888
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225440,
+    "instruction_va": 4225450,
+    "destination": 4387260,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 5696",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "5696",
+        "value": 5696
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225472,
+    "instruction_va": 4225482,
+    "destination": 4387256,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 15872",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "15872",
+        "value": 15872
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225504,
+    "instruction_va": 4225514,
+    "destination": 4387252,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 16000",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "16000",
+        "value": 16000
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225536,
+    "instruction_va": 4225546,
+    "destination": 4387248,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 27136",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "27136",
+        "value": 27136
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225568,
+    "instruction_va": 4225578,
+    "destination": 4387244,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 12224",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "12224",
+        "value": 12224
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225600,
+    "instruction_va": 4225610,
+    "destination": 4387240,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 16032",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "16032",
+        "value": 16032
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225632,
+    "instruction_va": 4225642,
+    "destination": 4387236,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 10908",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "10908",
+        "value": 10908
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225664,
+    "instruction_va": 4225674,
+    "destination": 4387232,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 16272",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "16272",
+        "value": 16272
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225696,
+    "instruction_va": 4225706,
+    "destination": 4387228,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 16352",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "16352",
+        "value": 16352
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225728,
+    "instruction_va": 4225738,
+    "destination": 4387224,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 27392",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "27392",
+        "value": 27392
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225760,
+    "instruction_va": 4225770,
+    "destination": 4387220,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 2024",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "2024",
+        "value": 2024
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225792,
+    "instruction_va": 4225802,
+    "destination": 4387216,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 31488",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "31488",
+        "value": 31488
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225824,
+    "instruction_va": 4225834,
+    "destination": 4387212,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 8688",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "8688",
+        "value": 8688
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225856,
+    "instruction_va": 4225866,
+    "destination": 4387208,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 19776",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "19776",
+        "value": 19776
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225888,
+    "instruction_va": 4225898,
+    "destination": 4387204,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 22768",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "22768",
+        "value": 22768
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225920,
+    "instruction_va": 4225930,
+    "destination": 4387200,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 29440",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "29440",
+        "value": 29440
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225952,
+    "instruction_va": 4225962,
+    "destination": 4387196,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 28992",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "28992",
+        "value": 28992
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4225984,
+    "instruction_va": 4225994,
+    "destination": 4387192,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 29904",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "29904",
+        "value": 29904
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226016,
+    "instruction_va": 4226026,
+    "destination": 4387188,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 29952",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "29952",
+        "value": 29952
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226048,
+    "instruction_va": 4226058,
+    "destination": 4387184,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 30208",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "30208",
+        "value": 30208
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226080,
+    "instruction_va": 4226090,
+    "destination": 4387168,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 25792",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "25792",
+        "value": 25792
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226112,
+    "instruction_va": 4226122,
+    "destination": 4387164,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 30128",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "30128",
+        "value": 30128
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226144,
+    "instruction_va": 4226154,
+    "destination": 4387160,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 22384",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "22384",
+        "value": 22384
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226176,
+    "instruction_va": 4226186,
+    "destination": 4387156,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 19840",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "19840",
+        "value": 19840
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226208,
+    "instruction_va": 4226218,
+    "destination": 4387152,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 31144",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "31144",
+        "value": 31144
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226240,
+    "instruction_va": 4226250,
+    "destination": 4387148,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 20144",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "20144",
+        "value": 20144
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226272,
+    "instruction_va": 4226282,
+    "destination": 4387144,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 30464",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "30464",
+        "value": 30464
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226304,
+    "instruction_va": 4226314,
+    "destination": 4387140,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 20032",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "20032",
+        "value": 20032
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226336,
+    "instruction_va": 4226346,
+    "destination": 4387136,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 30400",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "30400",
+        "value": 30400
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226368,
+    "instruction_va": 4226378,
+    "destination": 4387132,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 30520",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "30520",
+        "value": 30520
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226400,
+    "instruction_va": 4226410,
+    "destination": 4387128,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 20128",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "20128",
+        "value": 20128
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226432,
+    "instruction_va": 4226442,
+    "destination": 4387124,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 30720",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "30720",
+        "value": 30720
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226464,
+    "instruction_va": 4226474,
+    "destination": 4387120,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 30672",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "30672",
+        "value": 30672
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226496,
+    "instruction_va": 4226506,
+    "destination": 4387116,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 30784",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "30784",
+        "value": 30784
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226528,
+    "instruction_va": 4226538,
+    "destination": 4387112,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 31040",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "31040",
+        "value": 31040
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226560,
+    "instruction_va": 4226570,
+    "destination": 4387108,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 31232",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "31232",
+        "value": 31232
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226592,
+    "instruction_va": 4226602,
+    "destination": 4387104,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 1792",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "1792",
+        "value": 1792
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226624,
+    "instruction_va": 4226634,
+    "destination": 4387100,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 1840",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "1840",
+        "value": 1840
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226656,
+    "instruction_va": 4226666,
+    "destination": 4387096,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 400",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "400",
+        "value": 400
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226688,
+    "instruction_va": 4226698,
+    "destination": 4387092,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 24512",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "24512",
+        "value": 24512
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226720,
+    "instruction_va": 4226730,
+    "destination": 4387088,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 14512",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "14512",
+        "value": 14512
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226752,
+    "instruction_va": 4226762,
+    "destination": 4387084,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 31600",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "31600",
+        "value": 31600
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226784,
+    "instruction_va": 4226794,
+    "destination": 4387080,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 31456",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "31456",
+        "value": 31456
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226816,
+    "instruction_va": 4226826,
+    "destination": 4387076,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 31648",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "31648",
+        "value": 31648
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226848,
+    "instruction_va": 4226858,
+    "destination": 4387072,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 31696",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "31696",
+        "value": 31696
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226880,
+    "instruction_va": 4226890,
+    "destination": 4387068,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 31760",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "31760",
+        "value": 31760
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226912,
+    "instruction_va": 4226922,
+    "destination": 4387064,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 31776",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "31776",
+        "value": 31776
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226944,
+    "instruction_va": 4226954,
+    "destination": 4387060,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 31944",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "31944",
+        "value": 31944
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4226976,
+    "instruction_va": 4226986,
+    "destination": 4387056,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 32048",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "32048",
+        "value": 32048
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227008,
+    "instruction_va": 4227018,
+    "destination": 4387052,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 32088",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "32088",
+        "value": 32088
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227040,
+    "instruction_va": 4227050,
+    "destination": 4387048,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 32112",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "32112",
+        "value": 32112
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227072,
+    "instruction_va": 4227082,
+    "destination": 4387044,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 34816",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "34816",
+        "value": 34816
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227104,
+    "instruction_va": 4227114,
+    "destination": 4387040,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 32336",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "32336",
+        "value": 32336
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227136,
+    "instruction_va": 4227146,
+    "destination": 4387036,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 32224",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "32224",
+        "value": 32224
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227168,
+    "instruction_va": 4227178,
+    "destination": 4387032,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 32432",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "32432",
+        "value": 32432
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227200,
+    "instruction_va": 4227210,
+    "destination": 4387028,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 32512",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "32512",
+        "value": 32512
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227232,
+    "instruction_va": 4227242,
+    "destination": 4387024,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 5960",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "5960",
+        "value": 5960
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227264,
+    "instruction_va": 4227274,
+    "destination": 4387020,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 2656",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "2656",
+        "value": 2656
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227296,
+    "instruction_va": 4227306,
+    "destination": 4387016,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 0x8000",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "0x8000",
+        "value": 32768
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227328,
+    "instruction_va": 4227338,
+    "destination": 4387012,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 32904",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "32904",
+        "value": 32904
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227360,
+    "instruction_va": 4227370,
+    "destination": 4387008,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 33104",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "33104",
+        "value": 33104
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227392,
+    "instruction_va": 4227402,
+    "destination": 4387004,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 33248",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "33248",
+        "value": 33248
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227424,
+    "instruction_va": 4227434,
+    "destination": 4387000,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 33280",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "33280",
+        "value": 33280
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227456,
+    "instruction_va": 4227466,
+    "destination": 4386996,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 33424",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "33424",
+        "value": 33424
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227488,
+    "instruction_va": 4227498,
+    "destination": 4386992,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 33456",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "33456",
+        "value": 33456
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227520,
+    "instruction_va": 4227530,
+    "destination": 4386988,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 33568",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "33568",
+        "value": 33568
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227552,
+    "instruction_va": 4227562,
+    "destination": 4386984,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 34384",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "34384",
+        "value": 34384
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227584,
+    "instruction_va": 4227594,
+    "destination": 4386980,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 33792",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "33792",
+        "value": 33792
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227616,
+    "instruction_va": 4227626,
+    "destination": 4386976,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 33856",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "33856",
+        "value": 33856
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227648,
+    "instruction_va": 4227658,
+    "destination": 4386972,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 34096",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "34096",
+        "value": 34096
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227680,
+    "instruction_va": 4227690,
+    "destination": 4386968,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 34432",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "34432",
+        "value": 34432
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227712,
+    "instruction_va": 4227722,
+    "destination": 4386964,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 34752",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "34752",
+        "value": 34752
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227744,
+    "instruction_va": 4227754,
+    "destination": 4386960,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 38912",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "38912",
+        "value": 38912
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227776,
+    "instruction_va": 4227786,
+    "destination": 4386956,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 35072",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "35072",
+        "value": 35072
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227808,
+    "instruction_va": 4227818,
+    "destination": 4386952,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 37728",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "37728",
+        "value": 37728
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227840,
+    "instruction_va": 4227850,
+    "destination": 4386948,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 33632",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "33632",
+        "value": 33632
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227872,
+    "instruction_va": 4227882,
+    "destination": 4386944,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 36864",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "36864",
+        "value": 36864
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227904,
+    "instruction_va": 4227914,
+    "destination": 4386940,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 37136",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "37136",
+        "value": 37136
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227936,
+    "instruction_va": 4227946,
+    "destination": 4386936,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 37376",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "37376",
+        "value": 37376
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4227968,
+    "instruction_va": 4227978,
+    "destination": 4386932,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 37536",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "37536",
+        "value": 37536
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228000,
+    "instruction_va": 4228010,
+    "destination": 4386928,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 37888",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "37888",
+        "value": 37888
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228032,
+    "instruction_va": 4228042,
+    "destination": 4386924,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 14336",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "14336",
+        "value": 14336
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228064,
+    "instruction_va": 4228074,
+    "destination": 4386920,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 2752",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "2752",
+        "value": 2752
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228096,
+    "instruction_va": 4228106,
+    "destination": 4386916,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 39936",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "39936",
+        "value": 39936
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228128,
+    "instruction_va": 4228138,
+    "destination": 4386912,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 39984",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "39984",
+        "value": 39984
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228160,
+    "instruction_va": 4228170,
+    "destination": 4386908,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 40112",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "40112",
+        "value": 40112
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228192,
+    "instruction_va": 4228202,
+    "destination": 4386904,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 40960",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "40960",
+        "value": 40960
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228224,
+    "instruction_va": 4228234,
+    "destination": 4386900,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 41824",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "41824",
+        "value": 41824
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228256,
+    "instruction_va": 4228266,
+    "destination": 4386896,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 42752",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "42752",
+        "value": 42752
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228288,
+    "instruction_va": 4228298,
+    "destination": 4386892,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 40704",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "40704",
+        "value": 40704
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228320,
+    "instruction_va": 4228330,
+    "destination": 4386888,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 42928",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "42928",
+        "value": 42928
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228352,
+    "instruction_va": 4228362,
+    "destination": 4386884,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 9680",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "9680",
+        "value": 9680
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228384,
+    "instruction_va": 4228394,
+    "destination": 4386880,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 9728",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "9728",
+        "value": 9728
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228416,
+    "instruction_va": 4228426,
+    "destination": 4386876,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 39312",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "39312",
+        "value": 39312
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228448,
+    "instruction_va": 4228458,
+    "destination": 4386872,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 39504",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "39504",
+        "value": 39504
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228480,
+    "instruction_va": 4228490,
+    "destination": 4386868,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 39904",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "39904",
+        "value": 39904
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228512,
+    "instruction_va": 4228522,
+    "destination": 4386864,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 13776",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "13776",
+        "value": 13776
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228544,
+    "instruction_va": 4228554,
+    "destination": 4386860,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 9216",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "9216",
+        "value": 9216
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228576,
+    "instruction_va": 4228586,
+    "destination": 4386856,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 42496",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "42496",
+        "value": 42496
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228608,
+    "instruction_va": 4228618,
+    "destination": 4386852,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 42640",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "42640",
+        "value": 42640
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228640,
+    "instruction_va": 4228650,
+    "destination": 4386848,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 43200",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "43200",
+        "value": 43200
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228672,
+    "instruction_va": 4228682,
+    "destination": 4386844,
+    "size": 4,
+    "value": {
+      "op": "add",
+      "text": "(char *)lpAddress + 25600",
+      "x": {
+        "op": "cast",
+        "text": "(char *)lpAddress",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "size": 4
+      },
+      "y": {
+        "op": "num",
+        "text": "25600",
+        "value": 25600
+      },
+      "stride": 1
+    }
+  },
+  {
+    "function_va": 4228704,
+    "instruction_va": 4228714,
+    "destination": 4386840,
+    "size": 4,
+    "value": {
+      "op": "cast",
+      "text": "(LPVOID)(lpAddress + 43008)",
+      "x": {
+        "op": "add",
+        "text": "lpAddress + 43008",
+        "x": {
+          "op": "obj",
+          "text": "lpAddress",
+          "va": 4325456,
+          "size": 4,
+          "array": false
+        },
+        "y": {
+          "op": "num",
+          "text": "43008",
+          "value": 43008
+        }
+      },
+      "size": 4
+    }
+  },
+  {
+    "function_va": 4233280,
+    "instruction_va": 4233941,
+    "destination": 4388312,
+    "size": 4,
+    "value": {
+      "op": "obj",
+      "text": "dword_41FB80",
+      "va": 4324224,
+      "size": 4,
+      "array": false
+    }
+  },
+  {
+    "function_va": 4233280,
+    "instruction_va": 4233946,
+    "destination": 4388316,
+    "size": 4,
+    "value": {
+      "op": "obj",
+      "text": "dword_41FB84",
+      "va": 4324228,
+      "size": 4,
+      "array": false
+    }
+  },
+  {
+    "function_va": 4233280,
+    "instruction_va": 4233952,
+    "destination": 4388320,
+    "size": 4,
+    "value": {
+      "op": "cast",
+      "text": "(int)&unk_41FB88",
+      "x": {
+        "op": "ref",
+        "text": "&unk_41FB88",
+        "x": {
+          "op": "obj",
+          "text": "unk_41FB88",
+          "va": 4324232,
+          "size": 18446744073709551615,
+          "array": false
+        },
+        "size": 4
+      },
+      "size": 4
+    }
+  },
+  {
+    "function_va": 4233280,
+    "instruction_va": 4234022,
+    "destination": 4388328,
+    "size": 4,
+    "value": {
+      "op": "obj",
+      "text": "dword_41FBE8",
+      "va": 4324328,
+      "size": 4,
+      "array": false
+    }
+  },
+  {
+    "function_va": 4233280,
+    "instruction_va": 4234028,
+    "destination": 4388332,
+    "size": 4,
+    "value": {
+      "op": "obj",
+      "text": "dword_41FBEC",
+      "va": 4324332,
+      "size": 4,
+      "array": false
+    }
+  },
+  {
+    "function_va": 4233280,
+    "instruction_va": 4234033,
+    "destination": 4388336,
+    "size": 4,
+    "value": {
+      "op": "cast",
+      "text": "(int)&unk_41FBF0",
+      "x": {
+        "op": "ref",
+        "text": "&unk_41FBF0",
+        "x": {
+          "op": "obj",
+          "text": "unk_41FBF0",
+          "va": 4324336,
+          "size": 18446744073709551615,
+          "array": false
+        },
+        "size": 4
+      },
+      "size": 4
+    }
+  },
+  {
+    "function_va": 4233280,
+    "instruction_va": 4234207,
+    "destination": 4388344,
+    "size": 4,
+    "value": {
+      "op": "obj",
+      "text": "dword_41FC28",
+      "va": 4324392,
+      "size": 4,
+      "array": false
+    }
+  },
+  {
+    "function_va": 4233280,
+    "instruction_va": 4234219,
+    "destination": 4388348,
+    "size": 4,
+    "value": {
+      "op": "obj",
+      "text": "dword_41FC2C",
+      "va": 4324396,
+      "size": 4,
+      "array": false
+    }
+  },
+  {
+    "function_va": 4233280,
+    "instruction_va": 4234225,
+    "destination": 4388360,
+    "size": 4,
+    "value": {
+      "op": "obj",
+      "text": "dword_41FC68",
+      "va": 4324456,
+      "size": 4,
+      "array": false
+    }
+  },
+  {
+    "function_va": 4233280,
+    "instruction_va": 4234230,
+    "destination": 4388364,
+    "size": 4,
+    "value": {
+      "op": "obj",
+      "text": "dword_41FC6C",
+      "va": 4324460,
+      "size": 4,
+      "array": false
+    }
+  },
+  {
+    "function_va": 4233280,
+    "instruction_va": 4234236,
+    "destination": 4388352,
+    "size": 4,
+    "value": {
+      "op": "cast",
+      "text": "(int)&unk_41FC30",
+      "x": {
+        "op": "ref",
+        "text": "&unk_41FC30",
+        "x": {
+          "op": "obj",
+          "text": "unk_41FC30",
+          "va": 4324400,
+          "size": 18446744073709551615,
+          "array": false
+        },
+        "size": 4
+      },
+      "size": 4
+    }
+  },
+  {
+    "function_va": 4233280,
+    "instruction_va": 4234246,
+    "destination": 4388368,
+    "size": 4,
+    "value": {
+      "op": "cast",
+      "text": "(int)&unk_41FC70",
+      "x": {
+        "op": "ref",
+        "text": "&unk_41FC70",
+        "x": {
+          "op": "obj",
+          "text": "unk_41FC70",
+          "va": 4324464,
+          "size": 18446744073709551615,
+          "array": false
+        },
+        "size": 4
+      },
+      "size": 4
+    }
+  },
+  {
+    "function_va": 4234768,
+    "instruction_va": 4235248,
+    "destination": 4325456,
+    "size": 4,
+    "value": {
+      "op": "ptr",
+      "text": "*(_DWORD *)(this + 96)",
+      "x": {
+        "op": "cast",
+        "text": "(_DWORD *)(this + 96)",
+        "x": {
+          "op": "add",
+          "text": "this + 96",
+          "x": {
+            "op": "var",
+            "text": "this",
+            "index": 0
+          },
+          "y": {
+            "op": "num",
+            "text": "96",
+            "value": 96
+          }
+        },
+        "size": 4
+      },
+      "size": 4
+    }
+  },
+  {
+    "function_va": 4234768,
+    "instruction_va": 4271263,
+    "destination": 4387172,
+    "size": 1,
+    "value": {
+      "op": "ptr",
+      "text": "*(_BYTE *)(this + 372)",
+      "x": {
+        "op": "cast",
+        "text": "(_BYTE *)(this + 372)",
+        "x": {
+          "op": "add",
+          "text": "this + 372",
+          "x": {
+            "op": "var",
+            "text": "this",
+            "index": 0
+          },
+          "y": {
+            "op": "num",
+            "text": "372",
+            "value": 372
+          }
+        },
+        "size": 4
+      },
+      "size": 1
+    }
+  },
+  {
+    "function_va": 4234768,
+    "instruction_va": 4271274,
+    "destination": 4387173,
+    "size": 1,
+    "value": {
+      "op": "ptr",
+      "text": "*(_BYTE *)(this + 376)",
+      "x": {
+        "op": "cast",
+        "text": "(_BYTE *)(this + 376)",
+        "x": {
+          "op": "add",
+          "text": "this + 376",
+          "x": {
+            "op": "var",
+            "text": "this",
+            "index": 0
+          },
+          "y": {
+            "op": "num",
+            "text": "376",
+            "value": 376
+          }
+        },
+        "size": 4
+      },
+      "size": 1
+    }
+  },
+  {
+    "function_va": 4234768,
+    "instruction_va": 4271286,
+    "destination": 4387174,
+    "size": 1,
+    "value": {
+      "op": "ptr",
+      "text": "*(_BYTE *)(this + 380)",
+      "x": {
+        "op": "cast",
+        "text": "(_BYTE *)(this + 380)",
+        "x": {
+          "op": "add",
+          "text": "this + 380",
+          "x": {
+            "op": "var",
+            "text": "this",
+            "index": 0
+          },
+          "y": {
+            "op": "num",
+            "text": "380",
+            "value": 380
+          }
+        },
+        "size": 4
+      },
+      "size": 1
+    }
+  },
+  {
+    "function_va": 4234768,
+    "instruction_va": 4271298,
+    "destination": 4387175,
+    "size": 1,
+    "value": {
+      "op": "ptr",
+      "text": "*(_BYTE *)(this + 384)",
+      "x": {
+        "op": "cast",
+        "text": "(_BYTE *)(this + 384)",
+        "x": {
+          "op": "add",
+          "text": "this + 384",
+          "x": {
+            "op": "var",
+            "text": "this",
+            "index": 0
+          },
+          "y": {
+            "op": "num",
+            "text": "384",
+            "value": 384
+          }
+        },
+        "size": 4
+      },
+      "size": 1
+    }
+  },
+  {
+    "function_va": 4234768,
+    "instruction_va": 4271309,
+    "destination": 4387176,
+    "size": 1,
+    "value": {
+      "op": "ptr",
+      "text": "*(_BYTE *)(this + 388)",
+      "x": {
+        "op": "cast",
+        "text": "(_BYTE *)(this + 388)",
+        "x": {
+          "op": "add",
+          "text": "this + 388",
+          "x": {
+            "op": "var",
+            "text": "this",
+            "index": 0
+          },
+          "y": {
+            "op": "num",
+            "text": "388",
+            "value": 388
+          }
+        },
+        "size": 4
+      },
+      "size": 1
+    }
+  },
+  {
+    "function_va": 4234768,
+    "instruction_va": 4271321,
+    "destination": 4387177,
+    "size": 1,
+    "value": {
+      "op": "ptr",
+      "text": "*(_BYTE *)(this + 392)",
+      "x": {
+        "op": "cast",
+        "text": "(_BYTE *)(this + 392)",
+        "x": {
+          "op": "add",
+          "text": "this + 392",
+          "x": {
+            "op": "var",
+            "text": "this",
+            "index": 0
+          },
+          "y": {
+            "op": "num",
+            "text": "392",
+            "value": 392
+          }
+        },
+        "size": 4
+      },
+      "size": 1
+    }
+  },
+  {
+    "function_va": 4234768,
+    "instruction_va": 4271333,
+    "destination": 4387178,
+    "size": 1,
+    "value": {
+      "op": "ptr",
+      "text": "*(_BYTE *)(this + 396)",
+      "x": {
+        "op": "cast",
+        "text": "(_BYTE *)(this + 396)",
+        "x": {
+          "op": "add",
+          "text": "this + 396",
+          "x": {
+            "op": "var",
+            "text": "this",
+            "index": 0
+          },
+          "y": {
+            "op": "num",
+            "text": "396",
+            "value": 396
+          }
+        },
+        "size": 4
+      },
+      "size": 1
+    }
+  },
+  {
+    "function_va": 4234768,
+    "instruction_va": 4271349,
+    "destination": 4387179,
+    "size": 1,
+    "value": {
+      "op": "ptr",
+      "text": "*(_BYTE *)(this + 400)",
+      "x": {
+        "op": "cast",
+        "text": "(_BYTE *)(this + 400)",
+        "x": {
+          "op": "add",
+          "text": "this + 400",
+          "x": {
+            "op": "var",
+            "text": "this",
+            "index": 0
+          },
+          "y": {
+            "op": "num",
+            "text": "400",
+            "value": 400
+          }
+        },
+        "size": 4
+      },
+      "size": 1
+    }
+  },
+  {
+    "function_va": 4234768,
+    "instruction_va": 4271363,
+    "destination": 4387180,
+    "size": 1,
+    "value": {
+      "op": "ptr",
+      "text": "*(_BYTE *)(this + 404)",
+      "x": {
+        "op": "cast",
+        "text": "(_BYTE *)(this + 404)",
+        "x": {
+          "op": "add",
+          "text": "this + 404",
+          "x": {
+            "op": "var",
+            "text": "this",
+            "index": 0
+          },
+          "y": {
+            "op": "num",
+            "text": "404",
+            "value": 404
+          }
+        },
+        "size": 4
+      },
+      "size": 1
+    }
+  },
+  {
+    "function_va": 4301824,
+    "instruction_va": 4301846,
+    "destination": 4382200,
+    "size": 4,
+    "value": {
+      "op": "cast",
+      "text": "(int)(this + 1905)",
+      "x": {
+        "op": "add",
+        "text": "this + 1905",
+        "x": {
+          "op": "var",
+          "text": "this",
+          "index": 0
+        },
+        "y": {
+          "op": "num",
+          "text": "1905",
+          "value": 1905
+        },
+        "stride": 4
+      },
+      "size": 4
+    }
+  },
+  {
+    "function_va": 4301824,
+    "instruction_va": 4301857,
+    "destination": 4382204,
+    "size": 4,
+    "value": {
+      "op": "cast",
+      "text": "(int)(this + 925)",
+      "x": {
+        "op": "add",
+        "text": "this + 925",
+        "x": {
+          "op": "var",
+          "text": "this",
+          "index": 0
+        },
+        "y": {
+          "op": "num",
+          "text": "925",
+          "value": 925
+        },
+        "stride": 4
+      },
+      "size": 4
+    }
+  },
+  {
+    "function_va": 4301824,
+    "instruction_va": 4301868,
+    "destination": 4382208,
+    "size": 4,
+    "value": {
+      "op": "cast",
+      "text": "(int)(this + 1180)",
+      "x": {
+        "op": "add",
+        "text": "this + 1180",
+        "x": {
+          "op": "var",
+          "text": "this",
+          "index": 0
+        },
+        "y": {
+          "op": "num",
+          "text": "1180",
+          "value": 1180
+        },
+        "stride": 4
+      },
+      "size": 4
+    }
+  },
+  {
+    "function_va": 4301824,
+    "instruction_va": 4301879,
+    "destination": 4382212,
+    "size": 4,
+    "value": {
+      "op": "cast",
+      "text": "(int)(this + 1181)",
+      "x": {
+        "op": "add",
+        "text": "this + 1181",
+        "x": {
+          "op": "var",
+          "text": "this",
+          "index": 0
+        },
+        "y": {
+          "op": "num",
+          "text": "1181",
+          "value": 1181
+        },
+        "stride": 4
+      },
+      "size": 4
+    }
+  },
+  {
+    "function_va": 4301824,
+    "instruction_va": 4301890,
+    "destination": 4382216,
+    "size": 4,
+    "value": {
+      "op": "cast",
+      "text": "(int)(this + 1207)",
+      "x": {
+        "op": "add",
+        "text": "this + 1207",
+        "x": {
+          "op": "var",
+          "text": "this",
+          "index": 0
+        },
+        "y": {
+          "op": "num",
+          "text": "1207",
+          "value": 1207
+        },
+        "stride": 4
+      },
+      "size": 4
+    }
+  },
+  {
+    "function_va": 4301824,
+    "instruction_va": 4301907,
+    "destination": 4382220,
+    "size": 4,
+    "value": {
+      "op": "cast",
+      "text": "(int)(this + 1208)",
+      "x": {
+        "op": "add",
+        "text": "this + 1208",
+        "x": {
+          "op": "var",
+          "text": "this",
+          "index": 0
+        },
+        "y": {
+          "op": "num",
+          "text": "1208",
+          "value": 1208
+        },
+        "stride": 4
+      },
+      "size": 4
+    }
+  },
+  {
+    "function_va": 4301824,
+    "instruction_va": 4301912,
+    "destination": 4382224,
+    "size": 4,
+    "value": {
+      "op": "cast",
+      "text": "(int)(this + 1303)",
+      "x": {
+        "op": "add",
+        "text": "this + 1303",
+        "x": {
+          "op": "var",
+          "text": "this",
+          "index": 0
+        },
+        "y": {
+          "op": "num",
+          "text": "1303",
+          "value": 1303
+        },
+        "stride": 4
+      },
+      "size": 4
+    }
+  },
+  {
+    "function_va": 4303037,
+    "instruction_va": 4303089,
+    "destination": 4388896,
+    "size": 4,
+    "value": {
+      "op": "num",
+      "text": "-1",
+      "value": 18446744073709551615
+    }
+  },
+  {
+    "function_va": 4303037,
+    "instruction_va": 4303096,
+    "destination": 4388900,
+    "size": 4,
+    "value": {
+      "op": "num",
+      "text": "-1",
+      "value": 18446744073709551615
+    }
+  },
+  {
+    "function_va": 4303037,
+    "instruction_va": 4303138,
+    "destination": 4388892,
+    "size": 4,
+    "value": {
+      "op": "obj",
+      "text": "adjust_fdiv",
+      "va": 4309712,
+      "size": 4,
+      "array": false
+    }
+  },
+  {
+    "function_va": 4303516,
+    "instruction_va": 4303528,
+    "destination": 4388888,
+    "size": 1,
+    "value": {
+      "op": "var",
+      "text": "result",
+      "index": 0
+    }
+  }
+]
