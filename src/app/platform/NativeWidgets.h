@@ -57,7 +57,7 @@ class Dialog
     std::optional<std::filesystem::path> file(bool save, const wchar_t *name) const;
     bool savePreference(const wchar_t *section, const wchar_t *key, bool value) const;
     bool preference(const wchar_t *section, const wchar_t *key, bool fallback) const;
-    void settingsPages(const std::wstring &extensionLabel, bool checked);
+    void settingsPages(const std::vector<MenuItem> &options);
     void settingsPage(int page);
     HWND endpoint() const
     {
@@ -95,7 +95,8 @@ class Dialog
     friend bool smokeTooltipUpdates(Dialog &dialog, int id);
     static INT_PTR CALLBACK procedure(HWND, UINT, WPARAM, LPARAM);
     HWND window_ = nullptr;
-    HWND tabs_ = nullptr, extension_ = nullptr;
+    HWND tabs_ = nullptr;
+    std::vector<HWND> extensions_;
     std::vector<HWND> originals_;
     HWND tooltip_ = nullptr;
     std::map<int, std::wstring> tooltipText_;

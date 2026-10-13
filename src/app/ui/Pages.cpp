@@ -521,10 +521,18 @@ class SettingsPage final : public ui::Dialog
     san9::ParameterConfig draft;
     void initialize() override
     {
-        settingsPages(L"跳过耐久驱动的攻城阵型优先选择", app.configuration().skipSiegeSelection);
+        const auto &timing = app.configuration().computerWorkTiming;
+        settingsPages({
+            {IDC_SKIP_DURABILITY_SIEGE_SELECTION, L"跳过耐久驱动的攻城阵型优先选择", app.configuration().skipSiegeSelection},
+            {IDC_IMPROVE_COMPUTER_REWARD_TIMING, L"优化电脑褒奖时间", timing.improveRewards},
+            {IDC_SKIP_COMPUTER_ATTACK_START_DELAY, L"电脑出征规划取消开局等待", timing.skipAttackStartDelay}});
         tooltip(IDC_SKIP_DURABILITY_SIEGE_SELECTION,
                 L"跳过原版按城池耐久优先选择攻城阵型的判断，不影响因路径障碍触发的选择。");
         tooltip(IDC_NPC_ALLIE_ATTACK, L"使多个电脑势力更容易集中进攻玩家的城池。");
+        tooltip(IDC_IMPROVE_COMPUTER_REWARD_TIMING,
+                L"开启：电脑褒奖开局等待初级60天、高级30天，并取消周期窗口；关闭：恢复初级90天、高级45天及30天周期窗口。");
+        tooltip(IDC_SKIP_COMPUTER_ATTACK_START_DELAY,
+                L"取消电脑出征规划的开局等待；关闭时初级等待120天、高级60天。实际出征仍须满足兵力、目标等条件。");
         for (const auto &field : san9::ParameterConfig::fields())
         {
             if (field.mask)
@@ -561,13 +569,17 @@ class SettingsPage final : public ui::Dialog
         if (!save())
             return;
         bool skip = checked(IDC_SKIP_DURABILITY_SIEGE_SELECTION);
-        if (!savePreference(L"Extensions", L"SkipDurabilitySiegeSelection", skip))
+        const ComputerWorkTiming2026 timing{checked(IDC_IMPROVE_COMPUTER_REWARD_TIMING),
+                                            checked(IDC_SKIP_COMPUTER_ATTACK_START_DELAY)};
+        if (!savePreference(L"Extensions", L"SkipDurabilitySiegeSelection", skip) ||
+            !savePreference(L"Extensions", L"ImproveComputerRewardTiming", timing.improveRewards) ||
+            !savePreference(L"Extensions", L"SkipComputerAttackStartDelay", timing.skipAttackStartDelay))
         {
             settingsPage(1);
             message(L"无法写入 San9PKHardSettings.ini，设置尚未确认。");
             return;
         }
-        if (app.commitParameters(draft, skip)) finish(IDOK);
+        if (app.commitParameters(draft, skip, timing)) finish(IDOK);
     }
     void command(int id, ui::Event event) override
     {
@@ -646,7 +658,12 @@ bool smokePages(Controller &c)
     if (!settings.createHidden(IDD_PARA_SETTING))
         return false;
     settings.settingsPage(1);
+    if (settings.checked(IDC_IMPROVE_COMPUTER_REWARD_TIMING) != c.configuration().computerWorkTiming.improveRewards ||
+        settings.checked(IDC_SKIP_COMPUTER_ATTACK_START_DELAY) != c.configuration().computerWorkTiming.skipAttackStartDelay)
+        return false;
     settings.check(IDC_SKIP_DURABILITY_SIEGE_SELECTION, !c.configuration().skipSiegeSelection);
+    settings.check(IDC_IMPROVE_COMPUTER_REWARD_TIMING, !c.configuration().computerWorkTiming.improveRewards);
+    settings.check(IDC_SKIP_COMPUTER_ATTACK_START_DELAY, !c.configuration().computerWorkTiming.skipAttackStartDelay);
     settings.settingsPage(0);
     if (!settings.save())
         return false;
@@ -654,6 +671,8 @@ bool smokePages(Controller &c)
         if (settings.draft.get(field.controlId) != parametersBefore.get(field.controlId))
             return false;
     settings.destroy();
+    if (!c.configuration().computerWorkTiming.improveRewards || c.configuration().computerWorkTiming.skipAttackStartDelay)
+        return false;
     if (!person.createHidden(IDD_PERSON_CONFIG))
         return false;
     person.radio(IDC_FEN_ZHAN, 1);
