@@ -29,9 +29,10 @@ class RuntimeGenerationTests(unittest.TestCase):
         self.assertTrue(scalar_array(row))
         symbols = (SOURCE_ROOT / 'generated/Symbols.inc').read_text()
         self.assertIn('#define dword_41FD34 (global<int>(0x41FD34))', symbols)
-        version = original_names((SOURCE_ROOT / 'runtime/RuntimeVersion2026.cpp').read_text(), '409840')
         branches = original_names((SOURCE_ROOT / 'runtime/RuntimeInjection2026.cpp').read_text(), '409E10')
-        self.assertIn('*v70 = pointer<int>(0x41FD34)[v71];', version)
+        image = PEImage(PROJECT_ROOT / 'recovery/sample-2026/San9PKHard.exe')
+        self.assertEqual(image.read(0x41FD30, 16),
+                         bytes.fromhex('24 80 50 00 92 81 50 00 0c 00 00 00 0d 00 00 00'))
         self.assertIn('(LPVOID)(dword_41FD34 + 3)', branches)
         self.assertIn('&dword_42D948, 0x190u', branches)
         self.assertIn('&byte_42DAD8, 0x32u', branches)

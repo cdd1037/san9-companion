@@ -207,6 +207,12 @@ void branchTest(bool options, bool alternateTarget=false) {
     check(RuntimeTestAccess2026{runtime}.field<DWORD>(140)==0,"initial injection branches report no errors");
     check(writes>900,"full injection path executed in fake memory");
     check(RuntimeTestAccess2026{runtime}.field<DWORD>(96)==base,"dynamic allocation used");
+    PatchDescriptor2026 descriptors[2]{};
+    RuntimeTestAccess2026{runtime}.dataOut(0x42F648,descriptors,sizeof(descriptors));
+    check(descriptors[0].target==0x508024 && descriptors[0].length==12,
+        "first hook descriptor retains target and width");
+    check(descriptors[1].target==descriptorTarget && descriptors[1].length==13,
+        "second hook descriptor uses scalar array value and width");
     check(singleByteWrites.count(descriptorTarget+3)==1,"scalar descriptor target received a one-byte write");
     check(singleByteWrites.at(descriptorTarget+3)==(options?3u:1u),"scalar descriptor single-byte write value");
     check(load(descriptorTarget+3,1)==(options?3u:1u),"scalar descriptor target uses byte offset +3");
@@ -248,6 +254,31 @@ void resetBackend() {
     processAlive=identityAvailable=true;processPid=windowPid=123;processCreated=1;windowHandle=42;exitAfterRead=0;
 }
 void initialModify(Runtime2026& runtime) { for(int i=0;i<6;++i) runtime.modify(ModifyReason2026::TimerTick); }
+void dispatchTest() {
+    resetBackend();
+    Runtime2026 runtime(api()); version(runtime);
+    for(int i=0;i<5;++i) runtime.modify(ModifyReason2026::TimerTick);
+    check(writes==0 && !allocated,"connection delay performs no injection");
+    runtime.modify(ModifyReason2026::TimerTick);
+    check(allocated && writes>900,"sixth tick installs the complete injection");
+    const auto installedWrites=writes, installedReads=reads;
+    for(int i=0;i<12;++i) runtime.modify(ModifyReason2026::TimerTick);
+    check(writes==installedWrites && reads==installedReads,"connected timer only animates status");
+    san9::ParameterConfig config;
+    config.set(1164,1); runtime.setParameters(config);
+    runtime.modify(ModifyReason2026::GameNotification);
+    runtime.modify(ModifyReason2026::GameDialogClosed);
+    check(load(4733494,2)==33807u,"game events do not apply unconfirmed parameter patches");
+    runtime.modify(ModifyReason2026::ParametersConfirmed);
+    check(load(4733494,2)==59792u,"confirmation applies parameter patches");
+    runtime.undo();
+    base=0x22000000; version(runtime); initialModify(runtime);
+    check(RuntimeTestAccess2026{runtime}.field<DWORD>(96)==base,
+        "reconnection installs at the new allocation base");
+    check(load(4733494,2)==59792u,"reconnection reapplies desired parameters");
+    runtime.undo();
+    check(releases==2 && closes==2,"both connected sessions clean up");
+}
 void checkRestored(const std::unordered_map<DWORD,BYTE>& before) {
     for(const auto& pair:memory) {
         const auto found=before.find(pair.first);
@@ -1247,7 +1278,7 @@ int main(int argc, char** argv) {
         for(const auto& entry:configurations)
             if(argc==3 && std::strcmp(argv[1],entry.option)==0) { entry.run(argv[2]);return 0; }
         if(argc==2 && std::strcmp(argv[1],"--dispatch")==0) {
-            branchTest(false);branchTest(true);unsupportedVersionTest();return 0;
+            branchTest(false);branchTest(true);unsupportedVersionTest();dispatchTest();return 0;
         }
         if(argc==3 && std::strcmp(argv[1],"--controller")==0) { controllerTest(std::filesystem::absolute(argv[2])); return 0; }
         const bool all=argc==3 && std::strcmp(argv[1],"--all")==0;
@@ -1265,7 +1296,7 @@ int main(int argc, char** argv) {
         std::puts("Checking runtime relocation...");rebaseTest();
         std::puts("Checking runtime branches...");
         branchTest(false);branchTest(true);unsupportedVersionTest();
-        branchTest(false,true);branchTest(true,true);
+        branchTest(false,true);branchTest(true,true);dispatchTest();
         std::puts("Checking transaction failures...");
         recoveryTest();liveFailureTest();
         protectionRegionTest(false);protectionRegionTest(true);windowChangeTest();

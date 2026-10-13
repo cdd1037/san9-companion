@@ -16,6 +16,7 @@
 #include "../model/PersonConfig.h"
 #include "../model/PersonSnapshot.h"
 #include "GameSnapshots2026.h"
+#include "PatchDescriptor2026.h"
 
 struct ProcessApi2026 {
     decltype(&::FindWindowA) findWindow = ::FindWindowA;
@@ -162,6 +163,20 @@ private:
     struct OperationFailure {};
     [[noreturn]] void fail(const char* operation);
     void modifyBranches(ModifyReason2026 reason);
+    bool connectGame(HWND window);
+    void animateConnectedStatus();
+    void installCoreHooks();
+    void installNotificationBridge();
+    void uploadInjectionPayloads();
+    void installGameplayPatches();
+    void applyParameterPatches();
+    void writeDescriptor(DWORD address, PatchSource2026 source);
+    void writeDescriptorRange(DWORD first, size_t count, PatchSource2026 source);
+    void writeInlineRange(DWORD first, size_t count);
+    void initializeHookDescriptors();
+    template<class A, class B> void writePatch(A target, B source, SIZE_T size) {
+        writeMemory(field<HANDLE>(san9::layout2026::ProcessHandle), target, source, size, nullptr);
+    }
     void applyGameConfiguration(ModifyReason2026 reason);
     void applyCityConfiguration(ModifyReason2026 reason);
     void applySkillConfiguration();
