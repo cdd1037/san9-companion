@@ -12,6 +12,7 @@ class MainWindow final : public ui::Dialog
 
   private:
     Controller &app;
+    std::wstring lastStatus;
     void initialize() override
     {
         icon(IDR_MAINFRAME);
@@ -28,8 +29,11 @@ class MainWindow final : public ui::Dialog
     void refresh()
     {
         auto value = statusText(app.runtime.status());
-        if (!value.empty())
+        if (!value.empty() && value != lastStatus)
+        {
             text(IDC_STATUS, value);
+            lastStatus = value;
+        }
     }
     void tick(unsigned id) override
     {

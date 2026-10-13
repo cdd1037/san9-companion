@@ -38,7 +38,7 @@ class Dialog
     bool checked(int id) const;
     void select(int id, int index, bool combo = false);
     int selected(int id, bool combo = false) const;
-    void append(int id, const std::wstring &value, bool combo = false);
+    void appendItems(int id, const std::vector<std::wstring> &values, bool combo = false);
     void radio(int id, int value);
     int radio(int id) const;
     void enable(int id, bool value);

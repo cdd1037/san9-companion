@@ -16,6 +16,82 @@ HINSTANCE instance()
 {
     return GetModuleHandleW(nullptr);
 }
+std::vector<BYTE> hiddenLayout(int resource)
+{
+    auto handle = FindResourceW(instance(), MAKEINTRESOURCEW(resource), MAKEINTRESOURCEW(5));
+    if (!handle)
+        throw std::runtime_error("missing dialog resource");
+    auto bytes = static_cast<const BYTE *>(LockResource(LoadResource(instance(), handle)));
+    if (!bytes)
+        throw std::runtime_error("cannot load dialog resource");
+    std::vector<BYTE> layout(bytes, bytes + SizeofResource(instance(), handle));
+    const bool extended = reinterpret_cast<const WORD *>(layout.data())[1] == 0xFFFF;
+    const size_t styleOffset = extended ? 12 : 0;
+    DWORD style = 0;
+    std::memcpy(&style, layout.data() + styleOffset, sizeof(style));
+    style &= ~WS_VISIBLE;
+    std::memcpy(layout.data() + styleOffset, &style, sizeof(style));
+    return layout;
+}
+class ListUpdate
+{
+  public:
+    explicit ListUpdate(HWND window) : window_(window), visible_(IsWindowVisible(window) != FALSE)
+    {
+        if (visible_)
+            SendMessageW(window_, WM_SETREDRAW, FALSE, 0);
+    }
+    ~ListUpdate()
+    {
+        if (visible_ && IsWindow(window_))
+        {
+            SendMessageW(window_, WM_SETREDRAW, TRUE, 0);
+            RedrawWindow(window_, nullptr, nullptr, RDW_INVALIDATE | RDW_ERASE | RDW_FRAME);
+        }
+    }
+    ListUpdate(const ListUpdate &) = delete;
+    ListUpdate &operator=(const ListUpdate &) = delete;
+
+  private:
+    HWND window_;
+    bool visible_;
+};
+class WindowLayout
+{
+  public:
+    void add(HWND window, int x, int y, UINT flags)
+    {
+        items_.push_back({window, x, y, flags});
+    }
+    void apply(HWND parent)
+    {
+        if (items_.empty())
+            return;
+        auto batch = BeginDeferWindowPos(int(items_.size()));
+        if (!batch)
+            throw std::runtime_error("cannot begin window layout");
+        for (const auto &item : items_)
+        {
+            batch = DeferWindowPos(batch, item.window, nullptr, item.x, item.y, 0, 0,
+                                  item.flags | SWP_NOSIZE | SWP_NOZORDER | SWP_NOACTIVATE | SWP_NOREDRAW);
+            if (!batch)
+                throw std::runtime_error("cannot queue window layout");
+        }
+        if (!EndDeferWindowPos(batch))
+            throw std::runtime_error("cannot apply window layout");
+        if (IsWindowVisible(parent))
+            RedrawWindow(parent, nullptr, nullptr, RDW_INVALIDATE | RDW_ERASE | RDW_ALLCHILDREN);
+    }
+
+  private:
+    struct Item
+    {
+        HWND window;
+        int x, y;
+        UINT flags;
+    };
+    std::vector<Item> items_;
+};
 HWND child(HWND window, int id)
 {
     auto handle = GetDlgItem(window, id);
@@ -54,8 +130,10 @@ void initializeWindows()
 int Dialog::show(int resource, Dialog *owner)
 {
     modal_ = true;
-    auto result = DialogBoxParamW(instance(), MAKEINTRESOURCEW(resource), owner ? owner->window_ : nullptr,
-                                  procedure, reinterpret_cast<LPARAM>(this));
+    // The dialog manager shows the modal window after WM_INITDIALOG completes.
+    auto layout = hiddenLayout(resource);
+    auto result = DialogBoxIndirectParamW(instance(), reinterpret_cast<const DLGTEMPLATE *>(layout.data()),
+                                         owner ? owner->window_ : nullptr, procedure, reinterpret_cast<LPARAM>(this));
     if (result == -1)
         throw std::runtime_error("dialog creation failed");
     return int(result);
@@ -64,17 +142,7 @@ bool Dialog::createHidden(int resource)
 {
     modal_ = false;
     smoke = true;
-    auto resourceHandle = FindResourceW(instance(), MAKEINTRESOURCEW(resource), MAKEINTRESOURCEW(5));
-    if (!resourceHandle)
-        return false;
-    auto bytes = static_cast<const BYTE *>(LockResource(LoadResource(instance(), resourceHandle)));
-    std::vector<BYTE> layout(bytes, bytes + SizeofResource(instance(), resourceHandle));
-    const bool extended = reinterpret_cast<const WORD *>(layout.data())[1] == 0xFFFF;
-    const size_t styleOffset = extended ? 12 : 0;
-    DWORD style = 0;
-    std::memcpy(&style, layout.data() + styleOffset, sizeof(style));
-    style &= ~WS_VISIBLE;
-    std::memcpy(layout.data() + styleOffset, &style, sizeof(style));
+    auto layout = hiddenLayout(resource);
     window_ = CreateDialogIndirectParamW(instance(), reinterpret_cast<const DLGTEMPLATE *>(layout.data()),
                                          nullptr, procedure, reinterpret_cast<LPARAM>(this));
     return window_ && IsWindow(window_);
@@ -164,12 +232,26 @@ int Dialog::selected(int id, bool combo) const
 {
     return int(SendMessageW(child(window_, id), combo ? CB_GETCURSEL : LB_GETCURSEL, 0, 0));
 }
-void Dialog::append(int id, const std::wstring &value, bool combo)
+void Dialog::appendItems(int id, const std::vector<std::wstring> &values, bool combo)
 {
-    auto result = SendMessageW(child(window_, id), combo ? CB_ADDSTRING : LB_ADDSTRING, 0,
-                               reinterpret_cast<LPARAM>(value.c_str()));
-    if (result < 0)
-        throw std::runtime_error("cannot append list item");
+    if (values.empty())
+        return;
+    auto handle = child(window_, id);
+    ListUpdate update(handle);
+    size_t bytes = 0;
+    for (const auto &value : values)
+        bytes += (value.size() + 1) * sizeof(wchar_t);
+    auto storage = SendMessageW(handle, combo ? CB_INITSTORAGE : LB_INITSTORAGE,
+                                WPARAM(values.size()), LPARAM(bytes));
+    if (storage == (combo ? CB_ERRSPACE : LB_ERRSPACE))
+        throw std::runtime_error("cannot reserve list storage");
+    for (const auto &value : values)
+    {
+        auto result = SendMessageW(handle, combo ? CB_ADDSTRING : LB_ADDSTRING, 0,
+                                   reinterpret_cast<LPARAM>(value.c_str()));
+        if (result < 0)
+            throw std::runtime_error("cannot append list item");
+    }
 }
 void Dialog::radio(int id, int value)
 {
@@ -306,19 +388,20 @@ void Dialog::settingsPages(const std::wstring &label, bool value)
     MapDialogRect(window_, &shift);
     SetWindowPos(window_, nullptr, 0, 0, rect.right - rect.left, rect.bottom - rect.top + shift.bottom,
                  SWP_NOMOVE | SWP_NOZORDER | SWP_NOACTIVATE);
+    WindowLayout layout;
     for (auto handle = GetWindow(window_, GW_CHILD); handle; handle = GetWindow(handle, GW_HWNDNEXT))
     {
         RECT position{};
         GetWindowRect(handle, &position);
         MapWindowPoints(nullptr, window_, reinterpret_cast<POINT *>(&position), 2);
-        SetWindowPos(handle, nullptr, position.left, position.top + shift.bottom, 0, 0,
-                     SWP_NOSIZE | SWP_NOZORDER | SWP_NOACTIVATE);
+        layout.add(handle, position.left, position.top + shift.bottom, 0);
         int id = GetDlgCtrlID(handle);
         if (id != IDOK && id != IDCANCEL && id != IDC_SAVE_CONFIG && id != IDC_PERSON_CONFIG &&
             id != IDC_CITY_CONFIG && id != IDC_KILLER_CONFIG && id != IDC_ARRAY_CONFIG &&
             id != IDC_SELECT_PLAYER_FORCE)
             originals_.push_back(handle);
     }
+    layout.apply(window_);
     RECT tab{11, 3, 540, 24};
     MapDialogRect(window_, &tab);
     tabs_ = CreateWindowExW(0, WC_TABCONTROLW, L"", WS_CHILD | WS_VISIBLE | WS_TABSTOP, tab.left, tab.top,
@@ -350,9 +433,15 @@ void Dialog::settingsPage(int page)
     if (!tabs_)
         return;
     TabCtrl_SetCurSel(tabs_, page);
+    WindowLayout layout;
+    auto visibility = [&](HWND handle, bool visible) {
+        if (((GetWindowLongPtrW(handle, GWL_STYLE) & WS_VISIBLE) != 0) != visible)
+            layout.add(handle, 0, 0, SWP_NOMOVE | (visible ? SWP_SHOWWINDOW : SWP_HIDEWINDOW));
+    };
     for (auto handle : originals_)
-        ShowWindow(handle, page == 0 ? SW_SHOW : SW_HIDE);
-    ShowWindow(extension_, page == 1 ? SW_SHOW : SW_HIDE);
+        visibility(handle, page == 0);
+    visibility(extension_, page == 1);
+    layout.apply(window_);
 }
 INT_PTR CALLBACK Dialog::procedure(HWND window, UINT message, WPARAM first, LPARAM second)
 {

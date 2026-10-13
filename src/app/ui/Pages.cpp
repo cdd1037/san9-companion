@@ -3,6 +3,7 @@
 #include "FormBinding.h"
 #include <algorithm>
 #include <fstream>
+#include <iterator>
 namespace app
 {
 namespace
@@ -57,12 +58,15 @@ template <class Config, class Snapshot> class RowsPage : public ui::Dialog
                 message(std::wstring(title) + L" " + std::to_wstring(*snapshot.invalidRow) +
                         L" 的游戏数据超出可编辑范围，保留原配置。");
         }
+        std::vector<std::wstring> labels;
+        labels.reserve(Config::Count);
         for (size_t i = 0; i < Config::Count; ++i)
         {
             auto label = std::to_wstring(i) + L" ";
             label += read ? ui::gameText(snapshot.names[i].data(), snapshot.names[i].size()) : title;
-            append(listId, label);
+            labels.push_back(label);
         }
+        appendItems(listId, labels);
         extraInitialize();
         load();
     }
@@ -218,8 +222,7 @@ class CityPage final : public RowsPage<san9::CityConfig, CitySnapshot2026>
     {
         const wchar_t *skills[] = {L"齐射", L"连射", L"连弩", L"混乱", L"陷阱", L"攻心",
                                    L"幻术", L"辱骂", L"鼓舞", L"治疗", L"妖术", L"无"};
-        for (auto skill : skills)
-            append(IDC_CITY_KILLER, skill, true);
+        appendItems(IDC_CITY_KILLER, std::vector<std::wstring>(std::begin(skills), std::end(skills)), true);
         check(IDC_CITY_CONFIG_AUTO, app.flags.cityAutomatic);
     }
     void extraLoad() override
@@ -311,6 +314,8 @@ class PersonPage final : public ui::Dialog
         if (app.runtime.hasGameSession() && !app.personSnapshot(snapshot))
             message(L"读游戏武将信息失败，仍可按编号编辑配置。");
         draft = app.persons;
+        std::vector<std::wstring> labels;
+        labels.reserve(san9::PersonConfig::Count);
         for (size_t i = 0; i < san9::PersonConfig::Count; ++i)
         {
             auto label = std::to_wstring(i) + L" ";
@@ -318,8 +323,9 @@ class PersonPage final : public ui::Dialog
                 label += ui::gameText(snapshot.at(i).name.data(), snapshot.at(i).name.size());
             else
                 label += L"武将";
-            append(IDC_PERSON_LIST, label);
+            labels.push_back(label);
         }
+        appendItems(IDC_PERSON_LIST, labels);
         readOnly(IDC_FRIENDSHIP_INDEX);
         for (auto id : goodIds)
             enable(id, false);
