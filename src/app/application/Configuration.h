@@ -4,6 +4,7 @@
 #include "../../model/CityConfig.h"
 #include "../../model/SkillConfig.h"
 #include "../../model/FormationConfig.h"
+#include "../../runtime/ComputerWorkTiming2026.h"
 
 namespace app
 {
@@ -35,5 +36,6 @@ struct Configuration
     ConfigurationSources sources;
     bool cityAutomatic = false;
     bool skipSiegeSelection = true;
+    ComputerWorkTiming2026 computerWorkTiming;
 };
 } // namespace app

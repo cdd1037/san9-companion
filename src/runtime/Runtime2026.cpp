@@ -132,6 +132,15 @@ bool Runtime2026::readGameMemory(DWORD address, void* buffer, SIZE_T size) {
         return false;
     }
 }
+void Runtime2026::applyComputerWorkTiming() {
+    // RE-SAN9PK-0174: metadata bytes 0/1 are initial delay/calendar period.
+    // Advanced difficulty halves the delay in the game's shared eligibility gate.
+    const std::array<BYTE, 2> reward = computerWorkTiming_.improveRewards
+        ? std::array<BYTE, 2>{60, 0} : std::array<BYTE, 2>{90, 30};
+    const BYTE attackDelay = computerWorkTiming_.skipAttackStartDelay ? 0 : 120;
+    writePatch(0x6574F0u, reward.data(), reward.size()); // Work code 15.
+    writePatch(0x6574C0u, &attackDelay, sizeof(attackDelay)); // Work code 9 only.
+}
 bool Runtime2026::togglePlayerForce(unsigned index) {
     if (index >= 50 || process_.state().phase != SessionPhase2026::Active) return false;
     return runOperation([&] {

@@ -17,6 +17,7 @@
 #include "../model/PersonSnapshot.h"
 #include "GameSnapshots2026.h"
 #include "PatchDescriptor2026.h"
+#include "ComputerWorkTiming2026.h"
 #include "ProcessSession2026.h"
 #include "ImageRegion2026.h"
 
@@ -80,6 +81,7 @@ public:
     // Changes only when an exited or restored session resets its host projection.
     std::uint64_t configurationEpoch() const { return configurationEpoch_; }
     void setSkipDurabilitySiegeSelection(bool enabled) { skipDurabilitySiegeSelection_ = enabled; }
+    void setComputerWorkTiming(ComputerWorkTiming2026 value) { computerWorkTiming_ = value; }
     void setParameters(const san9::ParameterConfig& parameters);
     san9::PersonConfig personConfig() const;
     void setPersonConfig(const san9::PersonConfig& config);
@@ -126,6 +128,8 @@ private:
     bool undoPending_ = false;
     std::uint64_t configurationEpoch_ = 0;
     bool skipDurabilitySiegeSelection_ = true; // Preserve the companion default.
+    ComputerWorkTiming2026 computerWorkTiming_;
+    void applyComputerWorkTiming();
     void modifyBranches(ModifyReason2026 reason);
     bool connectGame(HWND window);
     void animateConnectedStatus();

@@ -412,7 +412,7 @@ bool Dialog::preference(const wchar_t *section, const wchar_t *key, bool fallbac
 {
     return GetPrivateProfileIntW(section, key, fallback ? 1 : 0, preferences().c_str()) != 0;
 }
-void Dialog::settingsPages(const std::wstring &label, bool value)
+void Dialog::settingsPages(const std::vector<MenuItem> &options)
 {
     RECT rect{};
     GetWindowRect(window_, &rect);
@@ -448,16 +448,21 @@ void Dialog::settingsPages(const std::wstring &label, bool value)
     TabCtrl_InsertItem(tabs_, 0, &item);
     item.pszText = const_cast<wchar_t *>(L"扩展设置");
     TabCtrl_InsertItem(tabs_, 1, &item);
-    RECT option{23, 49, 273, 61};
-    MapDialogRect(window_, &option);
-    extension_ =
-        CreateWindowExW(0, L"Button", label.c_str(), WS_CHILD | WS_TABSTOP | BS_AUTOCHECKBOX, option.left,
-                        option.top, option.right - option.left, option.bottom - option.top, window_,
-                        reinterpret_cast<HMENU>(IDC_SKIP_DURABILITY_SIEGE_SELECTION), instance(), nullptr);
-    if (!extension_)
-        throw std::runtime_error("cannot create extension checkbox");
-    SendMessageW(extension_, WM_SETFONT, SendMessageW(window_, WM_GETFONT, 0, 0), TRUE);
-    check(IDC_SKIP_DURABILITY_SIEGE_SELECTION, value);
+    int top = 49;
+    for (const auto &item : options)
+    {
+        RECT option{23, top, 510, top + 12};
+        MapDialogRect(window_, &option);
+        const auto handle = CreateWindowExW(0, L"Button", item.text.c_str(),
+            WS_CHILD | WS_TABSTOP | BS_AUTOCHECKBOX, option.left, option.top,
+            option.right - option.left, option.bottom - option.top, window_,
+            reinterpret_cast<HMENU>(item.id), instance(), nullptr);
+        if (!handle) throw std::runtime_error("cannot create extension checkbox");
+        extensions_.push_back(handle);
+        SendMessageW(handle, WM_SETFONT, SendMessageW(window_, WM_GETFONT, 0, 0), TRUE);
+        check(item.id, item.checked);
+        top += 22;
+    }
     settingsPage(0);
 }
 void Dialog::settingsPage(int page)
@@ -472,7 +477,8 @@ void Dialog::settingsPage(int page)
     };
     for (auto handle : originals_)
         visibility(handle, page == 0);
-    visibility(extension_, page == 1);
+    for (auto handle : extensions_)
+        visibility(handle, page == 1);
     layout.apply(window_);
 }
 INT_PTR CALLBACK Dialog::procedure(HWND window, UINT message, WPARAM first, LPARAM second)
