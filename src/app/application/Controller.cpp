@@ -100,6 +100,15 @@ void Controller::observeLifecycle()
     epoch_ = runtime_.configurationEpoch();
     queued_ |= All;
 }
+bool Controller::commitPresentationSpeed(unsigned multiplier)
+{
+    if (!presentation2026::validMultiplier(multiplier)) return false;
+    configuration_.presentationSpeed=multiplier;
+    queued_|=Speed;
+    stageConfiguration();
+    if (runtime_.hasGameSession()) modify(ModifyReason2026::PresentationSpeed);
+    return true;
+}
 void Controller::stageConfiguration()
 {
     observeLifecycle();
@@ -107,6 +116,7 @@ void Controller::stageConfiguration()
     if (!queued_ || (phase != SessionPhase2026::Idle && phase != SessionPhase2026::Active)) return;
     auto flags = runtime_.configurationState();
     const auto &sources = configuration_.sources;
+    if (queued_ & Speed) runtime_.setPresentationSpeed(configuration_.presentationSpeed);
     if (queued_ & Parameters)
     {
         runtime_.setParameters(configuration_.parameters);

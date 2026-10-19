@@ -60,6 +60,10 @@ const wchar_t* operationText(RuntimeOperation2026 operation) {
     case RuntimeOperation2026::ReleaseAllocation: return L"释放补丁内存";
     case RuntimeOperation2026::CloseExitedProcess: return L"清理已退出进程句柄";
     case RuntimeOperation2026::RuntimeException: return L"运行时异常";
+    case RuntimeOperation2026::ValidateSpeed: return L"加速入口被修改或计时模块不受支持";
+    case RuntimeOperation2026::PauseThreads: return L"暂停游戏线程以更新加速入口";
+    case RuntimeOperation2026::ResumeThreads: return L"恢复游戏线程运行";
+    case RuntimeOperation2026::SpeedBusy: return L"游戏正在执行加速入口，请稍后重试";
     }
     return L"未知操作";
 }

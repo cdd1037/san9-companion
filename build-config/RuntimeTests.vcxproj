@@ -14,6 +14,7 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <Import Project="Toolchain.props" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
   <Import Project="Compiler.props" />
   <PropertyGroup>
     <OutDir>$(ProjectDir)..\build\tests\$(Configuration)\</OutDir>
@@ -30,6 +31,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\tests\runtime_test.cpp" />
+    <ClCompile Include="..\tests\presentation_speed_test.cpp" />
+    <MASM Include="..\tests\presentation_speed_fixture.asm" />
     <ClCompile Include="..\src\app\ui\RuntimeStatusText.cpp" />
     <ClCompile Include="..\tests\config_files_test.cpp" />
     <ClCompile Include="..\src\app\application\ConfigFiles.cpp" />
@@ -41,4 +44,5 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
 </Project>

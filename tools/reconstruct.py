@@ -5,7 +5,7 @@ import re
 import struct
 import sys
 from call_evidence import memory_calls
-from dialog_customizations import control_title, customize_control_layout, dialog_title
+from dialog_customizations import control_title, customize_control_layout, dialog_title, extra_controls
 
 from pe_image import PEImage, dialog_template
 from res_file import build_resources
@@ -220,7 +220,9 @@ def main():
             editable += [f'FONT {f["point_size"]}, {quoted(f["face"])}, '
                          f'{f.get("weight",400)}, {f.get("italic",0)}, {f.get("charset",1)}']
         editable += ['BEGIN']
-        for c in d['controls']:
+        controls = list(d['controls'])
+        controls[3:3] = extra_controls(row['resource']['keys'][1])
+        for c in controls:
             c = dict(c)
             customize_control_layout(row['resource']['keys'][1], c)
             if c['creation_data']:

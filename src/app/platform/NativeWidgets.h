@@ -57,6 +57,8 @@ class Dialog
     std::optional<std::filesystem::path> file(bool save, const wchar_t *name) const;
     bool savePreference(const wchar_t *section, const wchar_t *key, bool value) const;
     bool preference(const wchar_t *section, const wchar_t *key, bool fallback) const;
+    bool savePreferenceNumber(const wchar_t *section, const wchar_t *key, unsigned value) const;
+    unsigned preferenceNumber(const wchar_t *section, const wchar_t *key, unsigned fallback) const;
     void settingsPages(const std::vector<MenuItem> &options);
     void settingsPage(int page);
     HWND endpoint() const

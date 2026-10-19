@@ -428,6 +428,17 @@ bool Dialog::savePreference(const wchar_t *section, const wchar_t *key, bool val
 {
     return WritePrivateProfileStringW(section, key, value ? L"1" : L"0", preferences().c_str()) != FALSE;
 }
+bool Dialog::savePreferenceNumber(const wchar_t *section, const wchar_t *key, unsigned value) const
+{
+    if (smoke) return true;
+    return WritePrivateProfileStringW(section, key, std::to_wstring(value).c_str(),
+                                     preferences().c_str()) != FALSE;
+}
+unsigned Dialog::preferenceNumber(const wchar_t *section, const wchar_t *key, unsigned fallback) const
+{
+    return GetPrivateProfileIntW(section,key,fallback,
+                                 preferences().c_str());
+}
 bool Dialog::preference(const wchar_t *section, const wchar_t *key, bool fallback) const
 {
     return GetPrivateProfileIntW(section, key, fallback ? 1 : 0, preferences().c_str()) != 0;
@@ -450,7 +461,7 @@ void Dialog::settingsPages(const std::vector<MenuItem> &options)
         int id = GetDlgCtrlID(handle);
         if (id != IDOK && id != IDCANCEL && id != IDC_SAVE_CONFIG && id != IDC_PERSON_CONFIG &&
             id != IDC_CITY_CONFIG && id != IDC_KILLER_CONFIG && id != IDC_ARRAY_CONFIG &&
-            id != IDC_SELECT_PLAYER_FORCE)
+            id != IDC_SELECT_PLAYER_FORCE && id != IDC_PRESENTATION_SPEED)
             originals_.push_back(handle);
     }
     layout.apply(window_);

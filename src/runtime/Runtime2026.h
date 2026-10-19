@@ -20,10 +20,12 @@
 #include "ComputerWorkTiming2026.h"
 #include "ProcessSession2026.h"
 #include "ImageRegion2026.h"
+#include "PresentationSpeed2026.h"
+#include "ThreadBarrier2026.h"
 
 // 0x409E10 dispatch; message-related names follow the host entry points,
 // not an inferred game action. Values remain the recovered ABI values.
-enum class ModifyReason2026 : int { TimerTick=1, GameNotification=2, GameDialogClosed=3, ParametersConfirmed=4 };
+enum class ModifyReason2026 : int { TimerTick=1, GameNotification=2, GameDialogClosed=3, ParametersConfirmed=4, PresentationSpeed=5 };
 
 enum class RuntimeStatusKind2026 {
     None, Connected, WaitingForGame, UnsupportedVersion, ExitCleanupFailed, ProcessExited, IdentityUnavailable,
@@ -82,6 +84,7 @@ public:
     std::uint64_t configurationEpoch() const { return configurationEpoch_; }
     void setSkipDurabilitySiegeSelection(bool enabled) { skipDurabilitySiegeSelection_ = enabled; }
     void setComputerWorkTiming(ComputerWorkTiming2026 value) { computerWorkTiming_ = value; }
+    void setPresentationSpeed(unsigned multiplier);
     void setParameters(const san9::ParameterConfig& parameters);
     san9::PersonConfig personConfig() const;
     void setPersonConfig(const san9::PersonConfig& config);
@@ -120,6 +123,12 @@ private:
     void validateImagePointer(std::uintptr_t address, size_t size) const;
     void captureGameBytes(std::uintptr_t source, std::uintptr_t destination, SIZE_T size);
     ProcessSession2026 process_;
+    ThreadBarrier2026 threadBarrier_;
+    DWORD speedAllocation_ = 0, savedSpeedAllocation_ = 0;
+    unsigned speedMultiplier_ = 1, appliedSpeed_ = 1, savedAppliedSpeed_ = 1;
+    void applyPresentationSpeed();
+    bool pauseSpeedThreads(bool installing = false);
+    bool resumeSpeedThreads();
     alignas(4) std::array<BYTE, san9::layout2026::StateSize> state_{};
     alignas(4) std::array<BYTE, 0x11000> data_{};
     RuntimeStatus2026 status_;

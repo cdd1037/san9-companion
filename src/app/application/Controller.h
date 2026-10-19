@@ -36,6 +36,7 @@ class Controller final
     bool commitCities(const san9::CityConfig &value, bool automatic);
     bool commitSkills(const san9::SkillConfig &value);
     bool commitFormations(const san9::FormationConfig &value);
+    bool commitPresentationSpeed(unsigned multiplier);
     void poll();
     void applyConfirmedConfiguration();
     bool gameMessage(UINT message, WPARAM action, LPARAM argument);
@@ -49,7 +50,7 @@ class Controller final
     bool forces(std::vector<PlayerForce2026> &value);
   private:
     friend struct ControllerTestAccess;
-    enum InputGroup : unsigned { Parameters = 1, Persons = 2, Cities = 4, Skills = 8, Formations = 16, All = 31 };
+    enum InputGroup : unsigned { Parameters = 1, Persons = 2, Cities = 4, Skills = 8, Formations = 16, Speed = 32, All = 63 };
     Runtime2026 runtime_;
     Configuration configuration_;
     unsigned queued_ = 0;

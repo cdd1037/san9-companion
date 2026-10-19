@@ -6,7 +6,8 @@ enum class RuntimeOperation2026 {
     None, ResolveProcess, OpenProcess, CaptureIdentity, VerifyProcess, VerifyWindow,
     RegisterMessage, CloseProcess, ClosePendingChanges, Allocate, QueryProtection,
     ValidateProtection, Protect, Read, ReadOriginal, Write, Flush, RestoreBytes,
-    RestoreFlush, RestoreProtection, ReleaseAllocation, CloseExitedProcess, RuntimeException
+    RestoreFlush, RestoreProtection, ReleaseAllocation, CloseExitedProcess, RuntimeException,
+    ValidateSpeed, PauseThreads, ResumeThreads, SpeedBusy
 };
 // API errors are captured immediately; a successful short transfer has error zero.
 struct RuntimeFailure2026 {

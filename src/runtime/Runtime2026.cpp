@@ -14,6 +14,8 @@ static_assert(sizeof(DWORD) == san9::layout2026::CityAutomaticSize && sizeof(DWO
 static_assert(sizeof(BYTE) == san9::layout2026::SkillFlagsSize && sizeof(BYTE) == san9::layout2026::FormationFlagsSize);
 
 void Runtime2026::restoreSessionBaseline() {
+    speedAllocation_=savedSpeedAllocation_=0;
+    appliedSpeed_=savedAppliedSpeed_=1;
     ++configurationEpoch_;
     // Keep user inputs; discard game addresses, version-derived data and event state.
     const auto inputs = state_;
@@ -37,6 +39,7 @@ void Runtime2026::restoreSessionBaseline() {
     if (field<BYTE>(san9::layout2026::FormationFlags)&1) field<BYTE>(san9::layout2026::FormationFlags)|=2;
 }
 bool Runtime2026::retireExitedProcess() {
+    if (!resumeSpeedThreads()) return false;
     if (!process_.retireExited()) {
         if (process_.state().recoveryFailure.operation == RuntimeOperation2026::CloseExitedProcess)
             setStatus(RuntimeStatusKind2026::ExitCleanupFailed);
@@ -86,16 +89,22 @@ bool Runtime2026::reverseChanges() {
     return true;
 }
 bool Runtime2026::retryRollback() {
+    if (process_.state().recoveryFailure.operation==RuntimeOperation2026::ResumeThreads && !resumeSpeedThreads()) return false;
     if (process_.state().process && observeProcess() == ProcessState2026::Exited) return retireExitedProcess();
     if (process_.state().phase != SessionPhase2026::RecoveryRequired) return true;
     if (!process_.canRecover()) {
         setStatus(RuntimeStatusKind2026::IdentityUnavailable);
         return false;
     }
-    if (!reverseChanges()) return false;
+    if (!pauseSpeedThreads()) { resumeSpeedThreads(); return false; }
+    const bool restored=reverseChanges();
+    if (!resumeSpeedThreads() || !restored) return false;
     if (process_.state().result == OperationResult2026::ProcessExited) return true;
     if (undoPending_) restoreSessionBaseline();
-    else { state_ = savedState_; data_ = savedData_; }
+    else {
+        state_ = savedState_; data_ = savedData_;
+        speedAllocation_=savedSpeedAllocation_; appliedSpeed_=savedAppliedSpeed_;
+    }
     process_.state().phase = process_.state().process ? SessionPhase2026::Active : SessionPhase2026::Idle;
     process_.state().result = undoPending_ ? OperationResult2026::Undone : OperationResult2026::RolledBack;
     undoPending_ = false;
@@ -115,6 +124,7 @@ void Runtime2026::modify(ModifyReason2026 reason) {
     const bool updateExtension = hasGameSession() && reason==ModifyReason2026::ParametersConfirmed;
     runOperation([&] {
         modifyBranches(reason);
+        applyPresentationSpeed();
         // The recovered patch site is in the initial-connection branch only.
         // Live confirmation must update it in the same rollback transaction.
         if (updateExtension && process_.state().process) {
@@ -161,11 +171,13 @@ bool Runtime2026::runOperation(const std::function<void()>& operation) {
     }
     savedState_ = state_;
     savedData_ = data_;
+    savedSpeedAllocation_=speedAllocation_; savedAppliedSpeed_=appliedSpeed_;
     process_.beginOperation();
     try {
         if (process_.state().process) requireProcess(process_.state().process);
         operation();
         if (process_.state().process) requireProcess(process_.state().process);
+        if (!resumeSpeedThreads()) return false;
         if (process_.state().journal.boundary() == 0 && !process_.state().journal.empty()) {
             initialState_ = savedState_; initialData_ = savedData_;
         }
@@ -186,6 +198,7 @@ bool Runtime2026::runOperation(const std::function<void()>& operation) {
         if (process_.state().result == OperationResult2026::RolledBack)
             setStatus(RuntimeStatusKind2026::ExceptionRolledBack);
     }
+    if (!resumeSpeedThreads()) return false;
     return process_.state().result == OperationResult2026::Committed;
 }
 bool Runtime2026::undo() {
@@ -201,7 +214,7 @@ bool Runtime2026::undo() {
 
 static_assert(sizeof(void*) == 4, "2026 runtime requires Win32");
 
-Runtime2026::Runtime2026(ProcessApi2026 api): process_(api) {
+Runtime2026::Runtime2026(ProcessApi2026 api): process_(api), threadBarrier_(api) {
     static constexpr BYTE seed[] = {
 #include "../generated/companion_data.inc"
     };

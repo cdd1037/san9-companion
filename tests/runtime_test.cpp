@@ -14,11 +14,13 @@
 #include <fstream>
 #include <sstream>
 #include <memory>
+void presentationSpeedMachineCodeTest();
 
 // Explicit friend seam for recovered-layout regressions, unavailable to GUI clients.
 struct RuntimeTestAccess2026 {
     Runtime2026& runtime;
     bool rebase() { return runtime.rebase(); }
+    unsigned appliedPresentationSpeed() const { return runtime.appliedSpeed_; }
     template<class T> T& field(size_t offset) { return runtime.field<T>(offset); }
     void copyIn(size_t offset, const void* source, size_t size) { runtime.copyIn(offset, source, size); }
     void copyOut(size_t offset, void* destination, size_t size) { runtime.copyOut(offset, destination, size); }
@@ -60,6 +62,11 @@ bool present=true;
 DWORD base=0x10000000;
 std::unordered_map<DWORD,DWORD> protections;
 bool allocated=false;
+bool speedAllocated=false;
+DWORD barrierEip=0;
+unsigned barrierSuspended=0;
+enum class BarrierFault { None, Snapshot, Open, Suspend, Context, Resume };
+BarrierFault barrierFault=BarrierFault::None;
 bool processAlive=true, identityAvailable=true;
 DWORD processPid=123, windowPid=123, processCreated=1, windowHandle=42;
 size_t exitAfterRead=0;
@@ -105,10 +112,17 @@ HANDLE WINAPI openProcess(DWORD access,BOOL,DWORD) {
 BOOL WINAPI closeHandle(HANDLE) {if(fails(Fault::Close)) return FALSE; ++closes;return TRUE;}
 LPVOID WINAPI allocate(HANDLE,LPVOID,SIZE_T size,DWORD,DWORD) {
     if(fails(Fault::Allocate)) return nullptr;
+    if (size==presentation2026::PayloadSize) { speedAllocated=true; return reinterpret_cast<LPVOID>(base+0x10000); }
     check(size==0xB000,"2026 allocation size");allocated=true;return reinterpret_cast<LPVOID>(base);
 }
 BOOL WINAPI release(HANDLE,LPVOID address,SIZE_T size,DWORD type) {
     if(fails(Fault::Release)) return FALSE;
+    if (reinterpret_cast<DWORD>(address)==base+0x10000) {
+        check(speedAllocated && size==0 && type==MEM_RELEASE,"speed allocation released once");
+        speedAllocated=false; ++releases;
+        for (DWORD i=0;i<presentation2026::PayloadSize;++i) memory.erase(base+0x10000+i);
+        return TRUE;
+    }
     check(allocated && reinterpret_cast<DWORD>(address)==base && size==0 && type==MEM_RELEASE,"owned allocation released once");
     allocated=false; ++releases;
     for(DWORD i=0;i<0xB000;++i) memory.erase(base+i);
@@ -146,11 +160,13 @@ BOOL WINAPI write(HANDLE,LPVOID address,LPCVOID buffer,SIZE_T size,SIZE_T* count
     ++writes;
     const DWORD destination=reinterpret_cast<DWORD>(address);
     if (!((destination>=0x400000 && destination+size<=0x2000000)
-        || (destination>=base && destination+size<=base+0xB000))) {
+        || (destination>=base && destination+size<=base+0xB000)
+        || (speedAllocated && destination>=base+0x10000 && destination+size<=base+0x11000))) {
         std::fprintf(stderr,"invalid target: target=%p source=%p size=%zu write=%zu base=%08lX\n",address,buffer,size,writes,base);
     }
     check((destination>=0x400000 && destination+size<=0x2000000)
-        || (destination>=base && destination+size<=base+0xB000),"write stays in game or allocation");
+        || (destination>=base && destination+size<=base+0xB000)
+        || (speedAllocated && destination>=base+0x10000 && destination+size<=base+0x11000),"write stays in game or allocation");
     MEMORY_BASIC_INFORMATION region{};
     if (!VirtualQuery(buffer,&region,sizeof(region)) || region.State!=MEM_COMMIT
         || (region.Protect & (PAGE_NOACCESS|PAGE_GUARD))) {
@@ -168,9 +184,37 @@ BOOL WINAPI write(HANDLE,LPVOID address,LPCVOID buffer,SIZE_T size,SIZE_T* count
 }
 BOOL WINAPI flush(HANDLE,LPCVOID,SIZE_T) {return !fails(Fault::Flush);}
 UINT WINAPI registerMessage(LPCSTR) {return fails(Fault::Message)?0:0xC001;}
+HANDLE WINAPI snapshot(DWORD,DWORD) {
+    if (barrierFault==BarrierFault::Snapshot) { SetLastError(ERROR_ACCESS_DENIED); return INVALID_HANDLE_VALUE; }
+    return reinterpret_cast<HANDLE>(77);
+}
+BOOL WINAPI threadFirst(HANDLE,LPTHREADENTRY32 entry) { entry->th32OwnerProcessID=processPid; entry->th32ThreadID=321; return TRUE; }
+BOOL WINAPI threadNext(HANDLE,LPTHREADENTRY32) { SetLastError(ERROR_NO_MORE_FILES); return FALSE; }
+HANDLE WINAPI openThread(DWORD,BOOL,DWORD) {
+    if (barrierFault==BarrierFault::Open) { SetLastError(ERROR_ACCESS_DENIED); return nullptr; }
+    return reinterpret_cast<HANDLE>(78);
+}
+DWORD WINAPI suspendThread(HANDLE) {
+    if (barrierFault==BarrierFault::Suspend) { SetLastError(ERROR_ACCESS_DENIED); return MAXDWORD; }
+    return barrierSuspended++;
+}
+DWORD WINAPI resumeThread(HANDLE) {
+    if (barrierFault==BarrierFault::Resume) { SetLastError(ERROR_ACCESS_DENIED); return MAXDWORD; }
+    check(barrierSuspended>0,"barrier owns one suspension count"); return barrierSuspended--;
+}
+BOOL WINAPI threadContext(HANDLE,LPCONTEXT context) {
+    if (barrierFault==BarrierFault::Context) { SetLastError(ERROR_ACCESS_DENIED); return FALSE; }
+    context->Eip=barrierEip; return TRUE;
+}
+BOOL WINAPI moduleFirst(HANDLE,LPMODULEENTRY32W entry) {
+    entry->modBaseAddr=reinterpret_cast<BYTE*>(0x70000000); entry->modBaseSize=0x100000;
+    wcscpy_s(entry->szModule,L"winmm.dll"); return TRUE;
+}
+BOOL WINAPI moduleNext(HANDLE,LPMODULEENTRY32W) { SetLastError(ERROR_NO_MORE_FILES); return FALSE; }
 ProcessApi2026 api() {
     return {findWindow,windowProcess,openProcess,closeHandle,allocate,release,protect,read,write,flush,registerMessage,query,
-        processId,processTimes,waitProcess};
+        processId,processTimes,waitProcess,snapshot,threadFirst,threadNext,openThread,suspendThread,resumeThread,
+        threadContext,moduleFirst,moduleNext};
 }
 void store(DWORD address,DWORD value) {
     for(unsigned i=0;i<4;++i) memory[address+i]=static_cast<BYTE>(value>>(8*i));
@@ -268,6 +312,7 @@ void resetBackend() {
     writeCallback = {};
     memory.clear(); singleByteWrites.clear(); protections.clear();
     writes=reads=releases=closes=0; allocated=false; present=true; base=0x10000000;
+    speedAllocated=false; barrierEip=0; barrierSuspended=0; barrierFault=BarrierFault::None;
     calls.fill(0); fault=Fault::None; faultAt=0; fired=false; blockRecovery=false; partialFailure=false; shortSuccess=true;
     processAlive=identityAvailable=true;processPid=windowPid=123;processCreated=1;windowHandle=42;exitAfterRead=0;
 }
@@ -1529,6 +1574,109 @@ void controllerTest(const std::filesystem::path &configurationDirectory) {
     std::puts("Controller drafts, typed confirmations, snapshots, recovery queues, file policies and reconnection passed.");
 }
 
+void presentationSpeedRuntimeTest() {
+    auto seed=[] {
+        store(0x5FF4D8,0x70001000);
+        for (const auto& hook:presentation2026::hooks())
+            for (size_t i=0;i<hook.original.size();++i) memory[hook.site+DWORD(i)]=hook.original[i];
+    };
+    auto connected=[&](Runtime2026& runtime) { version(runtime); initialModify(runtime); seed(); };
+    auto clean=[] { check(barrierSuspended==0,"all acquired suspension counts are released"); };
+    resetBackend();
+    {
+        auto owner=std::make_unique<Runtime2026>(api()); auto& runtime=*owner; connected(runtime);
+        const auto before=memory;
+        runtime.setPresentationSpeed(2); runtime.modify(ModifyReason2026::PresentationSpeed);
+        check(RuntimeTestAccess2026{runtime}.appliedPresentationSpeed()==2 && speedAllocated,"speed installation commits"); clean();
+        for (const auto& hook:presentation2026::hooks()) {
+            auto patch=presentation2026::redirect(hook,base+0x10000);
+            for (size_t i=0;i<patch.size();++i) check(memory[hook.site+DWORD(i)]==patch[i],"all five owned detours installed");
+        }
+        const auto journalSize=runtime.session().journal.size();
+        for (unsigned i=0;i<12;++i) {
+            runtime.setPresentationSpeed(i%2?4:1); runtime.modify(ModifyReason2026::PresentationSpeed);
+            check(RuntimeTestAccess2026{runtime}.appliedPresentationSpeed()==(i%2?4u:1u),"live switch commits requested multiplier"); clean();
+        }
+        check(runtime.session().journal.size()==journalSize,"switching does not grow journal history");
+        const auto writeCount=writes, readCount=reads;
+        runtime.modify(ModifyReason2026::TimerTick);
+        check(writes==writeCount && reads==readCount && barrierSuspended==0,"idle speed polling performs no remote changes");
+        check(runtime.undo() && !speedAllocated && !allocated,"undo frees both allocations"); clean();
+        for (const auto& hook:presentation2026::hooks())
+            for (size_t i=0;i<hook.original.size();++i) check(memory[hook.site+DWORD(i)]==before.at(hook.site+DWORD(i)),"undo restores original instruction bytes");
+        check(load(0x5FF4D8)==0x70001000,"clock import was never modified");
+    }
+    // Partial installation, partial writes, rollback failures and retry must keep executable memory owned.
+    for (unsigned point=1;point<=6;++point) {
+        resetBackend(); auto owner=std::make_unique<Runtime2026>(api()); auto& runtime=*owner; connected(runtime);
+        fault=Fault::Write; faultAt=calls[static_cast<size_t>(Fault::Write)]+point;
+        partialFailure=true; shortSuccess=false;
+        runtime.setPresentationSpeed(2); runtime.modify(ModifyReason2026::PresentationSpeed);
+        check(fired && runtime.session().result==OperationResult2026::RolledBack && !speedAllocated,
+              "failed speed installation rolls back payload and every partial detour"); clean();
+        check(RuntimeTestAccess2026{runtime}.appliedPresentationSpeed()==1,"failed installation preserves applied multiplier");
+        fault=Fault::None;
+        runtime.modify(ModifyReason2026::TimerTick);
+        check(RuntimeTestAccess2026{runtime}.appliedPresentationSpeed()==2 && speedAllocated,"poll retries desired speed after rollback");
+        check(runtime.undo(),"recovered speed installation restores"); clean();
+    }
+    for (auto kind:{BarrierFault::Snapshot,BarrierFault::Open,BarrierFault::Suspend,BarrierFault::Context}) {
+        resetBackend(); auto owner=std::make_unique<Runtime2026>(api()); auto& runtime=*owner; connected(runtime);
+        barrierFault=kind;
+        runtime.setPresentationSpeed(2); runtime.modify(ModifyReason2026::PresentationSpeed);
+        check(RuntimeTestAccess2026{runtime}.appliedPresentationSpeed()==1 && !speedAllocated,"failed thread barrier prevents speed writes"); clean();
+        barrierFault=BarrierFault::None;
+        runtime.modify(ModifyReason2026::TimerTick);
+        check(RuntimeTestAccess2026{runtime}.appliedPresentationSpeed()==2,"barrier failure retries");
+        check(runtime.undo(),"barrier retry closes"); clean();
+    }
+    resetBackend();
+    {
+        auto owner=std::make_unique<Runtime2026>(api()); auto& runtime=*owner; connected(runtime);
+        barrierEip=presentation2026::hooks()[0].site+1;
+        runtime.setPresentationSpeed(2); runtime.modify(ModifyReason2026::PresentationSpeed);
+        check(runtime.status().failure.operation==RuntimeOperation2026::SpeedBusy && !speedAllocated,
+              "instruction boundary conflict prevents install"); clean();
+        barrierEip=0;
+        runtime.modify(ModifyReason2026::TimerTick);
+        barrierEip=base+0x10040;
+        check(!runtime.undo() && speedAllocated,"active payload prevents release during undo"); clean();
+        barrierEip=0;
+        check(runtime.undo() && !speedAllocated,"busy undo retries safely"); clean();
+    }
+    resetBackend();
+    {
+        auto owner=std::make_unique<Runtime2026>(api()); auto& runtime=*owner; connected(runtime);
+        runtime.setPresentationSpeed(2); runtime.modify(ModifyReason2026::PresentationSpeed);
+        runtime.setPresentationSpeed(4);
+        barrierFault=BarrierFault::Resume;
+        runtime.modify(ModifyReason2026::PresentationSpeed);
+        check(runtime.session().phase==SessionPhase2026::RecoveryRequired && barrierSuspended==1,
+              "resume failure preserves suspended thread ownership and blocks operations");
+        check(!runtime.retryRollback(),"persistent resume failure cannot discard recovery");
+        barrierFault=BarrierFault::None;
+        check(runtime.retryRollback() && RuntimeTestAccess2026{runtime}.appliedPresentationSpeed()==2,"resume retry rolls back incomplete live switch"); clean();
+        check(runtime.undo(),"resume failure ultimately restores"); clean();
+    }
+    resetBackend();
+    {
+        auto owner=std::make_unique<Runtime2026>(api()); auto& runtime=*owner; connected(runtime);
+        store(0x5FF4D8,0x71001000);
+        runtime.setPresentationSpeed(2); runtime.modify(ModifyReason2026::PresentationSpeed);
+        check(!speedAllocated && runtime.status().failure.operation==RuntimeOperation2026::ValidateSpeed,
+              "toolkit or other external clock hook is rejected");
+        store(0x5FF4D8,0x70001000);
+        memory[presentation2026::hooks()[0].site]=0xE9;
+        runtime.modify(ModifyReason2026::TimerTick);
+        check(!speedAllocated && runtime.status().failure.operation==RuntimeOperation2026::ValidateSpeed,
+              "foreign instruction detour is rejected");
+        check(runtime.undo(),"foreign entry rejection leaves ordinary session recoverable"); clean();
+    }
+    resetBackend();
+    presentationSpeedMachineCodeTest();
+    std::puts("Presentation session: installation, live switching, rollback, thread barriers, foreign ownership and undo passed.");
+}
+
 void configFilesTest();
 int main(int argc, char** argv) {
     std::setvbuf(stdout,nullptr,_IONBF,0);
@@ -1554,6 +1702,7 @@ int main(int argc, char** argv) {
             return 0;
         }
         const std::pair<const char*,void(*)()> focused[] = {
+            {"--presentation-speed",presentationSpeedRuntimeTest},
             {"--config-files",configFilesTest},
             {"--journal",journalTest},{"--diagnostics",diagnosticsTest},{"--app-paths",appPathsTest},{"--core-boundary",coreBoundaryTest},{"--game-snapshots",gameSnapshotsTest},
             {"--siege-selection",siegeSelectionTest},{"--state-bounds",stateBoundsTest},{"--image-bounds",imageBoundsTest},
@@ -1605,6 +1754,7 @@ int main(int argc, char** argv) {
         journalTest();
         diagnosticsTest();
         if(configurationsRequested) {
+            presentationSpeedRuntimeTest();
             configFilesTest(); controllerTest(configRoot);
             coreBoundaryTest();gameSnapshotsTest();appPathsTest();stateBoundsTest();imageBoundsTest();gameTextTest();personSnapshotTest();siegeSelectionTest();computerWorkTimingTest();
             for(const auto& entry:configurations) entry.run((configRoot/entry.file).string().c_str());

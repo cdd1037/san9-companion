@@ -25,6 +25,9 @@
       <FunctionLevelLinking Condition="'$(Configuration)'=='Publish'">true</FunctionLevelLinking>
       <WholeProgramOptimization Condition="'$(Configuration)'=='Publish'">true</WholeProgramOptimization>
     </ClCompile>
+    <MASM>
+      <UseSafeExceptionHandlers>true</UseSafeExceptionHandlers>
+    </MASM>
     <Link>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <LinkTimeCodeGeneration Condition="'$(Configuration)'=='Publish'">UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>

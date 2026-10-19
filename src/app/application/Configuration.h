@@ -37,5 +37,6 @@ struct Configuration
     bool cityAutomatic = false;
     bool skipSiegeSelection = true;
     ComputerWorkTiming2026 computerWorkTiming;
+    unsigned presentationSpeed = 1;
 };
 } // namespace app

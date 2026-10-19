@@ -4,7 +4,7 @@ import argparse
 import json
 import re
 from pe_image import PEImage, dialog_template
-from dialog_customizations import control_title, customize_control_layout, dialog_title
+from dialog_customizations import control_title, customize_control_layout, dialog_title, extra_controls
 
 from project_paths import PROJECT_ROOT, SOURCE_ROOT
 def normalized_class(value):
@@ -39,6 +39,7 @@ def check_executable(path, configuration):
         candidates=[r for r in resources if r['keys']==[5,ident,2052]]
         assert len(candidates)==1, (ident,'dialog missing/duplicated')
         actual=dialog_template(candidates[0]['data'])
+        expected['controls'][3:3] = extra_controls(ident)
         expected['title'] = dialog_title(ident, expected['title'])
         for key in ['title','rect','style','exstyle']:
             assert actual[key]==expected[key],(ident,key)

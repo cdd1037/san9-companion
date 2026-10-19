@@ -29,6 +29,8 @@ class MainWindow final : public ui::Dialog
                                     preference(L"Extensions", L"SkipComputerAttackStartDelay", false)});
             for (const auto &error : errors)
                 message(error.file + L"：" + configFileText(error.result));
+            const auto rate=preferenceNumber(L"Presentation",L"Speed",1);
+            app.commitPresentationSpeed(presentation2026::validMultiplier(rate)?rate:1);
         }
         timer(39, 1000);
     }
@@ -71,6 +73,7 @@ class MainWindow final : public ui::Dialog
         }
         else if (id == IDC_START_SAN9)
             ui::launchGame(*this);
+
     }
     void accept() override
     {
@@ -81,6 +84,7 @@ class MainWindow final : public ui::Dialog
         stopTimer(39);
         if (!app.undo())
         {
+            timer(39,1000);
             refresh();
             message(L"恢复未完成，修改日志和资源已保留。请再次关闭以重试恢复。");
             return;

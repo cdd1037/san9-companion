@@ -17,6 +17,7 @@
     <ConfigurationType>StaticLibrary</ConfigurationType>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
   <Import Project="Compiler.props" />
   <PropertyGroup>
     <OutDir>$(ProjectDir)..\build\runtime\$(Configuration)\</OutDir>
@@ -25,7 +26,11 @@
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
   <ItemGroup>
+    <MASM Include="..\src\runtime\PresentationPayload2026.asm" />
     <ClCompile Include="..\src\runtime\Runtime2026.cpp" />
+    <ClCompile Include="..\src\runtime\PresentationSpeed2026.cpp" />
+    <ClCompile Include="..\src\runtime\RuntimePresentation2026.cpp" />
+    <ClCompile Include="..\src\runtime\ThreadBarrier2026.cpp" />
     <ClCompile Include="..\src\runtime\ChangeJournal2026.cpp" />
     <ClCompile Include="..\src\runtime\ProcessSession2026.cpp" />
     <ClCompile Include="..\src\runtime\RuntimeVersion2026.cpp" />
@@ -45,4 +50,5 @@
     <ClInclude Include="..\src\runtime\*.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
 </Project>

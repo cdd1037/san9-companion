@@ -45,6 +45,7 @@ void Runtime2026::modifyBranches(ModifyReason2026 reason)
     applyGameConfiguration(reason);
     break;
   case ModifyReason2026::TimerTick:
+  case ModifyReason2026::PresentationSpeed:
     break;
   default:
     return;

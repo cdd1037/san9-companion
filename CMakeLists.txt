@@ -29,20 +29,25 @@ add_test(NAME parameter-config COMMAND san9-parameter-test)
 # The recovered injection ABI is x86. This path builds core/tests with only the
 # Windows SDK and C++ runtime; the MFC frontend is deliberately not a dependency.
 if(WIN32 AND CMAKE_SIZEOF_VOID_P EQUAL 4)
+  enable_language(ASM_MASM)
   add_library(san9-runtime STATIC
     src/runtime/Runtime2026.cpp src/runtime/RuntimeVersion2026.cpp
+    src/runtime/PresentationSpeed2026.cpp src/runtime/RuntimePresentation2026.cpp src/runtime/ThreadBarrier2026.cpp
+    src/runtime/PresentationPayload2026.asm
     src/runtime/ProcessSession2026.cpp src/runtime/ChangeJournal2026.cpp
     src/runtime/RuntimeInjection2026.cpp src/runtime/RuntimeConfiguration2026.cpp
     src/runtime/RuntimeZone2026.cpp src/runtime/GameText.cpp src/runtime/GameSnapshots2026.cpp)
   target_link_libraries(san9-runtime PUBLIC san9-recovered user32)
   target_include_directories(san9-runtime PUBLIC src/runtime)
-  add_executable(san9-runtime-test tests/runtime_test.cpp tests/config_files_test.cpp
+  add_executable(san9-runtime-test tests/runtime_test.cpp tests/config_files_test.cpp tests/presentation_speed_test.cpp
+    tests/presentation_speed_fixture.asm
     src/app/application/ConfigFiles.cpp src/app/application/Controller.cpp
     src/app/ui/RuntimeStatusText.cpp)
   target_link_libraries(san9-runtime-test PRIVATE san9-runtime)
   if(MSVC)
     foreach(target san9-runtime san9-runtime-test)
       target_compile_options(${target} PRIVATE /W3 /source-charset:utf-8 /execution-charset:.936)
+      target_compile_options(${target} PRIVATE "$<$<COMPILE_LANGUAGE:ASM_MASM>:/safeseh>")
       target_compile_definitions(${target} PRIVATE _WIN32_WINNT=0x0A00)
     endforeach()
   endif()

@@ -519,8 +519,14 @@ class SettingsPage final : public ui::Dialog
   private:
     Controller &app;
     san9::ParameterConfig draft;
+    void speedText()
+    {
+        text(IDC_PRESENTATION_SPEED,L"演出 " + std::to_wstring(app.configuration().presentationSpeed) + L"×");
+    }
     void initialize() override
     {
+        speedText();
+        tooltip(IDC_PRESENTATION_SPEED, L"选择进行阶段的地图与普通动画倍率。暂停、指令阶段及独立事件演出保持原速。");
         const auto &timing = app.configuration().computerWorkTiming;
         settingsPages({
             {IDC_SKIP_DURABILITY_SIEGE_SELECTION, L"跳过耐久驱动的攻城阵型优先选择", app.configuration().skipSiegeSelection},
@@ -615,6 +621,21 @@ class SettingsPage final : public ui::Dialog
             {
                 const auto result = saveConfigFile(*path, draft);
                 if (!result.ok()) message(configFileText(result));
+            }
+            break;
+        }
+        case IDC_PRESENTATION_SPEED: {
+            const auto rate=app.configuration().presentationSpeed;
+            const auto choice=popup(IDC_PRESENTATION_SPEED,{{33001,L"1×（原速）",rate==1},
+                {33002,L"2×",rate==2},{33004,L"4×",rate==4}});
+            if (choice==33001 || choice==33002 || choice==33004)
+            {
+                const unsigned next=choice-33000;
+                if (!savePreferenceNumber(L"Presentation",L"Speed",next))
+                    message(L"保存演出倍率失败。");
+                else
+                    app.commitPresentationSpeed(next);
+                speedText();
             }
             break;
         }
