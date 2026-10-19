@@ -253,6 +253,26 @@ void Dialog::appendItems(int id, const std::vector<std::wstring> &values, bool c
             throw std::runtime_error("cannot append list item");
     }
 }
+bool smokeListItems(Dialog &dialog, int id, const std::vector<std::wstring> &expected)
+{
+    const auto list = child(dialog.endpoint(), id);
+    if ((GetWindowLongPtrW(list, GWL_STYLE) & LBS_SORT) ||
+        SendMessageW(list, LB_GETCOUNT, 0, 0) != LRESULT(expected.size()))
+        return false;
+    for (size_t row = 0; row < expected.size(); ++row)
+    {
+        const auto length = SendMessageW(list, LB_GETTEXTLEN, row, 0);
+        if (length < 0)
+            return false;
+        std::wstring label(size_t(length) + 1, L'\0');
+        if (SendMessageW(list, LB_GETTEXT, row, reinterpret_cast<LPARAM>(label.data())) != length)
+            return false;
+        label.resize(size_t(length));
+        if (label != expected[row])
+            return false;
+    }
+    return true;
+}
 void Dialog::radio(int id, int value)
 {
     auto group = radios(child(window_, id));

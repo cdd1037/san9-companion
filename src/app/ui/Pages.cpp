@@ -58,7 +58,7 @@ template <class Config, class Snapshot> class RowsPage : public ui::Dialog
         labels.reserve(Config::Count);
         for (size_t i = 0; i < Config::Count; ++i)
         {
-            auto label = std::to_wstring(i) + L" ";
+            auto label = (i < 10 ? L"0" : L"") + std::to_wstring(i) + L" ";
             label += read ? ui::gameText(snapshot.names[i].data(), snapshot.names[i].size()) : title;
             labels.push_back(label);
         }
@@ -682,20 +682,36 @@ bool smokePages(Controller &c)
     auto rows = [&](auto &page, int resource) {
         if (!page.createHidden(resource))
             return false;
-        auto bindings = page.fields(page.draft);
-        const auto first = bindings.front();
-        int edited = first.get() == first.maximum ? first.minimum : first.get() + 1;
-        page.number(first.id, edited);
-        page.select(page.listId, 1);
-        page.command(page.listId, ui::Event::Selection);
-        if (page.index != 1)
+        std::vector<std::wstring> labels;
+        for (size_t row = 0; row < page.draft.Count; ++row)
+            labels.push_back((row < 10 ? L"0" : L"") + std::to_wstring(row) + L" " + page.title);
+        if (!ui::smokeListItems(page, page.listId, labels))
             return false;
-        if (first.get() != edited)
-            return false;
-        page.select(page.listId, 0);
-        page.command(page.listId, ui::Event::Selection);
-        if (page.number(first.id) != edited)
-            return false;
+        std::vector<int> edits;
+        for (size_t row = 0; row < page.draft.Count; ++row)
+        {
+            page.select(page.listId, int(row));
+            page.command(page.listId, ui::Event::Selection);
+            if (page.index != row)
+                return false;
+            const auto bindings = page.fields(page.draft);
+            for (const auto &field : bindings)
+                if (page.number(field.id) != field.get())
+                    return false;
+            const auto &first = bindings.front();
+            const int edited = first.minimum + int(row % (first.maximum - first.minimum + 1));
+            edits.push_back(edited);
+            page.number(first.id, edited);
+        }
+        // Revisit every row, including the final pending edit, and check draft isolation.
+        for (size_t row = 0; row < page.draft.Count; ++row)
+        {
+            page.select(page.listId, int(row));
+            page.command(page.listId, ui::Event::Selection);
+            const auto first = page.fields(page.draft).front();
+            if (page.index != row || first.get() != edits[row] || page.number(first.id) != edits[row])
+                return false;
+        }
         page.destroy();
         return true;
     };

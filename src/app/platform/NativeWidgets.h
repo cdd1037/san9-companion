@@ -104,6 +104,7 @@ class Dialog
 };
 std::wstring gameText(char *value, size_t capacity);
 bool smokeTooltipUpdates(Dialog &dialog, int id);
+bool smokeListItems(Dialog &dialog, int id, const std::vector<std::wstring> &expected);
 std::wstring ansiText(const char *value);
 void initializeWindows();
 void launchGame(Dialog &owner);

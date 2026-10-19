@@ -11,6 +11,9 @@ def control_title(dialog_id, control_id, original):
 
 
 def customize_control_layout(dialog_id, control):
+    if (dialog_id, control["id"]) in ((133, 1121), (134, 1138), (135, 1149)):
+        # List positions are game record IDs; text sorting breaks the row mapping.
+        control["style"] &= ~0x0002  # LBS_SORT
     if dialog_id == 102 and control["id"] in (0xFFFF, 0xFFFFFFFF):
         control["id"] = 1202
         control["rect"] = [15, 82, 120, 8]
