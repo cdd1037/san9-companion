@@ -62,7 +62,7 @@ def generate(output=OUT):
             raise ValueError(value)
         if offset == 6572:
             # m_dwOldOfficerBasicInt: the companion reversed the two displacements.
-            # TC-101 at 0x4B2E37 is 60 8B 4E 58 (remake RE-SAN9PK-0067).
+            # TC-101 at 0x4B2E37 is 60 8B 4E 58 (san9-remake RE-SAN9PK-0067).
             # Undo uses captured session bytes; this corrects the legacy registration.
             if int(value, 0) != 0x604E8B58:
                 raise ValueError('Officer ability old-byte registration changed in evidence')
