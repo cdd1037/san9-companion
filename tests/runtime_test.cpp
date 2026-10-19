@@ -1677,6 +1677,7 @@ void presentationSpeedRuntimeTest() {
     std::puts("Presentation session: installation, live switching, rollback, thread barriers, foreign ownership and undo passed.");
 }
 
+void preferencesTest();
 void configFilesTest();
 int main(int argc, char** argv) {
     std::setvbuf(stdout,nullptr,_IONBF,0);
@@ -1704,6 +1705,7 @@ int main(int argc, char** argv) {
         const std::pair<const char*,void(*)()> focused[] = {
             {"--presentation-speed",presentationSpeedRuntimeTest},
             {"--config-files",configFilesTest},
+            {"--preferences",preferencesTest},
             {"--journal",journalTest},{"--diagnostics",diagnosticsTest},{"--app-paths",appPathsTest},{"--core-boundary",coreBoundaryTest},{"--game-snapshots",gameSnapshotsTest},
             {"--siege-selection",siegeSelectionTest},{"--state-bounds",stateBoundsTest},{"--image-bounds",imageBoundsTest},
             {"--computer-work-timing",computerWorkTimingTest},
@@ -1755,7 +1757,7 @@ int main(int argc, char** argv) {
         diagnosticsTest();
         if(configurationsRequested) {
             presentationSpeedRuntimeTest();
-            configFilesTest(); controllerTest(configRoot);
+            configFilesTest(); preferencesTest(); controllerTest(configRoot);
             coreBoundaryTest();gameSnapshotsTest();appPathsTest();stateBoundsTest();imageBoundsTest();gameTextTest();personSnapshotTest();siegeSelectionTest();computerWorkTimingTest();
             for(const auto& entry:configurations) entry.run((configRoot/entry.file).string().c_str());
         }

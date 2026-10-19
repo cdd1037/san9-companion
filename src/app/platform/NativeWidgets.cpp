@@ -1,4 +1,5 @@
 #include "NativeWidgets.h"
+#include "Preferences.h"
 #include "../../runtime/AppPaths.h"
 #include "../../runtime/GameText.h"
 #include "../../../assets/ui/resource_ids.h"
@@ -423,6 +424,11 @@ std::optional<std::filesystem::path> Dialog::file(bool save, const wchar_t *name
     if (CommDlgExtendedError())
         throw std::runtime_error("file dialog failed");
     return {};
+}
+bool Dialog::saveExtensionPreferences(bool skipSiege, bool improveRewards, bool skipAttackDelay) const
+{
+    if (smoke) return true;
+    return ui::saveExtensionPreferences(preferences(), skipSiege, improveRewards, skipAttackDelay);
 }
 bool Dialog::savePreference(const wchar_t *section, const wchar_t *key, bool value) const
 {

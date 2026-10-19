@@ -577,9 +577,7 @@ class SettingsPage final : public ui::Dialog
         bool skip = checked(IDC_SKIP_DURABILITY_SIEGE_SELECTION);
         const ComputerWorkTiming2026 timing{checked(IDC_IMPROVE_COMPUTER_REWARD_TIMING),
                                             checked(IDC_SKIP_COMPUTER_ATTACK_START_DELAY)};
-        if (!savePreference(L"Extensions", L"SkipDurabilitySiegeSelection", skip) ||
-            !savePreference(L"Extensions", L"ImproveComputerRewardTiming", timing.improveRewards) ||
-            !savePreference(L"Extensions", L"SkipComputerAttackStartDelay", timing.skipAttackStartDelay))
+        if (!saveExtensionPreferences(skip, timing.improveRewards, timing.skipAttackStartDelay))
         {
             settingsPage(1);
             message(L"无法写入 San9PKHardSettings.ini，设置尚未确认。");

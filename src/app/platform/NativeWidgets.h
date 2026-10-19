@@ -55,6 +55,7 @@ class Dialog
     unsigned popup(int anchor, const std::vector<MenuItem> &items);
     void message(const std::wstring &value) const;
     std::optional<std::filesystem::path> file(bool save, const wchar_t *name) const;
+    bool saveExtensionPreferences(bool skipSiege, bool improveRewards, bool skipAttackDelay) const;
     bool savePreference(const wchar_t *section, const wchar_t *key, bool value) const;
     bool preference(const wchar_t *section, const wchar_t *key, bool fallback) const;
     bool savePreferenceNumber(const wchar_t *section, const wchar_t *key, unsigned value) const;
