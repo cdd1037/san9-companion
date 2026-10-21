@@ -39,7 +39,8 @@ if(WIN32 AND CMAKE_SIZEOF_VOID_P EQUAL 4)
     src/runtime/RuntimeZone2026.cpp src/runtime/GameText.cpp src/runtime/GameSnapshots2026.cpp)
   target_link_libraries(san9-runtime PUBLIC san9-recovered user32)
   target_include_directories(san9-runtime PUBLIC src/runtime)
-  add_executable(san9-runtime-test tests/runtime_test.cpp tests/config_files_test.cpp tests/presentation_speed_test.cpp
+  add_executable(san9-runtime-test tests/runtime_test.cpp tests/config_files_test.cpp tests/preferences_test.cpp tests/presentation_speed_test.cpp
+    src/app/platform/Preferences.cpp
     tests/presentation_speed_fixture.asm
     src/app/application/ConfigFiles.cpp src/app/application/Controller.cpp
     src/app/ui/RuntimeStatusText.cpp)
@@ -52,4 +53,11 @@ if(WIN32 AND CMAKE_SIZEOF_VOID_P EQUAL 4)
     endforeach()
   endif()
   add_test(NAME runtime-session COMMAND san9-runtime-test --all "${CMAKE_CURRENT_SOURCE_DIR}/assets/config")
+endif()
+
+if(WIN32)
+  add_executable(san9-preferences-test tests/preferences_test.cpp src/app/platform/Preferences.cpp)
+  target_compile_features(san9-preferences-test PRIVATE cxx_std_17)
+  target_compile_definitions(san9-preferences-test PRIVATE SAN9_PREFERENCES_TEST_STANDALONE)
+  add_test(NAME preferences-atomic-save COMMAND san9-preferences-test)
 endif()

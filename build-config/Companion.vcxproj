@@ -39,6 +39,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\src\app\platform\NativeWidgets.cpp" />
+    <ClCompile Include="..\src\app\platform\Preferences.cpp" />
     <ClCompile Include="..\src\app\application\Controller.cpp" />
     <ClCompile Include="..\src\app\application\ConfigFiles.cpp" />
     <ClCompile Include="..\src\app\ui\ConfigFileText.cpp" />

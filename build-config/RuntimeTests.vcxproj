@@ -35,6 +35,8 @@
     <MASM Include="..\tests\presentation_speed_fixture.asm" />
     <ClCompile Include="..\src\app\ui\RuntimeStatusText.cpp" />
     <ClCompile Include="..\tests\config_files_test.cpp" />
+    <ClCompile Include="..\tests\preferences_test.cpp" />
+    <ClCompile Include="..\src\app\platform\Preferences.cpp" />
     <ClCompile Include="..\src\app\application\ConfigFiles.cpp" />
     <ClCompile Include="..\src\app\application\Controller.cpp" />
   </ItemGroup>
