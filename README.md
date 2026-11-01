@@ -39,4 +39,6 @@ Debug 产物位于 `build/app/Debug/San9Companion.exe`。其他构建和验证�
 | `docs/` | 架构、配置及开发文档 |
 | `recovery/` | 固定数据再生所需输入与证据 |
 
-更多说明：[优化说明](docs/optimizations.md) · [架构](docs/architecture.md) · [运行时](docs/runtime.md) · [恢复资料](recovery/README.md) · [开发约定](CONTRIBUTING.md)
+功能研究：[功能与采用方案](docs/companion-2026.md) · [AI设计说明](docs/companion-ai.md) · [算法与规则参考](docs/optimizations.md)
+
+工程文档：[架构](docs/architecture.md) · [运行时](docs/runtime.md) · [恢复资料](recovery/README.md) · [开发约定](CONTRIBUTING.md)

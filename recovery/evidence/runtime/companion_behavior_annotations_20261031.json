@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-31",
+  "input": "remake/private/游戏文件/San9PK.exe",
+  "database": "remake/research/analysis/San9PK-TC-101.i64",
+  "ida": "9.4",
+  "hexrays": "9.4.0.260915",
+  "operation": "append repeatable explanatory function comments",
+  "program_bytes_modified": 0,
+  "names_or_types_modified": 0,
+  "saved_database_reopened": true,
+  "annotations": [
+    {
+      "address": "0x489760",
+      "function": "calculate_construction_cost",
+      "section": 32,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true
+    },
+    {
+      "address": "0x48f770",
+      "function": "should_accept_prisoner_return_compensation",
+      "section": 35,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true
+    },
+    {
+      "address": "0x4b6730",
+      "function": "sub_4B6730",
+      "section": 31,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true
+    },
+    {
+      "address": "0x4b6810",
+      "function": "sub_4B6810",
+      "section": 30,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true
+    },
+    {
+      "address": "0x494580",
+      "function": "execute_recruit_command",
+      "section": 30,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true
+    },
+    {
+      "address": "0x49bfd0",
+      "function": "process_construction_unit_progress",
+      "section": 33,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true
+    },
+    {
+      "address": "0x4feb20",
+      "function": "compute_martial_tactic_effect",
+      "section": 36,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true
+    },
+    {
+      "address": "0x4febb0",
+      "function": "compute_confusion_tactic_effect",
+      "section": 37,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true
+    },
+    {
+      "address": "0x4fed10",
+      "function": "compute_trap_tactic_effect",
+      "section": 37,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true
+    },
+    {
+      "address": "0x44f3b0",
+      "function": "compute_capture_chance",
+      "section": 39,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true
+    }
+  ]
+}

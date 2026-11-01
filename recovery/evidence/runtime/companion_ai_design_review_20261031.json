@@ -1,0 +1,114 @@
+{
+  "scope": "AI design intent and adoption guidance; not exact emulation or dynamic efficacy",
+  "payload_ranges_verified": 22,
+  "payloads": [
+    "00423B38_000A2E00_1A2.asm",
+    "00423D08_000A3000_55.asm",
+    "00423D60_000A3060_2A.asm",
+    "0042B5C8_000A3800_98.asm",
+    "00421530_000A2B00_A2.asm",
+    "00422B60_000A00F0_4D.asm",
+    "00422BB0_000A3600_3C.asm",
+    "00422BEC_000A0200_A2.asm",
+    "0042CD8C_000AA600_86.asm",
+    "00426108_000A5A40_118.asm",
+    "00426220_000A5B60_BD.asm",
+    "004262E0_000A5C20_1C.asm",
+    "00427FD0_000A21F0_10.asm",
+    "0042BA48_000AA000_358.asm",
+    "0042BDA0_004AAA76_13.asm",
+    "0042BDE0_000AA360_1A0.asm",
+    "00420A80_000A0B20_64.asm",
+    "00421D38_000A1CE0_1A.asm",
+    "004206A8_000A0800_1A1.asm",
+    "00420990_000A6490_2E.asm",
+    "00420B80_000A0C00_40.asm",
+    "00420BE8_000A1E00_8F.asm"
+  ],
+  "descriptors_verified": [
+    {
+      "descriptor": "0x42b690",
+      "target": "0x4b800d",
+      "callee": "0xa3800"
+    },
+    {
+      "descriptor": "0x42b69c",
+      "target": "0x4b8762",
+      "callee": "0xa3809"
+    },
+    {
+      "descriptor": "0x42b6a8",
+      "target": "0x4b8bd7",
+      "callee": "0xa3809"
+    },
+    {
+      "descriptor": "0x42ce38",
+      "target": "0x4b5c28",
+      "callee": "0xaa600"
+    },
+    {
+      "descriptor": "0x42ce44",
+      "target": "0x4b5c3f",
+      "callee": "0xa5a40"
+    }
+  ],
+  "key_instruction_checks": 10,
+  "ida_main_read_only": true,
+  "new_database_copies": 0,
+  "seven_design_topics_closed": true,
+  "record_only_details": [
+    "annual/midyear force-wide staffing entry and order",
+    "ransom frequency budget write",
+    "legacy universal 6000 threshold"
+  ],
+  "unresolved_field_names_are_nonblocking": true,
+  "date": "2026-10-31",
+  "database": "remake/research/analysis/San9PK-TC-101.i64",
+  "operation": "read-only design intent review of remaining AI topics",
+  "program_bytes_modified": 0,
+  "database_annotations_added": 0,
+  "topics": [
+    {
+      "section": 57,
+      "topic": "formation roles and waterside facilities",
+      "evidence": "2026 payload, three installed hooks, baseline main IDA",
+      "conclusion": "match tactic composition to affordable formations and actual route terrain"
+    },
+    {
+      "section": 58,
+      "topic": "initial targets and continuation",
+      "evidence": "2026 border eligibility hook and continuation payloads, baseline main IDA",
+      "conclusion": "advance along supported frontier and continue or withdraw using target-group situation"
+    },
+    {
+      "section": 59,
+      "topic": "withdrawal destinations",
+      "evidence": "2026 return helper, baseline collectors and capacity",
+      "conclusion": "try nearer same-corps buildings with projected headroom, then original service place fallback"
+    },
+    {
+      "section": 60,
+      "topic": "force-wide staffing and corps organization",
+      "evidence": "2026 corps grouping and outlying-facility payloads; December 2025 staffing schedule author record",
+      "conclusion": "align personnel and resources with military demand and contiguous operational districts"
+    },
+    {
+      "section": 61,
+      "topic": "low-strength facilities and garrisons",
+      "evidence": "2026 type-4 facility 4000 branch and pair consumption; legacy 6000 author record",
+      "conclusion": "avoid wasting officers at low-use facilities and preserve useful defensive outposts"
+    },
+    {
+      "section": 62,
+      "topic": "ransom work frequency",
+      "evidence": "May 2022 author record and existing baseline work35 research",
+      "conclusion": "increase bounded processing throughput without guaranteeing successful return"
+    },
+    {
+      "section": 63,
+      "topic": "intelligence role quotas and historical fixes",
+      "evidence": "2026 grouping payload, role-distribution inference; author help and updates for historical fixes",
+      "conclusion": "spread support roles across teams; keep stability and safety distinct from balance settings"
+    }
+  ]
+}

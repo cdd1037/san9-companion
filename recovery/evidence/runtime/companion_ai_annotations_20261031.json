@@ -1,0 +1,146 @@
+{
+  "date": "2026-10-31",
+  "input": "remake/private/游戏文件/San9PK.exe",
+  "database": "remake/research/analysis/San9PK-TC-101.i64",
+  "ida": "9.4",
+  "hexrays": "9.4.0.260915",
+  "operation": "append repeatable explanatory function comments for AI audit sections 43-48",
+  "program_bytes_modified": 0,
+  "names_or_types_modified": 0,
+  "saved_database_reopened": true,
+  "previous_annotations_preserved": 10,
+  "annotations": [
+    {
+      "address": "0x4b2910",
+      "function": "score_automatic_special_office_candidate",
+      "section": 43,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-43] Baseline callback includes effective Leadership+Intelligence+tenure+loyalty bonus. Companion replaces caller pointer with A1DE0: base Leadership+base Intelligence+max item bonuses for each; no tenure or loyalty>=150 bonus. Callee44D490 stack locals supply the second item result.",
+      "saved_readback": true
+    },
+    {
+      "address": "0x4b2970",
+      "function": "score_automatic_military_office_candidate",
+      "section": 43,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-43] Baseline callback includes effective Leadership+tenure+loyalty bonus. Companion replaces caller pointer with A0BC0: 2*(base Leadership+max item Leadership)+righteousness-floor(ruler affinity distance/2). Not current effective Leadership alone.",
+      "saved_readback": true
+    },
+    {
+      "address": "0x4b2a20",
+      "function": "score_automatic_civil_office_candidate",
+      "section": 43,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-43] Baseline callback includes effective Intelligence+Politics+tenure+loyalty bonus. Companion replaces caller pointer with A1CC0: base Intelligence+base Politics+their max item bonuses. No tenure or loyalty>=150 bonus.",
+      "saved_readback": true
+    },
+    {
+      "address": "0x4b2f10",
+      "function": "sub_4B2F10",
+      "section": 43,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-43] Companion hook4B2FB0->A1B40 deletes office-list tail, requires same-root funds>3*salary reserve, then removes low-loyalty candidates. Class1 current office ID>0 and loyalty<80 also directly sets current office=-1 during preparation; ID<=0 uses85. Hook4B2FF0 returns no occupied office for embedded-garrison people. Original filtered-count return semantics remain; outer4B30E0 ignores return.",
+      "saved_readback": true
+    },
+    {
+      "address": "0x4b2bb0",
+      "function": "sub_4B2BB0",
+      "section": 44,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-44] Companion office pipeline: emperor special IDs0..3, military, civil. Class2 iff ID>=4 and q=(ID-4)>>2 is odd and<16; otherwise non-special class1. Direct operand writes move office loop checks to temporary +8 flags and person cutoffs to base L>=60 /max(base I,P)>=70. Peek then consume only after assignment; failed head ends phase. A1900 removes unchanged plans and conditionally adds no-office76 plans for remaining people.",
+      "saved_readback": true
+    },
+    {
+      "address": "0x4bbf50",
+      "function": "sub_4BBF50",
+      "section": 45,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-45] Companion replaces unit predicate at4BBF98 with A4C80: nonzero status, flags20&3==0, same root. Base ledger excludes construction40..43; transport51 credits soldiers+all wounded to main target; other units credit soldiers+half wounded to current territory; eligible buildings add garrison+half wounded. A5000 then encodes reserve and priority, not pure shortage.",
+      "saved_readback": true
+    },
+    {
+      "address": "0x4bbdf0",
+      "function": "select_automatic_work51_source_buildings",
+      "section": 46,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-46] Companion4BBE35->A4F60 returns to4BBE73, bypassing BOTH original4B04B0 direct-corps/query-state collection and4BBB10 filter. Earlier A54B0 enforces raw garrison status1, no construction/player-owner bit, pressure<8. Final donor filter requires city ledger>5888, serving-person count>0; suppresses adjacent-empty flag4 absent strong targets<=-6024. New descending key adds overflow1000000, non-city250000, no metadata-bit40 250000.",
+      "saved_readback": true
+    },
+    {
+      "address": "0x4bbb80",
+      "function": "is_automatic_work51_target_building_candidate",
+      "section": 45,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-45] Companion inline tail4BBBAE requires original4AF210 eligibility, ledger<-5000, and for cross-direct-corps recipients food>43EFA0(recipient corps), the next-July consumption reserve. Replaces original city-or-serving-person final check; do not import donor people/state requirements into receiver eligibility.",
+      "saved_readback": true
+    },
+    {
+      "address": "0x4bc240",
+      "function": "select_automatic_work51_building_pair",
+      "section": 46,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-46] Companion resets phase at4BC361 FOR EACH donor. Inline4BC3B6 scans phases: near city/strong<=-6024, any/strong, near/weak, any/weak; every pair must pass4BB7A0 blockage. Near uses donor military-neighbor city list plus own city. Success consumes donor+receiver nodes; four failed scans advance donor. A5400 path blocker distinguishes hostile player-owner territory from NPC building-footprint checks.",
+      "saved_readback": true
+    },
+    {
+      "address": "0x4bb5f0",
+      "function": "sub_4BB5F0",
+      "section": 46,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-46] Baseline planning ledger transaction subtracts planned N from source and adds N to receiver. Work51 factory4BBA00 calls it before constructing transport or non-city emptied-source deployment fallback; companion retains it. Ledger priority encoding means this is not proof of exact shortage fulfillment or successful command submission.",
+      "saved_readback": true
+    },
+    {
+      "address": "0x4a3bb0",
+      "function": "build_ai_deployment_people_and_troops",
+      "section": 47,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-47] Companion direct bytes4A3D00=58 58 EB 01 skip old additional-person consumption. A0800 uses remaining-person count AFTER primary pop and cached threat reserve; segmented groups, 1..4 target crew, intelligence quota, later-commander reservation and affinity fallback. Returned troop amount still passes original min(primary capacity,25000) and new>=6000 cutoff. Nominal group count is not guaranteed actual sortie count.",
+      "saved_readback": true
+    },
+    {
+      "address": "0x4a3e90",
+      "function": "build_group2_single_person_deployment_plan",
+      "section": 48,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-48] Companion4A3F08->A0560 group2 single-person path: >=5 scans TAIL backwards for effective I>=64, else maximum I. <5 scans head, nominal gate W>=60 OR I>=65 OR P>=60 OR L>=65 then min(max(W,I,L)). Critical: FIRST failed gate jumps A05A9->A05D9->A05DF and RETURNS THAT PERSON, overriding earlier best; it does not skip. All-pass end returns accumulated best. Static normal-attribute control flow, not observed scene frequency.",
+      "saved_readback": true
+    }
+  ]
+}

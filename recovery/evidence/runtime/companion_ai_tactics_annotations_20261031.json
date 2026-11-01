@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-31",
+  "input": "remake/private/游戏文件/San9PK.exe",
+  "database": "remake/research/analysis/San9PK-TC-101.i64",
+  "ida": "9.4",
+  "hexrays": "9.4.0.260915",
+  "operation": "append repeatable explanatory function comments for AI audit sections49-54",
+  "program_bytes_modified": 0,
+  "names_or_types_modified": 0,
+  "saved_database_reopened": true,
+  "previous_annotations_preserved": 22,
+  "annotations": [
+    {
+      "address": "0x4a1930",
+      "function": "select_ai_person_deployment_tactic",
+      "section": 49,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-49] Companion 2026 tactic selection: A2DE0 classifies BASE I-W>=8, with base I<80 class1,80..89 class2, otherwise0 including I>=90. Hook4A1BB9->453911 stores8*(current I-W) in the chance slot; following INC EAX is NOT stored back. A27A0 gates confusion23/taunt27 with current I-W>max residual physical power. A2230/A3550 alter early antitrap21/teach22 by class and actual target equipped tactics; trap is24, confusion23. See sections49-50.",
+      "saved_readback": true
+    },
+    {
+      "address": "0x4b7c60",
+      "function": "sub_4B7C60",
+      "section": 50,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-50] Companion ordinary work9/59 tactic path differs from defensive4A1930. 4B801D EB skips early antitrap21, not all antitrap selection.4B8295=0 removes archer-empty chance bypass;4538B6 feeds8*(current I-W). Water teach22: class0 rejects,class1 allows,class2 uses50% rejection draw after duplicate check. A37CC class1 clears restricted list before appending teach,class2 appends,class0 keeps existing list or falls back. A2AC0 inserts heart25 else confusion23 into late fallback. Original special30/26/29 and other legality/ordering gates remain.",
+      "saved_readback": true
+    },
+    {
+      "address": "0x4b85b0",
+      "function": "sub_4B85B0",
+      "section": 52,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-52] Companion4B89BC->A2E00 jointly changes formation and physical tactic assignments through A3000/A3060 and12-word table A2FA8. Not a universal highest-power chooser. Optional DisableKillerJianlan branch4B8BF6: both available23/22 =>50% chooses22 else23; no23 =>22 then21 then20. Availability/budget and upstream route/target context remain. This local branch does not prove all N23 non-harbor waterside paths. WaterKillerProp hook506104 is combat opportunity, not this AI selector.",
+      "saved_readback": true
+    },
+    {
+      "address": "0x45edf0",
+      "function": "sub_45EDF0",
+      "section": 53,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-53] Baseline computes path but returns0 at45EE63. Companion unconditional descriptors42CD40..58 change invalid/empty path to INT_MAX and return path count. A2400 conditionally validates saved caller map object and matching target square, then scans physical building crossings: grouped work types7..10 OR original enemy predicate set bit20000; matching score=(L|penalty)<<12. Context mismatch keeps raw L. Crossing is45D070 geometry, not merely enemy territory; shared helper also has transfer-action caller.",
+      "saved_readback": true
+    },
+    {
+      "address": "0x45ee80",
+      "function": "sub_45EE80",
+      "section": 53,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-53] Baseline writes45EDF0 return into object+8; companion retains this wrapper while replacing45EDF0 zero score with route/context-sensitive crossing score. Callers include467A32 post-target invalidation and4680E3 transfer-action retarget. Do not describe all uses as raw geometric distance or all scores as ETA.",
+      "saved_readback": true
+    },
+    {
+      "address": "0x467190",
+      "function": "resolve_unit_command_after_target_invalidation",
+      "section": 53,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-53] Companion post-action candidate sorting inherits changed45EDF0 via45EE80: baseline zero score becomes route length and conditional physical-crossing penalty. Candidate collection461D50, policy/strength decision and empty building-candidate branch are separate; no new general nearest-building collector is established by this hook.",
+      "saved_readback": true
+    },
+    {
+      "address": "0x50ec90",
+      "function": "process_force_unit_simulation_task_state",
+      "section": 54,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-54] Companion cursor wrapper at50F16E->A1000 calls50EC10; exhaustion runs A2B00 continuation check. Its successful A00F0 branch invokes A6600 on collected same-target units, filters bit8/player-or-barbarian owner/march6, groups DIRECT corps. Scores/replaces only currently physical-tactic members, with no positive-gain cutoff after quota. Changes formation/tactics/slots and sets actual near-attack policy mask1000. A5D40 skips mask1000 but divides participating ETA sums by TOTAL group count, then wait=clamp(mean+half mean absolute deviation-ETA,0,9). This audit closes these helpers, not all continuation failure/return selection.",
+      "saved_readback": true
+    }
+  ]
+}

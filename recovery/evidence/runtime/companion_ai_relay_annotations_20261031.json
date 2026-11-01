@@ -1,0 +1,199 @@
+{
+  "date": "2026-10-31",
+  "input": "san9/San9 Tc/San9PK.exe",
+  "database": "remake/research/analysis/San9PK-TC-101.i64",
+  "source_database": "remake/research/analysis/San9PK-TC-101.i64",
+  "master_database_updated": true,
+  "ida": "9.4",
+  "hexrays": "9.4.0.260915",
+  "operation": "append repeatable explanatory comments for AI relay audit sections55-56; synchronized to master after initial independent-copy review",
+  "program_bytes_modified": 0,
+  "names_or_types_modified": 0,
+  "saved_database_reopened": true,
+  "previous_annotations_preserved": 29,
+  "annotations": [
+    {
+      "address": "0x4a3630",
+      "function": "select_group2_deployment_pair",
+      "section": 55,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-55] Companion relay closure sections55-56: no direct donor triggers4A3A9E->A0300, not command-execution failure. One pending global B/original A. Eligibility S=P(A)-D(A)<=11*max(D(A),20000)/16. Scan original A city-neighbor table8 in order: valid same-root city, serving count>0, allowance<=0, P(B)<=D(B). Overwrite P(B)=max(D(B),10000)+S+5000 and append B to working queue. B failure resumes AFTER B in original A table, not recursive multi-hop. 4A3712->A0EC0 runs when next scan sees P<=D, setting original A cooldown2 only if target is pending B. Facility cooldown read uses local+50 via vslotC but write uses raw local byte;192-byte region ends at A0EC0 code, so facility142 reads B8 code byte. Static indexing proof, not native crash reproduction.",
+      "saved_readback": true,
+      "master_readback": true,
+      "master_bytes_unchanged": true,
+      "master_pseudocode_body_unchanged": true,
+      "saved_master_readback": true
+    },
+    {
+      "address": "0x4a2fd0",
+      "function": "build_automatic_deployment_candidate_groups",
+      "section": 55,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-55] Companion group2 input patches: callback pointer4A3125=A0F80; ETA<20 subset sum then4A3206->A2520 caps pressure at capacity-10000 and promotes it to10000 if D<8000 and pressure<10000. Store P by4A1160; positive P-D enters target queue. DefenceD is companion A2550, not original function alone. Non-city/pass target gate4A316F->A33C8 also uses warning2 or harbor/force-tactic rule.",
+      "saved_readback": true,
+      "master_readback": true,
+      "master_bytes_unchanged": true,
+      "master_pseudocode_body_unchanged": true,
+      "saved_master_readback": true
+    },
+    {
+      "address": "0x4a12a0",
+      "function": "sub_4A12A0",
+      "section": 55,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-55] Companion entry is replaced with push A2550/ret. D=garrison + service-associated units retained by A1780(raw event38/unit target type3) + raw event39/51/52 matching main destination, no current target, excluding states4/6. A2550 temporarily changes A1990 distance branch7E->EB and restores it, counting these inbound units WITHOUT the usual distance30/ETA9 gate. Soldiers only. Not the damage/threat reserve A6000.",
+      "saved_readback": true,
+      "master_readback": true,
+      "master_bytes_unchanged": true,
+      "master_pseudocode_body_unchanged": true,
+      "saved_master_readback": true
+    },
+    {
+      "address": "0x4a1160",
+      "function": "sub_4A1160",
+      "section": 55,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-55] Baseline pressure table setter is ASSIGNMENT at planner+160C+4*unified place ID, not add. Companion A0300 relay registers max(D(B),10000)+S+5000 here, overwriting real pressure; changing relay does not restore old B pressure. Table is zero-initialized per work58 planner construction. Slots>248 are rejected by original bound.",
+      "saved_readback": true,
+      "master_readback": true,
+      "master_bytes_unchanged": true,
+      "master_pseudocode_body_unchanged": true,
+      "saved_master_readback": true
+    },
+    {
+      "address": "0x4a3e90",
+      "function": "build_group2_single_person_deployment_plan",
+      "section": 56,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-56] Companion group2 troop helper at4A3FAB first tests DONOR ALLOWANCE>=3000. Below3000 it clears allowance and returns0; otherwise min(allowance, original city/pass10000 or other commander capacity). Thus final troop count is not unconditionally>=3000 with custom low capacities. Allowance is debited by4A1230 BEFORE command construction/shared validation; failures do not refund it. Actor replacement A0560 behavior is separately documented in section48.",
+      "saved_readback": true,
+      "master_readback": true,
+      "master_bytes_unchanged": true,
+      "master_pseudocode_body_unchanged": true,
+      "saved_master_readback": true
+    },
+    {
+      "address": "0x4a43b0",
+      "function": "select_automatic_deployment_source_and_target",
+      "section": 56,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-56] Work58 next-plan clears selected references and route cache, then tries groups0,1,2. Companion relay registration appends intermediary to group2 temporary working queue; successful pairing requeues target, allowing another donor or same source-target pair if actors/allowance permit. Donor allowance is not reset by this route-cache reset. No universal attempted-pair blacklist.",
+      "saved_readback": true,
+      "master_readback": true,
+      "master_bytes_unchanged": true,
+      "master_pseudocode_body_unchanged": true,
+      "saved_master_readback": true
+    },
+    {
+      "address": "0x4a4430",
+      "function": "create_automatic_unit_deployment_command",
+      "section": 56,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-56] Group2 relay production uses4A3E90 then4B9AF0->4B76B0 shared deployment command. Debit occurs before factory/shared validation; no relay-specific refund here. A0EC0 completion hook is in NEXT PAIR SCAN4A3712 on nonpositive pressure deficit, not this successful factory or public Send. Continuation budget ending before a rescan may leave pending relay without setting cooldown.",
+      "saved_readback": true,
+      "master_readback": true,
+      "master_bytes_unchanged": true,
+      "master_pseudocode_body_unchanged": true,
+      "saved_master_readback": true
+    },
+    {
+      "address": "0x4a1440",
+      "function": "automatic_work59_deployment_planner_vfunc_26",
+      "section": 56,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-56] Work58 continuation requires remaining common attempt budget and any nonempty group0/1/2 queue. No relay-specific rollback/cleanup is performed on budget termination. Companion pending relay is global and only next matching-target rescan or later shared phase preparation clears it.",
+      "saved_readback": true,
+      "master_readback": true,
+      "master_bytes_unchanged": true,
+      "master_pseudocode_body_unchanged": true,
+      "saved_master_readback": true
+    },
+    {
+      "address": "0x50eab0",
+      "function": "sub_50EAB0",
+      "section": 56,
+      "readback": true,
+      "bytes_unchanged": true,
+      "pseudocode_body_unchanged": true,
+      "previous_comments_preserved": true,
+      "comment": "[Companion-2026 AI audit 2026-10-31; docs/optimizations.md#companion-audit-56] Relay uses this shared automatic-command path unchanged: empty factory, failed shared validation, successful submission all consume one attempt. It does not refund work58 source allowance already debited in4A3E90 or undo pressure overwritten by A0300. Count attempts separately from committed troop reservations in a remake design.",
+      "saved_readback": true,
+      "master_readback": true,
+      "master_bytes_unchanged": true,
+      "master_pseudocode_body_unchanged": true,
+      "saved_master_readback": true
+    }
+  ],
+  "initial_research_database": "优化伴侣重置/local/companion-plugin-audit/San9PK-TC-101-ai-relay-review.i64",
+  "initial_input": "remake/private/游戏文件/San9PK.exe",
+  "previous_master_attachment_issue": "Main path attachment returned no input and image base 0; identity assertions prevented annotation writes. Saved packed database copied to an independent research path opened correctly.",
+  "master_attachment_recovered": true,
+  "master_saved": true,
+  "master_annotations_readback": 38,
+  "saved_master_copy_reopened_annotations": 38,
+  "preflight_previous_annotations_present": 29,
+  "preflight_complete_function_ranges_equal_at_both_input_paths": 9,
+  "master_sync_completed_at": "2026-10-31T22:39:57.5473912+08:00",
+  "research_copies_recycled": [
+    {
+      "original_path": "优化伴侣重置/local/companion-plugin-audit/San9PK-TC-101-ai-relay-reopen.i64",
+      "method": "Windows SendToRecycleBin",
+      "source_absent": true
+    },
+    {
+      "original_path": "优化伴侣重置/local/companion-plugin-audit/San9PK-TC-101-ai-relay-review.i64",
+      "method": "Windows SendToRecycleBin",
+      "source_absent": true
+    },
+    {
+      "original_path": "优化伴侣重置/local/companion-plugin-audit/San9PK-TC-101-ai-stage2-saved-check.i64",
+      "method": "Windows SendToRecycleBin",
+      "source_absent": true
+    },
+    {
+      "original_path": "优化伴侣重置/local/companion-plugin-audit/San9PK-TC-101-ai-stage3-saved-check.i64",
+      "method": "Windows SendToRecycleBin",
+      "source_absent": true
+    },
+    {
+      "original_path": "优化伴侣重置/local/companion-plugin-audit/San9PK-TC-101-research.i64",
+      "method": "Windows SendToRecycleBin",
+      "source_absent": true
+    },
+    {
+      "original_path": "优化伴侣重置/local/companion-plugin-audit/San9PK-TC-101-saved-check.i64",
+      "method": "Windows SendToRecycleBin",
+      "source_absent": true
+    },
+    {
+      "original_path": "优化伴侣重置/local/companion-plugin-audit/San9PK-TC-101-master-sync-check.i64",
+      "method": "Windows SendToRecycleBin",
+      "source_absent": true
+    }
+  ],
+  "research_copies_recycled_count": 7
+}
